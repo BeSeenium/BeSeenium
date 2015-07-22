@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sendkeys',['SendKeys',['../classbeseenium_1_1action_1_1elementActions_1_1SendKeys.html',1,'beseenium::action::elementActions']]],
-  ['submit',['Submit',['../classbeseenium_1_1action_1_1elementActions_1_1Submit.html',1,'beseenium::action::elementActions']]],
-  ['submitexception',['SubmitException',['../classbeseenium_1_1exception_1_1SubmitException.html',1,'beseenium::exception']]]
+  ['isdisplayed',['IsDisplayed',['../classbeseenium_1_1action_1_1elementActions_1_1IsDisplayed.html',1,'beseenium::action::elementActions']]],
+  ['isenabled',['IsEnabled',['../classbeseenium_1_1action_1_1elementActions_1_1IsEnabled.html',1,'beseenium::action::elementActions']]],
+  ['isselected',['IsSelected',['../classbeseenium_1_1action_1_1elementActions_1_1IsSelected.html',1,'beseenium::action::elementActions']]]
 ];
