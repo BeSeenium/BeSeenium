@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcore_1_1query_1_1ElementQuery_1_1ElementQuery.html" title="core.query.ElementQuery.\lElementQuery" alt="" coords="5,300,195,341"/>
+<area shape="rect" id="node2" href="$classcore_1_1query_1_1ElementQuery_1_1Clear.html" title="core.query.ElementQuery.\lClear" alt="" coords="256,5,445,47"/>
+<area shape="rect" id="node3" href="$classcore_1_1query_1_1ElementQuery_1_1Click.html" title="core.query.ElementQuery.\lClick" alt="" coords="256,71,445,112"/>
+<area shape="rect" id="node4" href="$classcore_1_1query_1_1ElementQuery_1_1IsDisplayed.html" title="core.query.ElementQuery.\lIsDisplayed" alt="" coords="256,136,445,177"/>
+<area shape="rect" id="node5" href="$classcore_1_1query_1_1ElementQuery_1_1IsEnabled.html" title="core.query.ElementQuery.\lIsEnabled" alt="" coords="256,201,445,243"/>
+<area shape="rect" id="node6" href="$classcore_1_1query_1_1ElementQuery_1_1IsSelected.html" title="core.query.ElementQuery.\lIsSelected" alt="" coords="256,267,445,308"/>
+<area shape="rect" id="node7" href="$classcore_1_1query_1_1ElementQuery_1_1Location.html" title="core.query.ElementQuery.\lLocation" alt="" coords="256,332,445,373"/>
+<area shape="rect" id="node8" href="$classcore_1_1query_1_1ElementQuery_1_1Size.html" title="core.query.ElementQuery.Size" alt="" coords="243,398,459,425"/>
+<area shape="rect" id="node9" href="$classcore_1_1query_1_1ElementQuery_1_1Submit.html" title="core.query.ElementQuery.\lSubmit" alt="" coords="256,449,445,491"/>
+<area shape="rect" id="node10" href="$classcore_1_1query_1_1ElementQuery_1_1TagName.html" title="core.query.ElementQuery.\lTagName" alt="" coords="256,515,445,556"/>
+<area shape="rect" id="node11" href="$classcore_1_1query_1_1ElementQuery_1_1Text.html" title="core.query.ElementQuery.Text" alt="" coords="243,581,459,607"/>
+</map>

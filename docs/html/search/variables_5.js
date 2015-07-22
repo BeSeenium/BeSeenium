@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['serialversionuid',['serialVersionUID',['../classbeseenium_1_1exception_1_1ActionDataException.html#a2094d7d89acca647e9ad1a0cd2e415c4',1,'beseenium.exception.ActionDataException.serialVersionUID()'],['../classbeseenium_1_1exception_1_1ActionException.html#a2a1ed1d5211da4834ac6c29068e117b0',1,'beseenium.exception.ActionException.serialVersionUID()'],['../classbeseenium_1_1exception_1_1BeSeeniumException.html#a69c7a5024cdb6f6ea1846e70b3fcbf93',1,'beseenium.exception.BeSeeniumException.serialVersionUID()'],['../classbeseenium_1_1exception_1_1ClickException.html#a30309c7d7134054c5881bd02cab48172',1,'beseenium.exception.ClickException.serialVersionUID()'],['../classbeseenium_1_1exception_1_1SubmitException.html#ae131e212e16a5ad35be98c1697b13899',1,'beseenium.exception.SubmitException.serialVersionUID()']]]
+];

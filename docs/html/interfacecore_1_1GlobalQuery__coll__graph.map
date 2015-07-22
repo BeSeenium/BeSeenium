@@ -1,0 +1,4 @@
+<map id="core.GlobalQuery" name="core.GlobalQuery">
+<area shape="rect" id="node2" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; String,\l Void \&gt;\n||+ execute()\l}" alt="" coords="11,145,160,237"/>
+<area shape="rect" id="node3" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; T1, T2 \&gt;\n||+ execute()\l}" alt="" coords="5,5,165,83"/>
+</map>
