@@ -1,4 +1,4 @@
-package beseenium.exception;
+package beseenium.exceptions;
 
 /**
  * the root class for the beseenium exception hierarchy

@@ -1,4 +1,4 @@
-package beseenium.action.findElementBy;
+package beseenium.action.findElementsBy;
 
 import java.util.List;
 
@@ -8,15 +8,15 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
-public class FindElementsByXpath extends AbstractAction 
+public class FindElementsByLinkTxt extends AbstractAction 
 {
 	/**
 	 * constructor, initialises Action using the ActionData passed in as a param
 	 * @param context an ActionData
 	 */
-	public FindElementsByXpath(ActionData context) 
+	public FindElementsByLinkTxt(ActionData context) 
 	{super(context);}
 
 	/**
@@ -33,7 +33,7 @@ public class FindElementsByXpath extends AbstractAction
 		String searchParam = super.context.getInputParam();
 		String returnParam = super.context.getOutputParam();
 		WebDriver browser = super.context.getDriver();
-		List<WebElement> htmlElements = browser.findElements(By.xpath(searchParam));
+		List<WebElement> htmlElements = browser.findElements(By.linkText(searchParam));
 		
 		super.context.setElement(htmlElements);
 		

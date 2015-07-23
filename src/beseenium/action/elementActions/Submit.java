@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
-import beseenium.exception.SubmitException;
+import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.SubmitException;
 
 /**
  * This will submit a form if the element in question is a form or a form element

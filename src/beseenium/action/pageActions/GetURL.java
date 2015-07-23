@@ -1,8 +1,8 @@
-package beseenium.action.pageAction;
+package beseenium.action.pageActions;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 /**
  * This is a GetURL Action, it retrieves the URL of the current page
  * @author JPC Hanson

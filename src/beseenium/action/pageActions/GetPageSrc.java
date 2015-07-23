@@ -1,9 +1,9 @@
-package beseenium.action.pageAction;
+package beseenium.action.pageActions;
 
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
 /**
  * this is a get page source action, it retrieves the source code of the page

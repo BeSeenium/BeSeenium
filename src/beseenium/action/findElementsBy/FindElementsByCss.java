@@ -1,4 +1,4 @@
-package beseenium.action.findElementBy;
+package beseenium.action.findElementsBy;
 
 import java.util.List;
 
@@ -8,21 +8,21 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
 /**
- * This class represents a FindElementByClass Action, it takes an ActionData object in initialiseation
+ * this is a FindElementByCss Action, it takes an ActionData object in initialiseation
  * which should contain an appropriate searchParam and returnParam.
  * @author JPC Hanson
  *
  */
-public class FindElementsByClass extends AbstractAction 
+public class FindElementsByCss extends AbstractAction 
 {
 	/**
 	 * constructor, initialises Action using the ActionData passed in as a param
 	 * @param context an ActionData
 	 */
-	public FindElementsByClass(ActionData context) 
+	public FindElementsByCss(ActionData context) 
 	{super(context);}
 
 	/**
@@ -39,14 +39,15 @@ public class FindElementsByClass extends AbstractAction
 		String searchParam = super.context.getInputParam();
 		String returnParam = super.context.getOutputParam();
 		WebDriver browser = super.context.getDriver();
-		List<WebElement> htmlElements = browser.findElements(By.className(searchParam));
-		
+		List<WebElement> htmlElements = browser.findElements(By.cssSelector(searchParam));
+	
 		super.context.setElement(htmlElements);
-		
+	
+		//return result dependant on input n
 		if(n == -1)
-		{return iterateThroughAllElements(htmlElements, returnParam);}
+			{return iterateThroughAllElements(htmlElements, returnParam);}
 		else
-		{return htmlElements.get(n).getAttribute(returnParam);}
+			{return htmlElements.get(n).getAttribute(returnParam);}
 	}
 	
 	/**

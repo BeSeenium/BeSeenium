@@ -1,4 +1,4 @@
-package beseenium.action.findElementBy;
+package beseenium.action.findElementsBy;
 
 import java.util.List;
 
@@ -8,21 +8,15 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
-/**
- * This class represents a FindElementById Action, it takes an ActionData object in initialiseation
- * which should contain an appropriate searchParam and returnParam.
- * @author JPC Hanson
- *
- */
-public class FindElementsById extends AbstractAction 
+public class FindElementsByXpath extends AbstractAction 
 {
 	/**
 	 * constructor, initialises Action using the ActionData passed in as a param
 	 * @param context an ActionData
 	 */
-	public FindElementsById(ActionData context) 
+	public FindElementsByXpath(ActionData context) 
 	{super(context);}
 
 	/**
@@ -39,7 +33,7 @@ public class FindElementsById extends AbstractAction
 		String searchParam = super.context.getInputParam();
 		String returnParam = super.context.getOutputParam();
 		WebDriver browser = super.context.getDriver();
-		List<WebElement> htmlElements = browser.findElements(By.id(searchParam));
+		List<WebElement> htmlElements = browser.findElements(By.xpath(searchParam));
 		
 		super.context.setElement(htmlElements);
 		

@@ -1,4 +1,5 @@
-package beseenium.action.findElementBy;
+package beseenium.action.findElementsBy;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,16 +8,21 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
-
-public class FindElementsByPartialLinkTxt extends AbstractAction 
+/**
+ * This class represents a FindElementByClass Action, it takes an ActionData object in initialiseation
+ * which should contain an appropriate searchParam and returnParam.
+ * @author JPC Hanson
+ *
+ */
+public class FindElementsByClass extends AbstractAction 
 {
 	/**
 	 * constructor, initialises Action using the ActionData passed in as a param
 	 * @param context an ActionData
 	 */
-	public FindElementsByPartialLinkTxt(ActionData context) 
+	public FindElementsByClass(ActionData context) 
 	{super(context);}
 
 	/**
@@ -33,7 +39,7 @@ public class FindElementsByPartialLinkTxt extends AbstractAction
 		String searchParam = super.context.getInputParam();
 		String returnParam = super.context.getOutputParam();
 		WebDriver browser = super.context.getDriver();
-		List<WebElement> htmlElements = browser.findElements(By.partialLinkText(searchParam));
+		List<WebElement> htmlElements = browser.findElements(By.className(searchParam));
 		
 		super.context.setElement(htmlElements);
 		

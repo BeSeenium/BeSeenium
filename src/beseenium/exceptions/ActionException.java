@@ -1,4 +1,4 @@
-package beseenium.exception;
+package beseenium.exceptions;
 
 public class ActionException extends BeSeeniumException 
 {

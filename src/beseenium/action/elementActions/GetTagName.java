@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
-import beseenium.exception.ActionException;
+import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.ActionException;
 
 /**
  * This is a GetTagName Action, it retrieves the tag name of the web element selected.

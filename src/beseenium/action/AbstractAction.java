@@ -1,8 +1,8 @@
 package beseenium.action;
 
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
-import beseenium.exception.ActionException;
+import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.ActionException;
 
 /**
  * this is the root class for all derived Actions

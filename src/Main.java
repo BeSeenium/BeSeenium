@@ -2,19 +2,20 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import beseenium.action.findElementBy.*;
-import beseenium.action.pageAction.*;
+import beseenium.action.findElementsBy.*;
+import beseenium.action.navigateActions.*;
+import beseenium.action.pageActions.*;
+import beseenium.action.switchActions.*;
 import beseenium.action.elementActions.*;
 import beseenium.action.*;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
-import beseenium.exception.ActionException;
-
-
+import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.ActionException;
 
 public class Main {
 
-	public static void main(String[] args) throws ActionDataException, ActionException, InterruptedException 
+	public static void main(String[] args) 
+	throws ActionDataException, ActionException, InterruptedException 
 	{
 		
 		WebDriver driver = new FirefoxDriver();
@@ -129,6 +130,30 @@ public class Main {
 		//test 15 get page title
 		context = action.getActionData();
 		action = new GetTitle(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		//test 16 is selected?
+		context = action.getActionData();
+		action = new NavigateBack(context);
+		test = action.execute(5);
+		System.out.println(test);
+		
+		//test 17 is selected?
+		context = action.getActionData();
+		action = new NavigateForward(context);
+		test = action.execute(5);
+		System.out.println(test);
+		
+		//test 18 is selected?
+		context = action.getActionData();
+		action = new RefreshPage(context);
+		test = action.execute(5);
+		System.out.println(test);
+		
+		//test 18 is selected?
+		context = action.getActionData();
+		action = new SwitchToActiveElement(context);
 		test = action.execute(0);
 		System.out.println(test);
 		

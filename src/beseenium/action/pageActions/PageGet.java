@@ -1,8 +1,8 @@
-package beseenium.action.pageAction;
+package beseenium.action.pageActions;
 
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
-import beseenium.exception.ActionDataException;
+import beseenium.exceptions.ActionDataException;
 
 /**
  * this is a page get action, it navigates to a page set in the input parameter of 
