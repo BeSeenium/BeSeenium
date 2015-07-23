@@ -133,27 +133,33 @@ public class Main {
 		test = action.execute(0);
 		System.out.println(test);
 		
-		//test 16 is selected?
+		//test 16  navigate back
 		context = action.getActionData();
 		action = new NavigateBack(context);
 		test = action.execute(5);
 		System.out.println(test);
 		
-		//test 17 is selected?
+		//test 17  navigate forward
 		context = action.getActionData();
 		action = new NavigateForward(context);
 		test = action.execute(5);
 		System.out.println(test);
 		
-		//test 18 is selected?
+		//test 18  refresh page
 		context = action.getActionData();
 		action = new RefreshPage(context);
 		test = action.execute(5);
 		System.out.println(test);
 		
-		//test 18 is selected?
+		//test 18 switch to active element
 		context = action.getActionData();
 		action = new SwitchToActiveElement(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		//test 19 switch to default content
+		context = action.getActionData();
+		action = new SwitchToDefaultContent(context);
 		test = action.execute(0);
 		System.out.println(test);
 		

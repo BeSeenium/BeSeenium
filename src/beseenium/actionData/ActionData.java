@@ -121,5 +121,8 @@ public class ActionData
 	 */
 	public void setInputParam(String searchParam) 
 	{this.inputParam = searchParam;}
+	
+	public void setDriver(WebDriver driver)
+	{this.driver=driver;}
 //---------------------------------------------------------------------ENDOF GETTERS
 }

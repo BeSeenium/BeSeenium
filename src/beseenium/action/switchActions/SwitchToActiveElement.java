@@ -32,8 +32,9 @@ public class SwitchToActiveElement extends AbstractAction
 		super.getActionData().getElement().clear();
 		super.getActionData().getElement().add
 				(
-						super.getActionData().getDriver().switchTo().activeElement()
+						super.getActionData().getDriver()
+						.switchTo().activeElement()
 				);
-		return "switched to: " + super.getActionData().getDriver().switchTo().activeElement().toString();
+		return "switched to: " + super.getActionData().getDriver().switchTo().activeElement().getTagName();
 	}
 }
