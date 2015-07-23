@@ -34,25 +34,31 @@ public class ActionData
 	/** the Input parameter that an action may operate on**/
 	private String inputParam;
 	/** the Output parameter that an action may return**/
-	private String returnParam;
+	private String outputParam;
 	/** The html element that other actions operate on **/
 	private List<WebElement> element;
 	
 	/**
-	 * Instantiate a new ActionData object with the WebDriver provided
-	 * @param driver
+	 * default ctor
+	 */
+	public ActionData()
+	{}
+	
+	/**
+	 * Instantiate a new ActionData object with the WebDriver provided 
+	 * @param driver \todo remove
 	 */
 	public ActionData(WebDriver driver)
 	{this.driver = driver;}
 	
 	/**
-	 * constructor for findElement style actions
+	 * constructor for findElement style actions \todo remove
 	 */
 	public ActionData(WebDriver driver, String iParam, String oParam)
 	{
 		this.driver = driver;
 		this.inputParam = iParam;
-		this.returnParam = oParam;
+		this.outputParam = oParam;
 	}
 
 //---------------------------------------------------------------------------SETTERS
@@ -74,10 +80,10 @@ public class ActionData
 	 */
 	public String getOutputParam() throws ActionDataException 
 	{
-		if (this.returnParam == null)
+		if (this.outputParam == null)
 			{throw new ActionDataException("No return parameter set");}
 		else
-			{return returnParam;}	
+			{return outputParam;}	
 	}
 
 	/**
@@ -94,10 +100,14 @@ public class ActionData
 	
 	/**
 	 * @return the WebDriver
+	 * @throws ActionDataException 
 	 */
-	public WebDriver getDriver()
+	public WebDriver getDriver() throws ActionDataException
 	{
-		return driver;
+		if (this.driver == null)
+		{throw new ActionDataException("No WebDriver exists in this ActionData");}
+	else
+		{return driver;}
 	}
 //---------------------------------------------------------------------ENDOF SETTERS
 	
@@ -109,18 +119,18 @@ public class ActionData
 	{this.element = element;}
 
 	/**
-	 * @param OutputParam the returnParam to set
+	 * @param outputParam the returnParam to set
 	 */
-	public void setOutputParam(String returnParam) 
-	{this.returnParam = returnParam;}
+	public void setOutputParam(String outputParam) 
+	{this.outputParam = outputParam;}
 
 	/**
 	 * this method sets the value of the input parameter. Make sure that the value is 
 	 * appropriate to the action that you plan to execute next.
-	 * @param InputParam the searchParam to set
+	 * @param inputParam the searchParam to set
 	 */
-	public void setInputParam(String searchParam) 
-	{this.inputParam = searchParam;}
+	public void setInputParam(String inputParam) 
+	{this.inputParam = inputParam;}
 	
 	public void setDriver(WebDriver driver)
 	{this.driver=driver;}

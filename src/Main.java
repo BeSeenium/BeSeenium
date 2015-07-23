@@ -20,7 +20,7 @@ public class Main {
 	public static void main(String[] args) 
 	throws ActionDataException, ActionException, InterruptedException 
 	{
-		
+		/**
 		WebDriver driver = new FirefoxDriver();
 		ActionData context;
 		AbstractAction action;
@@ -151,7 +151,7 @@ public class Main {
 		//test 18  refresh page
 		context = action.getActionData();
 		action = new RefreshPage(context);
-		test = action.execute(5);
+		test = action.execute(1);
 		System.out.println(test);
 		
 		//test 18 switch to active element
@@ -164,18 +164,27 @@ public class Main {
 		context = action.getActionData();
 		action = new SwitchToDefaultContent(context);
 		test = action.execute(0);
-		System.out.println(test);
+		System.out.println(test);**/
 		
 		///////////////////////////////////////////////////////////////////////
 		//prototype action list and iteration
 		///////////////////////////////////////////////////////////////////////
+		ActionData actionData = ActionDataCreator.createFirefoxActionData();
+		ActionController controller = new ActionController(actionData);
 		
+		controller.add(ActionCreator.createPageGetAction(), "http://www.test.com", 0);
+		controller.add(ActionCreator.createPageGetAction(), "http://www.google.com", 0);
 		
+		List<String> results = controller.execute();
 		
+		for (int i = 0; i < results.size(); ++i)
+		{
+			System.out.println(results.get(i));
+		}
 		
 		//end
-		Thread.sleep(1000);
-		driver.quit();
+		//Thread.sleep(1000);
+		//driver.quit();
 	}
 
 }

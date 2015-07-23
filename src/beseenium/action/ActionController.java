@@ -2,6 +2,9 @@ package beseenium.action;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+
 import beseenium.actionData.ActionData;
 import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
@@ -17,11 +20,15 @@ public class ActionController
 	private List<AbstractAction> actions;
 	private List<String> inputParams;
 	private List<Integer> optionalIndex;
-	private ActionData context;
-	private List<String> result;
+	private WebDriver driver;
 	
-	public ActionController()
+	/**
+	 * @throws ActionDataException 
+	 * 
+	 */
+	public ActionController(ActionData actionData) throws ActionDataException
 	{
+		this.driver = actionData.getDriver();
 		this.actions = new ArrayList<AbstractAction>();
 		this.inputParams = new ArrayList<String>();
 		this.optionalIndex = new ArrayList<Integer>();
@@ -57,9 +64,13 @@ public class ActionController
 	 * @return List<String> the results of the various actions, to be used in reporting.
 	 * @throws ActionException 
 	 * @throws ActionDataException 
+	 * \todo set action data from local context
 	 */
 	public List<String> execute() throws ActionDataException, ActionException
 	{
+		ActionData context;
+		List<String> result = new ArrayList<String>();
+		
 		for (int i = 0; i < actions.size(); ++i)
 		{
 			AbstractAction individualAction = actions.get(i);
@@ -68,9 +79,11 @@ public class ActionController
 			
 			context = individualAction.getActionData();
 			context.setInputParam(inputString);
-			result.add(individualAction.execute(index));		
+			context.setDriver(driver);
+			result.add(individualAction.execute(index));	
+			
 		}
 		
-		return this.result;		
+		return result;		
 	}
 }

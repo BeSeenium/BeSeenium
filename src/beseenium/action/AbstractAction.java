@@ -5,9 +5,9 @@ import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
 
 /**
- * this is the root class for all derived Actions
+ * this is the root class for all derived Actions 
  * @author JPC Hanson
- *
+ * \todo change CTOR's to setActionData(WebDriver driver, ) methods
  */
 public abstract class AbstractAction 
 {
