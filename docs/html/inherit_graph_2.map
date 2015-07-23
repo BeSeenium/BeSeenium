@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classbeseenium_1_1exception_1_1BeSeeniumException.html" title="beseenium.exception.BeSeenium\lException" alt="" coords="137,39,375,80"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1exception_1_1ActionDataException.html" title="beseenium.exception.Action\lDataException" alt="" coords="423,5,625,47"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1exception_1_1ActionException.html" title="beseenium.exception.Action\lException" alt="" coords="423,71,625,112"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1exception_1_1ClickException.html" title="beseenium.exception.Click\lException" alt="" coords="682,37,874,79"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1exception_1_1SubmitException.html" title="beseenium.exception.Submit\lException" alt="" coords="673,103,883,144"/>
-</map>
