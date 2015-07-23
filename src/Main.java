@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import beseenium.action.findElementBy.*;
+import beseenium.action.pageAction.*;
 import beseenium.action.elementActions.*;
 import beseenium.action.*;
 import beseenium.actionData.ActionData;
@@ -21,7 +22,7 @@ public class Main {
 		AbstractAction action;
 		String test;
 		
-		driver.get("http://www.google.com");
+		driver.get("http://www.google.com");		
 		
 		//test 1 find element
 		context = new ActionData(driver, "q", "id");
@@ -42,7 +43,8 @@ public class Main {
 		test = action.execute(0);
 		System.out.println(test);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
 		//test 4 clear
 		context = action.getActionData();
 		action = new Clear(context);
@@ -102,6 +104,31 @@ public class Main {
 		//test 13 is selected?
 		context = action.getActionData();
 		action = new IsSelected(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		// test 14 get page
+		context = action.getActionData();
+		context.setInputParam("http://jpchanson.jetos.com");
+		action = new PageGet(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		//test 14 get current url
+		context = action.getActionData();
+		action = new GetURL(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		//test 15 get page src
+		context = action.getActionData();
+		action = new GetPageSrc(context);
+		test = action.execute(0);
+		System.out.println(test);
+		
+		//test 15 get page title
+		context = action.getActionData();
+		action = new GetTitle(context);
 		test = action.execute(0);
 		System.out.println(test);
 		
