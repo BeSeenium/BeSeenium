@@ -3,14 +3,17 @@ package beseenium.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import beseenium.actionData.ActionData;
 import beseenium.exceptions.ActionDataFactoryException;
 
 /**
  * This Class conforms to a 'factory' pattern, it allows the creation of different
- * ActionData instances
+ * ActionData instances 
  * @author JPC Hanson
  *
  */
@@ -18,6 +21,10 @@ public class ActionDataFactory
 {
 	/** container for string value pairs associated with this factory **/
 	private static Map<String, ActionData> ActionDataMap;
+	/**  **/
+	private static final String USERNAME = "jonjackson";
+	private static final String BSKEY = "WDaudZN5Y1eTGPUUozty";
+	private static final String URL = "http://" + USERNAME + ":" + BSKEY + "@hub.browserstack.com/wd/hub";
 	
 	/**
 	 * default constructor, initialises internal map and populates it
@@ -43,6 +50,7 @@ public class ActionDataFactory
 					+ "	Check your spelling, or refer to documentation");}
 	}
 	
+	
 	/**
 	 * add appropriate entries to the factoryMap.
 	 */
@@ -53,5 +61,8 @@ public class ActionDataFactory
 		
 		//for public use
 		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
+		ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
+		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
+		ActionDataMap.put("remote", new ActionData(new RemoteWebDriver() ));
 	}
 }

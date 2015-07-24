@@ -172,11 +172,10 @@ public class Main {
 		//prototype action list and iteration
 		///////////////////////////////////////////////////////////////////////
 		//initialise factories
-
 		ActionFactory Afactory = new ActionFactory();
 		
 		//configuration
-		ActionData actionData = ActionDataFactory.makeActionData("firefox");
+		ActionData actionData = ActionDataFactory.makeActionData("noWindows");
 		ActionController controller = new ActionController(actionData);
 		
 		//page actions test
