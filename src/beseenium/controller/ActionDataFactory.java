@@ -39,7 +39,8 @@ public class ActionDataFactory
 		if(ActionDataMap.containsKey(ActionDataKey))
 			{return ActionDataMap.get(ActionDataKey);}
 		else
-			{throw new ActionDataFactoryException();}
+			{throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
+					+ "	Check your spelling, or refer to documentation");}
 	}
 	
 	/**

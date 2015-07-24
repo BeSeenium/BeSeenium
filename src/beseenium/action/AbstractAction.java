@@ -28,6 +28,9 @@ public abstract class AbstractAction
 	public ActionData getActionData()
 	{return this.context;}
 	
+	public void setActionData(ActionData actionData)
+	{this.context = actionData;}
+	
 	/**
 	 * execute the derived Action in question, 
 	 * @param n the index of the element to find information on, i.e. if 3 results are found

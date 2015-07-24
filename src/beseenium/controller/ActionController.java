@@ -77,12 +77,13 @@ public class ActionController
 			AbstractAction individualAction = actions.get(i);
 			String inputString = inputParams.get(i);
 			int index = optionalIndex.get(i);
-			
+						
 			context = individualAction.getActionData();
 			context.setInputParam(inputString);
 			context.setDriver(driver);
-			result.add(individualAction.execute(index));	
-			
+			context.setOutputParam("class");
+		
+			result.add(individualAction.execute(index));		
 		}
 		
 		return result;		

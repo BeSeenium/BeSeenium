@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import beseenium.action.AbstractAction;
 import beseenium.actionData.ActionData;
 import beseenium.exceptions.ActionDataException;
+import beseenium.helpers.FormatOutput;
 
 public class FindElementsByName extends AbstractAction 
 {
@@ -31,33 +32,11 @@ public class FindElementsByName extends AbstractAction
 	public String execute(int n) throws ActionDataException 
 	{
 		String searchParam = super.context.getInputParam();
-		String returnParam = super.context.getOutputParam();
 		WebDriver browser = super.context.getDriver();
 		List<WebElement> htmlElements = browser.findElements(By.name(searchParam));
 		
 		super.context.setElement(htmlElements);
 		
-		if(n == -1)
-		{return iterateThroughAllElements(htmlElements, returnParam);}
-		else
-		{return htmlElements.get(n).getAttribute(returnParam);}
-	}
-	
-	/**
-	 * iterate through all the elements provided and concatonate the attribute results into
-	 * one string
-	 * @param elements the List<elements> to operate on
-	 * @param rParam the value of the attribute you wish to return
-	 * @return String representation of the Action Result
-	 */
-	private String iterateThroughAllElements(List<WebElement> elements, String rParam)
-	{
-		String tempRes = "";
-		for(int i=0; i< elements.size(); ++i)
-		{
-			tempRes += elements.get(i).getAttribute(rParam)+"\n";
-		}
-		
-		return tempRes;
+		return FormatOutput.formatFindElementOutput(htmlElements, n);
 	}
 }

@@ -29,7 +29,7 @@ public class NavigateForward extends AbstractAction
 	{
 		int count;
 		String oldURL, newURL="";
-		for(count = -1; count < n; ++count)
+		for(count = 0; count < n; ++count)
 		{
 			oldURL = super.context.getDriver().getCurrentUrl();
 			super.context.getDriver().navigate().forward();	
