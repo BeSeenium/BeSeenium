@@ -1,7 +1,13 @@
-package beseenium.action;
+package beseenium.controller;
 
+import beseenium.action.AbstractAction;
 import beseenium.action.pageActions.*;
 
+/**
+ * 
+ * @author JPC Hanson
+ *\todo change to factory method map implementation
+ */
 public class ActionCreator 
 {
 
