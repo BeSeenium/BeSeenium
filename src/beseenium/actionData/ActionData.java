@@ -46,7 +46,7 @@ public class ActionData
 	
 	/**
 	 * Instantiate a new ActionData object with the WebDriver provided 
-	 * @param driver \todo remove
+	 * @param driver
 	 */
 	public ActionData(WebDriver driver)
 	{this.driver = driver;}

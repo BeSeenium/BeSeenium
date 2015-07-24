@@ -171,11 +171,16 @@ public class Main {
 		///////////////////////////////////////////////////////////////////////
 		//prototype action list and iteration
 		///////////////////////////////////////////////////////////////////////
-		ActionData actionData = ActionDataCreator.createFirefoxActionData();
+		//initialise factories
+
+		ActionFactory Afactory = new ActionFactory();
+		
+		//configuration
+		ActionData actionData = ActionDataFactory.makeActionData("firefox");
 		ActionController controller = new ActionController(actionData);
 		
-		controller.add(ActionCreator.createPageGetAction(), "http://www.test.com", 0);
-		controller.add(ActionCreator.createPageGetAction(), "http://www.google.com", 0);
+		controller.add(ActionFactory.makeAction("PageGet"), "http://www.test.com", 0);
+		controller.add(ActionFactory.makeAction("PageGet"), "http://www.google.com", 0);
 		
 		List<String> results = controller.execute();
 		
