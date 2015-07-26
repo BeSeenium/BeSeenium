@@ -1,4 +1,0 @@
-<map id="beseenium.action.pageActions.PageClose" name="beseenium.action.pageActions.PageClose">
-<area shape="rect" id="node2" href="$classbeseenium_1_1action_1_1AbstractAction.html" title="{beseenium.action.Abstract\lAction\n||+ getActionData()\l+ setActionData()\l+ execute()\l# AbstractAction()\l}" alt="" coords="83,587,277,723"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1actionData_1_1ActionData.html" title="{beseenium.actionData.ActionData\n|&#45; inputParam\l&#45; outputParam\l|+ ActionData()\l+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getOutputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setOutputParam()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="59,285,301,524"/>
-</map>

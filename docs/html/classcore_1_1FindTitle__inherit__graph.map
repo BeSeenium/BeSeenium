@@ -1,5 +1,0 @@
-<map id="core.FindTitle" name="core.FindTitle">
-<area shape="rect" id="node2" href="$interfacecore_1_1GlobalQuery.html" title="{core.GlobalQuery\n||+ execute()\l}" alt="" coords="19,287,151,364"/>
-<area shape="rect" id="node3" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; String,\l Void \&gt;\n||+ execute()\l}" alt="" coords="11,145,160,237"/>
-<area shape="rect" id="node4" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; T1, T2 \&gt;\n||+ execute()\l}" alt="" coords="5,5,165,83"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="beseenium.FindElementsByCss.execute" name="beseenium.FindElementsByCss.execute">
-<area shape="rect" id="node2" href="$classbeseenium_1_1context_1_1Context.html#ae51ef667f4e2fa0ccc911a8d22cb82a1" title="beseenium.context.Context.set\lWebElement" alt="" coords="253,5,475,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1context_1_1Context.html#a57743831eb841625169c6a8242e36b11" title="beseenium.context.Context.get\lDriver" alt="" coords="252,71,476,112"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1context_1_1Context.html#ac48e81e3a8e6fd4056f1560f4eaaeadc" title="beseenium.context.Context.get\lSearchParam" alt="" coords="252,136,476,177"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1context_1_1Context.html#ad82668920692a96a12ae1112e585c7fa" title="beseenium.context.Context.get\lElement" alt="" coords="252,201,476,243"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1context_1_1Context.html#a6809d3bc604b66b6a5aeeb47ebea2535" title="beseenium.context.Context.get\lReturnParam" alt="" coords="252,267,476,308"/>
-</map>

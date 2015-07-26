@@ -1,5 +1,0 @@
-<map id="core.FindTagBy" name="core.FindTagBy">
-<area shape="rect" id="node2" href="$interfacecore_1_1TagQuery.html" title="{core.TagQuery\n||+ execute()\l}" alt="" coords="43,287,158,364"/>
-<area shape="rect" id="node3" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; WebElement,\l By \&gt;\n||+ execute()\l}" alt="" coords="5,145,196,237"/>
-<area shape="rect" id="node4" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; T1, T2 \&gt;\n||+ execute()\l}" alt="" coords="21,5,181,83"/>
-</map>
