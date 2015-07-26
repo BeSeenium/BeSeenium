@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
-import beseenium.action.AbstractAction;
-import beseenium.actionData.ActionData;
 import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
+import beseenium.model.action.AbstractAction;
+import beseenium.model.actionData.ActionData;
 
 /**
  * This class acts as the invoker in a GOF command style pattern. It stores and
@@ -81,7 +81,6 @@ public class ActionController
 			context = individualAction.getActionData();
 			context.setInputParam(inputString);
 			context.setDriver(driver);
-			context.setOutputParam("class");
 		
 			result.add(individualAction.execute(index));		
 		}

@@ -3,13 +3,13 @@ package beseenium.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import beseenium.action.AbstractAction;
-import beseenium.action.elementActions.*;
-import beseenium.action.findElementsBy.*;
-import beseenium.action.navigateActions.*;
-import beseenium.action.pageActions.*;
 import beseenium.exceptions.ActionDataFactoryException;
 import beseenium.exceptions.ActionFactoryException;
+import beseenium.model.action.AbstractAction;
+import beseenium.model.action.elementActions.*;
+import beseenium.model.action.findElementsBy.*;
+import beseenium.model.action.navigateActions.*;
+import beseenium.model.action.pageActions.*;
 
 /**
  * 

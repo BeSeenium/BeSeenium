@@ -8,8 +8,8 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import beseenium.actionData.ActionData;
 import beseenium.exceptions.ActionDataFactoryException;
+import beseenium.model.actionData.ActionData;
 
 /**
  * This Class conforms to a 'factory' pattern, it allows the creation of different
@@ -35,6 +35,8 @@ public class ActionDataFactory
 		mapEntries();
 	}
 	
+	
+	
 	/**
 	 * make a specific actionData containing a specific WebDriver.
 	 * @param ActionDataKey the type of ActionData you wish to specify.
@@ -51,6 +53,9 @@ public class ActionDataFactory
 	}
 	
 	
+	
+	
+	
 	/**
 	 * add appropriate entries to the factoryMap.
 	 */
@@ -61,8 +66,8 @@ public class ActionDataFactory
 		
 		//for public use
 		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
-		ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
+		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
-		ActionDataMap.put("remote", new ActionData(new RemoteWebDriver() ));
+		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver() ));
 	}
 }
