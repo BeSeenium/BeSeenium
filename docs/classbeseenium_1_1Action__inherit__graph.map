@@ -1,5 +1,0 @@
-<map id="beseenium.Action" name="beseenium.Action">
-<area shape="rect" id="node2" href="$classbeseenium_1_1ElementAction.html" title="{beseenium.ElementAction\n||+ execute()\l# ElementAction()\l# getContext()\l}" alt="" coords="5,160,196,267"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1PageAction.html" title="{beseenium.PageAction\n||+ execute()\l# PageAction()\l# getContext()\l}" alt="" coords="220,160,389,267"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1FindElementsByCss.html" title="{beseenium.FindElementsByCss\n||+ FindElementsByCss()\l+ execute()\l}" alt="" coords="193,315,416,407"/>
-</map>
