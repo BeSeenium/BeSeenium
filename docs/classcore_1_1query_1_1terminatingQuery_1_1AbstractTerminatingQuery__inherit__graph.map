@@ -1,0 +1,12 @@
+<map id="core.query.terminatingQuery.AbstractTerminatingQuery" name="core.query.terminatingQuery.AbstractTerminatingQuery">
+<area shape="rect" id="node2" href="$classcore_1_1query_1_1terminatingQuery_1_1Clear.html" title="{core.query.terminatingQuery.\lClear\n||+ Clear()\l+ execute()\l}" alt="" coords="5,160,216,267"/>
+<area shape="rect" id="node3" href="$classcore_1_1query_1_1terminatingQuery_1_1Click.html" title="{core.query.terminatingQuery.\lClick\n||+ Click()\l+ execute()\l}" alt="" coords="240,160,451,267"/>
+<area shape="rect" id="node4" href="$classcore_1_1query_1_1terminatingQuery_1_1IsDisplayed.html" title="{core.query.terminatingQuery.\lIsDisplayed\n||+ IsDisplayed()\l+ execute()\l}" alt="" coords="475,160,685,267"/>
+<area shape="rect" id="node5" href="$classcore_1_1query_1_1terminatingQuery_1_1IsEnabled.html" title="{core.query.terminatingQuery.\lIsEnabled\n||+ IsEnabled()\l+ execute()\l}" alt="" coords="709,160,920,267"/>
+<area shape="rect" id="node6" href="$classcore_1_1query_1_1terminatingQuery_1_1IsSelected.html" title="{core.query.terminatingQuery.\lIsSelected\n||+ IsSelected()\l+ execute()\l}" alt="" coords="944,160,1155,267"/>
+<area shape="rect" id="node7" href="$classcore_1_1query_1_1terminatingQuery_1_1Location.html" title="{core.query.terminatingQuery.\lLocation\n||+ Location()\l+ execute()\l}" alt="" coords="1179,160,1389,267"/>
+<area shape="rect" id="node8" href="$classcore_1_1query_1_1terminatingQuery_1_1Size.html" title="{core.query.terminatingQuery.Size\n||+ Size()\l+ execute()\l}" alt="" coords="1413,167,1651,259"/>
+<area shape="rect" id="node9" href="$classcore_1_1query_1_1terminatingQuery_1_1Submit.html" title="{core.query.terminatingQuery.\lSubmit\n||+ Submit()\l+ execute()\l}" alt="" coords="1675,160,1885,267"/>
+<area shape="rect" id="node10" href="$classcore_1_1query_1_1terminatingQuery_1_1TagName.html" title="{core.query.terminatingQuery.\lTagName\n||+ TagName()\l+ execute()\l}" alt="" coords="1909,160,2120,267"/>
+<area shape="rect" id="node11" href="$classcore_1_1query_1_1terminatingQuery_1_1Text.html" title="{core.query.terminatingQuery.Text\n||+ Text()\l+ execute()\l}" alt="" coords="2144,167,2381,259"/>
+</map>

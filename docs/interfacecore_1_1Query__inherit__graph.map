@@ -1,0 +1,8 @@
+<map id="core.Query&lt; T1, T2 &gt;" name="core.Query&lt; T1, T2 &gt;">
+<area shape="rect" id="node2" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; WebElement,\l By \&gt;\n||+ execute()\l}" alt="" coords="5,145,196,237"/>
+<area shape="rect" id="node5" href="$interfacecore_1_1Query.html" title="{core.Query\&lt; String,\l Void \&gt;\n||+ execute()\l}" alt="" coords="221,145,370,237"/>
+<area shape="rect" id="node3" href="$interfacecore_1_1TagQuery.html" title="{core.TagQuery\n||+ execute()\l}" alt="" coords="43,287,158,364"/>
+<area shape="rect" id="node4" href="$classcore_1_1FindTagBy.html" title="{core.FindTagBy\n|&#45; selector\l|+ FindTagBy()\l+ execute()\l}" alt="" coords="41,413,160,505"/>
+<area shape="rect" id="node6" href="$interfacecore_1_1GlobalQuery.html" title="{core.GlobalQuery\n||+ execute()\l}" alt="" coords="229,287,361,364"/>
+<area shape="rect" id="node7" href="$classcore_1_1FindTitle.html" title="{core.FindTitle\n||+ execute()\l}" alt="" coords="242,421,349,498"/>
+</map>
