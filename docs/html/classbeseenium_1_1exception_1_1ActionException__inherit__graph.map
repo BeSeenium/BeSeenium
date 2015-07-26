@@ -1,0 +1,5 @@
+<map id="beseenium.exception.ActionException" name="beseenium.exception.ActionException">
+<area shape="rect" id="node4" href="$classbeseenium_1_1exception_1_1ClickException.html" title="{beseenium.exception.Click\lException\n|&#45; serialVersionUID\l|+ ClickException()\l+ ClickException()\l}" alt="" coords="5,440,197,547"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1exception_1_1SubmitException.html" title="{beseenium.exception.Submit\lException\n|&#45; serialVersionUID\l|+ SubmitException()\l+ SubmitException()\l}" alt="" coords="222,440,431,547"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1exception_1_1BeSeeniumException.html" title="{beseenium.exception.BeSeenium\lException\n|&#45; serialVersionUID\l|+ BeSeeniumException()\l# BeSeeniumException()\l}" alt="" coords="95,131,332,237"/>
+</map>
