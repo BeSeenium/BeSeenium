@@ -1,5 +1,6 @@
 package beseenium.controller;
 
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,9 +26,10 @@ public class ActionFactory
 
 	/**
 	 * @throws ActionDataFactoryException 
+	 * @throws MalformedURLException 
 	 * 
 	 */
-	public ActionFactory() throws ActionDataFactoryException
+	public ActionFactory() throws ActionDataFactoryException, MalformedURLException
 	{
 		@SuppressWarnings("unused")
 		ActionDataFactory actionDataFactory = new ActionDataFactory();
