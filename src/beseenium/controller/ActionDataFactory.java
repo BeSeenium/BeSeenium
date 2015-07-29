@@ -90,7 +90,7 @@ public class ActionDataFactory
 		ActionDataMap.put("internal", new ActionData());
 		
 		//for public use
-//		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
+		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 //		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
 		ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
