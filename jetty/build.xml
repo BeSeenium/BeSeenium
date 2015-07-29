@@ -1,0 +1,26 @@
+<project name="BeSeenium" default="run">
+    <target name="clean">
+        <delete dir="output"/>
+    </target>
+
+    <path id="classpath">
+        <fileset dir="lib" includes="*.jar"/>
+    </path>
+
+    <target name="init">
+        <mkdir dir="output/class"/>
+    </target>
+
+    <target name="compile" depends="init" >
+        <javac srcdir="src" destdir="output/class" classpathref="classpath" />
+    </target>
+
+    <target name="run" depends="compile">
+        <java fork="true" classname="ubiserv.simple.Start">
+            <classpath>
+                <path refid="classpath"/>
+                <path location="output/class"/>
+            </classpath>
+        </java>
+    </target>
+</project>

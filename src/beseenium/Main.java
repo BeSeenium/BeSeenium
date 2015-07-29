@@ -31,7 +31,7 @@ public class Main {
 		ActionDataFactory.setCapabilities("auth", "jonjackson:WDaudZN5Y1eTGPUUozty");
 		
 		ActionFactory Afactory = new ActionFactory();
-		ActionData actionData = ActionDataFactory.makeActionData("remote");
+		ActionData actionData = ActionDataFactory.makeActionData("firefox");
 		
 		
 		ActionController controller = new ActionController(actionData);

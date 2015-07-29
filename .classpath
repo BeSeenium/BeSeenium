@@ -2,11 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry exported="true" kind="var" path="M2_REPO/org/seleniumhq/selenium/selenium-support/2.46.0/selenium-support-2.46.0.jar"/>
-	<classpathentry exported="true" kind="var" path="M2_REPO/org/seleniumhq/selenium/selenium-firefox-driver/2.46.0/selenium-firefox-driver-2.46.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/MySel20Proj-1.0.jar"/>
-	<classpathentry kind="lib" path="/home/orpheus/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.46.0/selenium-chrome-driver-2.46.0.jar"/>
-	<classpathentry kind="lib" path="/home/orpheus/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.46.0/selenium-htmlunit-driver-2.46.0.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MySel20Proj"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/selenium-2.46"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jetty"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
