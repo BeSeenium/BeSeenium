@@ -18,10 +18,31 @@ public class Servlet extends HttpServlet
 	
 	protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException
     {
-        httpServletResponse.setContentType("text/plain");
+		String command = httpServletRequest.getParameter("command");
         PrintWriter out = httpServletResponse.getWriter();
-        out.println(httpServletRequest.getParameter("QID"));
+       
+        out.println("command");
+        
+        
+        if(command.contentEquals("ok"))
+        {
+        	out.flush();
+        	 System.out.println("it works");
+        }
+        else
+        {
+        	out.println("command = "+command);
+            out.println("value = "+httpServletRequest.getParameter("value"));
+        }
         out.close();
+    }
+	
+	/**
+     * read the config file and apply settings to server
+     */
+    private void readHTMLFile()
+    {
+    	
     }
 
 }
