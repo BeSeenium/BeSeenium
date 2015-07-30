@@ -16,7 +16,6 @@ import beseenium.controller.ActionFactory;
 import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
 import beseenium.model.actionData.ActionData;
-import net.sourceforge.htmlunit.corejs.javascript.tools.debugger.Main;
 
 public class Servlet extends HttpServlet 
 {
@@ -33,10 +32,20 @@ public class Servlet extends HttpServlet
        
         out.println("command");
         
+        if(command == null)
+        {
+        	
+        }
         
-        if(command.contentEquals("ok"))
+        else if(command.contentEquals("ok")==false)
         {
         	//httpServletResponse.reset(); //clear screen
+        	out.println("command = "+command);
+            out.println("value = "+httpServletRequest.getParameter("value"));
+        	
+        }
+        else
+        {
         	try {
 				run();
 			} catch (ActionDataException | ActionException
@@ -46,13 +55,29 @@ public class Servlet extends HttpServlet
 			}
         	 System.out.println("it works");
         }
-        else
-        {
-        	out.println("command = "+command);
-            out.println("value = "+httpServletRequest.getParameter("value"));
-        }
         out.close();
     }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void run() 
 			throws ActionDataException, ActionException, InterruptedException, MalformedURLException 
