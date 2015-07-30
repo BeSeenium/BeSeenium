@@ -1,0 +1,4 @@
+<map id="beseenium.model.action.elementActions.IsSelected" name="beseenium.model.action.elementActions.IsSelected">
+<area shape="rect" id="node2" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html" title="{beseenium.model.action.Abstract\lAction\n||+ getActionData()\l+ setActionData()\l+ execute()\l# AbstractAction()\l}" alt="" coords="61,572,299,708"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="{beseenium.model.actionData.\lActionData\n|&#45; inputParam\l&#45; outputParam\l|+ ActionData()\l+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="73,285,287,509"/>
+</map>

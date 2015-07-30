@@ -1,0 +1,11 @@
+<map id="beseenium.view.Servlet.run" name="beseenium.view.Servlet.run">
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionDataFactory.html#a884552b1e4c0d8ef6e1c2745b8b104fc" title="beseenium.controller.Action\lDataFactory.setCapabilities" alt="" coords="257,5,458,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory.html#a732d2b17a48e9b70ae4f57f14028f785" title="beseenium.controller.Action\lDataFactory.makeActionData" alt="" coords="252,71,463,112"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionController.html#ac710a79e9c754b648bd93395b6cd969d" title="beseenium.controller.Action\lController.add" alt="" coords="257,136,458,177"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1controller_1_1ActionFactory.html#a7ed669d25a991ca780d2bb46ef38c129" title="beseenium.controller.Action\lFactory.makeAction" alt="" coords="257,201,458,243"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1controller_1_1ActionController.html#ae79caff159bb31b5c242fc8bce48823f" title="beseenium.controller.Action\lController.execute" alt="" coords="257,267,458,308"/>
+<area shape="rect" id="node7" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a1dade057d9cb3bfecefdb716aae91d33" title="beseenium.model.action.Abstract\lAction.getActionData" alt="" coords="511,168,749,209"/>
+<area shape="rect" id="node8" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="beseenium.model.actionData.\lActionData.setInputParam" alt="" coords="523,233,737,275"/>
+<area shape="rect" id="node9" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a1cbbd813f07556de640f8f3b3f03587a" title="beseenium.model.actionData.\lActionData.setDriver" alt="" coords="523,299,737,340"/>
+<area shape="rect" id="node10" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a24e2b60937596ecd18cd17cfe7595c5d" title="beseenium.model.action.Abstract\lAction.execute" alt="" coords="511,364,749,405"/>
+</map>
