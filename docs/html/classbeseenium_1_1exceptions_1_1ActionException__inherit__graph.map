@@ -1,7 +1,0 @@
-<map id="beseenium.exceptions.ActionException" name="beseenium.exceptions.ActionException">
-<area shape="rect" id="node4" href="$classbeseenium_1_1exceptions_1_1ActionFactoryException.html" title="{beseenium.exceptions.Action\lFactoryException\n|&#45; serialVersionUID\l|+ ActionFactoryException()\l+ ActionFactoryException()\l}" alt="" coords="5,440,216,547"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1exceptions_1_1ClickException.html" title="{beseenium.exceptions.Click\lException\n|&#45; serialVersionUID\l|+ ClickException()\l+ ClickException()\l}" alt="" coords="239,440,438,547"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1exceptions_1_1NoSuchParameterException.html" title="{beseenium.exceptions.NoSuch\lParameterException\n|&#45; serialVersionUID\l|+ NoSuchParameterException()\l+ NoSuchParameterException()\l}" alt="" coords="463,440,689,547"/>
-<area shape="rect" id="node7" href="$classbeseenium_1_1exceptions_1_1SubmitException.html" title="{beseenium.exceptions.Submit\lException\n|&#45; serialVersionUID\l|+ SubmitException()\l+ SubmitException()\l}" alt="" coords="713,440,929,547"/>
-<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="{beseenium.exceptions.BeSeenium\lException\n|&#45; serialVersionUID\l|+ BeSeeniumException()\l# BeSeeniumException()\l}" alt="" coords="335,131,579,237"/>
-</map>
