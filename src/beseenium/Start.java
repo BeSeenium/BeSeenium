@@ -1,3 +1,4 @@
+package beseenium;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
@@ -21,20 +22,19 @@ public class Start
         server.setConnectors(new Connector[] {connector});
         
                
-       
+        //test servlet
         ContextHandler context0 = new ContextHandler();
-        context0.setContextPath("/");
-        
+        context0.setContextPath("/results");        
         ServletContextHandler serv = new ServletContextHandler();
         serv.addServlet(beseenium.view.Servlet.class, "/*");
         context0.setHandler(serv);
        
         
-        
+        //gui page
         ContextHandler context1 = new ContextHandler();
-        context1.setContextPath("/home");
-        
+        context1.setContextPath("/");        
         ResourceHandler res = new ResourceHandler();
+        res.setWelcomeFiles(new String[]{"index.html"});
         res.setBaseResource(Resource.newResource("./resources/"));
         context1.setHandler(res);
        

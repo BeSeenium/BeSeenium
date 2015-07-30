@@ -51,13 +51,13 @@ public class ActionController
 	
 	/**
 	 * removes the last Action and associated parameters
+	 * @param actionToRemove the action to remove with 0 being the first action
 	 */
-	public void remove()
+	public void remove(int actionToRemove)
 	{
-		int sizeOfList = actions.size()-1;
-		this.actions.remove(sizeOfList);
-		this.inputParams.remove(sizeOfList);
-		this.optionalIndex.remove(sizeOfList);
+		this.actions.remove(actionToRemove);
+		this.inputParams.remove(actionToRemove);
+		this.optionalIndex.remove(actionToRemove);
 	}
 	
 	/**
