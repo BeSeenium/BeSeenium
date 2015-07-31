@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
-import beseenium.exceptions.ActionDataException;
-import beseenium.exceptions.ActionException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 

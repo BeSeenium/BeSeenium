@@ -11,7 +11,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import beseenium.exceptions.ActionDataFactoryException;
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.model.actionData.ActionData;
 
 /**

@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import beseenium.controller.ActionController;
+import beseenium.exceptions.testExceptions.TestAlreadyExistsException;
+import beseenium.exceptions.testExceptions.TestDoesNotExistException;
 
 public class TestManager 
 {
@@ -21,12 +23,13 @@ public class TestManager
 	/**
 	 * adds a new test to the testManager
 	 * @param testID the unique identifier of the test to add
+	 * @throws TestAlreadyExistsException 
 	 */
-	public void addTest(String testID)
+	public void addTest(String testID) throws TestAlreadyExistsException
 	{
 		if (tests.containsKey(testID))
 		{
-			throw new testAlreadyExistsException("cannot add a test who already exists");
+			throw new TestAlreadyExistsException("cannot add a test who already exists");
 		}
 		else
 		{
@@ -37,12 +40,13 @@ public class TestManager
 	/**
 	 * removes a test from the testManager
 	 * @param testID the unique identifier of the test to remove
+	 * @throws TestDoesNotExistException 
 	 */
-	public void removeTest(String testID)
+	public void removeTest(String testID) throws TestDoesNotExistException
 	{
 		if (tests.containsKey(testID)==false)
 		{
-			throw new testDoesNotExistException("cannot remove a test that does not exist");
+			throw new TestDoesNotExistException("cannot remove a test that does not exist");
 		}
 		else
 		{
@@ -54,12 +58,13 @@ public class TestManager
 	 * gets the ActionController associated with a particular test
 	 * @param testID the unique identifier of the test
 	 * @return ActionController associated with a particular test
+	 * @throws TestDoesNotExistException 
 	 */
-	public ActionController getTestContext(String testID)
+	public ActionController getTestContext(String testID) throws TestDoesNotExistException
 	{
 		if (tests.containsKey(testID)==false)
 		{
-			throw new testDoesNotExistException("cannot get data for a test that does not exist");
+			throw new TestDoesNotExistException("cannot get data for a test that does not exist");
 		}
 		else
 		{

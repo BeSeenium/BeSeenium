@@ -1,6 +1,6 @@
 package beseenium.model.action;
 
-import beseenium.exceptions.NoSuchParameterException;
+import beseenium.exceptions.actionExceptions.NoSuchParameterException;
 import beseenium.model.actionData.ActionData;
 
 public class ResetActionData extends AbstractAction

@@ -1,4 +1,4 @@
-package beseenium.exceptions;
+package beseenium.exceptions.actionDataExceptions;
 
 
 public class ActionDataFactoryException extends ActionDataException 

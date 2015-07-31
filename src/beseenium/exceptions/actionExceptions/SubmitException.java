@@ -1,4 +1,5 @@
-package beseenium.exceptions;
+package beseenium.exceptions.actionExceptions;
+
 
 public class SubmitException extends ActionException 
 {

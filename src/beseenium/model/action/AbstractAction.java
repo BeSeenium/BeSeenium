@@ -1,7 +1,7 @@
 package beseenium.model.action;
 
-import beseenium.exceptions.ActionDataException;
-import beseenium.exceptions.ActionException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.actionData.ActionData;
 
 /**

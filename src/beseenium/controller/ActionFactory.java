@@ -4,8 +4,8 @@ import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
-import beseenium.exceptions.ActionDataFactoryException;
-import beseenium.exceptions.ActionFactoryException;
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
+import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.action.elementActions.*;
 import beseenium.model.action.findElementsBy.*;

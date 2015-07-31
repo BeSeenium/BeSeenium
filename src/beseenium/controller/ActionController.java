@@ -4,9 +4,9 @@ import java.net.MalformedURLException;
 import java.util.List;
 
 import beseenium.controller.*;
-import beseenium.exceptions.ActionDataException;
-import beseenium.exceptions.ActionException;
-import beseenium.exceptions.ActionFactoryException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
+import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.model.actionData.ActionData;
 
 public class ActionController 

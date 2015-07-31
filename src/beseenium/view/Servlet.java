@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import beseenium.controller.ActionInvoker;
 import beseenium.controller.ActionDataFactory;
 import beseenium.controller.ActionFactory;
-import beseenium.exceptions.ActionDataException;
-import beseenium.exceptions.ActionException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.actionData.ActionData;
 
 public class Servlet extends HttpServlet 

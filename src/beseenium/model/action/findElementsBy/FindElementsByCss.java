@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 import beseenium.model.helpers.FormatOutput;

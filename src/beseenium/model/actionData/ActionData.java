@@ -5,7 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import beseenium.exceptions.ActionDataException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
 
 /**
  * This class encapsulates the data needed to perform an action into 4 distinct areas: <br><br>

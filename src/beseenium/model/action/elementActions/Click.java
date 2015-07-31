@@ -5,8 +5,8 @@ import java.util.List;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 
-import beseenium.exceptions.ActionDataException;
-import beseenium.exceptions.ClickException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ClickException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
