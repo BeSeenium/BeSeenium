@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beseenium.controller.ActionInvoker;
 import beseenium.controller.ActionDataFactory;
+import beseenium.controller.ActionInvoker;
 import beseenium.controller.ActionFactory;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionException;
@@ -99,6 +99,7 @@ public class Servlet extends HttpServlet
 				ActionDataFactory.setCapabilities("auth", "jonjackson:WDaudZN5Y1eTGPUUozty");
 				
 				ActionFactory Afactory = new ActionFactory();
+				ActionDataFactory AdFactory = new ActionDataFactory();
 				ActionData actionData = ActionDataFactory.makeActionData("firefox");
 				
 				
@@ -106,44 +107,44 @@ public class Servlet extends HttpServlet
 				
 				
 				//page actions test
-				controller.add(ActionFactory.makeAction("PageGet"), "http://www.test.com", 0);
-//				controller.add(ActionFactory.makeAction("GetPageSrc"), "", 0);
-//				controller.add(ActionFactory.makeAction("GetTitle"), "", 0);
-//				controller.add(ActionFactory.makeAction("GetURL"), "", 0);
+				controller.add(Afactory.makeAction("PageGet"), "http://www.test.com", 0);
+//				controller.add(Afactory.makeAction("GetPageSrc"), "", 0);
+//				controller.add(Afactory.makeAction("GetTitle"), "", 0);
+//				controller.add(Afactory.makeAction("GetURL"), "", 0);
 				
 				//navigation Actions test
-				controller.add(ActionFactory.makeAction("PageGet"), "http://www.google.com/?#q=test", 0);
-//				controller.add(ActionFactory.makeAction("NavigateBack"), "", 1);
-//				controller.add(ActionFactory.makeAction("NavigateForward"), "", 1);
-//				controller.add(ActionFactory.makeAction("RefreshPage"), "", 2);
+				controller.add(Afactory.makeAction("PageGet"), "http://www.google.com/?#q=test", 0);
+//				controller.add(Afactory.makeAction("NavigateBack"), "", 1);
+//				controller.add(Afactory.makeAction("NavigateForward"), "", 1);
+//				controller.add(Afactory.makeAction("RefreshPage"), "", 2);
 				
 				//find elements by test
-//				controller.add(ActionFactory.makeAction("FindElementsByCss"), "input", -1);
-//				controller.add(ActionFactory.makeAction("FindElementsByTagName"), "input", -1);
-//				controller.add(ActionFactory.makeAction("FindElementsById"), "lst-ib", -1);
-//				controller.add(ActionFactory.makeAction("FindElementsByLinkTxt"), "Speedtest.net by Ookla - The Global Broadband Speed Test", -1);
-//				controller.add(ActionFactory.makeAction("FindElementsByPartialLinkTxt"), "Ookla", -1);
-//				controller.add(ActionFactory.makeAction("FindElementsByXpath"), "//div[@id]", -1);
-				controller.add(ActionFactory.makeAction("FindElementsByName"), "q", -1);
+//				controller.add(Afactory.makeAction("FindElementsByCss"), "input", -1);
+//				controller.add(Afactory.makeAction("FindElementsByTagName"), "input", -1);
+//				controller.add(Afactory.makeAction("FindElementsById"), "lst-ib", -1);
+//				controller.add(Afactory.makeAction("FindElementsByLinkTxt"), "Speedtest.net by Ookla - The Global Broadband Speed Test", -1);
+//				controller.add(Afactory.makeAction("FindElementsByPartialLinkTxt"), "Ookla", -1);
+//				controller.add(Afactory.makeAction("FindElementsByXpath"), "//div[@id]", -1);
+				controller.add(Afactory.makeAction("FindElementsByName"), "q", -1);
 
 				//element Action test
-				controller.add(ActionFactory.makeAction("Clear"), "", 0);
-				controller.add(ActionFactory.makeAction("Click"), "", 0);
-				controller.add(ActionFactory.makeAction("GetAttribute"), "name", 0);
-				controller.add(ActionFactory.makeAction("GetCssValue"), "background", 0);
-				controller.add(ActionFactory.makeAction("GetLocation"), "", 0);
-				controller.add(ActionFactory.makeAction("GetSize"), "", 0);
-				controller.add(ActionFactory.makeAction("GetTagName"), "", 0);
-				controller.add(ActionFactory.makeAction("GetText"), "", 0);
-				controller.add(ActionFactory.makeAction("IsDisplayed"), "", 0);
-				controller.add(ActionFactory.makeAction("IsEnabled"), "", 0);
-				controller.add(ActionFactory.makeAction("IsSelected"), "", 0);
-				controller.add(ActionFactory.makeAction("SendKeys"), "blueberry trifle", 0);
-				controller.add(ActionFactory.makeAction("Submit"), "", 0);
+				controller.add(Afactory.makeAction("Clear"), "", 0);
+				controller.add(Afactory.makeAction("Click"), "", 0);
+				controller.add(Afactory.makeAction("GetAttribute"), "name", 0);
+				controller.add(Afactory.makeAction("GetCssValue"), "background", 0);
+				controller.add(Afactory.makeAction("GetLocation"), "", 0);
+				controller.add(Afactory.makeAction("GetSize"), "", 0);
+				controller.add(Afactory.makeAction("GetTagName"), "", 0);
+				controller.add(Afactory.makeAction("GetText"), "", 0);
+				controller.add(Afactory.makeAction("IsDisplayed"), "", 0);
+				controller.add(Afactory.makeAction("IsEnabled"), "", 0);
+				controller.add(Afactory.makeAction("IsSelected"), "", 0);
+				controller.add(Afactory.makeAction("SendKeys"), "blueberry trifle", 0);
+				controller.add(Afactory.makeAction("Submit"), "", 0);
 				
 				//close page and browser(PageActions)
-//				controller.add(ActionFactory.makeAction("PageClose"), "", 0);
-				controller.add(ActionFactory.makeAction("BrowserQuit"), "", 0);
+//				controller.add(Afactory.makeAction("PageClose"), "", 0);
+				controller.add(Afactory.makeAction("BrowserQuit"), "", 0);
 				
 				//execute all Actions
 				List<String> results = controller.execute();

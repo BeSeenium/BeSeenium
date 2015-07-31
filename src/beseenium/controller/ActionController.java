@@ -27,7 +27,7 @@ public class ActionController
 	public ActionController() throws ActionDataFactoryException, MalformedURLException
 	{
 		actionDataFactory = new ActionDataFactory();
-		actionFactory = new ActionFactory();
+		actionFactory = new ActionFactory(actionDataFactory);
 	}
 	
 	/**
@@ -37,7 +37,7 @@ public class ActionController
 	 */
 	public void setBrowser(String BrowserDriver) throws ActionDataException
 	{
-		ActionData actionData = ActionDataFactory.makeActionData("firefox");	
+		ActionData actionData = actionDataFactory.makeActionData("firefox");	
 		invoker = new ActionInvoker(actionData);
 	}
 	
@@ -48,7 +48,7 @@ public class ActionController
 	 */
 	public void configureRemoteDriver(String key, String value)
 	{
-		ActionDataFactory.setCapabilities(key, value);
+		actionDataFactory.setCapabilities(key, value);
 	}
 	
 	/**
@@ -61,7 +61,7 @@ public class ActionController
 	public void addAction(String actionName, String inputParameter, int optionalIndex) 
 			throws ActionFactoryException
 	{
-		invoker.add(ActionFactory.makeAction(actionName), inputParameter, optionalIndex);
+		invoker.add(actionFactory.makeAction(actionName), inputParameter, optionalIndex);
 	}
 	
 	/**
@@ -95,7 +95,7 @@ public class ActionController
 		{
 			invoker.remove(i);
 		}
-		invoker.add(ActionFactory.makeAction("BrowserQuit"), "", 0);
+		invoker.add(actionFactory.makeAction("BrowserQuit"), "", 0);
 		invoker.execute();
 	}
 }

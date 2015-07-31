@@ -20,20 +20,22 @@ import beseenium.model.action.pageActions.*;
 public class ActionFactory 
 {
 	/**  **/
-	private static Map<String, AbstractAction> actionMap;
+	private Map<String, AbstractAction> actionMap;
 	/**  **/
-	private static final String internal = "internal";
+	private final String internal = "internal";
+	/**  **/
+	private ActionDataFactory actionDataFactory;
 
 	/**
 	 * @throws ActionDataFactoryException 
 	 * @throws MalformedURLException 
 	 * 
 	 */
-	public ActionFactory() throws ActionDataFactoryException, MalformedURLException
+	public ActionFactory(ActionDataFactory actionDataFactory) 
+			throws ActionDataFactoryException, MalformedURLException
 	{
-//		@SuppressWarnings("unused")
-//		ActionDataFactory actionDataFactory = new ActionDataFactory();
-		ActionFactory.actionMap = new HashMap<String, AbstractAction>();
+		this.actionDataFactory = actionDataFactory;
+		actionMap = new HashMap<String, AbstractAction>();
 		populateActionMap();
 	}
 	
@@ -43,7 +45,7 @@ public class ActionFactory
 	 * @throws ActionFactoryException 
 	 * @throws ActionDataFactoryException 
 	 */
-	public static AbstractAction makeAction(String actionKey) throws ActionFactoryException
+	public AbstractAction makeAction(String actionKey) throws ActionFactoryException
 	{
 		if(actionMap.containsKey(actionKey))
 		{return actionMap.get(actionKey);}
@@ -59,42 +61,42 @@ public class ActionFactory
 	private void populateActionMap() throws ActionDataFactoryException
 	{
 		//Page Actions
-		actionMap.put( "PageGet", new PageGet(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetPageSrc", new GetPageSrc(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "BrowserQuit", new BrowserQuit(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetTitle", new GetTitle(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetURL", new GetURL(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "PageClose", new PageClose(ActionDataFactory.makeActionData(internal)));
+		actionMap.put( "PageGet", new PageGet(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetPageSrc", new GetPageSrc(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "BrowserQuit", new BrowserQuit(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetTitle", new GetTitle(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetURL", new GetURL(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "PageClose", new PageClose(actionDataFactory.makeActionData(internal)));
 		
 		//Navigation Actions
-		actionMap.put( "NavigateBack", new NavigateBack(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "NavigateForward", new NavigateForward(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "RefreshPage", new RefreshPage(ActionDataFactory.makeActionData(internal)));
+		actionMap.put( "NavigateBack", new NavigateBack(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "NavigateForward", new NavigateForward(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "RefreshPage", new RefreshPage(actionDataFactory.makeActionData(internal)));
 		
 		//Find Element Actions
-		actionMap.put( "FindElementsByClass", new FindElementsByClass(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByCss", new FindElementsByCss(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsById", new FindElementsById(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByLinkTxt", new FindElementsByLinkTxt(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByName", new FindElementsByName(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByPartialLinkTxt", new FindElementsByPartialLinkTxt(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByTagName", new FindElementsByTagName(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "FindElementsByXpath", new FindElementsByXpath(ActionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByClass", new FindElementsByClass(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByCss", new FindElementsByCss(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsById", new FindElementsById(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByLinkTxt", new FindElementsByLinkTxt(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByName", new FindElementsByName(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByPartialLinkTxt", new FindElementsByPartialLinkTxt(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByTagName", new FindElementsByTagName(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "FindElementsByXpath", new FindElementsByXpath(actionDataFactory.makeActionData(internal)));
 		
 		//Element Actions
-		actionMap.put( "Clear", new Clear(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "Click", new Click(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetAttribute", new GetAttribute(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetCssValue", new GetCssValue(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetLocation", new GetLocation(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetSize", new GetSize(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetTagName", new GetTagName(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "GetText", new GetText(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "IsDisplayed", new IsDisplayed(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "IsEnabled", new IsEnabled(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "IsSelected", new IsSelected(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "SendKeys", new SendKeys(ActionDataFactory.makeActionData(internal)));
-		actionMap.put( "Submit", new Submit(ActionDataFactory.makeActionData(internal)));
+		actionMap.put( "Clear", new Clear(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "Click", new Click(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetAttribute", new GetAttribute(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetCssValue", new GetCssValue(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetLocation", new GetLocation(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetSize", new GetSize(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetTagName", new GetTagName(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "GetText", new GetText(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "IsDisplayed", new IsDisplayed(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "IsEnabled", new IsEnabled(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "IsSelected", new IsSelected(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "SendKeys", new SendKeys(actionDataFactory.makeActionData(internal)));
+		actionMap.put( "Submit", new Submit(actionDataFactory.makeActionData(internal)));
 		
 		
 	}

@@ -23,11 +23,11 @@ import beseenium.model.actionData.ActionData;
 public class ActionDataFactory 
 {
 	/** container for string value pairs associated with this factory **/
-	private static Map<String, ActionData> ActionDataMap;
+	private  Map<String, ActionData> ActionDataMap;
 	/**  **/
-	private static DesiredCapabilities capabilities;
+	private  DesiredCapabilities capabilities;
 	
-	private static String URL;
+	private  String URL;
 	
 	/**
 	 * default constructor, initialises internal map and populates it
@@ -36,7 +36,7 @@ public class ActionDataFactory
 	public ActionDataFactory() throws MalformedURLException
 	{
 		
-		ActionDataFactory.ActionDataMap = new HashMap<String, ActionData>();
+		this.ActionDataMap = new HashMap<String, ActionData>();
 		mapEntries();
 	}
 	
@@ -46,7 +46,7 @@ public class ActionDataFactory
 	 * @param key the capability you wish to set
 	 * @param value the value you wish to set it to.
 	 */
-	public static void setCapabilities(String key, String value)
+	public void setCapabilities(String key, String value)
 	{
 		capabilities = new DesiredCapabilities();
 		if (key != "auth")
@@ -67,7 +67,7 @@ public class ActionDataFactory
 	 * @return ActionData containing no WebDriver
 	 * @throws ActionDataFactoryException 
 	 */
-	public static ActionData makeActionData(String ActionDataKey) throws ActionDataFactoryException
+	public ActionData makeActionData(String ActionDataKey) throws ActionDataFactoryException
 	{
 		if(ActionDataMap.containsKey(ActionDataKey))
 			{return ActionDataMap.get(ActionDataKey);}
