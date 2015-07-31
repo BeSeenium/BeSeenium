@@ -6,10 +6,49 @@ import java.util.List;
 import beseenium.controller.*;
 import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
+import beseenium.exceptions.ActionFactoryException;
 import beseenium.model.actionData.ActionData;
 
-public class ActionController {
+public class ActionController 
+{
+	/**  **/
+	private ActionFactory actionFactory;
+	/**  **/
+	private ActionDataFactory actionDataFactory;	
+	/**  **/
+	private ActionInvoker invoker;
+	
+	public ActionController()
+	{
+		
+	}
 
+	public void setBrowser(String BrowserDriver)
+	{
+		
+	}
+	
+	public void configureRemoteDriver(String key, String value)
+	{
+		ActionDataFactory.setCapabilities(key, value);
+	}
+	
+	public void addAction(String actionName, String inputParameter, int optionalIndex) 
+			throws ActionFactoryException
+	{
+		invoker.add(ActionFactory.makeAction(actionName), inputParameter, optionalIndex);
+	}
+	
+	public void removeAction(int actionToRemove)
+	{
+		invoker.remove(actionToRemove);
+	}
+	
+	public List<String> executeActions() throws ActionDataException, ActionException
+	{
+		return invoker.execute();
+	}
+	
 	public static void main(String[] args) 
 	throws ActionDataException, ActionException, InterruptedException, MalformedURLException 
 	{
@@ -32,8 +71,7 @@ public class ActionController {
 		
 		ActionFactory Afactory = new ActionFactory();
 		ActionData actionData = ActionDataFactory.makeActionData("firefox");
-		
-		
+				
 		ActionInvoker controller = new ActionInvoker(actionData);
 		
 		

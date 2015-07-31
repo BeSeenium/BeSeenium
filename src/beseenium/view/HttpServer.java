@@ -22,7 +22,7 @@ public class HttpServer
         server.setConnectors(new Connector[] {connector});
         
                
-        //test servlet
+        //test handler
         ContextHandler context0 = new ContextHandler();
         context0.setContextPath("/results");        
         ServletContextHandler serv = new ServletContextHandler();
@@ -30,7 +30,7 @@ public class HttpServer
         context0.setHandler(serv);
        
         
-        //gui page
+        //gui handler
         ContextHandler context1 = new ContextHandler();
         context1.setContextPath("/");        
         ResourceHandler res = new ResourceHandler();
@@ -38,9 +38,11 @@ public class HttpServer
         res.setBaseResource(Resource.newResource("./resources/"));
         context1.setHandler(res);
        
+        //add handlers to collection
         ContextHandlerCollection contexts = new ContextHandlerCollection();
         contexts.setHandlers(new Handler[] { context1, context0});
  
+        //give handler collection to server
         server.setHandler(contexts);
         
         

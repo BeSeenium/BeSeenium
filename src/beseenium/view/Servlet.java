@@ -31,7 +31,6 @@ public class Servlet extends HttpServlet
         PrintWriter out = httpServletResponse.getWriter();
        
         out.println("command");
-        
         if(command == null)
         {
         	
