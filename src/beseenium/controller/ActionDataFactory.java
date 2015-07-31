@@ -42,7 +42,7 @@ public class ActionDataFactory
 	
 	/**
 	 * when you wish to use the remote webdriver, then the capabilities must be set first, this method 
-	 * provides a convienient way to set them.
+	 * provides a convenient way to set them.
 	 * @param key the capability you wish to set
 	 * @param value the value you wish to set it to.
 	 */
@@ -93,6 +93,6 @@ public class ActionDataFactory
 		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 //		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
-		ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
+		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
 	}
 }

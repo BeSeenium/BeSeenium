@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beseenium.controller.ActionController;
+import beseenium.controller.ActionInvoker;
 import beseenium.controller.ActionDataFactory;
 import beseenium.controller.ActionFactory;
 import beseenium.exceptions.ActionDataException;
@@ -103,7 +103,7 @@ public class Servlet extends HttpServlet
 				ActionData actionData = ActionDataFactory.makeActionData("firefox");
 				
 				
-				ActionController controller = new ActionController(actionData);
+				ActionInvoker controller = new ActionInvoker(actionData);
 				
 				
 				//page actions test

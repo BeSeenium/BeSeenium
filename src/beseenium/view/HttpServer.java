@@ -8,14 +8,14 @@ import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.resource.Resource;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
-public class Start
+public class HttpServer
 {
     public static void main(String[] args) throws Exception
     {
-    
         Server server = new Server();
         ServerConnector connector = new ServerConnector(server);
         connector.setPort(Integer.valueOf(args[0]));

@@ -1,90 +1,92 @@
 package beseenium.controller;
 
-import java.util.ArrayList;
+import java.net.MalformedURLException;
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
-
+import beseenium.controller.*;
 import beseenium.exceptions.ActionDataException;
 import beseenium.exceptions.ActionException;
-import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
-/**
- * This class acts as the invoker in a GOF command style pattern. It stores and
- * tries to execute a series of Actions loaded at runtime.
- * @author JPC Hanson
- *
- */
-public class ActionController 
-{
-	private List<AbstractAction> actions;
-	private List<String> inputParams;
-	private List<Integer> optionalIndex;
-	private WebDriver driver;
-	
-	/**
-	 * @throws ActionDataException 
-	 * 
-	 */
-	public ActionController(ActionData actionData) throws ActionDataException
-	{
-		this.driver = actionData.getDriver();
-		this.actions = new ArrayList<AbstractAction>();
-		this.inputParams = new ArrayList<String>();
-		this.optionalIndex = new ArrayList<Integer>();
-	}
+public class ActionController {
 
-	/**
-	 * Adds an abstract action to the action queue, each action may have an input parameter
-	 * and an index n. 
-	 * @param action an AbstractAction derived type.
-	 * @param inputParam dependant on the Action being performed.
-	 * @param n dependant on the Action being performed.
-	 */
-	public void add(AbstractAction action, String inputParam, int n)
+	public static void main(String[] args) 
+	throws ActionDataException, ActionException, InterruptedException, MalformedURLException 
 	{
-		this.actions.add(action);
-		this.inputParams.add(inputParam);
-		this.optionalIndex.add(n);
-	}
-	
-	/**
-	 * removes the last Action and associated parameters
-	 * @param actionToRemove the action to remove with 0 being the first action
-	 */
-	public void remove(int actionToRemove)
-	{
-		this.actions.remove(actionToRemove);
-		this.inputParams.remove(actionToRemove);
-		this.optionalIndex.remove(actionToRemove);
-	}
-	
-	/**
-	 * iterates through the commands stored in the list and executes
-	 * @return List<String> the results of the various actions, to be used in reporting.
-	 * @throws ActionException 
-	 * @throws ActionDataException 
-	 * 
-	 */
-	public List<String> execute() throws ActionDataException, ActionException
-	{
-		ActionData context;
-		List<String> result = new ArrayList<String>();
+
+		///////////////////////////////////////////////////////////////////////
+		//prototype action list and iteration
+		///////////////////////////////////////////////////////////////////////
 		
-		for (int i = 0; i < actions.size(); ++i)
+		
+		//initialise factories
+		
+		
+		//configuration
+		ActionDataFactory.setCapabilities("browser", "IE");
+		ActionDataFactory.setCapabilities("brower_version", "7.0");
+		ActionDataFactory.setCapabilities("os", "Windows");
+		ActionDataFactory.setCapabilities("os_version", "XP");
+		ActionDataFactory.setCapabilities("browserstack.debug", "true");
+		ActionDataFactory.setCapabilities("auth", "jonjackson:WDaudZN5Y1eTGPUUozty");
+		
+		ActionFactory Afactory = new ActionFactory();
+		ActionData actionData = ActionDataFactory.makeActionData("firefox");
+		
+		
+		ActionInvoker controller = new ActionInvoker(actionData);
+		
+		
+		//page actions test
+		controller.add(ActionFactory.makeAction("PageGet"), "http://www.test.com", 0);
+//		controller.add(ActionFactory.makeAction("GetPageSrc"), "", 0);
+//		controller.add(ActionFactory.makeAction("GetTitle"), "", 0);
+//		controller.add(ActionFactory.makeAction("GetURL"), "", 0);
+		
+		//navigation Actions test
+		controller.add(ActionFactory.makeAction("PageGet"), "http://www.google.com/?#q=test", 0);
+//		controller.add(ActionFactory.makeAction("NavigateBack"), "", 1);
+//		controller.add(ActionFactory.makeAction("NavigateForward"), "", 1);
+//		controller.add(ActionFactory.makeAction("RefreshPage"), "", 2);
+		
+		//find elements by test
+//		controller.add(ActionFactory.makeAction("FindElementsByCss"), "input", -1);
+//		controller.add(ActionFactory.makeAction("FindElementsByTagName"), "input", -1);
+//		controller.add(ActionFactory.makeAction("FindElementsById"), "lst-ib", -1);
+//		controller.add(ActionFactory.makeAction("FindElementsByLinkTxt"), "Speedtest.net by Ookla - The Global Broadband Speed Test", -1);
+//		controller.add(ActionFactory.makeAction("FindElementsByPartialLinkTxt"), "Ookla", -1);
+//		controller.add(ActionFactory.makeAction("FindElementsByXpath"), "//div[@id]", -1);
+		controller.add(ActionFactory.makeAction("FindElementsByName"), "q", -1);
+
+		//element Action test
+		controller.add(ActionFactory.makeAction("Clear"), "", 0);
+		controller.add(ActionFactory.makeAction("Click"), "", 0);
+		controller.add(ActionFactory.makeAction("GetAttribute"), "name", 0);
+		controller.add(ActionFactory.makeAction("GetCssValue"), "background", 0);
+		controller.add(ActionFactory.makeAction("GetLocation"), "", 0);
+		controller.add(ActionFactory.makeAction("GetSize"), "", 0);
+		controller.add(ActionFactory.makeAction("GetTagName"), "", 0);
+		controller.add(ActionFactory.makeAction("GetText"), "", 0);
+		controller.add(ActionFactory.makeAction("IsDisplayed"), "", 0);
+		controller.add(ActionFactory.makeAction("IsEnabled"), "", 0);
+		controller.add(ActionFactory.makeAction("IsSelected"), "", 0);
+		controller.add(ActionFactory.makeAction("SendKeys"), "blueberry trifle", 0);
+		controller.add(ActionFactory.makeAction("Submit"), "", 0);
+		
+		//close page and browser(PageActions)
+//		controller.add(ActionFactory.makeAction("PageClose"), "", 0);
+		controller.add(ActionFactory.makeAction("BrowserQuit"), "", 0);
+		
+		//execute all Actions
+		List<String> results = controller.execute();
+		
+		//print results to screen
+		for (int i = 0; i < results.size(); ++i)
 		{
-			AbstractAction individualAction = actions.get(i);
-			String inputString = inputParams.get(i);
-			int index = optionalIndex.get(i);
-						
-			context = individualAction.getActionData();
-			context.setInputParam(inputString);
-			context.setDriver(driver);
-		
-			result.add(individualAction.execute(index));		
+			System.out.println(results.get(i));
 		}
 		
-		return result;		
+	
 	}
+
 }
