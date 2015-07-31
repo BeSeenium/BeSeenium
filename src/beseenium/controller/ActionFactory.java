@@ -31,8 +31,8 @@ public class ActionFactory
 	 */
 	public ActionFactory() throws ActionDataFactoryException, MalformedURLException
 	{
-		@SuppressWarnings("unused")
-		ActionDataFactory actionDataFactory = new ActionDataFactory();
+//		@SuppressWarnings("unused")
+//		ActionDataFactory actionDataFactory = new ActionDataFactory();
 		ActionFactory.actionMap = new HashMap<String, AbstractAction>();
 		populateActionMap();
 	}

@@ -1,5 +1,7 @@
 package beseenium.model.action.pageActions;
 
+import org.openqa.selenium.WebDriverException;
+
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
@@ -29,9 +31,16 @@ public class PageGet extends AbstractAction
 	@Override
 	public String execute(int n) throws ActionDataException 
 	{
-		String inputParam = super.context.getInputParam();
-		super.context.getDriver().get(inputParam);	
+		try 
+		{
+			String inputParam = super.context.getInputParam();
+			super.context.getDriver().get(inputParam);	
+			return "navigating to " + inputParam;
+		}
 		
-		return "navigating to " + inputParam;
+		catch (WebDriverException e)
+		{
+			throw new ActionDataException("cannot open webPage \n" + e.getCause());
+		}
 	}
 }

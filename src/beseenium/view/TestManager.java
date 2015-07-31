@@ -1,9 +1,11 @@
 package beseenium.view;
 
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
 import beseenium.controller.ActionController;
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.exceptions.testExceptions.TestAlreadyExistsException;
 import beseenium.exceptions.testExceptions.TestDoesNotExistException;
 
@@ -24,8 +26,11 @@ public class TestManager
 	 * adds a new test to the testManager
 	 * @param testID the unique identifier of the test to add
 	 * @throws TestAlreadyExistsException 
+	 * @throws MalformedURLException 
+	 * @throws ActionDataFactoryException 
 	 */
-	public void addTest(String testID) throws TestAlreadyExistsException
+	public void addTest(String testID) 
+			throws TestAlreadyExistsException, ActionDataFactoryException, MalformedURLException
 	{
 		if (tests.containsKey(testID))
 		{

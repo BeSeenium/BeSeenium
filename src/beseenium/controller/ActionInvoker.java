@@ -87,4 +87,13 @@ public class ActionInvoker
 		
 		return result;		
 	}
+	
+	/**
+	 * get the current size of the invoker
+	 * @return int representation of size.
+	 */
+	public int size()
+	{
+		return actions.size();
+	}
 }
