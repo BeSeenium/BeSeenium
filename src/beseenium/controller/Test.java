@@ -10,7 +10,7 @@ import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.model.actionData.ActionData;
 
-public class TestController 
+public class Test 
 {
 	/**  **/
 	private ActionFactory actionFactory;
@@ -20,11 +20,11 @@ public class TestController
 	private ActionInvoker invoker;
 	
 	/**
-	 * constructs the Test Controller object
+	 * constructs the Test object
 	 * @throws ActionDataFactoryException
 	 * @throws MalformedURLException
 	 */
-	public TestController() throws ActionDataFactoryException, MalformedURLException
+	public Test() throws ActionDataFactoryException, MalformedURLException
 	{
 		actionDataFactory = new ActionDataFactory();
 		actionFactory = new ActionFactory(actionDataFactory);

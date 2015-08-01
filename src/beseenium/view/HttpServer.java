@@ -37,6 +37,8 @@ public class HttpServer
         res.setWelcomeFiles(new String[]{"index.html"});
         res.setBaseResource(Resource.newResource("./resources/"));
         context1.setHandler(res);
+        
+        
        
         //add handlers to collection
         ContextHandlerCollection contexts = new ContextHandlerCollection();

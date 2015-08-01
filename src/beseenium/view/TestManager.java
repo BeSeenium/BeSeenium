@@ -4,22 +4,22 @@ import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
-import beseenium.controller.TestController;
+import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.exceptions.testExceptions.TestAlreadyExistsException;
 import beseenium.exceptions.testExceptions.TestDoesNotExistException;
 
 public class TestManager 
 {
-	/** holds the ActionController for each test **/
-	private Map<String, TestController> tests;
+	/** holds the tests **/
+	private Map<String, Test> tests;
 	
 	/**
 	 * initialises the object data
 	 */
 	public TestManager()
 	{
-		tests = new HashMap<String, TestController>();
+		tests = new HashMap<String, Test>();
 	}
 	
 	/**
@@ -38,7 +38,7 @@ public class TestManager
 		}
 		else
 		{
-			tests.put(testID, new TestController());
+			tests.put(testID, new Test());
 		}		
 	}
 	
@@ -65,7 +65,7 @@ public class TestManager
 	 * @return ActionController associated with a particular test
 	 * @throws TestDoesNotExistException 
 	 */
-	public TestController getTestContext(String testID) throws TestDoesNotExistException
+	public Test getTestContext(String testID) throws TestDoesNotExistException
 	{
 		if (tests.containsKey(testID)==false)
 		{
