@@ -2,6 +2,8 @@ package beseenium.controller;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -23,7 +25,7 @@ import beseenium.model.actionData.ActionData;
 public class ActionDataFactory 
 {
 	/** container for string value pairs associated with this factory **/
-	private  Map<String, ActionData> ActionDataMap;
+	private  Map<String, Method> ActionDataMap;
 	/**  **/
 	private  DesiredCapabilities capabilities;
 	
@@ -36,8 +38,15 @@ public class ActionDataFactory
 	public ActionDataFactory() throws MalformedURLException
 	{
 		
-		this.ActionDataMap = new HashMap<String, ActionData>();
-		mapEntries();
+		this.ActionDataMap = new HashMap<String, Method>();
+		try 
+		{
+			mapEntries();
+		} 
+		catch (NoSuchMethodException | SecurityException e) 
+		{
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -67,11 +76,23 @@ public class ActionDataFactory
 	 */
 	public ActionData makeActionData(String ActionDataKey) throws ActionDataFactoryException
 	{
-		if(ActionDataMap.containsKey(ActionDataKey))
-			{return ActionDataMap.get(ActionDataKey);}
-		else
-			{throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
-					+ "	Check your spelling, or refer to documentation");}
+		Class cls = ActionDataFactory.class;
+		Object obj;
+		try {
+				obj = cls.newInstance();
+				if(ActionDataMap.containsKey(ActionDataKey))
+				{return (ActionData) ActionDataMap.get(ActionDataKey).invoke(obj);}
+			} 
+		
+		catch (InstantiationException | IllegalAccessException 
+				| IllegalArgumentException | InvocationTargetException e) 
+		{
+			throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
+					+ "	Check your spelling, or refer to documentation" + e.getCause());
+		}
+		
+			throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
+					+ "	Check your spelling, or refer to documentation");
 	}
 	
 	
@@ -80,20 +101,35 @@ public class ActionDataFactory
 	/**
 	 * add appropriate entries to the factoryMap.
 	 * @throws MalformedURLException 
+	 * @throws SecurityException 
+	 * @throws NoSuchMethodException 
 	 */
-	private void mapEntries() throws MalformedURLException
+	private void mapEntries() throws MalformedURLException, NoSuchMethodException, SecurityException
 	{
 		//for use internally within the ActionController
-		ActionDataMap.put("internal", new ActionData());
+		ActionDataMap.put("internal", ActionDataFactory.class.getDeclaredMethod("makeEmptyData"));
 		
 		//for public use
-		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
-		ActionDataMap.put("test", ActionDataFactory.class.getMethod("makeFirefoxData"));
+		//ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
+		ActionDataMap.put("firefox", ActionDataFactory.class.getDeclaredMethod("makeFirefoxData"));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 //		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
 		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
+	private ActionData makeEmptyData()
+	{
+		return new ActionData();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	private ActionData makeFirefoxData()
 	{
 		return new ActionData(new FirefoxDriver());

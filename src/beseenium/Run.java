@@ -18,18 +18,18 @@ public class Run
 		tm.addTest("bob");
 		tm.getTestContext("jan").setBrowser("firefox");
 		tm.getTestContext("jan").addAction("PageGet", "http://www.google.com", 0);
-		tm.getTestContext("jan").addAction("FindElementsByCss", "#lst-ib", -1);
+		tm.getTestContext("jan").addAction("FindElementsByName", "q", -1);
 		tm.getTestContext("jan").addAction("GetTagName", "", 0);
 		tm.getTestContext("jan").addAction("BrowserQuit", "", 0);
 		
 		
-		tm.getTestContext("bob").setBrowser("firefox");
-		tm.getTestContext("bob").addAction("PageGet", "http://www.google.com", 0);
-		tm.getTestContext("bob").addAction("FindElementsByCss", "a.gb_8a", -1);
-		tm.getTestContext("bob").addAction("GetAttribute", "href", 0);
-		tm.getTestContext("bob").addAction("BrowserQuit", "", 0);
+//		tm.getTestContext("bob").setBrowser("firefox");
+//		tm.getTestContext("bob").addAction("PageGet", "http://www.google.com", 0);
+//		tm.getTestContext("bob").addAction("FindElementsByCss", "a.gb_8a", -1);
+//		tm.getTestContext("bob").addAction("GetAttribute", "href", 0);
+//		tm.getTestContext("bob").addAction("BrowserQuit", "", 0);
 		
 		System.out.println(tm.getTestContext("jan").executeActions());
-		System.out.println(tm.getTestContext("bob").executeActions());
+		//System.out.println(tm.getTestContext("bob").executeActions());
 	}
 }
