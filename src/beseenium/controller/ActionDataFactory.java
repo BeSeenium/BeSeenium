@@ -48,16 +48,14 @@ public class ActionDataFactory
 	 */
 	public void setCapabilities(String key, String value)
 	{
-		capabilities = new DesiredCapabilities();
+		this.capabilities = new DesiredCapabilities();
 		if (key != "auth")
 		{
 			capabilities.setCapability(key, value);
 		}
 		
 		else
-		{
-			URL = "http://" + value + "@hub.browserstack.com/wd/hub";
-		}
+		{URL = "http://" + value + "@hub.browserstack.com/wd/hub";}
 		System.out.println(capabilities.getCapability(key));
 	}
 	
@@ -79,7 +77,6 @@ public class ActionDataFactory
 	
 	
 	
-	
 	/**
 	 * add appropriate entries to the factoryMap.
 	 * @throws MalformedURLException 
@@ -91,8 +88,14 @@ public class ActionDataFactory
 		
 		//for public use
 		ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
+		ActionDataMap.put("test", ActionDataFactory.class.getMethod("makeFirefoxData"));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 //		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
 		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
+	}
+	
+	private ActionData makeFirefoxData()
+	{
+		return new ActionData(new FirefoxDriver());
 	}
 }
