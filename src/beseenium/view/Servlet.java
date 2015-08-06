@@ -3,13 +3,16 @@ package beseenium.view;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.MalformedURLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import beseenium.Run;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionException;
+import beseenium.exceptions.testExceptions.TestException;
 
 public class Servlet extends HttpServlet 
 {
@@ -42,9 +45,9 @@ public class Servlet extends HttpServlet
         else
         {
         	try {
-				run();
+				Run.main(new String[]{});;
 			} catch (ActionDataException | ActionException
-					| InterruptedException e) {
+					| TestException e) {
 				e.printStackTrace();
 			}
         	 System.out.println("it works");

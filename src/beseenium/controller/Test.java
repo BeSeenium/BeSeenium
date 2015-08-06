@@ -26,8 +26,8 @@ public class Test
 	 */
 	public Test() throws ActionDataFactoryException, MalformedURLException
 	{
-		actionDataFactory = new ActionDataFactory();
-		actionFactory = new ActionFactory(actionDataFactory);
+		this.actionDataFactory = new ActionDataFactory();
+		this.actionFactory = new ActionFactory(actionDataFactory);
 	}
 	
 	/**
@@ -35,10 +35,10 @@ public class Test
 	 * @param BrowserDriver
 	 * @throws ActionDataException
 	 */
-	public void setBrowser(String BrowserDriver) throws ActionDataException
+	public void setBrowser(String browserDriver) throws ActionDataException
 	{
-		ActionData actionData = actionDataFactory.makeActionData("firefox");	
-		invoker = new ActionInvoker(actionData);
+		ActionData actionData = actionDataFactory.makeActionData(browserDriver);	
+		this.invoker = new ActionInvoker(actionData);
 	}
 	
 	/**
@@ -48,7 +48,7 @@ public class Test
 	 */
 	public void configureRemoteDriver(String key, String value)
 	{
-		actionDataFactory.setCapabilities(key, value);
+		this.actionDataFactory.setCapabilities(key, value);
 	}
 	
 	/**
@@ -63,7 +63,7 @@ public class Test
 	public void addAction(String actionName, String inputParameter, int optionalIndex) 
 			throws ActionFactoryException
 	{
-		invoker.add(actionFactory.makeAction(actionName), inputParameter, optionalIndex);
+		this.invoker.add(actionFactory.makeAction(actionName), inputParameter, optionalIndex);
 	}
 	
 	/**
@@ -72,7 +72,7 @@ public class Test
 	 */
 	public void removeAction(int actionToRemove)
 	{
-		invoker.remove(actionToRemove);
+		this.invoker.remove(actionToRemove);
 	}
 	
 	/**
@@ -83,7 +83,7 @@ public class Test
 	 */
 	public List<String> executeActions() throws ActionDataException, ActionException
 	{
-		return invoker.execute();
+		return this.invoker.execute();
 	}
 	
 	/**
@@ -95,9 +95,9 @@ public class Test
 	{
 		for(int i = 0; i < invoker.size(); ++i)
 		{
-			invoker.remove(i);
+			this.invoker.remove(i);
 		}
-		invoker.add(actionFactory.makeAction("BrowserQuit"), "", 0);
-		invoker.execute();
+		this.invoker.add(this.actionFactory.makeAction("BrowserQuit"), "", 0);
+		this.invoker.execute();
 	}
 }

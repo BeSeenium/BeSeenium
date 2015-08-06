@@ -35,8 +35,8 @@ public class ActionFactory
 			throws ActionDataFactoryException, MalformedURLException
 	{
 		this.actionDataFactory = actionDataFactory;
-		actionMap = new HashMap<String, AbstractAction>();
-		populateActionMap();
+		this.actionMap = new HashMap<String, AbstractAction>();
+		this.populateActionMap();
 	}
 	
 	/**
@@ -47,8 +47,8 @@ public class ActionFactory
 	 */
 	public AbstractAction makeAction(String actionKey) throws ActionFactoryException
 	{
-		if(actionMap.containsKey(actionKey))
-		{return actionMap.get(actionKey);}
+		if(this.actionMap.containsKey(actionKey))
+		{return this.actionMap.get(actionKey);}
 	else
 		{throw new ActionFactoryException("you cannot instanciate this type of Action '"
 					+actionKey+ "' Check your spelling, or refer to documentation");}

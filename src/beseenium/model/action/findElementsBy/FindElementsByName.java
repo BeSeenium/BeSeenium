@@ -33,12 +33,9 @@ public class FindElementsByName extends AbstractAction
 	{
 		String searchParam = super.context.getInputParam();
 		WebDriver browser = super.context.getDriver();
-		System.out.println(browser.toString());
 		List<WebElement> htmlElements = browser.findElements(By.name(searchParam));
-		System.out.println();
 		
 		super.context.setElement(htmlElements);
-		
 		return FormatOutput.formatFindElementOutput(htmlElements, n);
 	}
 }

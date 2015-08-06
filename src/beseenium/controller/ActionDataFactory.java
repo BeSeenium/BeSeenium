@@ -26,10 +26,12 @@ public class ActionDataFactory
 {
 	/** container for string value pairs associated with this factory **/
 	private  Map<String, Method> ActionDataMap;
-	/**  **/
+	/** the  **/
 	private  DesiredCapabilities capabilities;
 	
 	private  String URL;
+	
+	private ActionData emptyActionData;
 	
 	/**
 	 * default constructor, initialises internal map and populates it
@@ -37,15 +39,16 @@ public class ActionDataFactory
 	 */
 	public ActionDataFactory() throws MalformedURLException
 	{
-		
+		this.emptyActionData = new ActionData();
 		this.ActionDataMap = new HashMap<String, Method>();
+		
 		try 
 		{
-			mapEntries();
+			this.mapEntries();
 		} 
-		catch (NoSuchMethodException | SecurityException e) 
-		{
-			e.printStackTrace();
+		catch (NoSuchMethodException | SecurityException e) //reflection exceptions not throwing as user should never
+		{													//ever see this, if these exceptions occur something has 
+			e.printStackTrace();							//gone terribly wrong.
 		}
 	}
 	
@@ -60,11 +63,11 @@ public class ActionDataFactory
 		this.capabilities = new DesiredCapabilities();
 		if (key != "auth")
 		{
-			capabilities.setCapability(key, value);
+			this.capabilities.setCapability(key, value);
 		}
 		
 		else
-		{URL = "http://" + value + "@hub.browserstack.com/wd/hub";}
+		{this.URL = "http://" + value + "@hub.browserstack.com/wd/hub";}
 		System.out.println(capabilities.getCapability(key));
 	}
 	
@@ -76,54 +79,55 @@ public class ActionDataFactory
 	 */
 	public ActionData makeActionData(String ActionDataKey) throws ActionDataFactoryException
 	{
-		Class cls = ActionDataFactory.class;
-		Object obj;
-		try {
-				obj = cls.newInstance();
-				if(ActionDataMap.containsKey(ActionDataKey))
-				{return (ActionData) ActionDataMap.get(ActionDataKey).invoke(obj);}
-			} 
-		
-		catch (InstantiationException | IllegalAccessException 
-				| IllegalArgumentException | InvocationTargetException e) 
+		//if the ActionDataKey = "internal" then return the empty ActionData created at construction time
+		if(ActionDataKey.contentEquals("internal")){return this.emptyActionData;}
+		//otherwise grab the correct ActionData from the ActionDataMap
+		else
 		{
-			throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
-					+ "	Check your spelling, or refer to documentation" + e.getCause());
-		}
+			//reference to this class
+			Class<ActionDataFactory> actionDataFactory = ActionDataFactory.class;
+		
+			try {
+					//instance of this class, needed to reflectivly invoke the method stored in the ActionDataMap
+					Object action = actionDataFactory.newInstance();
+					if(ActionDataMap.containsKey(ActionDataKey))
+						//invoke the method returned from the ActionDataMap ON the Object defined above, i.e. this class
+						//must be cast to ActionData as Method.invoke(Object) returns an Object, the cast is safe as this 
+						//Object will always in reality be an ActionData.
+					{return (ActionData) ActionDataMap.get(ActionDataKey).invoke(action);}
+				} 
+		
+		
+			//reflection exceptions
+			catch (InstantiationException | IllegalAccessException 
+				| IllegalArgumentException | InvocationTargetException e) 
+				{
+					throw new ActionDataFactoryException("you cannot reflectivly instanciate this type of ActionData"
+							+ "	Check your spelling, or refer to documentation and pray!!" + e.getCause());
+				}
 		
 			throw new ActionDataFactoryException("you cannot instanciate this type of ActionData"
 					+ "	Check your spelling, or refer to documentation");
+		}
 	}
 	
 	
 	
-	
 	/**
-	 * add appropriate entries to the factoryMap.
+	 * Reflectively add 'Method' objects to the ActionDataMap, not normally the method I would chose to do this
+	 * however calling 'new' on a WebDriver object automatically spools up a specific browser process, hence the need
+	 * to store the method call but only invoke the method call when the map entry is needed.
 	 * @throws MalformedURLException 
 	 * @throws SecurityException 
 	 * @throws NoSuchMethodException 
 	 */
 	private void mapEntries() throws MalformedURLException, NoSuchMethodException, SecurityException
 	{
-		//for use internally within the ActionController
-		ActionDataMap.put("internal", ActionDataFactory.class.getDeclaredMethod("makeEmptyData"));
-		
-		//for public use
 		//ActionDataMap.put("firefox", new ActionData( new FirefoxDriver() ));
-		ActionDataMap.put("firefox", ActionDataFactory.class.getDeclaredMethod("makeFirefoxData"));
+		this.ActionDataMap.put("firefox", ActionDataFactory.class.getDeclaredMethod("makeFirefoxData"));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
-//		ActionDataMap.put("noWindows", new ActionData(new HtmlUnitDriver() ));
+		this.ActionDataMap.put("noWindows",  ActionDataFactory.class.getDeclaredMethod("makeHTMLDriverData"));
 		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	private ActionData makeEmptyData()
-	{
-		return new ActionData();
 	}
 	
 	/**
@@ -133,5 +137,14 @@ public class ActionDataFactory
 	private ActionData makeFirefoxData()
 	{
 		return new ActionData(new FirefoxDriver());
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	private ActionData makeHTMLDriverData()
+	{
+		return new ActionData(new HtmlUnitDriver());
 	}
 }
