@@ -15,145 +15,42 @@ import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.testExceptions.TestException;
 
 public class Servlet extends HttpServlet 
-{
-
-	/**
-	 * need this to avoid warnings
-	 */
+{	
+	/** need this to avoid warnings **/
 	private static final long serialVersionUID = -2842549406742289709L;
 	
-	
-	
-	protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException
+	/**
+	 * 
+	 * @param request
+	 * @param response
+	 * @throws ServletException
+	 * @throws IOException
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException
     {
-		String command = httpServletRequest.getParameter("command");
-        PrintWriter out = httpServletResponse.getWriter();
-       
-        out.println("command");
-        if(command == null)
-        {
-        	
-        }
-        
-        else if(command.contentEquals("ok")==false)
-        {
-        	//httpServletResponse.reset(); //clear screen
-        	out.println("command = "+command);
-            out.println("value = "+httpServletRequest.getParameter("value"));
-        	
-        }
-        else
-        {
-        	try {
-				Run.main(new String[]{});;
-			} catch (ActionDataException | ActionException
-					| TestException e) {
-				e.printStackTrace();
-			}
-        	 System.out.println("it works");
-        }
-        out.close();
+		/** holds the contents of the 'browser' get parameter **/
+		String browser = request.getParameter("browser");
+		/** holds the contents of the 'addActions' get parameter **/
+		String addActions = request.getParameter("addActions");
+		/** holds the contents of the 'addActions' get parameter **/
+		String capabilities = request.getParameter("capabilities");
+		/** holds the contents of the 'execute' get parameter **/
+		String execute = request.getParameter("execute");
+		/** reference to object that outputs text to response **/
+		PrintWriter out = response.getWriter();
+		/** UrlDecoder turns the get parameter strings into program actions **/
+		UrlDecoder urlDecoder = new UrlDecoder();
+		
+		//turn the get parameters into something useful
+		urlDecoder.decodeCapabilities(capabilities);
+		urlDecoder.decodeBrowser(browser);
+		urlDecoder.decodeAddActions(addActions);
+		
+		//execute the actions and turn the result string into an http response
+		out.print(urlDecoder.execute(execute));
+		
+		//close the PrintWriter
+		out.close();
     }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public void run() 
-			throws ActionDataException, ActionException, InterruptedException, MalformedURLException 
-			{
-//
-//				///////////////////////////////////////////////////////////////////////
-//				//prototype action list and iteration
-//				///////////////////////////////////////////////////////////////////////
-//				
-//				
-//				//initialise factories
-//				
-//				
-//				//configuration
-//				ActionDataFactory.setCapabilities("browser", "IE");
-//				ActionDataFactory.setCapabilities("brower_version", "7.0");
-//				ActionDataFactory.setCapabilities("os", "Windows");
-//				ActionDataFactory.setCapabilities("os_version", "XP");
-//				ActionDataFactory.setCapabilities("browserstack.debug", "true");
-//				ActionDataFactory.setCapabilities("auth", "jonjackson:WDaudZN5Y1eTGPUUozty");
-//				
-//				ActionFactory Afactory = new ActionFactory();
-//				ActionDataFactory AdFactory = new ActionDataFactory();
-//				ActionData actionData = ActionDataFactory.makeActionData("firefox");
-//				
-//				
-//				ActionInvoker controller = new ActionInvoker(actionData);
-//				
-//				
-//				//page actions test
-//				controller.add(Afactory.makeAction("PageGet"), "http://www.test.com", 0);
-////				controller.add(Afactory.makeAction("GetPageSrc"), "", 0);
-////				controller.add(Afactory.makeAction("GetTitle"), "", 0);
-////				controller.add(Afactory.makeAction("GetURL"), "", 0);
-//				
-//				//navigation Actions test
-//				controller.add(Afactory.makeAction("PageGet"), "http://www.google.com/?#q=test", 0);
-////				controller.add(Afactory.makeAction("NavigateBack"), "", 1);
-////				controller.add(Afactory.makeAction("NavigateForward"), "", 1);
-////				controller.add(Afactory.makeAction("RefreshPage"), "", 2);
-//				
-//				//find elements by test
-////				controller.add(Afactory.makeAction("FindElementsByCss"), "input", -1);
-////				controller.add(Afactory.makeAction("FindElementsByTagName"), "input", -1);
-////				controller.add(Afactory.makeAction("FindElementsById"), "lst-ib", -1);
-////				controller.add(Afactory.makeAction("FindElementsByLinkTxt"), "Speedtest.net by Ookla - The Global Broadband Speed Test", -1);
-////				controller.add(Afactory.makeAction("FindElementsByPartialLinkTxt"), "Ookla", -1);
-////				controller.add(Afactory.makeAction("FindElementsByXpath"), "//div[@id]", -1);
-//				controller.add(Afactory.makeAction("FindElementsByName"), "q", -1);
-//
-//				//element Action test
-//				controller.add(Afactory.makeAction("Clear"), "", 0);
-//				controller.add(Afactory.makeAction("Click"), "", 0);
-//				controller.add(Afactory.makeAction("GetAttribute"), "name", 0);
-//				controller.add(Afactory.makeAction("GetCssValue"), "background", 0);
-//				controller.add(Afactory.makeAction("GetLocation"), "", 0);
-//				controller.add(Afactory.makeAction("GetSize"), "", 0);
-//				controller.add(Afactory.makeAction("GetTagName"), "", 0);
-//				controller.add(Afactory.makeAction("GetText"), "", 0);
-//				controller.add(Afactory.makeAction("IsDisplayed"), "", 0);
-//				controller.add(Afactory.makeAction("IsEnabled"), "", 0);
-//				controller.add(Afactory.makeAction("IsSelected"), "", 0);
-//				controller.add(Afactory.makeAction("SendKeys"), "blueberry trifle", 0);
-//				controller.add(Afactory.makeAction("Submit"), "", 0);
-//				
-//				//close page and browser(PageActions)
-////				controller.add(Afactory.makeAction("PageClose"), "", 0);
-//				controller.add(Afactory.makeAction("BrowserQuit"), "", 0);
-//				
-//				//execute all Actions
-//				List<String> results = controller.execute();
-//				
-//				//print results to screen
-//				for (int i = 0; i < results.size(); ++i)
-//				{
-//					System.out.println(results.get(i));
-//				}
-//				
-//			
-			}
-
 }

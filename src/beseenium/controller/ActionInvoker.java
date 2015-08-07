@@ -74,9 +74,9 @@ public class ActionInvoker
 		
 		for (int i = 0; i < actions.size(); ++i)
 		{
-			AbstractAction individualAction = actions.get(i);
-			String inputString = inputParams.get(i);
-			int index = optionalIndex.get(i);
+			AbstractAction individualAction = this.actions.get(i);
+			String inputString = this.inputParams.get(i);
+			int index = this.optionalIndex.get(i);
 						
 			context = individualAction.getActionData();
 			context.setInputParam(inputString);

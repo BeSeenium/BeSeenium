@@ -127,6 +127,7 @@ public class ActionDataFactory
 		this.ActionDataMap.put("firefox", ActionDataFactory.class.getDeclaredMethod("makeFirefoxData"));
 		//ActionDataMap.put("chrome", new ActionData( new ChromeDriver() ));
 		this.ActionDataMap.put("noWindows",  ActionDataFactory.class.getDeclaredMethod("makeHTMLDriverData"));
+		this.ActionDataMap.put("remote",  ActionDataFactory.class.getDeclaredMethod("makeRemoteData"));
 		//ActionDataMap.put("remote", new ActionData(new RemoteWebDriver(new URL(URL), capabilities )));
 	}
 	
@@ -134,6 +135,7 @@ public class ActionDataFactory
 	 * 
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private ActionData makeFirefoxData()
 	{
 		return new ActionData(new FirefoxDriver());
@@ -143,8 +145,20 @@ public class ActionDataFactory
 	 * 
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private ActionData makeHTMLDriverData()
 	{
 		return new ActionData(new HtmlUnitDriver());
+	}
+	
+	/**
+	 * 
+	 * @return
+	 * @throws MalformedURLException 
+	 */
+	@SuppressWarnings("unused")
+	private ActionData makeRemoteData() throws MalformedURLException
+	{
+		return new ActionData(new RemoteWebDriver(new URL(URL), capabilities ));
 	}
 }

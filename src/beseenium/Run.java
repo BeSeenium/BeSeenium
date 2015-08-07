@@ -14,7 +14,7 @@ public class Run
 			throws MalformedURLException, ActionDataException, ActionException, TestException
 	{
 		Test test = new Test();
-		test.setBrowser("noWindows");
+		test.setBrowser("firefox");
 		test.addAction("PageGet", "http://www.google.com", 0);
 		test.addAction("FindElementsByName", "q", -1);
 		test.addAction("GetTagName", "", 0);
