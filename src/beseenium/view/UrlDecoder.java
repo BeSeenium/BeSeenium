@@ -1,5 +1,10 @@
 package beseenium.view;
 
+/**
+ * 
+ * @author orpheus
+ *
+ */
 public class UrlDecoder 
 {
 	/**
@@ -14,8 +19,7 @@ public class UrlDecoder
 	 */
 	public void decodeCapabilities(String capabilities) 
 	{
-		// TODO Auto-generated method stub
-		
+				
 	}
 
 	/**
