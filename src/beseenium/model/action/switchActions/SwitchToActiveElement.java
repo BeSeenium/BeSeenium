@@ -1,7 +1,6 @@
 package beseenium.model.action.switchActions;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
-import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 

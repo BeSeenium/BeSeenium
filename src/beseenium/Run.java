@@ -1,6 +1,7 @@
 package beseenium;
 
 import java.net.MalformedURLException;
+import java.util.Arrays;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
@@ -10,17 +11,32 @@ import beseenium.view.TestManager;
 
 public class Run 
 {
+
+	
 	public static void main(String[] args) 
 			throws MalformedURLException, ActionDataException, ActionException, TestException
 	{
-		Test test = new Test();
-		test.setBrowser("firefox");
-		test.addAction("PageGet", "http://www.google.com", 0);
-		test.addAction("FindElementsByName", "q", -1);
-		test.addAction("GetTagName", "", 0);
-		test.addAction("BrowserQuit", "", 0);
+		String testString = "key1+value1+val1AAAkey2+value2+val2AAAkey3+value3+val3";
 		
-		System.out.println(test.executeActions().toString());
+		String[] firstSplit = testString.split("ABC"); //={"key:value", "key:value"}
+		int split1Len = firstSplit.length;
+		int split2Len = firstSplit[0].split("XYZ").length;
+		String[][] resultArray = new String[split1Len][split2Len];// = {{"key","value"},{"key","value"}};
+		
+		for(int i = 0; i < firstSplit.length; ++i)
+		{
+			resultArray[i]=firstSplit[i].split("XYZ");
+		}
+		System.out.println(Arrays.deepToString(resultArray));
+		
+//		Test test = new Test();
+//		test.setBrowser("firefox");
+//		test.addAction("PageGet", "http://www.google.com", 0);
+//		test.addAction("FindElementsByName", "q", -1);
+//		test.addAction("GetTagName", "", 0);
+//		test.addAction("BrowserQuit", "", 0);
+//		
+//		System.out.println(test.executeActions().toString());
 
 //		TestManager tm = new TestManager();
 //		tm.addTest("jan");

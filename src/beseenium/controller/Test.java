@@ -3,7 +3,6 @@ package beseenium.controller;
 import java.net.MalformedURLException;
 import java.util.List;
 
-import beseenium.controller.*;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.exceptions.actionExceptions.ActionException;

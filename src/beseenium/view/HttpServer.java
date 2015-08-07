@@ -8,7 +8,6 @@ import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.resource.Resource;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
@@ -26,7 +25,7 @@ public class HttpServer
         ContextHandler context0 = new ContextHandler();
         context0.setContextPath("/results");        
         ServletContextHandler serv = new ServletContextHandler();
-        serv.addServlet(beseenium.view.Servlet.class, "/*");
+        serv.addServlet(beseenium.view.BeSeeniumServlet.class, "/*");
         context0.setHandler(serv);
        
         

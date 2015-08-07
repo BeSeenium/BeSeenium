@@ -33,8 +33,6 @@ public class ActionData
 	private WebDriver driver;
 	/** the Input parameter that an action may operate on**/
 	private String inputParam;
-	/** the Output parameter that an action may return**/
-	private String outputParam;
 	/** The html element that other actions operate on **/
 	private List<WebElement> element;
 	
@@ -58,7 +56,6 @@ public class ActionData
 	{
 		this.driver = driver;
 		this.inputParam = iParam;
-		this.outputParam = oParam;
 	}
 
 //---------------------------------------------------------------------------SETTERS
