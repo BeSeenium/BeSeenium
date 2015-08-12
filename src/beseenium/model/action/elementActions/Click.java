@@ -42,12 +42,12 @@ public class Click extends AbstractAction
 			if(n==-1)
 			{
 				for(int element = 0; element < elements.size(); ++element)
-				{elements.get(element).clear();}
+				{elements.get(element).click();}
 				return " all provided elements clicked ";
 			}
 			else
 			{
-				elements.get(n).clear();
+				elements.get(n).click();
 				return "element " + n + " clicked";		
 			}
 		}

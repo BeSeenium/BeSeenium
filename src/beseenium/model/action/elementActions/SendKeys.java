@@ -40,7 +40,7 @@ public class SendKeys extends AbstractAction
 		if(n==-1)
 		{
 			for(int element = 0; element < elements.size(); ++element)
-			{elements.get(n).sendKeys(super.context.getInputParam());}
+			{elements.get(element).sendKeys(super.context.getInputParam());}
 			return "all elements populated with: '" +
 			super.context.getInputParam()+"'";
 		}
