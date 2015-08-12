@@ -92,11 +92,14 @@ public class Test
 	 */
 	public void emergencyShutdown() throws ActionDataException, ActionException
 	{
-		for(int i = 0; i < invoker.size(); ++i)
+		if(this.invoker != null)
 		{
-			this.invoker.remove(i);
+			for(int i = 0; i < invoker.size(); ++i)
+			{
+				this.invoker.remove(i);
+			}
+			this.invoker.add(this.actionFactory.makeAction("BrowserQuit"), "", 0);
+			this.invoker.execute();
 		}
-		this.invoker.add(this.actionFactory.makeAction("BrowserQuit"), "", 0);
-		this.invoker.execute();
 	}
 }

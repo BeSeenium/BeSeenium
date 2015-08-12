@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
@@ -30,20 +31,29 @@ public class Clear extends AbstractAction
 	 * @param n the index of the element to clear (as taken from the ActionData)
 	 * @return String verifying clear action
 	 * @throws ActionDataException
+	 * @throws ActionException 
 	 */
 	@Override
-	public String execute(int n) throws ActionDataException 
+	public String execute(int n) throws ActionDataException, ActionException 
 	{
 		List<WebElement> elements = super.context.getElement();
-		String tag = elements.get(n).getTagName();
-		String href = elements.get(n).getAttribute("href");
-		String text = elements.get(n).getText();
-		String classOf = elements.get(n).getText();
+				
+		if(n==-1)
+		{
+			for(int element = 0; element < elements.size(); ++element)
+			{elements.get(element).clear();}
+			return " all provided elements cleared ";
+		}
+		else
+		{
+			try
+			{
+				elements.get(n).clear();
+				return "element " + n + " cleared";
+			}
 		
-		
-		elements.get(n).clear();	
-		
-		return "<"+tag+" class='"+classOf+ "' href='"+href+"'>"
-				+text +"</"+tag+">"+"-------cleared";
+			catch (IndexOutOfBoundsException e)
+			{throw new ActionException(this.toString()+": you provided an invalid index");}
+		}
 	}
 }

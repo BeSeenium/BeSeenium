@@ -82,7 +82,7 @@ public class ActionInvoker
 			context.setInputParam(inputString);
 			context.setDriver(driver);
 		
-			result.add(individualAction.execute(index));
+			result.add("{"+individualAction.execute(index)+"}");
 		}
 		
 		return result;		

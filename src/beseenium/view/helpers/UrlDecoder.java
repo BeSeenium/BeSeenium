@@ -44,19 +44,24 @@ public class UrlDecoder
 	public String decodeURL(String capabilities, String browser,
 			String addActions, String execute) 
 	{	
-		String caps = decodeCapabilities(capabilities);
-		String brwsr = decodeBrowser(browser);
-		String actns = decodeAddActions(addActions);
+		String caps="" ;
+		String brwsr="" ;
+		String actns="";
 		
-		String confirmationString = brwsr + caps + actns;
+		
 		try 
 		{
+			caps = decodeCapabilities(capabilities);
+			brwsr = decodeBrowser(browser);
+			actns = decodeAddActions(addActions);
+			String confirmationString = brwsr + caps + actns;
 			return confirmationString + "TEST RESULTS: " + (test.executeActions().toString()) + EOL;
 		} 
 		
-		catch (ActionDataException | ActionException e) 
+		catch (ActionDataException | ActionException | NullPointerException e) 
 		{
-			return "ERROR: "+e.getMessage() + e.getStackTrace().toString()+shutdown(e) + EOL;
+			return "ERROR: trace -> \n"+caps+brwsr+actns + "TEST RESULTS: "
+					+e.getMessage() + e.getStackTrace().toString()+shutdown(e) + EOL;
 		}
 	}
 	
@@ -90,7 +95,7 @@ public class UrlDecoder
 		}
 		
 		catch(NullPointerException e)
-		{return "NO DESIRED CAPABILITIES:" + EOL;}
+		{return "DESIRED CAPABILITIES: NONE" + EOL;}
 	}
 	
 	/**
@@ -106,9 +111,11 @@ public class UrlDecoder
 			return "BROWSER SET AS: " + browser + EOL;
 		} 
 		
-		catch (ActionDataException e) 
+		catch (ActionDataException | NullPointerException e) 
 		{
-			return "ERROR: "+ e.getMessage() +" " + e.getStackTrace().toString()+shutdown(e) + EOL;
+			
+			return "could not set browser as \"" + browser +"\" "
+					+ e.getMessage() +" " + e.getStackTrace().toString()+shutdown(e) + EOL;
 		}
 	}
 	

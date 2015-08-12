@@ -18,12 +18,7 @@ public class FormatOutput
 		{
 			for(int i=0; i< elements.size(); ++i)
 			{
-				tempRes += elements.get(i).getTagName() + " , " +
-						elements.get(i).getAttribute("id") +  " , " +
-						elements.get(i).getAttribute("class") +  " , " +
-						elements.get(i).getAttribute("name") +  " , " +
-						elements.get(i).getAttribute("href") +  " , " +
-						elements.get(i).toString()+"\n";
+				tempRes += elements.get(i).toString()+" , ";
 			}
 		
 		return tempRes;
@@ -31,12 +26,7 @@ public class FormatOutput
 		
 		else
 		{
-			return  elements.get(n).getTagName() + " , " +
-					elements.get(n).getAttribute("id") +  " , " +
-					elements.get(n).getAttribute("class") +  " , " +
-					elements.get(n).getAttribute("name") +  " , " +
-					elements.get(n).getAttribute("href") +  " , " +
-					elements.get(n).toString()+"\n";
+			return elements.get(n).toString();
 		}
 		
 	}

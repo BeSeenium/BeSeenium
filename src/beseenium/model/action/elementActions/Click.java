@@ -6,6 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.actionExceptions.ClickException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
@@ -28,21 +29,27 @@ public class Click extends AbstractAction
 	 * This performs the click action.
 	 * @param n the index of the element to click on (as taken from the ActionData)
 	 * @return String verifying success of click action
-	 * @throws ClickException 
 	 * @throws ActionDataException
+	 * @throws ActionException 
 	 */
 	@Override
 	public String execute(int n) throws ActionDataException, ClickException 
 	{
 		List<WebElement> elements = super.context.getElement();
-		String tag = elements.get(n).getTagName();
-		String href = elements.get(n).getAttribute("href");
-		String text = elements.get(n).getText();
-		String classOf = elements.get(n).getText();
 		
 		try
 		{
-			elements.get(n).click();
+			if(n==-1)
+			{
+				for(int element = 0; element < elements.size(); ++element)
+				{elements.get(element).clear();}
+				return " all provided elements clicked ";
+			}
+			else
+			{
+				elements.get(n).clear();
+				return "element " + n + " clicked";		
+			}
 		}
 		catch (StaleElementReferenceException e2)
 		{
@@ -50,10 +57,7 @@ public class Click extends AbstractAction
 		}
 		catch (IndexOutOfBoundsException e2)
 		{
-			throw new ActionDataException("there is no such element in the list");
+			throw new ActionDataException(this.toString()+": you provided an invalid index");
 		}
-		
-		return "<"+tag+" class='"+classOf+ "' href='"+href+"'>"
-				+text +"</"+tag+">"+"-------clicked";
 	}
 }

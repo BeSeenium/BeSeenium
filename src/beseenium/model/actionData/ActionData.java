@@ -77,7 +77,7 @@ public class ActionData
 	 */
 	public List<WebElement> getElement() throws ActionDataException 
 	{
-		if (this.element == null)
+		if (this.element.isEmpty() || this.element == null)
 			{throw new ActionDataException("No WebElement exists in this ActionData");}
 		else
 			{return element;}	

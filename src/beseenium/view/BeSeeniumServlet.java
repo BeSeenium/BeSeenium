@@ -49,7 +49,7 @@ public class BeSeeniumServlet extends HttpServlet
 		
 		catch (ActionDataFactoryException e) 
 		{
-			out.println("UNRECOVERABLE ERROR: " + EOL);
+			out.println("UNRECOVERABLE ERROR: "+ e.getMessage() + EOL);
 			e.printStackTrace(out);
 			e.printStackTrace();
 			out.println(EOL);

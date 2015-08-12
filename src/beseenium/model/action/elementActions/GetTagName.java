@@ -32,7 +32,8 @@ public class GetTagName extends AbstractAction
 	public String execute(int n) throws ActionDataException 
 	{
 		List<WebElement> elements = super.context.getElement();			
-		
+
 		return elements.get(n).getTagName();
+
 	}
 }
