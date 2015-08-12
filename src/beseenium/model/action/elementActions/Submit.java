@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.actionExceptions.SubmitException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
@@ -29,27 +30,36 @@ public class Submit extends AbstractAction
 	 * @param n the index of the element to clear (as taken from the ActionData)
 	 * @return String verifying clear action
 	 * @throws ActionDataException
-	 * @throws SubmitException 
+	 * @throws ActionException 
 	 */
 	@Override
-	public String execute(int n) throws ActionDataException, SubmitException 
+	public String execute(int n) throws ActionDataException, ActionException 
 	{
 		List<WebElement> elements = super.context.getElement();
-		String tag = elements.get(n).getTagName();
-		String id = elements.get(n).getAttribute("id");
-		String text = elements.get(n).getText();
-		String classOf = elements.get(n).getText();
 		
 		try
-		{
-			elements.get(n).submit();
+		{	
+			if(n==-1)
+			{
+				for(int element = 0; element < elements.size(); ++element)
+				{elements.get(element).submit();}
+				return " all elements submited. ";
+			}
+			else
+			{
+				try
+				{
+					elements.get(n).submit();
+					return "element-"+n+" submitted.";
+				}
+			
+				catch (IndexOutOfBoundsException e)
+				{throw new ActionException(this.toString()+": you provided an invalid index");}
+			}
 		}
 		catch (NoSuchElementException e)
 		{
 			throw new SubmitException("the element is not a form");
 		}
-		
-		return "<"+tag+" class='"+classOf+ "' href='"+id+"'>"
-				+text +"</"+tag+">"+"-------submitted";
 	}
 }

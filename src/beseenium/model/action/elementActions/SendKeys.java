@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
@@ -29,21 +30,31 @@ public class SendKeys extends AbstractAction
 	 * @param n the index of the element to send the keys to (as taken from the ActionData)
 	 * @return String verifying SendKeys action
 	 * @throws ActionDataException
+	 * @throws ActionException 
 	 */
 	@Override
-	public String execute(int n) throws ActionDataException 
+	public String execute(int n) throws ActionDataException, ActionException 
 	{
 		List<WebElement> elements = super.context.getElement();
-		String tag = elements.get(n).getTagName();
-		String id = elements.get(n).getAttribute("id");
-		String text = elements.get(n).getText();
-		String classOf = elements.get(n).getText();
 		
-		
-		elements.get(n).sendKeys(super.context.getInputParam());;	
-		
-		return "<"+tag+" class='"+classOf+ "' id='"+id+"'>"
-				+text +"</"+tag+">  populated with: '" +
+		if(n==-1)
+		{
+			for(int element = 0; element < elements.size(); ++element)
+			{elements.get(n).sendKeys(super.context.getInputParam());}
+			return "all elements populated with: '" +
+			super.context.getInputParam()+"'";
+		}
+		else
+		{
+			try
+			{
+				elements.get(n).sendKeys(super.context.getInputParam());
+				return "element-"+n+" populated with: '" +
 				super.context.getInputParam()+"'";
+			}
+		
+			catch (IndexOutOfBoundsException e)
+			{throw new ActionException(this.toString()+": you provided an invalid index");}
+		}
 	}
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
@@ -30,12 +31,27 @@ public class GetCssValue extends AbstractAction
 	 * @param n the index of the element to get a CSS value of (as taken from the ActionData)
 	 * @return String containing the value of the CSS value set in the input parameter
 	 * @throws ActionDataException
+	 * @throws ActionException 
 	 */
 	@Override
-	public String execute(int n) throws ActionDataException 
+	public String execute(int n) throws ActionDataException, ActionException 
 	{
 		List<WebElement> elements = super.context.getElement();			
+		String result ="";
 		
-		return elements.get(n).getCssValue(super.context.getInputParam());
+		if(n==-1)
+		{
+			for(int element = 0; element < elements.size(); ++element)
+			{result += elements.get(element).getCssValue(super.context.getInputParam())+" , ";}
+			return result;
+		}
+		else
+		{
+			try
+			{return elements.get(n).getCssValue(super.context.getInputParam());}
+		
+			catch (IndexOutOfBoundsException e)
+			{throw new ActionException(this.toString()+": you provided an invalid index");}
+		}
 	}
 }
