@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
-import beseenium.view.helpers.UrlDecoder;
+import beseenium.view.helpers.URLHandler;
 
 public class BeSeeniumServlet extends HttpServlet 
 {	
@@ -40,10 +40,10 @@ public class BeSeeniumServlet extends HttpServlet
 		try 
 		{			
 			/** UrlDecoder turns the get parameter strings into program actions **/
-			UrlDecoder urlDecoder = new UrlDecoder();
+			URLHandler urlDecoder = new URLHandler();
 			//turn the get parameters into something useful
 			//execute the actions and turn the result string into an http response
-			String result =urlDecoder.decodeURL(capabilities, browser, addActions, execute);
+			String result =urlDecoder.handleURL(capabilities, browser, addActions, execute);
 			out.print(result);	
 		} 
 		

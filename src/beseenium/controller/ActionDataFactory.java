@@ -28,7 +28,7 @@ public class ActionDataFactory
 	/** the  **/
 	private  DesiredCapabilities capabilities;
 	
-	private  String URL;
+	private  URL URL;
 	
 	private ActionData emptyActionData;
 	
@@ -56,18 +56,23 @@ public class ActionDataFactory
 	 * provides a convenient way to set them.
 	 * @param key the capability you wish to set
 	 * @param value the value you wish to set it to.
+	 * @throws MalformedURLException 
 	 */
-	public void setCapabilities(String key, String value)
+	public void setCapabilities(String key, String value) throws MalformedURLException
 	{
 		this.capabilities = new DesiredCapabilities();
-		if (key != "auth")
+		if (key.contentEquals("auth")==false)
 		{
 			this.capabilities.setCapability(key, value);
+			System.out.println(key+":"+capabilities.getCapability(key));
 		}
 		
 		else
-		{this.URL = "http://" + value + "@hub.browserstack.com/wd/hub";}
-		System.out.println(capabilities.getCapability(key));
+		{
+			this.URL =new URL("http://" + value + "@hub.browserstack.com/wd/hub");
+			System.out.println(key+":"+URL);
+		}
+		
 	}
 	
 	/**
@@ -101,6 +106,7 @@ public class ActionDataFactory
 			catch (InstantiationException | IllegalAccessException 
 				| IllegalArgumentException | InvocationTargetException e) 
 				{
+				//e.printStackTrace();
 					throw new ActionDataFactoryException("you cannot reflectivly instanciate this type of ActionData"
 							+ "	Check your spelling, or refer to documentation and pray!!" + e.getCause());
 				}
@@ -158,6 +164,6 @@ public class ActionDataFactory
 	@SuppressWarnings("unused")
 	private ActionData makeRemoteData() throws MalformedURLException
 	{
-		return new ActionData(new RemoteWebDriver(new URL(URL), capabilities ));
+		return new ActionData(new RemoteWebDriver(URL, capabilities ));
 	}
 }

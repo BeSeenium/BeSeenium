@@ -44,8 +44,9 @@ public class Test
 	 * When using a 'remote' Driver set a capability of the driver i.e. key='os' value='windows'
 	 * @param key
 	 * @param value
+	 * @throws MalformedURLException 
 	 */
-	public void configureRemoteDriver(String key, String value)
+	public void configureRemoteDriver(String key, String value) throws MalformedURLException
 	{
 		this.actionDataFactory.setCapabilities(key, value);
 	}

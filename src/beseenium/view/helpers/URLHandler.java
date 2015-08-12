@@ -14,7 +14,7 @@ import beseenium.exceptions.actionExceptions.ActionFactoryException;
  * @author orpheus
  *
  */
-public class UrlDecoder 
+public class URLHandler 
 {
 	/** The Test to create **/
 	Test test;
@@ -26,7 +26,7 @@ public class UrlDecoder
 	 * @throws ActionDataFactoryException
 	 * @throws MalformedURLException
 	 */
-	public UrlDecoder() throws ActionDataFactoryException, MalformedURLException
+	public URLHandler() throws ActionDataFactoryException, MalformedURLException
 	{
 		super();
 		test = new Test();
@@ -41,7 +41,7 @@ public class UrlDecoder
 	 * @return String representation of the aggregate results of the individual actions. will return
 	 * an error message with appropriate content if an exception is caught
 	 */
-	public String decodeURL(String capabilities, String browser,
+	public String handleURL(String capabilities, String browser,
 			String addActions, String execute) 
 	{	
 		String caps="" ;
@@ -51,16 +51,16 @@ public class UrlDecoder
 		
 		try 
 		{
-			caps = decodeCapabilities(capabilities);
-			brwsr = decodeBrowser(browser);
-			actns = decodeAddActions(addActions);
+			caps = handleCapabilities(capabilities);
+			brwsr = handleBrowser(browser);
+			actns = handleAddActions(addActions);
 			String confirmationString = brwsr + caps + actns;
 			return confirmationString + "TEST RESULTS: " + (test.executeActions().toString()) + EOL;
 		} 
 		
 		catch (ActionDataException | ActionException | NullPointerException e) 
 		{
-			return "ERROR: trace -> \n"+caps+brwsr+actns + "TEST RESULTS: "
+			return "ERROR: trace -> \n"+brwsr+caps+actns + "TEST RESULTS: "
 					+e.getMessage() + e.getStackTrace().toString()+shutdown(e) + EOL;
 		}
 	}
@@ -68,11 +68,11 @@ public class UrlDecoder
 	/**
 	 * takes an input from servlet in the form of string 'get' URL parameter 'capabilities' uses it to set the 
 	 * remoteDriver configuration, this is only of use when the browser type is set as 'remote'
-	 * @param capabilities String of the form "key:value|key:value|key:value|..."
+	 * @param capabilities String of the form "key+value|key+value|key+value|..."
 	 * @return String of the form message + "[[key1, value1], [key2, value2], [key3, value3]]"
 	 * will return an error message if the input string is badly formatted
 	 */
-	private String decodeCapabilities(String capabilities)
+	private String handleCapabilities(String capabilities)
 	{	
 		try
 		{
@@ -96,6 +96,9 @@ public class UrlDecoder
 		
 		catch(NullPointerException e)
 		{return "DESIRED CAPABILITIES: NONE" + EOL;}
+		catch(MalformedURLException e1)
+		{return "DESIRED CAPABILITIES: BAD URL"+EOL;}
+		
 	}
 	
 	/**
@@ -103,7 +106,7 @@ public class UrlDecoder
 	 * @param browser
 	 * @return
 	 */
-	private String decodeBrowser(String browser)
+	private String handleBrowser(String browser)
 	{
 		try 
 		{
@@ -124,7 +127,7 @@ public class UrlDecoder
 	 * @param addActions = name:inputParam:optional|name:inputParam:optional|name:inputParam:optional|...
 	 * @return
 	 */
-	private String decodeAddActions(String addActions)
+	private String handleAddActions(String addActions)
 	{
 		String[][] actions = splitString(addActions);
 		
