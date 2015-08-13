@@ -18,7 +18,7 @@ package beseenium.controller.ActionDataFactory;
 import beseenium.model.actionData.ActionData;
 
 /**
- * 
+ * interface which describes a prototype for creating MakeData objects.
  * @author Jan P.C. Hanson
  *
  */

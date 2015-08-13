@@ -25,17 +25,23 @@ import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.model.actionData.ActionData;
 /**
+ * blueprint for creating Test objects, a Test is ostensibly a series of actions
+ * that are performed one after the other. provides methods for adding/removing actions
+ * configuring remote capabilities and other functionality that relates to creating and 
+ * using a test.
  * 
+ * this class acts as the client of command pattern governing the storage and execution 
+ * of Abstract Actions.
  * @author Jan P.C. Hanson
  *
  */
 public class Test 
 {
-	/**  **/
+	/** reference to internal ActionFactory **/
 	private ActionFactory actionFactory;
-	/**  **/
+	/** reference to internal ActionDataFactory **/
 	private ActionDataFactory actionDataFactory;	
-	/**  **/
+	/** reference to Action Invoker. **/
 	private ActionInvoker invoker;
 	
 	/**

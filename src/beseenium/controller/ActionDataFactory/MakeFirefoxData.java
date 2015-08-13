@@ -20,7 +20,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import beseenium.model.actionData.ActionData;
 
 /**
- * 
+ * make an ActionData containing a firefox Driver
  * @author Jan P.C. Hanson
  *
  */

@@ -41,7 +41,7 @@ public class Submit extends AbstractAction
 	{super(context);}
 	
 	/**
-	 * This performs a clear action.
+	 * This performs a submit action.
 	 * @param n the index of the element to clear (as taken from the ActionData)
 	 * @return String verifying clear action
 	 * @throws ActionDataException

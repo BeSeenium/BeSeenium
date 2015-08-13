@@ -31,9 +31,6 @@ import beseenium.exceptions.actionDataExceptions.ActionDataException;
  * inputParam would be ".myClass" and if the action was SendKeys an appropriate Input Parameter
  * would be a string containing the set letters you wish to send etc.<br>
  * 
- * <strong>OutputParam</strong> - The Output Parameter is a string that represents the attribute
- * that an action should return for instance "href" or "class" etc<br>
- * 
  * <strong>element</strong>  A FindElementBy... action populates an ActionData with a WebElement,
  * this is needed by other, non FindElementBy queries.<br>
  * 
@@ -55,27 +52,19 @@ public class ActionData
 	 * default ctor
 	 */
 	public ActionData()
-	{}
+	{super();}
 	
 	/**
 	 * Instantiate a new ActionData object with the WebDriver provided 
-	 * @param driver
+	 * @param driver the WebDriver to instantiate the ActionData with.
 	 */
 	public ActionData(WebDriver driver)
 	{this.driver = driver;}
-	
-	/**
-	 * constructor for findElement style actions \todo remove
-	 */
-	public ActionData(WebDriver driver, String iParam, String oParam)
-	{
-		this.driver = driver;
-		this.inputParam = iParam;
-	}
 
 //---------------------------------------------------------------------------SETTERS
 	/**
-	 * @return the inputParam
+	 * retrieve the input parameter currently stored in this ActionData
+	 * @return String representing the input parameter.
 	 * @throws ActionDataException if no search parameter set.
 	 */
 	public String getInputParam() throws ActionDataException 
@@ -87,7 +76,8 @@ public class ActionData
 	}
 
 	/**
-	 * @return the WebElement
+	 * retrieve the list of WebElements currently stored in the ActionData
+	 * @return List<WebElement> containing all elements currently stored.
 	 * @throws ActionDataException if no WebElement set.
 	 */
 	public List<WebElement> getElement() throws ActionDataException 
@@ -99,8 +89,9 @@ public class ActionData
 	}
 	
 	/**
-	 * @return the WebDriver
-	 * @throws ActionDataException 
+	 * retrieves the WebDriver Object curently stored in the ActionData
+	 * @return WebDriver representing the browser instance currently stored
+	 * @throws ActionDataException if no driver is set.
 	 */
 	public WebDriver getDriver() throws ActionDataException
 	{
@@ -113,7 +104,8 @@ public class ActionData
 	
 //---------------------------------------------------------------------------GETTERS	
 	/**
-	 * @param element the element to set
+	 * sets the list of WebElements currently stored in the ActionData
+	 * @param element the list of element to set
 	 */
 	public void setElement(List<WebElement> element) 
 	{this.element = element;}
@@ -127,8 +119,8 @@ public class ActionData
 	{this.inputParam = inputParam;}
 	
 	/**
-	 * 
-	 * @param driver
+	 * Sets the WebDriver associated with this ActionData
+	 * @param driver the WebDrivver to set.
 	 */
 	public void setDriver(WebDriver driver)
 	{this.driver=driver;}

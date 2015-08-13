@@ -16,7 +16,12 @@
 package beseenium.exceptions.actionDataExceptions;
 
 import beseenium.exceptions.BeSeeniumException;
-
+/**
+ * Exception applicable to ActionData
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ActionDataException extends BeSeeniumException {
 
 	/**

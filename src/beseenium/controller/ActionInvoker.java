@@ -39,6 +39,9 @@ public class ActionInvoker
 	private WebDriver driver;
 	
 	/**
+	 * constructor, takes an ActionData(one that has been populated with a WebDriver, if it is not 
+	 * populated then you will run into problems down the line as the execute method requires one),
+	 * and instantiates internal variables.
 	 * @throws ActionDataException 
 	 * 
 	 */
@@ -51,7 +54,7 @@ public class ActionInvoker
 	}
 
 	/**
-	 * Adds an abstract action to the action queue, each action may have an input parameter
+	 * Adds an abstract action to the action queue, each action has an input parameter
 	 * and an index n. 
 	 * @param action an AbstractAction derived type.
 	 * @param inputParam dependant on the Action being performed.

@@ -35,6 +35,7 @@ public class NavigateForward extends AbstractAction
 	{super(context);}
 	
 	/**
+	 * performs the navigate forwards action.
 	 * @param n the number of times to navigate forward
 	 * @return String verifying the number of times forward navigation has occurred
 	 * and the resultant URL.

@@ -15,7 +15,12 @@
  */
 package beseenium.exceptions.actionExceptions;
 
-
+/**
+ * exception applicable to the submit action.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class SubmitException extends ActionException 
 {
 	/**

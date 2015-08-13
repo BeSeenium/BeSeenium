@@ -15,7 +15,12 @@
  */
 package beseenium.exceptions.actionDataExceptions;
 
-
+/**
+ * Exception applicable to AcitonDataFactory
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ActionDataFactoryException extends ActionDataException 
 {
 

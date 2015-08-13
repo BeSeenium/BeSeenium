@@ -19,6 +19,13 @@ import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
+/**
+ * represents a SwitchToDefaultContent action which Selects either the 
+ * first frame on the page, or the main document when a page contains iframes.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class SwitchToDefaultContent extends AbstractAction 
 {
 	/**

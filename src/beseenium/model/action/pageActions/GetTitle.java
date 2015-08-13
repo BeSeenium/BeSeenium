@@ -20,7 +20,7 @@ import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
 /**
- * 
+ * retrieves the title of the html document currently selected.
  * @author JPC Hanson
  *
  */

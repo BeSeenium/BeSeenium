@@ -20,7 +20,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import beseenium.model.actionData.ActionData;
 
 /**
- * 
+ * makes an ActionData containing a HtmlUnitDriver
  * @author Jan P.C. Hanson
  *
  */

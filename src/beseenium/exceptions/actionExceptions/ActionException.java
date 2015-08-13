@@ -16,7 +16,12 @@
 package beseenium.exceptions.actionExceptions;
 
 import beseenium.exceptions.BeSeeniumException;
-
+/**
+ * exception applicable to Actions
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ActionException extends BeSeeniumException 
 {
 

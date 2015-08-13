@@ -26,7 +26,14 @@ import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 import beseenium.model.helpers.FormatOutput;
 
-
+/**
+ * this is a find element by partial link text action, it searches for
+ * an element using a string containing 'partial link text' i.e. the text 
+ * between the start and end tags.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class FindElementsByPartialLinkTxt extends AbstractAction 
 {
 	/**
@@ -37,6 +44,7 @@ public class FindElementsByPartialLinkTxt extends AbstractAction
 	{super(context);}
 
 	/**
+	 * performs the find elements by partial link text action.
 	 * @param n the index of the element to find information on, i.e. if 3 results are found
 	 * the 0 will be the first element 1 the second and so on. will get an array out of bounds.
 	 * If you wish the action to return all of the results found then set n = -1.

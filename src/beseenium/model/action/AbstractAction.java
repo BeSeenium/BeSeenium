@@ -22,7 +22,7 @@ import beseenium.model.actionData.ActionData;
 /**
  * this is the root class for all derived Actions 
  * @author JPC Hanson
- * \todo change CTOR's to setActionData(WebDriver driver, ) methods
+ * 
  */
 public abstract class AbstractAction 
 {
@@ -43,6 +43,10 @@ public abstract class AbstractAction
 	public ActionData getActionData()
 	{return this.context;}
 	
+	/**
+	 * sets the ActionData that the derived AbstractAction is going to use.
+	 * @param actionData The ActionData that this AbstractAction will use.
+	 */
 	public void setActionData(ActionData actionData)
 	{this.context = actionData;}
 	

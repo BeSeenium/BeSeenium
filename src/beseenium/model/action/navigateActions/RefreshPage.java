@@ -19,6 +19,12 @@ import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
+/**
+ * this is a refresh page action, it (surprise surprise) refreshes the page.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class RefreshPage extends AbstractAction
 {
 	/**
@@ -29,6 +35,7 @@ public class RefreshPage extends AbstractAction
 	{super(context);}
 	
 	/**
+	 * performs the refresh action.
 	 * @param n the number of times to navigate forward
 	 * @return String verifying the number of times forward navigation has occurred
 	 * and the resultant URL.

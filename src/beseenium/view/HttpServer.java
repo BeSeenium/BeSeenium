@@ -25,9 +25,14 @@ import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.resource.Resource;
 //import org.eclipse.jetty.webapp.WebAppContext;
-
-
-
+/**
+ * This is the embedded Jetty Web Server, and the main entry point into the program
+ * the server port is set by passing command line parameters on execution of the program.
+ *
+ * @author Jan P.C. Hanson
+ *
+ * @param args[0] the server port is set from this parameter
+ */
 public class HttpServer
 {
     public static void main(String[] args) throws Exception

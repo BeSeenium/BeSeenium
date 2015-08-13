@@ -23,7 +23,7 @@ import beseenium.model.actionData.ActionData;
 
 /**
  * this is a page get action, it navigates to a page set in the input parameter of 
- * the ActionData object. It is possible to reload a page a number of times in succession
+ * the ActionData object. It is possible to get a page a number of times in succession
  * (could be useful for stress/load testing)
  * @author JPC Hanson
  *

@@ -17,6 +17,12 @@ package beseenium.exceptions.testExceptions;
 
 import beseenium.exceptions.BeSeeniumException;
 
+/**
+ * Exception that apply to Test's
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class TestException extends BeSeeniumException 
 {
 	/**

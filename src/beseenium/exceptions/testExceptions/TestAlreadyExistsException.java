@@ -14,7 +14,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package beseenium.exceptions.testExceptions;
-
+/**
+ * 
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class TestAlreadyExistsException extends TestException 
 {
 	/**

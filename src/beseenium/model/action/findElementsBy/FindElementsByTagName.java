@@ -26,6 +26,13 @@ import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 import beseenium.model.helpers.FormatOutput;
 
+/**
+ * this is a find elements by tag name, it finds an element using a provided tag name 
+ * string.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class FindElementsByTagName extends AbstractAction 
 {
 	/**
@@ -36,6 +43,7 @@ public class FindElementsByTagName extends AbstractAction
 	{super(context);}
 
 	/**
+	 * performs the find elements by tag name action
 	 * @param n the index of the element to find information on, i.e. if 3 results are found
 	 * the 0 will be the first element 1 the second and so on. will get an array out of bounds.
 	 * If you wish the action to return all of the results found then set n = -1.

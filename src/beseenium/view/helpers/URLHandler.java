@@ -25,7 +25,8 @@ import beseenium.exceptions.actionExceptions.ActionException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
 
 /**
- * 
+ * The sole responsibility of this class is to translate parameters representing URL query 
+ * strings from an http request into 'Test' functionality. 
  *
  * @author Jan P.C. Hanson
  *
@@ -50,15 +51,17 @@ public class URLHandler
 	
 	/**
 	 * takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Test
-	 * @param capabilities 
-	 * @param browser
-	 * @param addActions
-	 * @param execute
+	 * @param capabilities String of the form "key+value|key+value|key+value|..."
+	 * @param browser String representation of the 'browser' query string can take the values: firefox,
+	 * noWindows or remote(more to be added).
+	 * @param addActions String of the form: 
+	 * "name+inputParam+index|name+inputParam+index|name+inputParam+index|..."
 	 * @return String representation of the aggregate results of the individual actions. will return
 	 * an error message with appropriate content if an exception is caught
+	 * \todo add more browser drivers
 	 */
 	public String handleURL(String capabilities, String browser,
-			String addActions, String execute) 
+			String addActions) 
 	{	
 		String caps="" ;
 		String brwsr="" ;
@@ -82,10 +85,11 @@ public class URLHandler
 	}
 	
 	/**
-	 * takes an input from servlet in the form of string 'get' URL parameter 'capabilities' uses it to set the 
-	 * remoteDriver configuration, this is only of use when the browser type is set as 'remote'
+	 * takes an input from servlet(via handleURL method) in the form of string 'get' URL parameter 
+	 * 'capabilities' uses it to set the remoteDriver configuration, this is only of use when the 
+	 * browser type is set as 'remote'
 	 * @param capabilities String of the form "key+value|key+value|key+value|..."
-	 * @return String of the form message + "[[key1, value1], [key2, value2], [key3, value3]]"
+	 * @return String of the form "DESIRED CAPABILITES:" + "[[key1, value1], [key2, value2], [key3, value3]]"
 	 * will return an error message if the input string is badly formatted
 	 */
 	private String handleCapabilities(String capabilities)
@@ -118,9 +122,10 @@ public class URLHandler
 	}
 	
 	/**
-	 * 
-	 * @param browser
-	 * @return
+	 * takes an input from servlet(via handleURL method) in the form of string 'get' URL parameter 
+	 * 'browser' ancd uses it to set the Test's WebDriver.
+	 * @param browser String representation of the WebDriver to use ("firefox"/"noWindows"/"remote"...etc)
+	 * @return String of the form: "BROWSER SET AS" + "<name of browser>" + newline
 	 */
 	private String handleBrowser(String browser)
 	{
@@ -139,9 +144,12 @@ public class URLHandler
 	}
 	
 	/**
-	 * 
-	 * @param addActions = name:inputParam:optional|name:inputParam:optional|name:inputParam:optional|...
-	 * @return
+	 * takes an input from servlet(via handleURL method) in the form of string 'get' URL parameter 
+	 * 'addActions' and uses it to add actions to the test.
+	 * @param addActions String of the form:
+	 * "name+inputParam+optional|name+inputParam+optional|name+inputParam+optional|..."
+	 * @return String of the form:
+	 * "ACTIONS ADDED:"+"[[action1, inputParam1, index1],[action2, inputParam2, index2]...[actionN, inputParamN, indexN]]
 	 */
 	private String handleAddActions(String addActions)
 	{
@@ -187,6 +195,13 @@ public class URLHandler
 		return resultArray;
 	}
 	
+	/**
+	 * incase something goes wrong the test should be able to shut down the current browser instance,
+	 * or else there could potentially be many, for all intents and purposes, orphan processes floating
+	 * about eating up memory....remember: always kill the orphans.
+	 * @param e
+	 * @return verification string
+	 */
 	private String shutdown(Exception e)
 	{
 		try {test.emergencyShutdown();} 

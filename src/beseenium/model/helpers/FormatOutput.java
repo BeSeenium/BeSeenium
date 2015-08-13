@@ -18,12 +18,20 @@ package beseenium.model.helpers;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-
+/**
+ * This helper class provides methods to format the output of individual actions.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class FormatOutput 
 {
 	/**
 	 * formats the output string of a findElementBy... output string
-	 * @return
+	 * @param elements a List<WebElement> containing all elements to be formatted
+	 * @param n an integer value deermining which element to act on, if n = -1 then all elements
+	 * in the list will be formatted.
+	 * @return String containing the formatted output.
 	 */
 	public static String formatFindElementOutput(List<WebElement> elements, int n)
 	{
@@ -42,7 +50,6 @@ public class FormatOutput
 		else
 		{
 			return elements.get(n).toString();
-		}
-		
+		}	
 	}
 }

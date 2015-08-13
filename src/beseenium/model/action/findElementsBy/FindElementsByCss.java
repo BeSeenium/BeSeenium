@@ -42,6 +42,7 @@ public class FindElementsByCss extends AbstractAction
 	{super(context);}
 
 	/**
+	 * performs the find elements by css action.
 	 * @param n the index of the element to find information on, i.e. if 3 results are found
 	 * the 0 will be the first element 1 the second and so on. will get an array out of bounds.
 	 * If you wish the action to return all of the results found then set n = -1.

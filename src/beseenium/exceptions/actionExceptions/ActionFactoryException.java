@@ -15,7 +15,12 @@
  */
 package beseenium.exceptions.actionExceptions;
 
-
+/**
+ * exception applicable to an ActionFactory
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ActionFactoryException extends ActionException 
 {
 	/**

@@ -25,7 +25,9 @@ import javax.servlet.http.HttpServletResponse;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.helpers.URLHandler;
 /**
- * 
+ * BeSeeniumServlet is a servlet that provide functionality that grabs the query
+ * strings from a http request and passes it on to the URLHandler, which gives
+ * back a result string which this servlet then inserts into the http response.
  * @author Jan P.C. Hanson
  *
  */
@@ -37,9 +39,9 @@ public class BeSeeniumServlet extends HttpServlet
 	static final String EOL = "\n";
 	
 	/**
-	 * 
-	 * @param request
-	 * @param response
+	 * The method that actually does all the work.
+	 * @param request a http request
+	 * @param response the http response
 	 * @throws ServletException
 	 * @throws IOException
 	 */
@@ -52,8 +54,6 @@ public class BeSeeniumServlet extends HttpServlet
 		String addActions = request.getParameter("addActions");
 		/** holds the contents of the 'addActions' get parameter **/
 		String capabilities = request.getParameter("capabilities");
-		/** holds the contents of the 'execute' get parameter **/
-		String execute = request.getParameter("execute");
 		/** reference to object that outputs text to response **/
 		PrintWriter out = response.getWriter();
 		try 
@@ -62,7 +62,7 @@ public class BeSeeniumServlet extends HttpServlet
 			URLHandler urlDecoder = new URLHandler();
 			//turn the get parameters into something useful
 			//execute the actions and turn the result string into an http response
-			String result =urlDecoder.handleURL(capabilities, browser, addActions, execute);
+			String result =urlDecoder.handleURL(capabilities, browser, addActions);
 			out.print(result);	
 		} 
 		

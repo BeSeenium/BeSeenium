@@ -15,7 +15,12 @@
  */
 package beseenium.exceptions.actionExceptions;
 
-
+/**
+ * exception to a click action.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ClickException extends ActionException
 {
 

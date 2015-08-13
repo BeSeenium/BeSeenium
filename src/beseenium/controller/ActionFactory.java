@@ -29,18 +29,21 @@ import beseenium.model.action.navigateActions.*;
 import beseenium.model.action.pageActions.*;
 
 /**
- * 
+ * this class is a factory for creating actions, it uses a factory method
+ * style pattern and a map implementation.
  * @author JPC Hanson
  *
  */
 public class ActionFactory 
 {
-	/**  **/
+	/** the map to store the actions in **/
 	private Map<String, AbstractAction> actionMap;
-	/**  **/
+	/** internal ActionDataFactory reference **/
 	private ActionDataFactory actionDataFactory;
 
 	/**
+	 * default constructor creates and populates internal map 
+	 * @param ActionDataFactory 
 	 * @throws ActionDataFactoryException 
 	 * @throws MalformedURLException 
 	 * 
@@ -48,6 +51,7 @@ public class ActionFactory
 	public ActionFactory(ActionDataFactory actionDataFactory) 
 			throws ActionDataFactoryException, MalformedURLException
 	{
+		super();
 		this.actionDataFactory = actionDataFactory;
 		this.actionMap = new HashMap<String, AbstractAction>();
 		this.populateActionMap();
@@ -69,6 +73,7 @@ public class ActionFactory
 	}
 	
 	/**
+	 * creates all possible actions and populates the map with them.
 	 * @throws ActionDataFactoryException 
 	 * 
 	 */

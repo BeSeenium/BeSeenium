@@ -15,7 +15,12 @@
  */
 package beseenium.exceptions.actionExceptions;
 
-
+/**
+ * specific action exception does what it says on the tin.
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class NoSuchParameterException extends ActionException 
 {
 	

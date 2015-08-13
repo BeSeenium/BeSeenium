@@ -18,6 +18,12 @@ package beseenium.model.action;
 import beseenium.exceptions.actionExceptions.NoSuchParameterException;
 import beseenium.model.actionData.ActionData;
 
+/**
+ * this resets various attributes of the ActionData
+ *
+ * @author Jan P.C. Hanson
+ *
+ */
 public class ResetActionData extends AbstractAction
 {
 	/**
@@ -28,6 +34,7 @@ public class ResetActionData extends AbstractAction
 	{super(context);}
 	
 	/**
+	 * performs the reset action data action.
 	 * @param n ,0=reset WebElement, 1=reset inputParam, -1=reset all
 	 * @throws NoSuchParameterException 
 	 */

@@ -34,6 +34,7 @@ public class NavigateBack extends AbstractAction
 	{super(context);}
 	
 	/**
+	 * performs the navigate back action
 	 * @param n the number of times to navigate back
 	 * @return String verifying the number of times back navigation has occurred
 	 * and the resultant URL.
