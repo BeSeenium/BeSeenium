@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BeSeenium
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -131,8 +131,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4daea6e81af54bcf80c4c9ba874a5c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6046d51bd33641179e83f5d544fc921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#ac6046d51bd33641179e83f5d544fc921">ActionData</a> (WebDriver <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#afe2c72f05485ab0a40e61e4f109f8ef7">driver</a>)</td></tr>
 <tr class="separator:ac6046d51bd33641179e83f5d544fc921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4d7baebe3c24b1d5551a8a332f9ada"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#adb4d7baebe3c24b1d5551a8a332f9ada">ActionData</a> (WebDriver <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#afe2c72f05485ab0a40e61e4f109f8ef7">driver</a>, String iParam, String oParam)</td></tr>
-<tr class="separator:adb4d7baebe3c24b1d5551a8a332f9ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd604a0a69239efbe58f826f602a9039"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#abd604a0a69239efbe58f826f602a9039">getInputParam</a> ()  throws ActionDataException  	</td></tr>
 <tr class="separator:abd604a0a69239efbe58f826f602a9039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b9bc959458f9fc49a574f73948dbb5"><td class="memItemLeft" align="right" valign="top">List&lt; WebElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a37b9bc959458f9fc49a574f73948dbb5">getElement</a> ()  throws ActionDataException  	</td></tr>
@@ -152,8 +150,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afe2c72f05485ab0a40e61e4f109f8ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba705e8e65de35f1f48641fd4372e240"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#aba705e8e65de35f1f48641fd4372e240">inputParam</a></td></tr>
 <tr class="separator:aba705e8e65de35f1f48641fd4372e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012757a2998830299691252055abb1b2"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a012757a2998830299691252055abb1b2">outputParam</a></td></tr>
-<tr class="separator:a012757a2998830299691252055abb1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09edf853108df60ee4153f97b6d0a8e5"><td class="memItemLeft" align="right" valign="top">List&lt; WebElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a09edf853108df60ee4153f97b6d0a8e5">element</a></td></tr>
 <tr class="separator:a09edf853108df60ee4153f97b6d0a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -162,8 +158,6 @@ Private Attributes</h2></td></tr>
 <br />
 </p>
 <p><b>InputParam</b> - The Input Param is a string that represents What a particular action should be using as input. For example if the action in question is FindElementByCss action an appropriate inputParam would be "a.title" if it was FindElementByClass an appropriate inputParam would be ".myClass" and if the action was SendKeys an appropriate Input Parameter would be a string containing the set letters you wish to send etc.<br />
-</p>
-<p><b>OutputParam</b> - The Output Parameter is a string that represents the attribute that an action should return for instance "href" or "class" etc<br />
 </p>
 <p><b>element</b> A FindElementBy... action populates an <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> with a WebElement, this is needed by other, non FindElementBy queries.<br />
 </p>
@@ -201,43 +195,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Instantiate a new <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> object with the WebDriver provided </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">driver</td><td></td></tr>
+    <tr><td class="paramname">driver</td><td>the WebDriver to instantiate the <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> with. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="adb4d7baebe3c24b1d5551a8a332f9ada"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">beseenium.model.actionData.ActionData.ActionData </td>
-          <td>(</td>
-          <td class="paramtype">WebDriver&#160;</td>
-          <td class="paramname"><em>driver</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>iParam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>oParam</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>constructor for findElement style actions</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>remove </dd></dl>
 
 </div>
 </div>
@@ -250,14 +211,14 @@ Private Attributes</h2></td></tr>
           <td class="memname">WebDriver beseenium.model.actionData.ActionData.getDriver </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1ActionDataException.html">ActionDataException</a></td>
+          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html">ActionDataException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the WebDriver </dd></dl>
+<p>retrieves the WebDriver Object curently stored in the <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> </p><dl class="section return"><dt>Returns</dt><dd>WebDriver representing the browser instance currently stored </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ActionDataException</td><td></td></tr>
+    <tr><td class="paramname">ActionDataException</td><td>if no driver is set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,11 +233,11 @@ Private Attributes</h2></td></tr>
           <td class="memname">List&lt;WebElement&gt; beseenium.model.actionData.ActionData.getElement </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1ActionDataException.html">ActionDataException</a></td>
+          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html">ActionDataException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the WebElement </dd></dl>
+<p>retrieve the list of WebElements currently stored in the <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> </p><dl class="section return"><dt>Returns</dt><dd>List&lt;WebElement&gt; containing all elements currently stored. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ActionDataException</td><td>if no WebElement set. </td></tr>
@@ -294,11 +255,11 @@ Private Attributes</h2></td></tr>
           <td class="memname">String beseenium.model.actionData.ActionData.getInputParam </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1ActionDataException.html">ActionDataException</a></td>
+          <td> throws <a class="el" href="classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html">ActionDataException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the inputParam </dd></dl>
+<p>retrieve the input parameter currently stored in this <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> </p><dl class="section return"><dt>Returns</dt><dd>String representing the input parameter. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ActionDataException</td><td>if no search parameter set. </td></tr>
@@ -321,9 +282,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the WebDriver associated with this <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">driver</td><td></td></tr>
+    <tr><td class="paramname">driver</td><td>the WebDrivver to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,7 +296,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1model_1_1actionData_1_1ActionData_a1cbbd813f07556de640f8f3b3f03587a_icgraph.png" border="0" usemap="#classbeseenium_1_1model_1_1actionData_1_1ActionData_a1cbbd813f07556de640f8f3b3f03587a_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1model_1_1actionData_1_1ActionData_a1cbbd813f07556de640f8f3b3f03587a_icgraph" id="classbeseenium_1_1model_1_1actionData_1_1ActionData_a1cbbd813f07556de640f8f3b3f03587a_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionController.html#ae79caff159bb31b5c242fc8bce48823f" title="beseenium.controller.Action\lController.execute" alt="" coords="268,23,469,65"/><area shape="rect" id="node3" href="classbeseenium_1_1Main.html#ab457dfac52d35c2fe8b77f4ec8069fa7" title="beseenium.Main.main" alt="" coords="535,5,698,32"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1Servlet.html#a4e662e5c6eba313a045361a4c7df388e" title="beseenium.view.Servlet.run" alt="" coords="517,56,716,83"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1Servlet.html#a6929926a2e22d63d341db639d944e0ca" title="beseenium.view.Servlet.doGet" alt="" coords="764,56,980,83"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a373799745fc2fec555c1e8e28eb732ae" title="beseenium.controller.Action\lInvoker.execute" alt="" coords="268,48,469,89"/><area shape="rect" id="node3" href="classbeseenium_1_1controller_1_1Test.html#a314a83d197e751b5927b1e060f111e0d" title="beseenium.controller.Test.execute\lActions" alt="" coords="867,5,1110,47"/><area shape="rect" id="node6" href="classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="517,83,781,124"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a6d404e12c217aa2698906c0ddd27186d" title="beseenium.view.helpers.URLHandler.handleURL" alt="" coords="1545,115,1872,142"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1920,108,2123,149"/><area shape="rect" id="node7" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a341776bb6b03f9e2a877a881e92155e7" title="beseenium.view.helpers.URLHandler.shutdown" alt="" coords="829,115,1148,142"/><area shape="rect" id="node8" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac518753830a616c2becad06e33fad45d" title="beseenium.view.helpers.URLHandler.handle\lCapabilities" alt="" coords="1196,108,1497,149"/><area shape="rect" id="node9" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac7cbff2db2509fa2b8d0c7977d7fa29e" title="beseenium.view.helpers.URLHandler.handle\lBrowser" alt="" coords="1196,173,1497,215"/><area shape="rect" id="node10" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#aa5af219ac17f16e493faf0c041694ac7" title="beseenium.view.helpers.URLHandler.handle\lAddActions" alt="" coords="1196,239,1497,280"/></map>
 </div>
 </p>
 
@@ -354,9 +315,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>sets the list of WebElements currently stored in the <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element</td><td>the element to set </td></tr>
+    <tr><td class="paramname">element</td><td>the list of element to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -390,7 +351,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1model_1_1actionData_1_1ActionData_a0825a9ec5bee8b6de8e7b244d991c04d_icgraph.png" border="0" usemap="#classbeseenium_1_1model_1_1actionData_1_1ActionData_a0825a9ec5bee8b6de8e7b244d991c04d_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1model_1_1actionData_1_1ActionData_a0825a9ec5bee8b6de8e7b244d991c04d_icgraph" id="classbeseenium_1_1model_1_1actionData_1_1ActionData_a0825a9ec5bee8b6de8e7b244d991c04d_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionController.html#ae79caff159bb31b5c242fc8bce48823f" title="beseenium.controller.Action\lController.execute" alt="" coords="268,23,469,65"/><area shape="rect" id="node3" href="classbeseenium_1_1Main.html#ab457dfac52d35c2fe8b77f4ec8069fa7" title="beseenium.Main.main" alt="" coords="535,5,698,32"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1Servlet.html#a4e662e5c6eba313a045361a4c7df388e" title="beseenium.view.Servlet.run" alt="" coords="517,56,716,83"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1Servlet.html#a6929926a2e22d63d341db639d944e0ca" title="beseenium.view.Servlet.doGet" alt="" coords="764,56,980,83"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a373799745fc2fec555c1e8e28eb732ae" title="beseenium.controller.Action\lInvoker.execute" alt="" coords="268,48,469,89"/><area shape="rect" id="node3" href="classbeseenium_1_1controller_1_1Test.html#a314a83d197e751b5927b1e060f111e0d" title="beseenium.controller.Test.execute\lActions" alt="" coords="867,5,1110,47"/><area shape="rect" id="node6" href="classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="517,83,781,124"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a6d404e12c217aa2698906c0ddd27186d" title="beseenium.view.helpers.URLHandler.handleURL" alt="" coords="1545,115,1872,142"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1920,108,2123,149"/><area shape="rect" id="node7" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a341776bb6b03f9e2a877a881e92155e7" title="beseenium.view.helpers.URLHandler.shutdown" alt="" coords="829,115,1148,142"/><area shape="rect" id="node8" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac518753830a616c2becad06e33fad45d" title="beseenium.view.helpers.URLHandler.handle\lCapabilities" alt="" coords="1196,108,1497,149"/><area shape="rect" id="node9" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac7cbff2db2509fa2b8d0c7977d7fa29e" title="beseenium.view.helpers.URLHandler.handle\lBrowser" alt="" coords="1196,173,1497,215"/><area shape="rect" id="node10" href="classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#aa5af219ac17f16e493faf0c041694ac7" title="beseenium.view.helpers.URLHandler.handle\lAddActions" alt="" coords="1196,239,1497,280"/></map>
 </div>
 </p>
 
@@ -460,27 +421,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a012757a2998830299691252055abb1b2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String beseenium.model.actionData.ActionData.outputParam</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>the Output parameter that an action may return </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/beseenium/model/actionData/<a class="el" href="ActionData_8java.html">ActionData.java</a></li>
 </ul>
@@ -490,7 +430,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1model.html">model</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1model_1_1actionData.html">actionData</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html">ActionData</a></li>
-    <li class="footer">Generated on Thu Jul 30 2015 22:00:57 for BeSeenium by
+    <li class="footer">Generated on Thu Aug 13 2015 23:25:48 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

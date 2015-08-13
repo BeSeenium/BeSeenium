@@ -1,7 +1,0 @@
-<map id="beseenium.controller.ActionDataFactory.makeActionData" name="beseenium.controller.ActionDataFactory.makeActionData">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory.html#afb56b3b426ac451618f106d6a1da6f4a" title="beseenium.controller.Action\lFactory.populateActionMap" alt="" coords="264,5,465,47"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1Main.html#ab457dfac52d35c2fe8b77f4ec8069fa7" title="beseenium.Main.main" alt="" coords="283,71,446,98"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1Servlet.html#a4e662e5c6eba313a045361a4c7df388e" title="beseenium.view.Servlet.run" alt="" coords="265,122,464,149"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionFactory.html#a2d91b6ea3a92671261eb29d82cc14868" title="beseenium.controller.Action\lFactory.ActionFactory" alt="" coords="521,5,722,47"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1view_1_1Servlet.html#a6929926a2e22d63d341db639d944e0ca" title="beseenium.view.Servlet.doGet" alt="" coords="513,122,729,149"/>
-</map>

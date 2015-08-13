@@ -1,5 +1,6 @@
 var namespacebeseenium_1_1view =
 [
-    [ "servlets", "namespacebeseenium_1_1view_1_1servlets.html", "namespacebeseenium_1_1view_1_1servlets" ],
-    [ "Servlet", "classbeseenium_1_1view_1_1Servlet.html", "classbeseenium_1_1view_1_1Servlet" ]
+    [ "helpers", "namespacebeseenium_1_1view_1_1helpers.html", "namespacebeseenium_1_1view_1_1helpers" ],
+    [ "BeSeeniumServlet", "classbeseenium_1_1view_1_1BeSeeniumServlet.html", "classbeseenium_1_1view_1_1BeSeeniumServlet" ],
+    [ "HttpServer", "classbeseenium_1_1view_1_1HttpServer.html", "classbeseenium_1_1view_1_1HttpServer" ]
 ];

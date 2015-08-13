@@ -1,6 +1,0 @@
-<map id="beseenium.controller.ActionDataFactory.setCapabilities" name="beseenium.controller.ActionDataFactory.setCapabilities">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1Test.html#a89397b4d1c9e1e78d0333e2ccd388e28" title="beseenium.controller.Test.configure\lRemoteDriver" alt="" coords="255,5,505,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1helpers_1_1UrlDecoder.html#a2920d9902174a1ec266398913b002481" title="beseenium.view.helpers.Url\lDecoder.decodeCapabilities" alt="" coords="553,5,753,47"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1helpers_1_1UrlDecoder.html#ab14e6b8518369d8191733b865940f9ee" title="beseenium.view.helpers.Url\lDecoder.decodeURL" alt="" coords="801,5,999,47"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1047,5,1249,47"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="beseenium.controller.ActionDataFactory.makeActionData" name="beseenium.controller.ActionDataFactory.makeActionData">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory.html#afb56b3b426ac451618f106d6a1da6f4a" title="beseenium.controller.Action\lFactory.populateActionMap" alt="" coords="269,5,471,47"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1Test.html#af02c624fce3af866729a032349e764c9" title="beseenium.controller.Test.set\lBrowser" alt="" coords="264,71,476,112"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionFactory.html#ab68b93e4f5b4ea17b9ecedbfde8fb8f1" title="beseenium.controller.Action\lFactory.ActionFactory" alt="" coords="524,5,725,47"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1helpers_1_1UrlDecoder.html#a0535ed7ed928361d111a6909e4f92f7e" title="beseenium.view.helpers.Url\lDecoder.decodeBrowser" alt="" coords="526,71,723,112"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1view_1_1helpers_1_1UrlDecoder.html#ab14e6b8518369d8191733b865940f9ee" title="beseenium.view.helpers.Url\lDecoder.decodeURL" alt="" coords="773,71,971,112"/>
-<area shape="rect" id="node7" href="$classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1019,71,1221,112"/>
-</map>

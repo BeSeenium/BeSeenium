@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbeseenium_1_1controller_1_1ActionController.html" title="beseenium.controller.Action\lController" alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node1" href="$interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="beseenium.controller.Action\lDataFactory.MakeData" alt="" coords="5,71,207,112"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="beseenium.controller.Action\lDataFactory.ActionDataFactory" alt="" coords="275,5,498,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeFirefoxData.html" title="beseenium.controller.Action\lDataFactory.MakeFirefoxData" alt="" coords="281,71,492,112"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html" title="beseenium.controller.Action\lDataFactory.MakeHtmlUnitDriverData" alt="" coords="255,136,519,177"/>
 </map>

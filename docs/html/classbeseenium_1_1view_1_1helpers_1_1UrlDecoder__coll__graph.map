@@ -1,7 +1,0 @@
-<map id="beseenium.view.helpers.UrlDecoder" name="beseenium.view.helpers.UrlDecoder">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1Test.html" title="{beseenium.controller.Test\n||+ Test()\l+ setBrowser()\l+ configureRemoteDriver()\l+ addAction()\l+ removeAction()\l+ executeActions()\l+ emergencyShutdown()\l}" alt="" coords="420,1105,615,1271"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory.html" title="{beseenium.controller.Action\lDataFactory\n|&#45; URL\l|+ ActionDataFactory()\l+ setCapabilities()\l+ makeActionData()\l&#45; mapEntries()\l&#45; makeFirefoxData()\l&#45; makeHTMLDriverData()\l&#45; makeRemoteData()\l}" alt="" coords="350,679,551,859"/>
-<area shape="rect" id="node15" href="$classbeseenium_1_1controller_1_1ActionFactory.html" title="{beseenium.controller.Action\lFactory\n||+ ActionFactory()\l+ makeAction()\l&#45; populateActionMap()\l}" alt="" coords="267,921,469,1043"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="{beseenium.model.actionData.\lActionData\n|&#45; inputParam\l|+ ActionData()\l+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="547,329,762,539"/>
-<area shape="rect" id="node11" href="$classbeseenium_1_1controller_1_1ActionInvoker.html" title="{beseenium.controller.Action\lInvoker\n||+ ActionInvoker()\l+ add()\l+ remove()\l+ execute()\l+ size()\l}" alt="" coords="786,359,987,509"/>
-</map>

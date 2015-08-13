@@ -1,6 +1,11 @@
 <map id="beseenium.model.action.AbstractAction.execute" name="beseenium.model.action.AbstractAction.execute">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionController.html#ae79caff159bb31b5c242fc8bce48823f" title="beseenium.controller.Action\lController.execute" alt="" coords="292,23,493,65"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1Main.html#ab457dfac52d35c2fe8b77f4ec8069fa7" title="beseenium.Main.main" alt="" coords="559,5,722,32"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1Servlet.html#a4e662e5c6eba313a045361a4c7df388e" title="beseenium.view.Servlet.run" alt="" coords="541,56,740,83"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1Servlet.html#a6929926a2e22d63d341db639d944e0ca" title="beseenium.view.Servlet.doGet" alt="" coords="788,56,1004,83"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a373799745fc2fec555c1e8e28eb732ae" title="beseenium.controller.Action\lInvoker.execute" alt="" coords="292,48,493,89"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1Test.html#a314a83d197e751b5927b1e060f111e0d" title="beseenium.controller.Test.execute\lActions" alt="" coords="891,5,1134,47"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="541,83,805,124"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a6d404e12c217aa2698906c0ddd27186d" title="beseenium.view.helpers.URLHandler.handleURL" alt="" coords="1569,115,1896,142"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1944,108,2147,149"/>
+<area shape="rect" id="node7" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a341776bb6b03f9e2a877a881e92155e7" title="beseenium.view.helpers.URLHandler.shutdown" alt="" coords="853,115,1172,142"/>
+<area shape="rect" id="node8" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac518753830a616c2becad06e33fad45d" title="beseenium.view.helpers.URLHandler.handle\lCapabilities" alt="" coords="1220,108,1521,149"/>
+<area shape="rect" id="node9" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac7cbff2db2509fa2b8d0c7977d7fa29e" title="beseenium.view.helpers.URLHandler.handle\lBrowser" alt="" coords="1220,173,1521,215"/>
+<area shape="rect" id="node10" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#aa5af219ac17f16e493faf0c041694ac7" title="beseenium.view.helpers.URLHandler.handle\lAddActions" alt="" coords="1220,239,1521,280"/>
 </map>

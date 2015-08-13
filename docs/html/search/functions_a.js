@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pageclose',['PageClose',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1PageClose.html#ad349a80080bec83ef5b5469ba5f0cd05',1,'beseenium::model::action::pageActions::PageClose']]],
-  ['pageget',['PageGet',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1PageGet.html#a9542346e2423b2a93e1f8e7256dc7f6d',1,'beseenium::model::action::pageActions::PageGet']]],
-  ['populateactionmap',['populateActionMap',['../classbeseenium_1_1controller_1_1ActionFactory.html#afb56b3b426ac451618f106d6a1da6f4a',1,'beseenium::controller::ActionFactory']]]
+  ['navigateback',['NavigateBack',['../classbeseenium_1_1model_1_1action_1_1navigateActions_1_1NavigateBack.html#ae116d84361bb8fd8d6656d08166833fa',1,'beseenium::model::action::navigateActions::NavigateBack']]],
+  ['navigateforward',['NavigateForward',['../classbeseenium_1_1model_1_1action_1_1navigateActions_1_1NavigateForward.html#afd9f4551942273d7e87f2c1b9305b0bf',1,'beseenium::model::action::navigateActions::NavigateForward']]],
+  ['nosuchparameterexception',['NoSuchParameterException',['../classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html#a80263ddd274c41d1ba0766f685829ba1',1,'beseenium.exceptions.actionExceptions.NoSuchParameterException.NoSuchParameterException()'],['../classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html#af4112a74bc864fc8b4b474d9bba85e25',1,'beseenium.exceptions.actionExceptions.NoSuchParameterException.NoSuchParameterException(String message)']]]
 ];

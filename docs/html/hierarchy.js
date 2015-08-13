@@ -35,32 +35,37 @@ var hierarchy =
       [ "beseenium.model.action.switchActions.SwitchToActiveElement", "classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToActiveElement.html", null ],
       [ "beseenium.model.action.switchActions.SwitchToDefaultContent", "classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToDefaultContent.html", null ]
     ] ],
-    [ "beseenium.controller.ActionController", "classbeseenium_1_1controller_1_1ActionController.html", null ],
     [ "beseenium.model.actionData.ActionData", "classbeseenium_1_1model_1_1actionData_1_1ActionData.html", null ],
-    [ "beseenium.controller.ActionDataFactory", "classbeseenium_1_1controller_1_1ActionDataFactory.html", null ],
     [ "beseenium.controller.ActionFactory", "classbeseenium_1_1controller_1_1ActionFactory.html", null ],
+    [ "beseenium.controller.ActionInvoker", "classbeseenium_1_1controller_1_1ActionInvoker.html", null ],
     [ "Exception", null, [
       [ "beseenium.exceptions.BeSeeniumException", "classbeseenium_1_1exceptions_1_1BeSeeniumException.html", [
-        [ "beseenium.exceptions.ActionDataException", "classbeseenium_1_1exceptions_1_1ActionDataException.html", [
-          [ "beseenium.exceptions.ActionDataFactoryException", "classbeseenium_1_1exceptions_1_1ActionDataFactoryException.html", null ]
+        [ "beseenium.exceptions.actionDataExceptions.ActionDataException", "classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html", [
+          [ "beseenium.exceptions.actionDataExceptions.ActionDataFactoryException", "classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataFactoryException.html", null ]
         ] ],
-        [ "beseenium.exceptions.ActionException", "classbeseenium_1_1exceptions_1_1ActionException.html", [
-          [ "beseenium.exceptions.ActionFactoryException", "classbeseenium_1_1exceptions_1_1ActionFactoryException.html", null ],
-          [ "beseenium.exceptions.ClickException", "classbeseenium_1_1exceptions_1_1ClickException.html", null ],
-          [ "beseenium.exceptions.NoSuchParameterException", "classbeseenium_1_1exceptions_1_1NoSuchParameterException.html", null ],
-          [ "beseenium.exceptions.SubmitException", "classbeseenium_1_1exceptions_1_1SubmitException.html", null ]
+        [ "beseenium.exceptions.actionExceptions.ActionException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionException.html", [
+          [ "beseenium.exceptions.actionExceptions.ActionFactoryException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html", null ],
+          [ "beseenium.exceptions.actionExceptions.ClickException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1ClickException.html", null ],
+          [ "beseenium.exceptions.actionExceptions.NoSuchParameterException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html", null ],
+          [ "beseenium.exceptions.actionExceptions.SubmitException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html", null ]
+        ] ],
+        [ "beseenium.exceptions.testExceptions.TestException", "classbeseenium_1_1exceptions_1_1testExceptions_1_1TestException.html", [
+          [ "beseenium.exceptions.testExceptions.TestAlreadyExistsException", "classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html", null ],
+          [ "beseenium.exceptions.testExceptions.TestDoesNotExistException", "classbeseenium_1_1exceptions_1_1testExceptions_1_1TestDoesNotExistException.html", null ]
         ] ]
       ] ]
     ] ],
     [ "beseenium.model.helpers.FormatOutput", "classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html", null ],
-    [ "beseenium.Main", "classbeseenium_1_1Main.html", null ],
-    [ "beseenium.Start", "classbeseenium_1_1Start.html", null ],
+    [ "beseenium.view.HttpServer", "classbeseenium_1_1view_1_1HttpServer.html", null ],
+    [ "beseenium.controller.ActionDataFactory.MakeData", "interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html", [
+      [ "beseenium.controller.ActionDataFactory.ActionDataFactory", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html", null ],
+      [ "beseenium.controller.ActionDataFactory.MakeFirefoxData", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeFirefoxData.html", null ],
+      [ "beseenium.controller.ActionDataFactory.MakeHtmlUnitDriverData", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html", null ]
+    ] ],
+    [ "beseenium.controller.Test", "classbeseenium_1_1controller_1_1Test.html", null ],
+    [ "beseenium.TestingMain", "classbeseenium_1_1TestingMain.html", null ],
+    [ "beseenium.view.helpers.URLHandler", "classbeseenium_1_1view_1_1helpers_1_1URLHandler.html", null ],
     [ "HttpServlet", null, [
-      [ "beseenium.view.Servlet", "classbeseenium_1_1view_1_1Servlet.html", null ],
-      [ "beseenium.view.servlets.ActionAdd", "classbeseenium_1_1view_1_1servlets_1_1ActionAdd.html", null ],
-      [ "beseenium.view.servlets.ActionExecute", "classbeseenium_1_1view_1_1servlets_1_1ActionExecute.html", null ],
-      [ "beseenium.view.servlets.ActionRemove", "classbeseenium_1_1view_1_1servlets_1_1ActionRemove.html", null ],
-      [ "beseenium.view.servlets.BrowserCapabilitiesServlet", "classbeseenium_1_1view_1_1servlets_1_1BrowserCapabilitiesServlet.html", null ],
-      [ "beseenium.view.servlets.BrowserSelectionServlet", "classbeseenium_1_1view_1_1servlets_1_1BrowserSelectionServlet.html", null ]
+      [ "beseenium.view.BeSeeniumServlet", "classbeseenium_1_1view_1_1BeSeeniumServlet.html", null ]
     ] ]
 ];
