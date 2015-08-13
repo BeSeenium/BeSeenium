@@ -1,0 +1,15 @@
+<map id="beseenium.view.helpers.URLHandler.handleAddActions" name="beseenium.view.helpers.URLHandler.handleAddActions">
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a67692070973f8bd3811dd95f10995ddb" title="beseenium.view.helpers.URLHandler.split\lString" alt="" coords="372,16,656,57"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1Test.html#a47938d96708f66fa5342e9377c8b5171" title="beseenium.controller.Test.add\lAction" alt="" coords="745,71,961,112"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a341776bb6b03f9e2a877a881e92155e7" title="beseenium.view.helpers.URLHandler.shutdown" alt="" coords="355,137,673,163"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#abb86fad56963d9646df9348a7b18fa62" title="beseenium.controller.Action\lInvoker.add" alt="" coords="1033,71,1235,112"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1controller_1_1ActionFactory.html#a8d8f69439d7d404c3524051b348c6b8b" title="beseenium.controller.Action\lFactory.makeAction" alt="" coords="1033,5,1235,47"/>
+<area shape="rect" id="node7" href="$classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="721,136,985,177"/>
+<area shape="rect" id="node8" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a5255d3be950b40cdc96d3f5ba1543529" title="beseenium.controller.Action\lInvoker.size" alt="" coords="1033,136,1235,177"/>
+<area shape="rect" id="node9" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a247c69cfb76118dec9261485c7d95c27" title="beseenium.controller.Action\lInvoker.remove" alt="" coords="1033,201,1235,243"/>
+<area shape="rect" id="node10" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a373799745fc2fec555c1e8e28eb732ae" title="beseenium.controller.Action\lInvoker.execute" alt="" coords="1033,267,1235,308"/>
+<area shape="rect" id="node11" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a1dade057d9cb3bfecefdb716aae91d33" title="beseenium.model.action.Abstract\lAction.getActionData" alt="" coords="1283,168,1521,209"/>
+<area shape="rect" id="node12" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="beseenium.model.actionData.\lActionData.setInputParam" alt="" coords="1295,233,1509,275"/>
+<area shape="rect" id="node13" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a1cbbd813f07556de640f8f3b3f03587a" title="beseenium.model.actionData.\lActionData.setDriver" alt="" coords="1295,299,1509,340"/>
+<area shape="rect" id="node14" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a24e2b60937596ecd18cd17cfe7595c5d" title="beseenium.model.action.Abstract\lAction.execute" alt="" coords="1283,364,1521,405"/>
+</map>

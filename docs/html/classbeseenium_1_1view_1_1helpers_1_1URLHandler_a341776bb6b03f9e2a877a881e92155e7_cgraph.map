@@ -1,0 +1,12 @@
+<map id="beseenium.view.helpers.URLHandler.shutdown" name="beseenium.view.helpers.URLHandler.shutdown">
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="372,136,636,177"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a5255d3be950b40cdc96d3f5ba1543529" title="beseenium.controller.Action\lInvoker.size" alt="" coords="684,5,885,47"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a247c69cfb76118dec9261485c7d95c27" title="beseenium.controller.Action\lInvoker.remove" alt="" coords="684,71,885,112"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#abb86fad56963d9646df9348a7b18fa62" title="beseenium.controller.Action\lInvoker.add" alt="" coords="684,136,885,177"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1controller_1_1ActionFactory.html#a8d8f69439d7d404c3524051b348c6b8b" title="beseenium.controller.Action\lFactory.makeAction" alt="" coords="684,201,885,243"/>
+<area shape="rect" id="node7" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#a373799745fc2fec555c1e8e28eb732ae" title="beseenium.controller.Action\lInvoker.execute" alt="" coords="684,267,885,308"/>
+<area shape="rect" id="node8" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a1dade057d9cb3bfecefdb716aae91d33" title="beseenium.model.action.Abstract\lAction.getActionData" alt="" coords="933,168,1172,209"/>
+<area shape="rect" id="node9" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="beseenium.model.actionData.\lActionData.setInputParam" alt="" coords="945,233,1160,275"/>
+<area shape="rect" id="node10" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a1cbbd813f07556de640f8f3b3f03587a" title="beseenium.model.actionData.\lActionData.setDriver" alt="" coords="945,299,1160,340"/>
+<area shape="rect" id="node11" href="$classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a24e2b60937596ecd18cd17cfe7595c5d" title="beseenium.model.action.Abstract\lAction.execute" alt="" coords="933,364,1172,405"/>
+</map>
