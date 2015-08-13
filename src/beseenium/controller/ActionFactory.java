@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
+import beseenium.controller.ActionDataFactory.ActionDataFactory;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.model.action.AbstractAction;
@@ -21,8 +22,6 @@ public class ActionFactory
 {
 	/**  **/
 	private Map<String, AbstractAction> actionMap;
-	/**  **/
-	private final String internal = "internal";
 	/**  **/
 	private ActionDataFactory actionDataFactory;
 
@@ -61,41 +60,41 @@ public class ActionFactory
 	private void populateActionMap() throws ActionDataFactoryException
 	{
 		//Page Actions
-		this.actionMap.put( "PageGet", new PageGet(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetPageSrc", new GetPageSrc(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "BrowserQuit", new BrowserQuit(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetTitle", new GetTitle(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetURL", new GetURL(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "PageClose", new PageClose(actionDataFactory.makeActionData(internal)));
+		this.actionMap.put( "PageGet", new PageGet(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetPageSrc", new GetPageSrc(actionDataFactory.makeActionData()));
+		this.actionMap.put( "BrowserQuit", new BrowserQuit(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetTitle", new GetTitle(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetURL", new GetURL(actionDataFactory.makeActionData()));
+		this.actionMap.put( "PageClose", new PageClose(actionDataFactory.makeActionData()));
 		
 		//Navigation Actions
-		this.actionMap.put( "NavigateBack", new NavigateBack(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "NavigateForward", new NavigateForward(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "RefreshPage", new RefreshPage(actionDataFactory.makeActionData(internal)));
+		this.actionMap.put( "NavigateBack", new NavigateBack(actionDataFactory.makeActionData()));
+		this.actionMap.put( "NavigateForward", new NavigateForward(actionDataFactory.makeActionData()));
+		this.actionMap.put( "RefreshPage", new RefreshPage(actionDataFactory.makeActionData()));
 		
 		//Find Element Actions
-		this.actionMap.put( "FindElementsByClass", new FindElementsByClass(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByCss", new FindElementsByCss(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsById", new FindElementsById(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByLinkTxt", new FindElementsByLinkTxt(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByName", new FindElementsByName(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByPartialLinkTxt", new FindElementsByPartialLinkTxt(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByTagName", new FindElementsByTagName(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "FindElementsByXpath", new FindElementsByXpath(actionDataFactory.makeActionData(internal)));
+		this.actionMap.put( "FindElementsByClass", new FindElementsByClass(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByCss", new FindElementsByCss(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsById", new FindElementsById(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByLinkTxt", new FindElementsByLinkTxt(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByName", new FindElementsByName(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByPartialLinkTxt", new FindElementsByPartialLinkTxt(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByTagName", new FindElementsByTagName(actionDataFactory.makeActionData()));
+		this.actionMap.put( "FindElementsByXpath", new FindElementsByXpath(actionDataFactory.makeActionData()));
 		
 		//Element Actions
-		this.actionMap.put( "Clear", new Clear(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "Click", new Click(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetAttribute", new GetAttribute(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetCssValue", new GetCssValue(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetLocation", new GetLocation(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetSize", new GetSize(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetTagName", new GetTagName(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "GetText", new GetText(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "IsDisplayed", new IsDisplayed(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "IsEnabled", new IsEnabled(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "IsSelected", new IsSelected(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "SendKeys", new SendKeys(actionDataFactory.makeActionData(internal)));
-		this.actionMap.put( "Submit", new Submit(actionDataFactory.makeActionData(internal)));		
+		this.actionMap.put( "Clear", new Clear(actionDataFactory.makeActionData()));
+		this.actionMap.put( "Click", new Click(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetAttribute", new GetAttribute(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetCssValue", new GetCssValue(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetLocation", new GetLocation(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetSize", new GetSize(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetTagName", new GetTagName(actionDataFactory.makeActionData()));
+		this.actionMap.put( "GetText", new GetText(actionDataFactory.makeActionData()));
+		this.actionMap.put( "IsDisplayed", new IsDisplayed(actionDataFactory.makeActionData()));
+		this.actionMap.put( "IsEnabled", new IsEnabled(actionDataFactory.makeActionData()));
+		this.actionMap.put( "IsSelected", new IsSelected(actionDataFactory.makeActionData()));
+		this.actionMap.put( "SendKeys", new SendKeys(actionDataFactory.makeActionData()));
+		this.actionMap.put( "Submit", new Submit(actionDataFactory.makeActionData()));		
 	}
 }
