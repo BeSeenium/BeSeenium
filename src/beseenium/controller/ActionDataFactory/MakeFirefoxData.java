@@ -1,14 +1,5 @@
-/**
+/** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
- */
-package beseenium.controller.ActionDataFactory;
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import beseenium.model.actionData.ActionData;
-
-/**
- * Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -21,11 +12,19 @@ import beseenium.model.actionData.ActionData;
  * 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package beseenium.controller.ActionDataFactory;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import beseenium.model.actionData.ActionData;
+
+/**
  * 
  * @author Jan P.C. Hanson
  *
  */
-public class MakeFirefoxData implements MakeActionData 
+public class MakeFirefoxData implements MakeData 
 {
 	/**
 	 * default constructor
@@ -37,7 +36,7 @@ public class MakeFirefoxData implements MakeActionData
 	 * @see beseenium.controller.ActionDataFactory.MakeActionData#MakeData()
 	 */
 	@Override
-	public ActionData MakeData() 
+	public ActionData makeActionData() 
 	{
 		return new ActionData(new FirefoxDriver());
 	}

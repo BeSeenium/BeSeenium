@@ -1,17 +1,5 @@
-package beseenium.controller;
-
-import java.net.MalformedURLException;
-import java.util.List;
-
-import beseenium.controller.ActionDataFactory.ActionDataFactory;
-import beseenium.exceptions.actionDataExceptions.ActionDataException;
-import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
-import beseenium.exceptions.actionExceptions.ActionException;
-import beseenium.exceptions.actionExceptions.ActionFactoryException;
-import beseenium.model.actionData.ActionData;
-/**
+/** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
- * Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -24,6 +12,19 @@ import beseenium.model.actionData.ActionData;
  * 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package beseenium.controller;
+
+import java.net.MalformedURLException;
+import java.util.List;
+
+import beseenium.controller.ActionDataFactory.ActionDataFactory;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
+import beseenium.exceptions.actionExceptions.ActionException;
+import beseenium.exceptions.actionExceptions.ActionFactoryException;
+import beseenium.model.actionData.ActionData;
+/**
  * 
  * @author Jan P.C. Hanson
  *

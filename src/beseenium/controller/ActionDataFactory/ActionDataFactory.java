@@ -1,3 +1,18 @@
+/** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 package beseenium.controller.ActionDataFactory;
 
 import java.util.HashMap;
@@ -17,10 +32,10 @@ import beseenium.model.actionData.ActionData;
  * @author JPC Hanson
  *
  */
-public class ActionDataFactory 
+public class ActionDataFactory implements MakeData
 {
 	/** container for string value pairs associated with this factory **/
-	private  Map<String, MakeActionData> ActionDataMap;
+	private  Map<String, MakeData> ActionDataMap;
 	/** this is used by the RemoteWebDriver to create an appropriate browser simulation **/
 	private  DesiredCapabilities capabilities;
 	/** needed by the RemoteWebDriver, holds the location of the server to run simulations on **/
@@ -36,7 +51,7 @@ public class ActionDataFactory
 	{
 		super();
 		this.emptyActionData = new ActionData();
-		this.ActionDataMap = new HashMap<String, MakeActionData>();
+		this.ActionDataMap = new HashMap<String, MakeData>();
 		this.capabilities = new DesiredCapabilities();
 		this.mapEntries();
 	}
@@ -73,6 +88,7 @@ public class ActionDataFactory
 	 * mostly used by ActionFactory.
 	 * @return ActionData that is completely empty.
 	 */
+	@Override
 	public ActionData makeActionData()
 	{return this.emptyActionData;}
 	
@@ -100,7 +116,7 @@ public class ActionDataFactory
 		
 		//if all goes well get the ActionData that they have requested.
 		else
-		{return this.ActionDataMap.get(ActionDataKey).MakeData();}
+		{return this.ActionDataMap.get(ActionDataKey).makeActionData();}
 	}
 	
 	

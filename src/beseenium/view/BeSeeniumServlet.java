@@ -1,17 +1,5 @@
-package beseenium.view;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
-import beseenium.view.helpers.URLHandler;
-/**
+/** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
- * Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -24,6 +12,19 @@ import beseenium.view.helpers.URLHandler;
  * 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package beseenium.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
+import beseenium.view.helpers.URLHandler;
+/**
  * 
  * @author Jan P.C. Hanson
  *
