@@ -7,8 +7,19 @@ UI (very basic) is also provided.
 - Java runtime environment.
 - a network connection to wherever BeSeenium is running.
 
+##Installation
+no formal installation needs to be carried out, however if by chance you have come accross this readme without
+the accompanying src please follow the instructions below.
+###GIT
+clone this repository from <https://github.com/jpchanson/BeSeenium.git>, compile the source code, create a runnable jar
+ and follow the instructions below.
+
+###Non-GIT
+Visit <https://github.com/jpchanson/BeSeenium>, on the right hand side of the page is a "download ZIP", unzip the file
+and follow the same steps as above.
+
 ##Starting the application
-Start the application from the command line using: **`"java -jar BeSeenium [port number]"`**, replacing
+Start the application from the command line using: **`"java -jar BeSeenium.jar [port number]"`**, replacing
 [port number] with the port you wish BeSeenium to run on. 
 
 ##API
