@@ -35,7 +35,7 @@ public class GetTitle extends AbstractAction
 	
 	/**
 	 * This performs a PageGet action.
-	 * @param n number of times to re-load the page.
+	 * @param n meaningless use any value
 	 * @return String verifying the page to navigate to.
 	 * @throws ActionDataException
 	 */
