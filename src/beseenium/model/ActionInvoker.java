@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.model.action;
+package beseenium.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,7 @@ import org.openqa.selenium.WebDriver;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionException;
+import beseenium.model.action.AbstractAction;
 import beseenium.model.actionData.ActionData;
 
 /**
