@@ -4,5 +4,5 @@ var namespacebeseenium =
     [ "exceptions", "namespacebeseenium_1_1exceptions.html", "namespacebeseenium_1_1exceptions" ],
     [ "model", "namespacebeseenium_1_1model.html", "namespacebeseenium_1_1model" ],
     [ "view", "namespacebeseenium_1_1view.html", "namespacebeseenium_1_1view" ],
-    [ "TestingMain", "classbeseenium_1_1TestingMain.html", "classbeseenium_1_1TestingMain" ]
+    [ "TestingMain", "classbeseenium_1_1TestingMain.html", null ]
 ];

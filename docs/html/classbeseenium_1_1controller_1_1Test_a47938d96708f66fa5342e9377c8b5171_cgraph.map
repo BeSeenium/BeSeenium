@@ -1,4 +1,4 @@
 <map id="beseenium.controller.Test.addAction" name="beseenium.controller.Test.addAction">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionInvoker.html#abb86fad56963d9646df9348a7b18fa62" title="beseenium.controller.Action\lInvoker.add" alt="" coords="269,5,471,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionFactory.html#a8d8f69439d7d404c3524051b348c6b8b" title="beseenium.controller.Action\lFactory.makeAction" alt="" coords="269,71,471,112"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1model_1_1ActionInvoker.html#abf329444fb06b3cf9b4dc5c0a11832b2" title="beseenium.model.ActionInvoker.add" alt="" coords="269,5,524,32"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a8283241ec6b94055f72282f99815155d" title="beseenium.controller.Action\lFactory.ActionFactory.makeAction" alt="" coords="277,57,517,98"/>
 </map>

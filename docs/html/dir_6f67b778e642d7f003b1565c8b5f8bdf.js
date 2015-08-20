@@ -5,6 +5,6 @@ var dir_6f67b778e642d7f003b1565c8b5f8bdf =
       [ "BeSeeniumServlet", "classbeseenium_1_1view_1_1BeSeeniumServlet.html", "classbeseenium_1_1view_1_1BeSeeniumServlet" ]
     ] ],
     [ "HttpServer.java", "HttpServer_8java.html", [
-      [ "HttpServer", "classbeseenium_1_1view_1_1HttpServer.html", "classbeseenium_1_1view_1_1HttpServer" ]
+      [ "HttpServer", "classbeseenium_1_1view_1_1HttpServer.html", null ]
     ] ]
 ];

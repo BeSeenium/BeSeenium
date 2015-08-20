@@ -1,0 +1,6 @@
+var namespacebeseenium_1_1controller_1_1ActionFactory_1_1navigateActions =
+[
+    [ "MakeNavigateBack", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateBack.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateBack" ],
+    [ "MakeNavigateForward", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateForward.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateForward" ],
+    [ "MakeRefreshPage", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeRefreshPage.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeRefreshPage" ]
+];

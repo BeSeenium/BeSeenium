@@ -1,0 +1,6 @@
+<map id="beseenium.controller.ActionFactory.elementActions.MakeIsEnabled" name="beseenium.controller.ActionFactory.elementActions.MakeIsEnabled">
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html" title="{beseenium.controller.Action\lFactory.MakeAction\n||+ makeAction()\l# MakeAction()\l}" alt="" coords="511,616,712,723"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="{beseenium.controller.Action\lDataFactory.ActionDataFactory\n||+ ActionDataFactory()\l+ setCapabilities()\l+ makeActionData()\l+ makeActionData()\l&#45; mapEntries()\l}" alt="" coords="500,403,723,553"/>
+<area shape="rect" id="node4" href="$interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="{beseenium.controller.Action\lDataFactory.MakeData\n||+ makeActionData()\l}" alt="" coords="5,197,207,289"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="{beseenium.model.actionData.\lActionData\n|&#45; inputParam\l|+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="504,145,719,340"/>
+</map>

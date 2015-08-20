@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BeSeenium
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.0.0-Alpha</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <div class="contents">
 &#160;<ul>
 <li>actionDataFactory
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory.html#a67c998df2034900726ce38a7f4388a5d">beseenium.controller.ActionFactory</a>
+: <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#aa1d1f90a33bbe8fd32745f36467b2cec">beseenium.controller.ActionFactory.ActionFactory</a>
 , <a class="el" href="classbeseenium_1_1controller_1_1Test.html#aa6bc804008de928eb3354c942cecd80f">beseenium.controller.Test</a>
 </li>
 <li>ActionDataMap
@@ -126,10 +126,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classbeseenium_1_1controller_1_1Test.html#a5782bbc9b9eaeac8368fe2e31c7afe57">beseenium.controller.Test</a>
 </li>
 <li>actionMap
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory.html#a71ae3fd49cf860ca724c795b9f313c5e">beseenium.controller.ActionFactory</a>
+: <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#aaab7ef6ed12e672caf0ba10c800bc19c">beseenium.controller.ActionFactory.ActionFactory</a>
 </li>
 <li>actions
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a59c41069dbe4b0b75afb883b816ad1b5">beseenium.controller.ActionInvoker</a>
+: <a class="el" href="classbeseenium_1_1model_1_1ActionInvoker.html#a5ecfb16c532c6ccfacf311acb4a94c2a">beseenium.model.ActionInvoker</a>
+</li>
+<li>adFactory
+: <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html#a406744aa39564412a6557916ab217ee6">beseenium.controller.ActionFactory.MakeAction</a>
 </li>
 <li>capabilities
 : <a class="el" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html#ae989ed5fd8af5178b7b3eef44bc8c2ea">beseenium.controller.ActionDataFactory.ActionDataFactory</a>
@@ -138,8 +141,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classbeseenium_1_1model_1_1action_1_1AbstractAction.html#ad183246458aa9803dc16bc13a290e954">beseenium.model.action.AbstractAction</a>
 </li>
 <li>driver
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a53ca3ee60ccdd5ed425078d5cfc09b9f">beseenium.controller.ActionInvoker</a>
-, <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#afe2c72f05485ab0a40e61e4f109f8ef7">beseenium.model.actionData.ActionData</a>
+: <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#afe2c72f05485ab0a40e61e4f109f8ef7">beseenium.model.actionData.ActionData</a>
+, <a class="el" href="classbeseenium_1_1model_1_1ActionInvoker.html#a5fb3887f863a5613a8f2060efe8c2067">beseenium.model.ActionInvoker</a>
 </li>
 <li>element
 : <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a09edf853108df60ee4153f97b6d0a8e5">beseenium.model.actionData.ActionData</a>
@@ -151,13 +154,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#aba705e8e65de35f1f48641fd4372e240">beseenium.model.actionData.ActionData</a>
 </li>
 <li>inputParams
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a03d588d01e9fb7ddd15dfe02f54bc52e">beseenium.controller.ActionInvoker</a>
+: <a class="el" href="classbeseenium_1_1model_1_1ActionInvoker.html#a3b70005e62ef33c690507a6b699ef380">beseenium.model.ActionInvoker</a>
 </li>
 <li>invoker
 : <a class="el" href="classbeseenium_1_1controller_1_1Test.html#a3728f5271b8b9b91db770f0e8c5911cd">beseenium.controller.Test</a>
 </li>
 <li>optionalIndex
-: <a class="el" href="classbeseenium_1_1controller_1_1ActionInvoker.html#a32d264219f8eff3012898e258669f0a3">beseenium.controller.ActionInvoker</a>
+: <a class="el" href="classbeseenium_1_1model_1_1ActionInvoker.html#a02512ec6babd4e6209d733d0ab3e2b26">beseenium.model.ActionInvoker</a>
 </li>
 <li>serialVersionUID
 : <a class="el" href="classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html#a9379e2ad45258351ad73554cabd39b80">beseenium.exceptions.actionDataExceptions.ActionDataException</a>
@@ -182,7 +185,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 13 2015 23:25:49 for BeSeenium by
+    <li class="footer">Generated on Thu Aug 20 2015 14:18:22 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
