@@ -26,7 +26,7 @@ import beseenium.model.actionData.ActionData;
 
 /**
  * This represents a clear action, it will have no effect unless the element that
- * this action is performed on is a text entry element, i.e. <input> or <textArea>.
+ * this action is performed on is a text entry element, i.e. input or textArea.
  * If it is one of these elements it will clear the value currently held in them.<br><br>
  * nb// does not fire any mouse or keyboard events
  * @author JPC Hanson

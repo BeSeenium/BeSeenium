@@ -19,6 +19,7 @@ import java.net.MalformedURLException;
 import java.util.List;
 
 import beseenium.controller.ActionDataFactory.ActionDataFactory;
+import beseenium.controller.ActionFactory.ActionFactory;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.exceptions.actionExceptions.ActionException;
@@ -58,7 +59,7 @@ public class Test
 	
 	/**
 	 * Set the browser that you want this test to run on
-	 * @param BrowserDriver
+	 * @param browserDriver
 	 * @throws ActionDataException
 	 */
 	public void setBrowser(String browserDriver) throws ActionDataException

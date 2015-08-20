@@ -35,7 +35,7 @@ public class ResetActionData extends AbstractAction
 	
 	/**
 	 * performs the reset action data action.
-	 * @param n ,0=reset WebElement, 1=reset inputParam, -1=reset all
+	 * @param n  0=reset WebElement, 1=reset inputParam, -1=reset all
 	 * @throws NoSuchParameterException 
 	 */
 	public String execute(int n) throws NoSuchParameterException
