@@ -43,7 +43,7 @@ public class HttpServer
         
         
                
-        //test handler
+        //servlet handler
         ContextHandler context0 = new ContextHandler();
         context0.setContextPath("/results");        
         ServletContextHandler serv = new ServletContextHandler();

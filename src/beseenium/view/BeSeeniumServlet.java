@@ -59,10 +59,10 @@ public class BeSeeniumServlet extends HttpServlet
 		try 
 		{			
 			/** UrlDecoder turns the get parameter strings into program actions **/
-			URLHandler urlDecoder = new URLHandler();
+			URLHandler urlHandler = new URLHandler();
 			//turn the get parameters into something useful
 			//execute the actions and turn the result string into an http response
-			String result =urlDecoder.handleURL(capabilities, browser, addActions);
+			String result = urlHandler.handleURL(capabilities, browser, addActions);
 			out.print(result);	
 		} 
 		
