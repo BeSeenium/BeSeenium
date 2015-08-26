@@ -17,6 +17,8 @@ package beseenium.view;
 
 import java.net.MalformedURLException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
@@ -35,6 +37,7 @@ import org.eclipse.jetty.util.resource.Resource;
  */
 public class HttpServer
 {
+	private static final Logger logger = LogManager.getLogger("BeSeenium.HttpServer");
 	/**
 	 * launches the embedded webserver on the specified port number.
 	 * @param portNumber the portnumber for the server to listen on.
@@ -59,11 +62,12 @@ public class HttpServer
     		server.setConnectors(new Connector[] {connector});
         
     		server.start();
+    		logger.info("<---BESEENIUM SERVER STARTED--->");
     		server.join();
     	}
     	catch(Exception e)
     	{
-    		e.getStackTrace();
+    		logger.fatal("COULD NOT START BESEENIUM SERVER \n" + e.getStackTrace());
     	}
     }
     
@@ -78,6 +82,7 @@ public class HttpServer
 		ServletContextHandler serv = new ServletContextHandler();
 		serv.addServlet(beseenium.view.BeSeeniumServlet.class, "/*");
 		context0.setHandler(serv);
+		logger.info("<---servlet handler initialised--->");
 		return context0;
     }
     
@@ -93,6 +98,7 @@ public class HttpServer
 		res.setWelcomeFiles(new String[]{"index.html"});
 		res.setBaseResource(Resource.newResource("./resources/"));
 		context1.setHandler(res);
+		logger.info("<---gui handler initialised--->");
 		
 //    WebAppContext webApp = new WebAppContext();
 //    webApp.setContextPath("/");

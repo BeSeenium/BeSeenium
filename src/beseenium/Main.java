@@ -15,6 +15,9 @@
  */
 package beseenium;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.view.HttpServer;
 
 /**
@@ -25,12 +28,19 @@ import beseenium.view.HttpServer;
  */
 public class Main
 {
+//	private static Logger logger = LogManager.getLogger("BeSeenium.Main");
 	/**
-	 * passes the first command line argument to the http server, ostensibly the port number.
+	 * passes the first command line argument to the http server, ostensibly the port number. 
+	 * also does some setup for log4j async logger.
 	 * @param args command line arguments.
 	 */
 	public static void main(String[] args)
 	{
+		//set all loggers to be asynchronous.
+		System.setProperty("Log4jContextSelector", "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector");
+		Logger logger = LogManager.getLogger("BeSeenium.Main");
+		logger.info("<---STARTING BESEENIUM--->");
+		//launch http server
 		HttpServer.launch(Integer.parseInt(args[0]));
 	}
 	

@@ -1,0 +1,8 @@
+2015-08-26 14:34:39,015 INFO B.Main [main] BeSeenium Initialised 
+2015-08-26 14:34:39,121 INFO B.HttpServer [main] servlet handler initialised 
+2015-08-26 14:34:39,149 INFO B.HttpServer [main] gui handler initialised 
+2015-08-26 14:34:39,213 INFO B.HttpServer [main] Jetty started 
+2015-08-26 14:35:09,040 INFO B.Main [main] BeSeenium Initialised 
+2015-08-26 14:35:09,148 INFO B.HttpServer [main] servlet handler initialised 
+2015-08-26 14:35:09,174 INFO B.HttpServer [main] gui handler initialised 
+2015-08-26 14:35:09,238 INFO B.HttpServer [main] Jetty started 

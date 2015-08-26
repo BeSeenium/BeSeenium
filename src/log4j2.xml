@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+
+  <appenders>
+  
+  	<RandomAccessFile name="RandomAccessFile" fileName="logs/BeSeenium.log" immediateFlush="false" append="true">
+  		<PatternLayout>
+        	<Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+      	</PatternLayout>
+  	</RandomAccessFile>
+  	
+  </appenders>
+  <loggers>
+ 
+    <root level="ALL">
+      <appender-ref ref="RandomAccessFile"/>
+    </root>
+    
+  </loggers>
+  
+  
+</configuration>
