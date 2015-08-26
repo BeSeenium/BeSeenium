@@ -17,10 +17,14 @@ package beseenium.view;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.helpers.URLHandler;
@@ -37,6 +41,8 @@ public class BeSeeniumServlet extends HttpServlet
 	private static final long serialVersionUID = -2842549406742289709L;
 	/** End of line break **/
 	static final String EOL = "\n";
+	/** Logger **/
+//	private static final Logger logger = LogManager.getLogger("BeSeenium.BeSeeniumServlet");
 	
 	/**
 	 * The method that actually does all the work.
@@ -48,6 +54,7 @@ public class BeSeeniumServlet extends HttpServlet
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException
     {
+		Logger logger = LogManager.getLogger("BeSeenium.BeSeeniumServlet");
 		/** holds the contents of the 'browser' get parameter **/
 		String browser = request.getParameter("browser");
 		/** holds the contents of the 'addActions' get parameter **/
@@ -63,7 +70,9 @@ public class BeSeeniumServlet extends HttpServlet
 			//turn the get parameters into something useful
 			//execute the actions and turn the result string into an http response
 			String result = urlHandler.handleURL(capabilities, browser, addActions);
+			logger.info("\n"+result);
 			out.print(result);	
+			
 		} 
 		
 		catch (ActionDataFactoryException e) 
@@ -72,6 +81,7 @@ public class BeSeeniumServlet extends HttpServlet
 			e.printStackTrace(out);
 			e.printStackTrace();
 			out.println(EOL);
+			logger.error(e.getStackTrace().toString());
 		}
 		
 		catch (Exception e)
@@ -80,6 +90,7 @@ public class BeSeeniumServlet extends HttpServlet
 			e.printStackTrace(out);
 			e.printStackTrace();
 			out.println(EOL);
+			logger.error(e.getStackTrace().toString());
 		}
 		
 		//close the PrintWriter

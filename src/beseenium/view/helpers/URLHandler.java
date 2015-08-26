@@ -18,6 +18,9 @@ package beseenium.view.helpers;
 import java.net.MalformedURLException;
 import java.util.Arrays;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
@@ -37,6 +40,8 @@ public class URLHandler
 	Test test;
 	/** End of line break **/
 	static final String EOL = "\n";
+	
+	private static final Logger logger = LogManager.getLogger("BeSeenium.BeSeeniumServlet");
 	
 	/**
 	 * default constructor, initialise a test to operate on

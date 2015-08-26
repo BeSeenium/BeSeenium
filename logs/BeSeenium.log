@@ -1,8 +1,268 @@
-2015-08-26 14:34:39,015 INFO B.Main [main] BeSeenium Initialised 
-2015-08-26 14:34:39,121 INFO B.HttpServer [main] servlet handler initialised 
-2015-08-26 14:34:39,149 INFO B.HttpServer [main] gui handler initialised 
-2015-08-26 14:34:39,213 INFO B.HttpServer [main] Jetty started 
-2015-08-26 14:35:09,040 INFO B.Main [main] BeSeenium Initialised 
-2015-08-26 14:35:09,148 INFO B.HttpServer [main] servlet handler initialised 
-2015-08-26 14:35:09,174 INFO B.HttpServer [main] gui handler initialised 
-2015-08-26 14:35:09,238 INFO B.HttpServer [main] Jetty started 
+2015-08-26 15:31:41,076 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 15:31:41,180 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 15:31:41,206 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 15:31:41,269 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 15:33:52,894 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 15:33:53,012 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 15:33:53,038 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 15:33:53,102 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 15:35:14,075 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 15:35:14,181 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 15:35:14,207 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 15:35:14,274 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 15:39:58,422 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 15:39:58,543 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 15:39:58,570 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 15:39:58,633 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:40:01,959 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:40:02,084 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:40:02,115 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:40:02,211 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:44:24,719 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:44:24,822 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:44:24,848 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:44:24,913 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:45:00,526 INFO B.BeSeeniumServlet [qtp2468142-14] BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+ 
+2015-08-26 16:45:02,516 INFO B.BeSeeniumServlet [qtp2468142-14] BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:45:36,851 INFO B.BeSeeniumServlet [qtp2468142-16] BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+ 
+2015-08-26 16:45:37,857 INFO B.BeSeeniumServlet [qtp2468142-16] BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:46:19,761 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:46:19,872 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:46:19,899 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:46:19,969 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:46:28,623 INFO B.BeSeeniumServlet [qtp2468142-13] ERROR: trace -> 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+TEST RESULTS: null[Ljava.lang.StackTraceElement;@17ac105
+could not run test
+ 
+2015-08-26 16:46:52,546 INFO B.BeSeeniumServlet [qtp2468142-14] BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:47:32,654 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:47:32,759 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:47:32,786 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:47:32,858 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:47:45,242 INFO B.BeSeeniumServlet [qtp2468142-13] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:48:06,066 INFO B.BeSeeniumServlet [qtp2468142-14] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:48:44,971 INFO B.BeSeeniumServlet [qtp2468142-15] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (95fb8bad-5fb3-4ec1-990a-2f771516f4cd)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 16:49:23,064 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:49:23,177 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:49:23,215 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:49:23,296 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:49:31,838 INFO B.BeSeeniumServlet [qtp2468142-13] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ERROR: you cannot instanciate this type of Action 'PageGets' Check your spelling, or refer to documentation [Ljava.lang.StackTraceElement;@1051be1
+could not run test
+TEST RESULTS: [{Quitting...}]
+ 
+2015-08-26 16:55:37,620 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 16:55:37,726 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 16:55:37,752 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 16:55:37,821 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 16:55:57,262 INFO B.BeSeeniumServlet [qtp29029616-14] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ERROR: you cannot instanciate this type of Action 'PageGets' Check your spelling, or refer to documentation [Ljava.lang.StackTraceElement;@10f8afe
+could not run test
+TEST RESULTS: [{Quitting...}]
+ 
+2015-08-26 16:56:40,000 INFO B.BeSeeniumServlet [qtp29029616-17] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (5a44f4a9-c4b9-45ed-8558-0560aef193e8)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:02:27,713 INFO B.BeSeeniumServlet [qtp29029616-18] 
+ERROR: trace -> 
+could not set browser as "null" null [Ljava.lang.StackTraceElement;@6d0ce7
+could not run test
+DESIRED CAPABILITIES: NONE
+TEST RESULTS: null[Ljava.lang.StackTraceElement;@aaf7da
+could not run test
+ 
+2015-08-26 17:05:28,096 INFO B.BeSeeniumServlet [qtp29029616-18] 
+ERROR: trace -> 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http//www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: cannot open webPage 
+java.net.MalformedURLException: no protocol: http//www.google.com[Ljava.lang.StackTraceElement;@14aa894
+CRITICAL ERROR: CANNOT PERFORM EMERGENCY SHUTDOWN
+
+ 
+2015-08-26 17:05:51,164 INFO B.BeSeeniumServlet [qtp29029616-14] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:06:17,332 INFO B.BeSeeniumServlet [qtp29029616-19] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (0be181aa-7159-4c01-8e88-911f54f99027)] -> name: q] , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:07:02,059 INFO B.BeSeeniumServlet [qtp29029616-16] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (99d75032-1591-4436-8d77-1aa244b5166a)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:07:05,537 INFO B.BeSeeniumServlet [qtp29029616-19] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (34641314-499d-48e7-bfa0-3bc62b8a6979)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:07:08,152 INFO B.BeSeeniumServlet [qtp29029616-18] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (98c0f504-8e0d-4e50-aaae-f983dffb01d7)] -> name: q] , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:03,054 INFO B.BeSeeniumServlet [qtp29029616-16] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:07,197 INFO B.BeSeeniumServlet [qtp29029616-15] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (c5296c21-99b9-4302-baa8-2e916bb8af58)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:13,127 INFO B.BeSeeniumServlet [qtp29029616-17] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:17,064 INFO B.BeSeeniumServlet [qtp29029616-19] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (2ad605da-fdd6-4613-a99f-252bf6dd4107)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:35,399 INFO B.BeSeeniumServlet [qtp29029616-18] 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [SendKeys, test, 0], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" /> , }, {element-0 populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:08:39,166 INFO B.BeSeeniumServlet [qtp29029616-14] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (fe35b69c-a94b-44b3-b300-6e8a42143879)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:12:46,751 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-08-26 17:12:46,857 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-08-26 17:12:46,907 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-08-26 17:12:46,983 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-08-26 17:13:00,180 INFO B.BeSeeniumServlet [qtp29029616-15] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (33a786d5-bb83-43b2-bef9-6e826eae4dfd)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:13:05,003 INFO B.BeSeeniumServlet [qtp29029616-16] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (11bd68f0-eb7e-4e76-9f0e-d16901af412d)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:15:40,075 INFO B.BeSeeniumServlet [qtp29029616-19] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (6a399564-5944-48f4-803d-d1ee5e1bd325)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:16:11,706 INFO B.BeSeeniumServlet [qtp29029616-17] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (d7dcad92aed1925e32d2e79ec0ce2071d6301d13)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:16:12,930 INFO B.BeSeeniumServlet [qtp29029616-18] 
+BROWSER SET AS: firefox
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (e1072472-1416-44d5-a25d-c3643a68c137)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:16:33,288 ERROR B.BeSeeniumServlet [qtp29029616-19] [Ljava.lang.StackTraceElement;@16abd0d 
+2015-08-26 17:16:48,784 ERROR B.BeSeeniumServlet [qtp29029616-14] [Ljava.lang.StackTraceElement;@18cf4c2 
+2015-08-26 17:18:00,018 INFO B.BeSeeniumServlet [qtp29029616-15] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (34bd671935a2713140362cd7e2964baf969948c0)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:18:34,773 INFO B.BeSeeniumServlet [qtp29029616-15] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (72e3e609f3eedf27f15630b8c304c2fce254cf38)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:18:45,846 INFO B.BeSeeniumServlet [qtp29029616-17] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (49a7fab9b962261bf05b065f818515c9e6a53a58)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:21:20,850 INFO B.BeSeeniumServlet [qtp29029616-18] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (814c176637b6cd82654336823ac35b68c99f14fa)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 
+2015-08-26 17:21:22,342 INFO B.BeSeeniumServlet [qtp29029616-14] 
+BROWSER SET AS: remote
+DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [browser, IE]]
+ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
+TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (b7b1bae98351a1ee4be10ec42af43dba06df2a75)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
+ 

@@ -62,7 +62,7 @@ public class HttpServer
     		server.setConnectors(new Connector[] {connector});
         
     		server.start();
-    		logger.info("<---BESEENIUM SERVER STARTED--->");
+    		logger.info("<---BESEENIUM SERVER STARTED---> \n");
     		server.join();
     	}
     	catch(Exception e)
