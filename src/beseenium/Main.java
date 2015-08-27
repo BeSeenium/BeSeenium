@@ -42,7 +42,6 @@ public class Main
 		logger.info("<---STARTING BESEENIUM--->");
 		//launch http server
 		HttpServer.launch(Integer.parseInt(args[0]));
-		logger.info("<--BESEENIUM STOPPED--> \n \n \n");
 	}
 	
 	

@@ -67,7 +67,7 @@ public class HttpServer
     	}
     	catch(Exception e)
     	{
-    		logger.fatal("COULD NOT START BESEENIUM SERVER \n" + e.getStackTrace());
+    		logger.fatal("COULD NOT START BESEENIUM SERVER \n", e);
     	}
     }
     

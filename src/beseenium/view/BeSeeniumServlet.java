@@ -27,7 +27,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
-import beseenium.view.helpers.URLHandler;
+import beseenium.view.inputHandlers.URLHandler;
 /**
  * BeSeeniumServlet is a servlet that provide functionality that grabs the query
  * strings from a http request and passes it on to the URLHandler, which gives
@@ -70,7 +70,6 @@ public class BeSeeniumServlet extends HttpServlet
 			//turn the get parameters into something useful
 			//execute the actions and turn the result string into an http response
 			String result = urlHandler.handleURL(capabilities, browser, addActions);
-			logger.info("\n"+result);
 			out.print(result);	
 			
 		} 
@@ -81,7 +80,8 @@ public class BeSeeniumServlet extends HttpServlet
 			e.printStackTrace(out);
 			e.printStackTrace();
 			out.println(EOL);
-			logger.error(e.getStackTrace().toString());
+			logger.error("UNRECOVERABLE ERROR: ActionDataFactory" + e + "\n");
+			
 		}
 		
 		catch (Exception e)
@@ -90,7 +90,7 @@ public class BeSeeniumServlet extends HttpServlet
 			e.printStackTrace(out);
 			e.printStackTrace();
 			out.println(EOL);
-			logger.error(e.getStackTrace().toString());
+			logger.error("UNRECOVERABLE ERROR: " + e +"\n");
 		}
 		
 		//close the PrintWriter

@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.helpers;
+package beseenium.view.inputHandlers;
 
 import java.net.MalformedURLException;
 import java.util.Arrays;
@@ -41,7 +41,7 @@ public class URLHandler
 	/** End of line break **/
 	static final String EOL = "\n";
 	
-	private static final Logger logger = LogManager.getLogger("BeSeenium.BeSeeniumServlet");
+	private static final Logger logger = LogManager.getLogger("BeSeenium.URLHandler");
 	
 	/**
 	 * default constructor, initialise a test to operate on
@@ -84,6 +84,7 @@ public class URLHandler
 		
 		catch (ActionDataException | ActionException | NullPointerException e) 
 		{
+			logger.warn("trace -> \n"+brwsr+caps+actns + "TEST RESULTS: ", e);
 			return "ERROR: trace -> \n"+brwsr+caps+actns + "TEST RESULTS: "
 					+e.getMessage() + e.getStackTrace().toString()+shutdown(e) + EOL;
 		}
@@ -201,7 +202,7 @@ public class URLHandler
 	}
 	
 	/**
-	 * incase something goes wrong the test should be able to shut down the current browser instance,
+	 * in case something goes wrong the test should be able to shut down the current browser instance,
 	 * or else there could potentially be many, for all intents and purposes, orphan processes floating
 	 * about eating up memory....remember: always kill the orphans.
 	 * @param e
