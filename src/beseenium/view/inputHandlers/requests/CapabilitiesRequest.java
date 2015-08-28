@@ -13,27 +13,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.requests;
+package beseenium.view.inputHandlers.requests;
 
+import java.net.MalformedURLException;
 import java.util.Arrays;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
-import beseenium.exceptions.actionExceptions.ActionFactoryException;
+import beseenium.exceptions.testExceptions.TestException;
 import beseenium.view.helpers.URLStringSplit;
 
 /**
- * represents a request to add a series of actions to a test.
+ * represents a request for a particular set of capabilities.
  * @author Jan P.C. Hanson
  *
  */
-public class AddActionsRequest extends AbstractTestRequest
+public class CapabilitiesRequest extends AbstractTestRequest
 {
 	/**
 	 * call super constructor passing in the appropriate request data.
 	 * @param requestData
 	 */
-	public AddActionsRequest(String requestData)
+	public CapabilitiesRequest(String requestData)
 	{
 		super(requestData);		
 	}
@@ -41,22 +42,33 @@ public class AddActionsRequest extends AbstractTestRequest
 	/* (non-Javadoc)
 	 * @see beseenium.view.inputHandlers.AbstractTestRequest#executeRequest()
 	 * 
-	 * \n addActions String of the form:
-	 * "name+inputParam+optional|name+inputParam+optional|name+inputParam+optional|..."
+	 * \n takes an input from servlet(via handleURL method) in the form of string 'get' URL parameter 
+	 * 'capabilities' uses it to set the remoteDriver configuration, this is only of use when the 
+	 * browser type is set as 'remote'.
 	 * 
-	 * \n return String of the form:
-	 * "ACTIONS ADDED:"+"[[action1, inputParam1, index1],[action2, inputParam2, index2]...[actionN, inputParamN, indexN]]
+	 * \n takes a capabilities String of the form "key+value|key+value|key+value|..."
+	 * 
+	 * \n and returns a String of the form 
+	 * "DESIRED CAPABILITES:" + "[[key1, value1], [key2, value2], [key3, value3]]"
 	 */
 	@Override
 	public String executeRequest(Test test) 
-			throws ActionDataException, NullPointerException, ActionFactoryException, NumberFormatException
+			throws ActionDataException, NullPointerException, TestException, MalformedURLException
 	{
-		String[][] actions = new URLStringSplit().splitString(super.requestData);
+		String[][] caps = new URLStringSplit().splitString(super.requestData);
 		
-		for(String[] actionSet: actions)
+		for(String[] capabilitySet: caps)
 		{
-				test.addAction(actionSet[0], actionSet[1], Integer.parseInt(actionSet[2]));
+				if(capabilitySet.length == 2 )
+				{
+					test.configureRemoteDriver(capabilitySet[0], capabilitySet[1]);
+				}
+			
+				else
+				{
+					throw new TestException("ERROR: badly formatted capability string");
+				}
 		}
-		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
+	return "DESIRED CAPABILITIES: "+Arrays.deepToString(caps) + "\n";
 	}
 }

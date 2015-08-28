@@ -16,11 +16,11 @@
 package beseenium.view.inputHandlers;
 
 
-import beseenium.view.requests.AbstractTestRequest;
-import beseenium.view.requests.AddActionsRequest;
-import beseenium.view.requests.BrowserRequest;
-import beseenium.view.requests.CapabilitiesRequest;
-import beseenium.view.requests.ExecuteRequest;
+import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+import beseenium.view.inputHandlers.requests.AddActionsRequest;
+import beseenium.view.inputHandlers.requests.BrowserRequest;
+import beseenium.view.inputHandlers.requests.CapabilitiesRequest;
+import beseenium.view.inputHandlers.requests.ExecuteRequest;
 
 /**
  * This class is responsible for taking the input, in the form of URL 
@@ -93,7 +93,7 @@ public class InputHandler
 	
 	/**
 	 * generates an ExecuteRequest
-	 * @return ExecuteRequest
+	 * @return ExecuteRequestu
 	 */
 	private AbstractTestRequest handleExecuteRequest()
 	{

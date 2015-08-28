@@ -15,12 +15,69 @@
  */
 package beseenium.view.outputHandlers;
 
+import java.util.Map;
+
+import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
+
 /**
- *
+ * This is takes an array of AbstractTestRequests and uses it to generate output in various forms.
+ * it is a specialisation of the AbstractRequestHandler type and contains an extra method setRequestS()
+ * which allows it to distribute the requests contained in this array to chains of responsibility specific
+ * to that request type.
+ * 
  * @author Jan P.C. Hanson
  *
  */
-public class OutputHandler
+public class OutputHandler extends AbstractRequestHandler
 {
+	/** map of possible chains of responsibility to follow depending on the type of TestRequest **/
+	private Map<AbstractTestRequest, AbstractRequestHandler> successorMap;
+	/** The actual chain of responsibility to follow. **/
+	private AbstractRequestHandler successor;
+	/** array of requests to distribute **/
+	private AbstractTestRequest[] requests;
+	
+	/**
+	 * default constructor
+	 */
+	public OutputHandler()
+	{super();}
+	
+	/**
+	 * Sets the array of Test Requests to distribute to the various chains of responsibility.
+	 * @param requests
+	 */
+	public void setRequests(AbstractTestRequest[] requests)
+	{
+		this.requests = requests;
+	}
+	
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.AbstractRequestHandler)
+	 */
+	@Override
+	public void setSuccessor(AbstractRequestHandler successor)
+	{
+		
+	}
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#handleRequest()
+	 */
+	@Override
+	public String handleRequest()
+	{	
+		return null;
+	}
+	
+	/**
+	 * populates the successorMap with the immediate successor appropriate to the type
+	 * of request.
+	 */
+	private void populateMap()
+	{
+		
+	}
 
 }
