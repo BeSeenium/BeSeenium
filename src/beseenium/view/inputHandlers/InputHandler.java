@@ -16,6 +16,9 @@
 package beseenium.view.inputHandlers;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.inputHandlers.requests.AddActionsRequest;
 import beseenium.view.inputHandlers.requests.BrowserRequest;
@@ -32,7 +35,8 @@ import beseenium.view.inputHandlers.requests.ExecuteRequest;
  */
 public class InputHandler
 {
-	private AbstractTestRequest[] testRequests;
+	/** map of Strings to AbstractTestRequest's **/
+	private Map<String, AbstractTestRequest> testRequests;
 	
 	/**
 	 * default constructor.
@@ -40,23 +44,24 @@ public class InputHandler
 	public InputHandler()
 	{
 		super();
-		testRequests = new AbstractTestRequest[4];
+		testRequests = new HashMap<String, AbstractTestRequest>();
 	}
 	
 	/**
-	 * Generates a array of requests from the given parameters, ending with a request to 
-	 * execute the test.
+	 * Generates a map of string descriptors to requests from the given parameters, 
+	 * ending with a request to execute the test.
 	 * @param caps the capabilities passed in as a string.
 	 * @param brwsr the browser passed in as a string.
 	 * @param actns the actions to add passed in as a string.
-	 * @return
+	 * @return Map<String, AbstractTestRequest> addressable by the strings:
+	 * capabilities, browser, actions & execute.
 	 */
-	public AbstractTestRequest[] handleInput(String caps, String brwsr, String actns)
+	public Map<String, AbstractTestRequest> handleInput(String caps, String brwsr, String actns)
 	{
-		this.testRequests[0] = this.handleCapabilities(caps);
-		this.testRequests[1] = this.handleBrowser(brwsr);
-		this.testRequests[2] = this.handleAddActions(actns);
-		this.testRequests[3] = this.handleExecuteRequest();
+		this.testRequests.put("capabilities", this.handleCapabilities(caps));
+		this.testRequests.put("browser", this.handleBrowser(brwsr));
+		this.testRequests.put("actions", this.handleAddActions(actns));
+		this.testRequests.put("execute", this.handleExecuteRequest());
 		
 		return testRequests;
 	}
@@ -93,7 +98,7 @@ public class InputHandler
 	
 	/**
 	 * generates an ExecuteRequest
-	 * @return ExecuteRequestu
+	 * @return ExecuteRequest
 	 */
 	private AbstractTestRequest handleExecuteRequest()
 	{

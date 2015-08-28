@@ -21,10 +21,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This is takes an array of AbstractTestRequests and uses it to generate output in various forms.
+ * This takes an array of AbstractTestRequests and uses it to generate output in various forms.
  * it is a specialisation of the AbstractRequestHandler type and contains an extra method setRequestS()
  * which allows it to distribute the requests contained in this array to chains of responsibility specific
- * to that request type.
+ * to that request type. It is also the client of all request chains of responsibility.
  * 
  * @author Jan P.C. Hanson
  *
@@ -42,7 +42,13 @@ public class OutputHandler extends AbstractRequestHandler
 	 * default constructor
 	 */
 	public OutputHandler()
-	{super();}
+	{
+		super();
+		this.createAddActionsChain();
+		this.createBrowserChain();
+		this.createCapabilitiesChain();
+		this.createExecuteChain();
+	}
 	
 	/**
 	 * Sets the array of Test Requests to distribute to the various chains of responsibility.
@@ -59,25 +65,57 @@ public class OutputHandler extends AbstractRequestHandler
 	@Override
 	public void setSuccessor(AbstractRequestHandler successor)
 	{
-		
+		this.successor = successor;
 	}
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#handleRequest()
+	 * 
+	 * 
 	 */
 	@Override
 	public String handleRequest()
 	{	
-		return null;
+		String results = "";
+		
+		for (int i = 0; i < requests.length; ++i)
+		{
+			this.setSuccessor(this.successorMap.get(requests[i]));
+			results += this.successor.handleRequest();
+		}
+		
+		return results;
 	}
 	
 	/**
-	 * populates the successorMap with the immediate successor appropriate to the type
-	 * of request.
+	 * creates the chain of responsibility for ExecuteRequests
 	 */
-	private void populateMap()
+	private void createExecuteChain()
 	{
 		
 	}
-
+	
+	/**
+	 * 
+	 */
+	private void createAddActionsChain()
+	{
+		
+	}
+	
+	/**
+	 * 
+	 */
+	private void createBrowserChain()
+	{
+		
+	}
+	
+	/**
+	 * 
+	 */
+	private void createCapabilitiesChain()
+	{
+		
+	}
 }
