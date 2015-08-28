@@ -19,6 +19,10 @@ import java.util.Map;
 
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
+import beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler;
+import beseenium.view.outputHandlers.requestHandlers.browserHandlers.RootBrowserHandler;
+import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCapabilitiesHandler;
+import beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler;
 
 /**
  * This takes an array of AbstractTestRequests and uses it to generate output in various forms.
@@ -35,8 +39,8 @@ public class OutputHandler extends AbstractRequestHandler
 	private Map<AbstractTestRequest, AbstractRequestHandler> successorMap;
 	/** The actual chain of responsibility to follow. **/
 	private AbstractRequestHandler successor;
-	/** array of requests to distribute **/
-	private AbstractTestRequest[] requests;
+	/** map of requests to distribute **/
+	private Map<String, AbstractTestRequest> requests;
 	
 	/**
 	 * default constructor
@@ -54,7 +58,7 @@ public class OutputHandler extends AbstractRequestHandler
 	 * Sets the array of Test Requests to distribute to the various chains of responsibility.
 	 * @param requests
 	 */
-	public void setRequests(AbstractTestRequest[] requests)
+	public void setRequests(Map<String, AbstractTestRequest> requests)
 	{
 		this.requests = requests;
 	}
@@ -78,9 +82,9 @@ public class OutputHandler extends AbstractRequestHandler
 	{	
 		String results = "";
 		
-		for (int i = 0; i < requests.length; ++i)
+		for (AbstractTestRequest request: requests)
 		{
-			this.setSuccessor(this.successorMap.get(requests[i]));
+			this.setSuccessor(this.successorMap.get(request));
 			results += this.successor.handleRequest();
 		}
 		
@@ -92,30 +96,30 @@ public class OutputHandler extends AbstractRequestHandler
 	 */
 	private void createExecuteChain()
 	{
-		
+		successorMap.put(requests.get("execute"), new RootExecuteHandler());
 	}
 	
 	/**
-	 * 
+	 * creates the chain of responsibility for AddActionRequests
 	 */
 	private void createAddActionsChain()
 	{
-		
+		successorMap.put(requests.get("action"), new RootAddActionsHandler());
 	}
 	
 	/**
-	 * 
+	 * creates the chain of responsibility for BrowserRequests
 	 */
 	private void createBrowserChain()
 	{
-		
+		successorMap.put(requests.get("browser"), new RootBrowserHandler());
 	}
 	
 	/**
-	 * 
+	 * creates the chain of responsibility for CapabilitiesRequests
 	 */
 	private void createCapabilitiesChain()
 	{
-		
+		successorMap.put(requests.get("capabilities"), new RootCapabilitiesHandler());
 	}
 }
