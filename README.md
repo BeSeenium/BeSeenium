@@ -4,8 +4,10 @@ programmers. It provides a RESTful(ish) API that users can hook into via any web
 UI (very basic) is also provided.
 
 ##Requirements
-- Java runtime environment.
+- Java runtime environment (java 1.8).
 - a network connection to wherever BeSeenium is running.
+- If local testing is required for graphical browsers, BeSeenium must be running on a machine with a Desktop 
+manager.
 
 ##Installation
 no formal installation needs to be carried out, however if by chance you have come accross this readme without

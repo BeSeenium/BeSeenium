@@ -27,7 +27,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
-import beseenium.view.inputHandlers.URLHandler;
 /**
  * BeSeeniumServlet is a servlet that provide functionality that grabs the query
  * strings from a http request and passes it on to the URLHandler, which gives
