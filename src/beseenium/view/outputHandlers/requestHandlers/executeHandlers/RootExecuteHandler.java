@@ -24,23 +24,13 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  */
 public class RootExecuteHandler extends AbstractRequestHandler
 {
-
-	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler)
-	 */
-	@Override
-	public void setSuccessor(AbstractRequestHandler successor)
-	{
-	}
-
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
 	 */
 	@Override
 	public String handleRequest()
 	{
-
+		
 		return null;
 	}
-
 }

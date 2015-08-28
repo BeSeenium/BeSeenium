@@ -25,16 +25,17 @@ package beseenium.view.outputHandlers.requestHandlers;
 public abstract class AbstractRequestHandler
 {
 	/** reference to the successor object **/
-	private AbstractRequestHandler successor;
+	protected AbstractRequestHandler successor;
 	
 	/**
 	 * sets the next concrete request handler in the chain.
 	 * @param requestHandler
 	 */
-	public abstract void setSuccessor(AbstractRequestHandler successor);
+	public void setSuccessor(AbstractRequestHandler successor)
+	{this.successor = successor;}
 	
 	/**
-	 * provides implemntation to handle the request.
+	 * provides implementation to handle the request.
 	 * @return
 	 */
 	public abstract String handleRequest();
