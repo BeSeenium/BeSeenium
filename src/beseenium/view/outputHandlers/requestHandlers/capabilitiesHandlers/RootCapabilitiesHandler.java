@@ -15,6 +15,7 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 
+import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
@@ -37,7 +38,7 @@ public class RootCapabilitiesHandler extends AbstractRequestHandler
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
 	 */
 	@Override
-	public String handleRequest()
+	public String handleRequest(AbstractTestRequest request)
 	{
 
 		return null;

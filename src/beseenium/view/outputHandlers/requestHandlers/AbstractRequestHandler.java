@@ -15,6 +15,8 @@
  */
 package beseenium.view.outputHandlers.requestHandlers;
 
+import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+
 /**
  * abstract base for a chain of responsibility that takes abstractTestRequests
  * and uses them to generate output in various forms: log messages, User messages,
@@ -38,5 +40,5 @@ public abstract class AbstractRequestHandler
 	 * provides implementation to handle the request.
 	 * @return
 	 */
-	public abstract String handleRequest();
+	public abstract String handleRequest(AbstractTestRequest request);
 }

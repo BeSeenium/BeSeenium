@@ -25,10 +25,15 @@ import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCa
 import beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler;
 
 /**
- * This takes an array of AbstractTestRequests and uses it to generate output in various forms.
- * it is a specialisation of the AbstractRequestHandler type and contains an extra method setRequestS()
- * which allows it to distribute the requests contained in this array to chains of responsibility specific
+ * This takes an array of AbstractTestRequests and uses it to generate output
+ * in various forms. it is a specialisation of the AbstractRequestHandler type
+ * and contains an extra method setRequestS() which allows it to distribute 
+ * the requests contained in this array to chains of responsibility specific
  * to that request type. It is also the client of all request chains of responsibility.
+ * 
+ * it is responsible for deciding the order in which the specific requests are
+ * handled, however it is left to the root handler of individual chains to decide
+ * the order in which request specific handlers are called. 
  * 
  * @author Jan P.C. Hanson
  *
@@ -39,20 +44,12 @@ public class OutputHandler extends AbstractRequestHandler
 	private Map<AbstractTestRequest, AbstractRequestHandler> successorMap;
 	/** The actual chain of responsibility to follow. **/
 	private AbstractRequestHandler successor;
-	/** map of requests to distribute **/
-	private Map<String, AbstractTestRequest> requests;
 	
 	/**
 	 * default constructor
 	 */
 	public OutputHandler()
-	{
-		super();
-		this.createAddActionsChain();
-		this.createBrowserChain();
-		this.createCapabilitiesChain();
-		this.createExecuteChain();
-	}
+	{super();}
 	
 	/**
 	 * Sets the array of Test Requests to distribute to the various chains of responsibility.
@@ -60,7 +57,10 @@ public class OutputHandler extends AbstractRequestHandler
 	 */
 	public void setRequests(Map<String, AbstractTestRequest> requests)
 	{
-		this.requests = requests;
+		successorMap.put(requests.get("execute"), new RootExecuteHandler());
+		successorMap.put(requests.get("action"), new RootAddActionsHandler());
+		successorMap.put(requests.get("browser"), new RootBrowserHandler());
+		successorMap.put(requests.get("capabilities"), new RootCapabilitiesHandler());	
 	}
 	
 	/* (non-Javadoc)
@@ -75,51 +75,15 @@ public class OutputHandler extends AbstractRequestHandler
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#handleRequest()
 	 * 
-	 * 
+	 * This method calls the individual chains of responsibility in the required 
+	 * order, it make much sense for actions to be handled before there is
+	 * a browser to handle them for instance. Similarly as the 'remote' browser type
+	 * requires capabilities to be set before it is called this must come first.
 	 */
 	@Override
-	public String handleRequest()
+	public String handleRequest(AbstractTestRequest request)
 	{	
-		String results = "";
-		
-		for (AbstractTestRequest request: requests)
-		{
-			this.setSuccessor(this.successorMap.get(request));
-			results += this.successor.handleRequest();
-		}
-		
-		return results;
-	}
-	
-	/**
-	 * creates the chain of responsibility for ExecuteRequests
-	 */
-	private void createExecuteChain()
-	{
-		successorMap.put(requests.get("execute"), new RootExecuteHandler());
-	}
-	
-	/**
-	 * creates the chain of responsibility for AddActionRequests
-	 */
-	private void createAddActionsChain()
-	{
-		successorMap.put(requests.get("action"), new RootAddActionsHandler());
-	}
-	
-	/**
-	 * creates the chain of responsibility for BrowserRequests
-	 */
-	private void createBrowserChain()
-	{
-		successorMap.put(requests.get("browser"), new RootBrowserHandler());
-	}
-	
-	/**
-	 * creates the chain of responsibility for CapabilitiesRequests
-	 */
-	private void createCapabilitiesChain()
-	{
-		successorMap.put(requests.get("capabilities"), new RootCapabilitiesHandler());
+		this.setSuccessor(successorMap.get(request));
+		return this.successor.handleRequest(request);
 	}
 }
