@@ -15,21 +15,25 @@
  */
 package beseenium.view.requests;
 
+import java.util.Arrays;
+
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionFactoryException;
+import beseenium.view.helpers.URLStringSplit;
 
 /**
- * This class represents a request for a test to use a particular browser type
+ * represents a request to add a series of actions to a test.
  * @author Jan P.C. Hanson
  *
  */
-public class BrowserRequest extends AbstractTestRequest
+public class AddActionsRequest extends AbstractTestRequest
 {
 	/**
 	 * call super constructor passing in the appropriate request data.
 	 * @param requestData
 	 */
-	public BrowserRequest(String requestData)
+	public AddActionsRequest(String requestData)
 	{
 		super(requestData);		
 	}
@@ -37,15 +41,22 @@ public class BrowserRequest extends AbstractTestRequest
 	/* (non-Javadoc)
 	 * @see beseenium.view.inputHandlers.AbstractTestRequest#executeRequest()
 	 * 
-	 * \n String representation of the WebDriver to use ("firefox"/"noWindows"/"remote"...etc)
+	 * \n addActions String of the form:
+	 * "name+inputParam+optional|name+inputParam+optional|name+inputParam+optional|..."
 	 * 
-	 * \n returns a String of the form: "BROWSER SET AS" + "<name of browser>" + newline
+	 * \n return String of the form:
+	 * "ACTIONS ADDED:"+"[[action1, inputParam1, index1],[action2, inputParam2, index2]...[actionN, inputParamN, indexN]]
 	 */
 	@Override
 	public String executeRequest(Test test) 
-			throws ActionDataException, NullPointerException
+			throws ActionDataException, NullPointerException, ActionFactoryException, NumberFormatException
 	{
-		test.setBrowser(super.requestData);
-		return "BROWSER SET AS: " + super.requestData + "\n";
+		String[][] actions = new URLStringSplit().splitString(super.requestData);
+		
+		for(String[] actionSet: actions)
+		{
+				test.addAction(actionSet[0], actionSet[1], Integer.parseInt(actionSet[2]));
+		}
+		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
 	}
 }

@@ -17,19 +17,20 @@ package beseenium.view.requests;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionException;
 
 /**
- * This class represents a request for a test to use a particular browser type
+ * represents a request to execute the test.
  * @author Jan P.C. Hanson
  *
  */
-public class BrowserRequest extends AbstractTestRequest
+public class ExecuteRequest extends AbstractTestRequest
 {
 	/**
 	 * call super constructor passing in the appropriate request data.
 	 * @param requestData
 	 */
-	public BrowserRequest(String requestData)
+	public ExecuteRequest(String requestData)
 	{
 		super(requestData);		
 	}
@@ -37,15 +38,11 @@ public class BrowserRequest extends AbstractTestRequest
 	/* (non-Javadoc)
 	 * @see beseenium.view.inputHandlers.AbstractTestRequest#executeRequest()
 	 * 
-	 * \n String representation of the WebDriver to use ("firefox"/"noWindows"/"remote"...etc)
-	 * 
-	 * \n returns a String of the form: "BROWSER SET AS" + "<name of browser>" + newline
+	 * \n returns a String of with the output of the test results.
 	 */
 	@Override
 	public String executeRequest(Test test) 
-			throws ActionDataException, NullPointerException
-	{
-		test.setBrowser(super.requestData);
-		return "BROWSER SET AS: " + super.requestData + "\n";
-	}
+			throws ActionDataException, ActionException 
+			
+	{return test.executeActions().toString() + "\n";}
 }

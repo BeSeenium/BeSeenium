@@ -189,7 +189,7 @@ public class URLHandler
 	 */
 	private String[][] splitString(String string)
 	{
-		String[] firstSplit = string.split("\\|"); //={"key:value", "key:value"}
+		String[] firstSplit = string.split("\\|"); //={"key|value", "key:value"}
 		int split1Len = firstSplit.length;
 		int split2Len = firstSplit[0].split(" ").length;
 		String[][] resultArray = new String[split1Len][split2Len];// = {{"key","value"},{"key","value"}};

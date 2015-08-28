@@ -15,10 +15,12 @@
  */
 package beseenium.view.inputHandlers;
 
-import java.util.List;
 
 import beseenium.view.requests.AbstractTestRequest;
+import beseenium.view.requests.AddActionsRequest;
 import beseenium.view.requests.BrowserRequest;
+import beseenium.view.requests.CapabilitiesRequest;
+import beseenium.view.requests.ExecuteRequest;
 
 /**
  * This class is responsible for taking the input, in the form of URL 
@@ -30,38 +32,49 @@ import beseenium.view.requests.BrowserRequest;
  */
 public class InputHandler
 {
+	private AbstractTestRequest[] testRequests;
+	
 	/**
 	 * default constructor.
 	 */
 	public InputHandler()
-	{super();}
+	{
+		super();
+		testRequests = new AbstractTestRequest[4];
+	}
 	
 	/**
-	 * Generates a List of requests from the given parameters, ending with a request to 
+	 * Generates a array of requests from the given parameters, ending with a request to 
 	 * execute the test.
 	 * @param caps the capabilities passed in as a string.
 	 * @param brwsr the browser passed in as a string.
 	 * @param actns the actions to add passed in as a string.
 	 * @return
 	 */
-	public List<AbstractTestRequest> handleInput(String caps, String brwsr, String actns)
+	public AbstractTestRequest[] handleInput(String caps, String brwsr, String actns)
 	{
-		return null;
+		this.testRequests[0] = this.handleCapabilities(caps);
+		this.testRequests[1] = this.handleBrowser(brwsr);
+		this.testRequests[2] = this.handleAddActions(actns);
+		this.testRequests[3] = this.handleExecuteRequest();
+		
+		return testRequests;
 	}
 	
 	/**
-	 * 
-	 * @param caps
+	 * generates a CapabilitiesRequest
+	 * @param caps the capabilities string
+	 * @return CapabilitiesRequest
 	 */
 	private AbstractTestRequest handleCapabilities(String caps)
 	{
-		return null;
+		return new CapabilitiesRequest(caps);
 	}
 	
 	/**
-	 * 
-	 * @param brwsr
-	 * @return
+	 * generates a BrowserRequest
+	 * @param brwsr the browser string
+	 * @return BrowserRequest
 	 */
 	private AbstractTestRequest handleBrowser(String brwsr)
 	{
@@ -69,12 +82,21 @@ public class InputHandler
 	}
 	
 	/**
-	 * 
-	 * @param actns
-	 * @return
+	 * generates a AddActionRequest
+	 * @param actns the actions string
+	 * @return AddActionRequest
 	 */
 	private AbstractTestRequest handleAddActions(String actns)
 	{
-		return null;
+		return new AddActionsRequest(actns);
+	}
+	
+	/**
+	 * generates an ExecuteRequest
+	 * @return ExecuteRequest
+	 */
+	private AbstractTestRequest handleExecuteRequest()
+	{
+		return new ExecuteRequest("THIS TEXT IS NOT USED ATM");
 	}
 }
