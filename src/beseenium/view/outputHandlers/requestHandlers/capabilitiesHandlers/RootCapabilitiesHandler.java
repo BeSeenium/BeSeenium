@@ -15,6 +15,7 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 
+import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
@@ -25,23 +26,28 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  */
 public class RootCapabilitiesHandler extends AbstractRequestHandler
 {
-
-	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler)
+	/**
+	 * default ctor
 	 */
-	@Override
-	public void setSuccessor(AbstractRequestHandler successor)
-	{
-	}
-
+	public RootCapabilitiesHandler()
+	{super();}
+	
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
 	 */
 	@Override
-	public String handleRequest(AbstractTestRequest request)
+	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-
-		return null;
+		String results="";
+		try
+		{
+			 results = request.executeRequest(test);
+		} 
+		catch (Exception e)
+		{
+			MalformedURLHandler h1 = new MalformedURLHandler();
+		}
+		
+		return results;
 	}
-
 }

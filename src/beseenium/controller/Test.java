@@ -53,8 +53,16 @@ public class Test
 	 */
 	public Test() throws ActionDataFactoryException, MalformedURLException
 	{
-		this.actionDataFactory = new ActionDataFactory();
-		this.actionFactory = new ActionFactory(actionDataFactory);
+		try
+		{
+			this.actionDataFactory = new ActionDataFactory();
+			this.actionFactory = new ActionFactory(actionDataFactory);
+		}
+		
+		catch(ActionDataFactoryException | MalformedURLException e )
+		{
+			e.getStackTrace();
+		}
 	}
 	
 	/**

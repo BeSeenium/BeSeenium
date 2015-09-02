@@ -15,6 +15,7 @@
  */
 package beseenium.view.outputHandlers.requestHandlers;
 
+import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 
 /**
@@ -40,5 +41,5 @@ public abstract class AbstractRequestHandler
 	 * provides implementation to handle the request.
 	 * @return
 	 */
-	public abstract String handleRequest(AbstractTestRequest request);
+	public abstract String handleRequest(AbstractTestRequest request, Test test);
 }

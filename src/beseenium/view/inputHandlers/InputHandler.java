@@ -49,7 +49,8 @@ public class InputHandler
 	
 	/**
 	 * Generates a map of string descriptors to requests from the given parameters, 
-	 * ending with a request to execute the test.
+	 * ending with a request to execute the test. keys are "capabilities", "browser", 
+	 * "actions", "execute"
 	 * @param caps the capabilities passed in as a string.
 	 * @param brwsr the browser passed in as a string.
 	 * @param actns the actions to add passed in as a string.
@@ -64,6 +65,16 @@ public class InputHandler
 		this.testRequests.put("execute", this.handleExecuteRequest());
 		
 		return testRequests;
+	}
+	
+	/**
+	 * retrieves a request
+	 * @param requestType string representing the request: capabilities/browser/actions/execute
+	 * @return AbstractTestRequest
+	 */
+	public AbstractTestRequest getRequest(String requestType)
+	{
+		return this.testRequests.get(requestType);
 	}
 	
 	/**

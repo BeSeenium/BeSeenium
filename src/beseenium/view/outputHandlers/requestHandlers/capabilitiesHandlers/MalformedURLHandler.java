@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.outputHandlers.requestHandlers.addActionHandlers;
+package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 
 import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
@@ -24,19 +24,16 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  * @author Jan P.C. Hanson
  *
  */
-public class RootAddActionsHandler extends AbstractRequestHandler
+public class MalformedURLHandler extends AbstractRequestHandler
 {
-
-	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler)
+	/**
+	 * default ctor
 	 */
-	@Override
-	public void setSuccessor(AbstractRequestHandler successor)
-	{
-	}
-
+	public MalformedURLHandler()
+	{super();}
+	
 	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
+	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)

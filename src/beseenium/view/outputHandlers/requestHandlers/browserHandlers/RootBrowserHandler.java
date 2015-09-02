@@ -15,6 +15,7 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.browserHandlers;
 
+import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
@@ -38,7 +39,7 @@ public class RootBrowserHandler extends AbstractRequestHandler
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
 	 */
 	@Override
-	public String handleRequest(AbstractTestRequest request)
+	public String handleRequest(AbstractTestRequest request, Test test)
 	{
 
 		return null;

@@ -15,8 +15,13 @@
  */
 package beseenium.view.outputHandlers;
 
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
+import beseenium.controller.Test;
+import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 import beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler;
@@ -26,24 +31,28 @@ import beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecute
 
 /**
  * This takes an array of AbstractTestRequests and uses it to generate output
- * in various forms. it is a specialisation of the AbstractRequestHandler type
- * and contains an extra method setRequestS() which allows it to distribute 
+ * in various forms. Logically it is a specialisation of the AbstractRequestHandler type
+ * but contains an extra method setRequests() which allows it to distribute 
  * the requests contained in this array to chains of responsibility specific
  * to that request type. It is also the client of all request chains of responsibility.
+ * As well as this, its handleRequests() method has no parameter, so while it is logically
+ * an AbstractRequestHandler it is not part of that inheritance hierarchy.
  * 
  * it is responsible for deciding the order in which the specific requests are
- * handled, however it is left to the root handler of individual chains to decide
- * the order in which request specific handlers are called. 
+ * passed to their handlers, however it is left to the root handler of individual 
+ * chains to decide the order in which request specific handlers are called. 
  * 
  * @author Jan P.C. Hanson
  *
  */
-public class OutputHandler extends AbstractRequestHandler
+public class OutputHandler
 {
 	/** map of possible chains of responsibility to follow depending on the type of TestRequest **/
 	private Map<AbstractTestRequest, AbstractRequestHandler> successorMap;
 	/** The actual chain of responsibility to follow. **/
 	private AbstractRequestHandler successor;
+	/** map of string descriptors to AbstractTestRequests**/
+	private Map<String, AbstractTestRequest> requestMap;
 	
 	/**
 	 * default constructor
@@ -52,11 +61,12 @@ public class OutputHandler extends AbstractRequestHandler
 	{super();}
 	
 	/**
-	 * Sets the array of Test Requests to distribute to the various chains of responsibility.
+	 * Sets the map of Test Requests to distribute to the various chains of responsibility.
 	 * @param requests
 	 */
 	public void setRequests(Map<String, AbstractTestRequest> requests)
 	{
+		requestMap = requests;
 		successorMap.put(requests.get("execute"), new RootExecuteHandler());
 		successorMap.put(requests.get("action"), new RootAddActionsHandler());
 		successorMap.put(requests.get("browser"), new RootBrowserHandler());
@@ -66,7 +76,6 @@ public class OutputHandler extends AbstractRequestHandler
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.AbstractRequestHandler)
 	 */
-	@Override
 	public void setSuccessor(AbstractRequestHandler successor)
 	{
 		this.successor = successor;
@@ -76,14 +85,35 @@ public class OutputHandler extends AbstractRequestHandler
 	 * @see beseenium.view.outputHandlers.AbstractRequestHandler#handleRequest()
 	 * 
 	 * This method calls the individual chains of responsibility in the required 
-	 * order, it make much sense for actions to be handled before there is
+	 * order, it makes sense for actions to be handled before there is
 	 * a browser to handle them for instance. Similarly as the 'remote' browser type
 	 * requires capabilities to be set before it is called this must come first.
 	 */
-	@Override
-	public String handleRequest(AbstractTestRequest request)
-	{	
-		this.setSuccessor(successorMap.get(request));
-		return this.successor.handleRequest(request);
+	public List<String> handleRequests()
+	{
+		ArrayList<String> results = new ArrayList<String>();
+		try
+		{
+			Test test = new Test();
+		
+		
+			this.setSuccessor(successorMap.get(this.requestMap.get("capabilities")));
+			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test));
+		
+			this.setSuccessor(successorMap.get(this.requestMap.get("browser")));
+			results.add(this.successor.handleRequest(this.requestMap.get("browser"),test));
+		
+			this.setSuccessor(successorMap.get(this.requestMap.get("actions")));
+			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test));
+		
+			this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
+			results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
+		} 
+		
+		catch (ActionDataFactoryException | MalformedURLException e)
+		{
+			e.printStackTrace();
+		}
+		return results;
 	}
 }

@@ -61,6 +61,8 @@ public class BeSeeniumServlet extends HttpServlet
 		/** holds the contents of the 'addActions' get parameter **/
 		String capabilities = request.getParameter("capabilities");
 		/** reference to object that outputs text to response **/
+		String id = request.getParameter("ID");
+		/** reference to the printwriter that will write the output to the response **/
 		PrintWriter out = response.getWriter();
 		try 
 		{			
@@ -70,6 +72,16 @@ public class BeSeeniumServlet extends HttpServlet
 			//execute the actions and turn the result string into an http response
 			String result = urlHandler.handleURL(capabilities, browser, addActions);
 			out.print(result);	
+			
+			/**
+			 * InputHandler inputHandler = new InputHandler();
+			 * OutputHandler outputHandler = new OutputHandler();
+			 * outputHandler.setRequests(
+			 * 						inputHandler.handlerInput(capabilities, browser, addActions)
+			 * 							);
+			 * 
+			 * ArrayList<String> results = outputHandler.handleRequests();
+			 */
 			
 		} 
 		
