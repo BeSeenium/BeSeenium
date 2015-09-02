@@ -85,7 +85,6 @@ public class BeSeeniumServlet extends HttpServlet
 			OutputHandler outputHandler = new OutputHandler();
 			Map<String, AbstractTestRequest>tmp = inputHandler.handleInput(capabilities, browser, addActions);
 
-			if(tmp.get("execute")== null){System.out.println("null");}
 			outputHandler.setRequests(tmp);
 			
 			List<String> results = outputHandler.handleRequests();

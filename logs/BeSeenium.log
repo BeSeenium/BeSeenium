@@ -414,3 +414,102 @@ TEST RESULTS:  beseenium.exceptions.actionDataExceptions.ActionDataException: No
 2015-09-02 15:17:38,300 INFO B.HttpServer [main] <---gui handler initialised---> 
 2015-09-02 15:17:38,370 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
+2015-09-02 15:33:24,209 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:33:24,318 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:33:24,348 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:33:24,423 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:44:35,839 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:44:35,954 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:44:35,993 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:44:36,060 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:46:54,540 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:46:54,649 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:46:54,678 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:46:54,750 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:47:44,526 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:47:44,637 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:47:44,666 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:47:44,743 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:48:14,939 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:48:15,047 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:48:15,073 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:48:15,151 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:49:22,148 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:49:22,287 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:49:22,351 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:49:22,478 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:50:08,876 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:50:08,988 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:50:09,017 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:50:09,085 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:53:10,742 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:53:10,847 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:53:10,872 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:53:10,935 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:53:35,849 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:53:35,969 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:53:35,995 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:53:36,077 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:55:39,013 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:55:39,120 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:55:39,146 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:55:39,214 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:56:58,794 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:56:58,906 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:56:58,936 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:56:59,006 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:58:09,264 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:58:09,370 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:58:09,396 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:58:09,467 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:59:29,788 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:59:29,902 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:59:29,931 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:59:29,995 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 16:00:01,544 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 16:00:01,648 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 16:00:01,673 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 16:00:01,745 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 16:00:44,163 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 16:00:44,269 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 16:00:44,300 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 16:00:44,368 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 16:01:11,758 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 16:01:11,864 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 16:01:11,891 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 16:01:11,961 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 16:02:08,443 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 16:02:08,549 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 16:02:08,575 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 16:02:08,638 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 16:58:36,144 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 16:58:36,252 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 16:58:36,280 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 16:58:36,340 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 17:00:13,488 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 17:00:13,592 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 17:00:13,624 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 17:00:13,683 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 17:01:46,639 ERROR B.v.o.r.c.BadlyFormedStringHandler [qtp29029616-14] Badly formed capabilities string 
+ 
+2015-09-02 17:08:55,251 ERROR B.v.o.r.c.BadlyFormedStringHandler [qtp29029616-15] Badly formed capabilities string 
+ 

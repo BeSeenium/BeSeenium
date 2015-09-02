@@ -15,6 +15,11 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 
+import java.net.MalformedURLException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
@@ -26,6 +31,9 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  */
 public class MalformedURLHandler extends AbstractRequestHandler
 {
+	/** refefrence to log4j logger **/
+	private static final Logger logger = LogManager.getLogger
+			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler");
 	/**
 	 * default ctor
 	 */
@@ -38,8 +46,28 @@ public class MalformedURLHandler extends AbstractRequestHandler
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-
-		return null;
+		String results=null;
+		try
+		{
+			results = request.executeRequest(test);
+		} 
+		catch (MalformedURLException npe)
+		{
+			logger.error("BAD URL check 'auth' capability string");
+			results="ERROR: BAD URL check 'auth' capability string";
+		}
+		catch (Exception e)
+		{
+			if(super.successor != null)
+			{results = super.successor.handleRequest(request, test);}
+			else
+			{
+				results = "end of chain, see logs for stacktrace";
+				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
+			}
+		}
+	
+	return results;
 	}
 
 }

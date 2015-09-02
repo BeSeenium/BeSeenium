@@ -38,19 +38,23 @@ public class RootCapabilitiesHandler extends AbstractRequestHandler
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-		String results="";
+		String results=null;
 		try
-		{
+		{			
 			 results = request.executeRequest(test);
 		} 
 		catch (Exception e)
 		{
 			NullPointerHandler h1 = new NullPointerHandler();
-			MalformedURLHandler h2 = new MalformedURLHandler();
+			BadlyFormedStringHandler h2 = new BadlyFormedStringHandler();
+			MalformedURLHandler h3 = new MalformedURLHandler();
+			ActionDataExceptionHandler h4 = new ActionDataExceptionHandler();
 			
 			h1.setSuccessor(h2);
+			h2.setSuccessor(h3);
+			h3.setSuccessor(h4);
 			
-			h1.handleRequest(request, test);
+			results = h1.handleRequest(request, test);
 		}
 		
 		return results;

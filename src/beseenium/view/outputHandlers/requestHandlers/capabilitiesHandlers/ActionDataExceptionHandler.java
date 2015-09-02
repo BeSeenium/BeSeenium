@@ -19,6 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.controller.Test;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
@@ -27,30 +28,27 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  * @author Jan P.C. Hanson
  *
  */
-public class NullPointerHandler extends AbstractRequestHandler
+public class ActionDataExceptionHandler extends AbstractRequestHandler
 {
+	/** refefrence to log4j logger **/
 	private static final Logger logger = LogManager.getLogger
-			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.NullPointerHandler");
-	/**
-	 * default ctor
-	 */
-	public NullPointerHandler()
-	{super();}
-
+			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.ActionDataExceptionHandler");
+	
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
-	{	
+	{
 		String results=null;
 		try
 		{
 			results = request.executeRequest(test);
 		} 
-		catch (NullPointerException npe)
+		catch (ActionDataException ade)
 		{
-			results="DESIRED CAPABILITIES: NONE";
+			logger.error("programming error in model FIX ME");
+			results="ERROR: something went wrong in the backend...sorry";
 		}
 		catch (Exception e)
 		{
