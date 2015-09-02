@@ -24,35 +24,22 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  * @author Jan P.C. Hanson
  *
  */
-public class RootCapabilitiesHandler extends AbstractRequestHandler
+public class NullPointerHandler extends AbstractRequestHandler
 {
 	/**
 	 * default ctor
 	 */
-	public RootCapabilitiesHandler()
+	public NullPointerHandler()
 	{super();}
-	
+
 	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
+	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-		String results="";
-		try
-		{
-			 results = request.executeRequest(test);
-		} 
-		catch (Exception e)
-		{
-			NullPointerHandler h1 = new NullPointerHandler();
-			MalformedURLHandler h2 = new MalformedURLHandler();
-			
-			h1.setSuccessor(h2);
-			
-			h1.handleRequest(request, test);
-		}
-		
-		return results;
+
+		return null;
 	}
+
 }

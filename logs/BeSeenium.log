@@ -266,3 +266,151 @@ DESIRED CAPABILITIES: [[auth, jonjackson:WDaudZN5Y1eTGPUUozty], [os, Windows], [
 ACTIONS ADDED: [[PageGet, http://www.google.com, 0], [FindElementsByName, q, -1], [GetAttribute, name, -1], [SendKeys, test, -1], [Submit, , -1], [BrowserQuit, , 0]]
 TEST RESULTS: [{navigating to http://www.google.com}, {[[RemoteWebDriver: internet explorer on WINDOWS (b7b1bae98351a1ee4be10ec42af43dba06df2a75)] -> name: q] , }, {q , }, {all elements populated with: 'test'}, { all elements submited. }, {Quitting...}]
  
+2015-09-02 13:37:04,129 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:37:04,322 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:37:04,347 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:37:04,468 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:37:31,013 WARN B.URLHandler [qtp29029616-14] trace -> 
+BROWSER SET AS: noWindows
+DESIRED CAPABILITIES: NONE
+ACTIONS ADDED: [[PageGet, http://www.googleeeeee.com, 0], [FindElementsByName, q, -1], [GetTagName, , 0], [BrowserQuit, , 0]]
+TEST RESULTS:  beseenium.exceptions.actionDataExceptions.ActionDataException: No WebElement exists in this ActionData
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:86)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.URLHandler.handleURL(URLHandler.java:82)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:77)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-02 13:37:31,025 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:37:45,440 ERROR B.BeSeeniumServlet [qtp29029616-17] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:39:45,733 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:39:45,841 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:39:45,880 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:39:45,946 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:40:12,195 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:40:12,300 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:40:12,326 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:40:12,394 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:40:19,071 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:41:41,543 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:41:41,704 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:41:41,742 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:41:41,897 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:42:15,840 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:42:15,952 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:42:15,996 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:42:16,095 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:42:22,464 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:45:51,890 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:45:51,995 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:45:52,022 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:45:52,087 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:46:36,942 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:46:37,049 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:46:37,096 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:46:37,162 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:46:45,212 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:48:22,812 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:48:22,929 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:48:22,959 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:48:23,020 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:48:29,009 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 13:52:27,188 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 13:52:27,293 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 13:52:27,320 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 13:52:27,385 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 13:52:33,221 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 14:29:42,319 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 14:29:42,429 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 14:29:42,468 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 14:29:42,523 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 14:29:55,465 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 14:32:00,110 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 14:32:00,217 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 14:32:00,249 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 14:32:00,307 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 14:32:05,333 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 14:53:36,342 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 14:53:36,448 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 14:53:36,474 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 14:53:36,541 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 14:53:42,447 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 15:05:02,673 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:05:02,787 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:05:02,813 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:05:02,874 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:06:20,001 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:06:20,107 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:06:20,135 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:06:20,195 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:06:22,485 ERROR B.BeSeeniumServlet [qtp29029616-14] UNRECOVERABLE ERROR: java.lang.NullPointerException
+ 
+2015-09-02 15:15:03,285 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:15:03,394 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:15:03,421 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:15:03,488 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:15:42,158 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:15:42,265 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:15:42,293 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:15:42,359 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:16:14,517 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:16:14,625 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:16:14,660 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:16:14,757 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:16:59,989 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:17:00,094 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:17:00,122 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:17:00,194 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-02 15:17:38,167 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-02 15:17:38,273 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-02 15:17:38,300 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-02 15:17:38,370 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 

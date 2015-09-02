@@ -17,12 +17,14 @@ package beseenium.view.outputHandlers;
 
 import java.net.MalformedURLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+import beseenium.view.inputHandlers.requests.ExecuteRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 import beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler;
 import beseenium.view.outputHandlers.requestHandlers.browserHandlers.RootBrowserHandler;
@@ -58,7 +60,10 @@ public class OutputHandler
 	 * default constructor
 	 */
 	public OutputHandler()
-	{super();}
+	{
+		super();
+		successorMap = new HashMap<AbstractTestRequest, AbstractRequestHandler>();	
+	}
 	
 	/**
 	 * Sets the map of Test Requests to distribute to the various chains of responsibility.
@@ -66,9 +71,9 @@ public class OutputHandler
 	 */
 	public void setRequests(Map<String, AbstractTestRequest> requests)
 	{
-		requestMap = requests;
+		this.requestMap = requests;
 		successorMap.put(requests.get("execute"), new RootExecuteHandler());
-		successorMap.put(requests.get("action"), new RootAddActionsHandler());
+		successorMap.put(requests.get("actions"), new RootAddActionsHandler());
 		successorMap.put(requests.get("browser"), new RootBrowserHandler());
 		successorMap.put(requests.get("capabilities"), new RootCapabilitiesHandler());	
 	}

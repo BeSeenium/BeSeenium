@@ -17,6 +17,10 @@ package beseenium.view;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -27,6 +31,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
+import beseenium.view.inputHandlers.InputHandler;
+import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+import beseenium.view.outputHandlers.OutputHandler;
 /**
  * BeSeeniumServlet is a servlet that provide functionality that grabs the query
  * strings from a http request and passes it on to the URLHandler, which gives
@@ -67,33 +74,34 @@ public class BeSeeniumServlet extends HttpServlet
 		try 
 		{			
 			/** UrlDecoder turns the get parameter strings into program actions **/
-			URLHandler urlHandler = new URLHandler();
-			//turn the get parameters into something useful
-			//execute the actions and turn the result string into an http response
-			String result = urlHandler.handleURL(capabilities, browser, addActions);
-			out.print(result);	
+//			URLHandler urlHandler = new URLHandler();
+//			//turn the get parameters into something useful
+//			//execute the actions and turn the result string into an http response
+//			String result = urlHandler.handleURL(capabilities, browser, addActions);
+//			out.print(result);	
 			
-			/**
-			 * InputHandler inputHandler = new InputHandler();
-			 * OutputHandler outputHandler = new OutputHandler();
-			 * outputHandler.setRequests(
-			 * 						inputHandler.handlerInput(capabilities, browser, addActions)
-			 * 							);
-			 * 
-			 * ArrayList<String> results = outputHandler.handleRequests();
-			 */
 			
+			InputHandler inputHandler = new InputHandler();
+			OutputHandler outputHandler = new OutputHandler();
+			Map<String, AbstractTestRequest>tmp = inputHandler.handleInput(capabilities, browser, addActions);
+
+			if(tmp.get("execute")== null){System.out.println("null");}
+			outputHandler.setRequests(tmp);
+			
+			List<String> results = outputHandler.handleRequests();
+			
+			out.println(Arrays.deepToString(results.toArray()));
 		} 
-		
-		catch (ActionDataFactoryException e) 
-		{
-			out.println("UNRECOVERABLE ERROR: "+ e.getMessage() + EOL);
-			e.printStackTrace(out);
-			e.printStackTrace();
-			out.println(EOL);
-			logger.error("UNRECOVERABLE ERROR: ActionDataFactory" + e + "\n");
-			
-		}
+//		
+//		catch (ActionDataFactoryException e) 
+//		{
+//			out.println("UNRECOVERABLE ERROR: "+ e.getMessage() + EOL);
+//			e.printStackTrace(out);
+//			e.printStackTrace();
+//			out.println(EOL);
+//			logger.error("UNRECOVERABLE ERROR: ActionDataFactory" + e + "\n");
+//			
+//		}
 		
 		catch (Exception e)
 		{
