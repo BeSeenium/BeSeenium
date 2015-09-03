@@ -24,7 +24,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This represents a handler for the case where the browser parameter has been left out 
+ * entirely. As this is not a permissible thing to do the user should get feedback
+ * to that effect. you cannot run a test without there being a browser to test it on.
+ * 
  * @author Jan P.C. Hanson
  *
  */

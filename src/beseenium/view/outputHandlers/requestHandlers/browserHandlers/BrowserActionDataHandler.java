@@ -24,7 +24,8 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
  * This represents a handler for the case where something in the model has gone awry and the
- * ActionData object has been misused somehow.
+ * ActionData object has been misused somehow. this is probably caused by a programming error
+ * and the user is directed to contact a developer who can address the problem.
  * 
  * @author Jan P.C. Hanson
  *

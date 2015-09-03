@@ -24,9 +24,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This represents a handler for the case where the browser parameter has been left empty or 
- * left out entirely. As this is not a permissible thing to do the user should get feedback
- * to that effect. you cannot run a test without there being a browser to test it on.
+ * This represents a handler for the case where the browser parameter has either been left blank
+ * or an incorrect value has been given as the browser parameter. Either way it will notify the
+ * user that this is the case and echo the string they used referring them to the documentation
+ * in order to remedy the problem.
  * 
  * @author Jan P.C. Hanson
  *
