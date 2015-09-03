@@ -25,7 +25,11 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This class represents a handler for the case in which the authorisation string of the 
+ * remote capabilities has been mutilated by the user, in which case the request should throw
+ * a MalformedURLException, which this handler will catch and dispose of appropriately, by
+ * by giving the user some information to that effect.
+ * 
  * @author Jan P.C. Hanson
  *
  */

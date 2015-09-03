@@ -24,7 +24,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This represents a handler for the case in which the ActionData object has not been correctly
+ * used, this is more than likely a backend issue and is something that only a developer can 
+ * deal with. Should this exception occur, it will be caught here and will notify the user of
+ * the situation and asked to contact a developer so the issue may be addressed.
  * @author Jan P.C. Hanson
  *
  */
@@ -48,7 +51,8 @@ public class ActionDataExceptionHandler extends AbstractRequestHandler
 		catch (ActionDataException ade)
 		{
 			logger.error("programming error in model FIX ME");
-			results="ERROR: something went wrong in the backend...sorry";
+			results="ERROR: something went wrong in the backend, please notify a Developer "+
+					"by emailing jpchansondev@gmail.com";
 		}
 		catch (Exception e)
 		{

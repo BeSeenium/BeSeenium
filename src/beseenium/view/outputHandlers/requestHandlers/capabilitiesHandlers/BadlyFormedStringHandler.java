@@ -24,7 +24,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This represents a handler for the case in which the user has made some elementary mistake in
+ * the length of the capabilities substring, either too few or too many parameters or the correct
+ * spacer has not been used etc. In this case the request will throw a TestException which 
+ * will be caught here, and the user will be provided with appropriate information.
  * @author Jan P.C. Hanson
  *
  */
