@@ -16,6 +16,7 @@ var searchData=
   ['getpagesrc',['GetPageSrc',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetPageSrc.html',1,'beseenium::model::action::pageActions']]],
   ['getpagesrc',['GetPageSrc',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetPageSrc.html#a946da82ee39481c242df37a83961da01',1,'beseenium::model::action::pageActions::GetPageSrc']]],
   ['getpagesrc_2ejava',['GetPageSrc.java',['../GetPageSrc_8java.html',1,'']]],
+  ['getrequest',['getRequest',['../classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#ade62305a5c7d06611bcef0599c4d5975',1,'beseenium::view::inputHandlers::InputHandler']]],
   ['getsize',['GetSize',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetSize.html',1,'beseenium::model::action::elementActions']]],
   ['getsize',['GetSize',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetSize.html#ad01b309dfc696e84fe32813b532d9fb4',1,'beseenium::model::action::elementActions::GetSize']]],
   ['getsize_2ejava',['GetSize.java',['../GetSize_8java.html',1,'']]],
@@ -28,7 +29,7 @@ var searchData=
   ['gettitle',['GetTitle',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetTitle.html',1,'beseenium::model::action::pageActions']]],
   ['gettitle',['GetTitle',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetTitle.html#a1dbee6da59979ec967453c6bcd36c286',1,'beseenium::model::action::pageActions::GetTitle']]],
   ['gettitle_2ejava',['GetTitle.java',['../GetTitle_8java.html',1,'']]],
-  ['geturl',['GetURL',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetURL.html#a9eb88798d45dd071437861e28b49f3ab',1,'beseenium::model::action::pageActions::GetURL']]],
   ['geturl',['GetURL',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetURL.html',1,'beseenium::model::action::pageActions']]],
+  ['geturl',['GetURL',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetURL.html#a9eb88798d45dd071437861e28b49f3ab',1,'beseenium::model::action::pageActions::GetURL']]],
   ['geturl_2ejava',['GetURL.java',['../GetURL_8java.html',1,'']]]
 ];

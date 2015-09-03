@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abstractaction',['AbstractAction',['../classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a5c0ba5a00f79da05789a7925fe97fdf3',1,'beseenium::model::action::AbstractAction']]],
+  ['abstracttestrequest',['AbstractTestRequest',['../classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#a8cdc6a264d7884bc05186e82c3715fab',1,'beseenium::view::inputHandlers::requests::AbstractTestRequest']]],
   ['actiondata',['ActionData',['../classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a4daea6e81af54bcf80c4c9ba874a5c0c',1,'beseenium.model.actionData.ActionData.ActionData()'],['../classbeseenium_1_1model_1_1actionData_1_1ActionData.html#ac6046d51bd33641179e83f5d544fc921',1,'beseenium.model.actionData.ActionData.ActionData(WebDriver driver)']]],
   ['actiondataexception',['ActionDataException',['../classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html#a0214437e537967e41c5bbe162e299319',1,'beseenium.exceptions.actionDataExceptions.ActionDataException.ActionDataException()'],['../classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html#aeda2e911a4d4d957e2a6b9a4a6f994b9',1,'beseenium.exceptions.actionDataExceptions.ActionDataException.ActionDataException(String message)']]],
   ['actiondatafactory',['ActionDataFactory',['../classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html#abac43a431296ce40d60888ea76f3a376',1,'beseenium::controller::ActionDataFactory::ActionDataFactory']]],
@@ -10,5 +11,6 @@ var searchData=
   ['actionfactoryexception',['ActionFactoryException',['../classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html#ade11a89eca35ed329ca240a3888146d5',1,'beseenium.exceptions.actionExceptions.ActionFactoryException.ActionFactoryException()'],['../classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html#a4d22dc6c184f0013a8616568d84b43e2',1,'beseenium.exceptions.actionExceptions.ActionFactoryException.ActionFactoryException(String message)']]],
   ['actioninvoker',['ActionInvoker',['../classbeseenium_1_1model_1_1ActionInvoker.html#a43c5b4073e83a9b0a5963da8e699834d',1,'beseenium::model::ActionInvoker']]],
   ['add',['add',['../classbeseenium_1_1model_1_1ActionInvoker.html#abf329444fb06b3cf9b4dc5c0a11832b2',1,'beseenium::model::ActionInvoker']]],
-  ['addaction',['addAction',['../classbeseenium_1_1controller_1_1Test.html#a47938d96708f66fa5342e9377c8b5171',1,'beseenium::controller::Test']]]
+  ['addaction',['addAction',['../classbeseenium_1_1controller_1_1Test.html#a47938d96708f66fa5342e9377c8b5171',1,'beseenium::controller::Test']]],
+  ['addactionsrequest',['AddActionsRequest',['../classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AddActionsRequest.html#adf7358ff02f6e8a970478420522e99ff',1,'beseenium::view::inputHandlers::requests::AddActionsRequest']]]
 ];

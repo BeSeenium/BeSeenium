@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['getattribute_2ejava',['GetAttribute.java',['../GetAttribute_8java.html',1,'']]],
-  ['getcssvalue_2ejava',['GetCssValue.java',['../GetCssValue_8java.html',1,'']]],
-  ['getlocation_2ejava',['GetLocation.java',['../GetLocation_8java.html',1,'']]],
-  ['getpagesrc_2ejava',['GetPageSrc.java',['../GetPageSrc_8java.html',1,'']]],
-  ['getsize_2ejava',['GetSize.java',['../GetSize_8java.html',1,'']]],
-  ['gettagname_2ejava',['GetTagName.java',['../GetTagName_8java.html',1,'']]],
-  ['gettext_2ejava',['GetText.java',['../GetText_8java.html',1,'']]],
-  ['gettitle_2ejava',['GetTitle.java',['../GetTitle_8java.html',1,'']]],
-  ['geturl_2ejava',['GetURL.java',['../GetURL_8java.html',1,'']]]
+  ['findelementsbyclass_2ejava',['FindElementsByClass.java',['../FindElementsByClass_8java.html',1,'']]],
+  ['findelementsbycss_2ejava',['FindElementsByCss.java',['../FindElementsByCss_8java.html',1,'']]],
+  ['findelementsbyid_2ejava',['FindElementsById.java',['../FindElementsById_8java.html',1,'']]],
+  ['findelementsbylinktxt_2ejava',['FindElementsByLinkTxt.java',['../FindElementsByLinkTxt_8java.html',1,'']]],
+  ['findelementsbyname_2ejava',['FindElementsByName.java',['../FindElementsByName_8java.html',1,'']]],
+  ['findelementsbypartiallinktxt_2ejava',['FindElementsByPartialLinkTxt.java',['../FindElementsByPartialLinkTxt_8java.html',1,'']]],
+  ['findelementsbytagname_2ejava',['FindElementsByTagName.java',['../FindElementsByTagName_8java.html',1,'']]],
+  ['findelementsbyxpath_2ejava',['FindElementsByXpath.java',['../FindElementsByXpath_8java.html',1,'']]],
+  ['formatoutput_2ejava',['FormatOutput.java',['../FormatOutput_8java.html',1,'']]]
 ];

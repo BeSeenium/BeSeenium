@@ -1,5 +1,4 @@
 <map id="beseenium.controller.Test.configureRemoteDriver" name="beseenium.controller.Test.configureRemoteDriver">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#ac518753830a616c2becad06e33fad45d" title="beseenium.view.helpers.URLHandler.handle\lCapabilities" alt="" coords="304,5,605,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a6d404e12c217aa2698906c0ddd27186d" title="beseenium.view.helpers.URLHandler.handleURL" alt="" coords="653,13,980,39"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1028,5,1231,47"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="beseenium.view.URLHandler.handle\lCapabilities" alt="" coords="304,5,555,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="603,13,877,39"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="beseenium.view.inputHandlers.requests.AbstractTestRequest" name="beseenium.view.inputHandlers.requests.AbstractTestRequest">
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AddActionsRequest.html" title="{beseenium.view.inputHandlers.requests.\lAddActionsRequest\n||+ AddActionsRequest()\l+ executeRequest()\l}" alt="" coords="5,160,287,267"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1BrowserRequest.html" title="{beseenium.view.inputHandlers.requests.\lBrowserRequest\n||+ BrowserRequest()\l+ executeRequest()\l}" alt="" coords="311,160,592,267"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1CapabilitiesRequest.html" title="{beseenium.view.inputHandlers.requests.\lCapabilitiesRequest\n||+ CapabilitiesRequest()\l+ executeRequest()\l}" alt="" coords="616,160,897,267"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1ExecuteRequest.html" title="{beseenium.view.inputHandlers.requests.\lExecuteRequest\n||+ ExecuteRequest()\l+ executeRequest()\l}" alt="" coords="921,160,1203,267"/>
+</map>

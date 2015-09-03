@@ -35,6 +35,29 @@ var hierarchy =
       [ "beseenium.model.action.switchActions.SwitchToActiveElement", "classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToActiveElement.html", null ],
       [ "beseenium.model.action.switchActions.SwitchToDefaultContent", "classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToDefaultContent.html", null ]
     ] ],
+    [ "beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html", [
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionDataHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1AddActionDataHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionFactoryHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1AddActionFactoryHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.EmptyActionParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1EmptyActionParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1RootAddActionsHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.BrowserActionDataHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1BrowserActionDataHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.NoBrowserParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1NoBrowserParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.RootBrowserHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1RootBrowserHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.WrongBrowserParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1WrongBrowserParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.BadlyFormedCapsStringHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1BadlyFormedCapsStringHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.CapsActionDataHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyCapsParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1EmptyCapsParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1MalformedURLHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCapabilitiesHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1RootCapabilitiesHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1RootExecuteHandler.html", null ]
+    ] ],
+    [ "beseenium.view.inputHandlers.requests.AbstractTestRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html", [
+      [ "beseenium.view.inputHandlers.requests.AddActionsRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AddActionsRequest.html", null ],
+      [ "beseenium.view.inputHandlers.requests.BrowserRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1BrowserRequest.html", null ],
+      [ "beseenium.view.inputHandlers.requests.CapabilitiesRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1CapabilitiesRequest.html", null ],
+      [ "beseenium.view.inputHandlers.requests.ExecuteRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1ExecuteRequest.html", null ]
+    ] ],
     [ "beseenium.model.actionData.ActionData", "classbeseenium_1_1model_1_1actionData_1_1ActionData.html", null ],
     [ "beseenium.controller.ActionFactory.ActionFactory", "classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html", null ],
     [ "beseenium.model.ActionInvoker", "classbeseenium_1_1model_1_1ActionInvoker.html", null ],
@@ -57,6 +80,8 @@ var hierarchy =
     ] ],
     [ "beseenium.model.helpers.FormatOutput", "classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html", null ],
     [ "beseenium.view.HttpServer", "classbeseenium_1_1view_1_1HttpServer.html", null ],
+    [ "beseenium.view.inputHandlers.InputHandler", "classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html", null ],
+    [ "beseenium.Main", "classbeseenium_1_1Main.html", null ],
     [ "beseenium.controller.ActionFactory.MakeAction", "classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html", [
       [ "beseenium.controller.ActionFactory.elementActions.MakeClear", "classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeClear.html", null ],
       [ "beseenium.controller.ActionFactory.elementActions.MakeClick", "classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeClick.html", null ],
@@ -94,9 +119,10 @@ var hierarchy =
       [ "beseenium.controller.ActionDataFactory.MakeFirefoxData", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeFirefoxData.html", null ],
       [ "beseenium.controller.ActionDataFactory.MakeHtmlUnitDriverData", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html", null ]
     ] ],
+    [ "beseenium.view.outputHandlers.OutputHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html", null ],
     [ "beseenium.controller.Test", "classbeseenium_1_1controller_1_1Test.html", null ],
-    [ "beseenium.TestingMain", "classbeseenium_1_1TestingMain.html", null ],
-    [ "beseenium.view.helpers.URLHandler", "classbeseenium_1_1view_1_1helpers_1_1URLHandler.html", null ],
+    [ "beseenium.view.URLHandler", "classbeseenium_1_1view_1_1URLHandler.html", null ],
+    [ "beseenium.view.helpers.URLStringSplit", "classbeseenium_1_1view_1_1helpers_1_1URLStringSplit.html", null ],
     [ "HttpServlet", null, [
       [ "beseenium.view.BeSeeniumServlet", "classbeseenium_1_1view_1_1BeSeeniumServlet.html", null ]
     ] ]

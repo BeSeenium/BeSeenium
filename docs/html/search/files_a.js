@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['refreshpage_2ejava',['RefreshPage.java',['../RefreshPage_8java.html',1,'']]],
-  ['resetactiondata_2ejava',['ResetActionData.java',['../ResetActionData_8java.html',1,'']]]
+  ['outputhandler_2ejava',['OutputHandler.java',['../OutputHandler_8java.html',1,'']]]
 ];

@@ -8,6 +8,7 @@ var searchData=
   ['getinputparam',['getInputParam',['../classbeseenium_1_1model_1_1actionData_1_1ActionData.html#abd604a0a69239efbe58f826f602a9039',1,'beseenium::model::actionData::ActionData']]],
   ['getlocation',['GetLocation',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetLocation.html#a5646765cfde71630bbdc1885de5c0b90',1,'beseenium::model::action::elementActions::GetLocation']]],
   ['getpagesrc',['GetPageSrc',['../classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetPageSrc.html#a946da82ee39481c242df37a83961da01',1,'beseenium::model::action::pageActions::GetPageSrc']]],
+  ['getrequest',['getRequest',['../classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#ade62305a5c7d06611bcef0599c4d5975',1,'beseenium::view::inputHandlers::InputHandler']]],
   ['getsize',['GetSize',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetSize.html#ad01b309dfc696e84fe32813b532d9fb4',1,'beseenium::model::action::elementActions::GetSize']]],
   ['gettagname',['GetTagName',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetTagName.html#af845e6a7dd6f1f37f985d9d5e26041cb',1,'beseenium::model::action::elementActions::GetTagName']]],
   ['gettext',['GetText',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1GetText.html#ac541ab73eb6237ae9e8ccf75680ded27',1,'beseenium::model::action::elementActions::GetText']]],

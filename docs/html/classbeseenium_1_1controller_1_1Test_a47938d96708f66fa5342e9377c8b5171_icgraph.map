@@ -1,5 +1,4 @@
 <map id="beseenium.controller.Test.addAction" name="beseenium.controller.Test.addAction">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#aa5af219ac17f16e493faf0c041694ac7" title="beseenium.view.helpers.URLHandler.handle\lAddActions" alt="" coords="269,5,571,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1helpers_1_1URLHandler.html#a6d404e12c217aa2698906c0ddd27186d" title="beseenium.view.helpers.URLHandler.handleURL" alt="" coords="619,13,945,39"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="993,5,1196,47"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="beseenium.view.URLHandler.handle\lAddActions" alt="" coords="269,5,520,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="568,13,843,39"/>
 </map>
