@@ -19,25 +19,25 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.controller.Test;
-import beseenium.exceptions.actionDataExceptions.ActionDataException;
+import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This represents a handler for the case where there has been a misuse of an ActionData object
- * This is in the most case a developer space problem rather than a user-space problem i.e. a 
- * bug rather than the user having done something wrong. this is generally the last handler in
- * the chain and as such if the exception is not caught here it will fall trigger an end of chain
- * response.
+ * This represents a handler for the case where the user attempts to create an action that 
+ * does not exist, for example they misspelled the action etc. This class will pass back a 
+ * message echoing what was used as input and refer the user to the documentation in order
+ * to check the spelling/action is correct. If this is not the case then the request will be
+ * propogated down the chain.
  * 
  * @author Jan P.C. Hanson
  *
  */
-public class AddActionDataHandler extends AbstractRequestHandler
+public class NonExistantActionHandler extends AbstractRequestHandler
 {
 	/** refefrence to log4j logger **/
 	private static final Logger logger = LogManager.getLogger
-			("BeSeenium.view.outputHandlers.requestHandlers.addActionHandlers.addActionDataHandler");
+			("BeSeenium.view.outputHandlers.requestHandlers.addActionHandlers.addActionFactoryHandler");
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
@@ -50,10 +50,10 @@ public class AddActionDataHandler extends AbstractRequestHandler
 		{
 			results = request.executeRequest(test);
 		} 
-		catch (ActionDataException ade)
+		catch (ActionFactoryException afe)
 		{
-			logger.error("ERROR: ActionDataException" + ade.getMessage());
-			results="ERROR: probably a programming error, notify developer, jpchansondev@gmail.com";
+			logger.error("ERROR: "+ afe.getMessage());
+			results="ERROR: "+ afe.getMessage();
 		}
 		catch (Exception e)
 		{
@@ -68,4 +68,5 @@ public class AddActionDataHandler extends AbstractRequestHandler
 	
 	return results;
 	}
+
 }

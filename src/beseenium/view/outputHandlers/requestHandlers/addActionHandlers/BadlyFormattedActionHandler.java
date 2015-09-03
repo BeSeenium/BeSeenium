@@ -15,17 +15,28 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.addActionHandlers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.controller.Test;
+import beseenium.exceptions.testExceptions.TestException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
+ * This represents a handler for the case where the user has entered a badly formatted value
+ * for the addAction parameter, if this is the case the request will throw a TestException,
+ * which is caught by this class and notifies the user of their mistake. If the exception caught
+ * is not a TestException then the request is propogated down the chain.
  *
  * @author Jan P.C. Hanson
  *
  */
-public class EmptyActionParamHandler extends AbstractRequestHandler
+public class BadlyFormattedActionHandler extends AbstractRequestHandler
 {
+	/** refefrence to log4j logger **/
+	private static final Logger logger = LogManager.getLogger
+			("BeSeenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler");
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
@@ -33,8 +44,27 @@ public class EmptyActionParamHandler extends AbstractRequestHandler
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-
-		return null;
+		String results=null;
+		try
+		{
+			results = request.executeRequest(test);
+		} 
+		catch (TestException te)
+		{
+			logger.error("ERROR: " + te.getMessage());
+			results="ERROR: " + te.getMessage();
+		}
+		catch (Exception e)
+		{
+			if(super.successor != null)
+			{results = super.successor.handleRequest(request, test);}
+			else
+			{
+				results = "end of chain, see logs for stacktrace";
+				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
+			}
+		}
+	
+	return results;
 	}
-
 }

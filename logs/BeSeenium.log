@@ -562,3 +562,83 @@ TEST RESULTS:  beseenium.exceptions.actionDataExceptions.ActionDataException: No
 2015-09-03 12:36:53,762 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-15] BROWSER ERROR: Browser parameter is empty or set incorrectly 
 2015-09-03 12:37:03,594 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-16] BROWSER ERROR: Browser parameter is empty or set incorrectly 
 2015-09-03 12:37:08,176 ERROR B.v.o.r.b.NoBrowserParamHandler [qtp29029616-17] Browser parameter not found, cannot perform test without one 
+2015-09-03 16:23:40,441 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:23:40,550 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:23:40,575 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:23:40,638 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:23:56,995 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-16] ERROR: you cannot instanciate this type of Action 'PagGet' Check your spelling, or refer to documentation 
+2015-09-03 16:24:10,094 FATAL B.v.o.r.a.addActionDataHandler [qtp29029616-15] reached end of handler chain, exception not handledjava.lang.ArrayIndexOutOfBoundsException: 1
+ 
+2015-09-03 16:25:16,623 WARN B.v.o.r.a.EmptyActionParamHandler [qtp29029616-18] Warning: The addAction is empty 
+2015-09-03 16:32:29,696 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:32:29,800 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:32:29,825 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:32:29,892 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:32:34,849 ERROR B.v.o.r.a.NoActionParamHandler [qtp29029616-14] ERROR: There is no addAction parameter present 
+2015-09-03 16:32:40,315 FATAL B.v.o.r.a.EmptyActionParamHandler [qtp29029616-15] reached end of handler chain, exception not handledjava.lang.ArrayIndexOutOfBoundsException: 1
+ 
+2015-09-03 16:32:46,350 FATAL B.v.o.r.a.EmptyActionParamHandler [qtp29029616-16] reached end of handler chain, exception not handledjava.lang.ArrayIndexOutOfBoundsException: 1
+ 
+2015-09-03 16:33:59,923 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:34:00,044 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:34:00,073 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:34:00,137 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:34:09,785 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'PagGet' Check your spelling, or refer to documentation 
+2015-09-03 16:34:20,634 FATAL B.v.o.r.a.EmptyActionParamHandler [qtp29029616-16] reached end of handler chain, exception not handledjava.lang.ArrayIndexOutOfBoundsException: 1
+ 
+2015-09-03 16:48:43,549 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:48:43,653 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:48:43,679 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:48:43,752 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:50:04,787 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:50:04,903 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:50:04,932 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:50:04,989 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:50:07,093 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: The index parameter provided is not a number 
+2015-09-03 16:52:27,946 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:52:28,062 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:52:28,099 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:52:28,164 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:52:32,344 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string 
+2015-09-03 16:55:05,774 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:55:05,889 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:55:05,915 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:55:05,989 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:55:12,046 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string[Ljava.lang.String;@52cb08 
+2015-09-03 16:56:34,591 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:56:34,709 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:56:34,736 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:56:34,798 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:56:40,536 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string[] 
+2015-09-03 16:57:19,460 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:57:19,573 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:57:19,598 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:57:19,658 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:57:23,615 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string[] 
+2015-09-03 16:57:26,187 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-15] ERROR: badly formatted addAction string[] 
+2015-09-03 16:57:48,134 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-16] ERROR: badly formatted addAction string[PagGet, http://www.google.com, 0, 3] 
+2015-09-03 16:58:29,093 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:58:29,199 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:58:29,231 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:58:29,293 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:58:34,193 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string: '[PagGet, http://www.google.com, 0, 3]' 
+2015-09-03 16:58:51,897 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 16:58:52,019 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 16:58:52,045 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 16:58:52,109 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 16:58:56,640 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-14] ERROR: badly formatted addAction string: [PagGet, http://www.google.com, 0, 3] 
+2015-09-03 17:00:01,769 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-15] ERROR: badly formatted addAction string: [PagGets, http://www.google.com, 0, 3] 
+2015-09-03 17:00:16,341 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-16] ERROR: you cannot instanciate this type of Action 'PagGets' Check your spelling, or refer to documentation 
+2015-09-03 17:00:27,470 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-18] ERROR: you cannot instanciate this type of Action 'PagGets' Check your spelling, or refer to documentation 
+2015-09-03 17:00:32,247 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-17] ERROR: you cannot instanciate this type of Action 'PagGet' Check your spelling, or refer to documentation 

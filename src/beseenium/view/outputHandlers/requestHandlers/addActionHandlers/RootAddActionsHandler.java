@@ -48,15 +48,17 @@ public class RootAddActionsHandler extends AbstractRequestHandler
 		} 
 		catch (Exception e)
 		{
-			EmptyActionParamHandler h1 = new EmptyActionParamHandler();
-			AddActionFactoryHandler h2 = new AddActionFactoryHandler();
-			ActionNumberFormatHandler h3 = new ActionNumberFormatHandler();
-			AddActionDataHandler h4 = new AddActionDataHandler();
+			BadlyFormattedActionHandler h1 = new BadlyFormattedActionHandler();
+			NoActionParamHandler h2 = new NoActionParamHandler();
+			NonExistantActionHandler h3 = new NonExistantActionHandler();
+			ActionNumberFormatHandler h4 = new ActionNumberFormatHandler();
+			AddActionDataHandler h5 = new AddActionDataHandler();
 			
 			
 			h1.setSuccessor(h2);
 			h2.setSuccessor(h3);
 			h3.setSuccessor(h4);
+			h4.setSuccessor(h5);
 			
 			
 			results = h1.handleRequest(request, test);

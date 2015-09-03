@@ -15,17 +15,26 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.addActionHandlers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This represents a handler for the case where the user has forgotten to use the addAction
+ * parameter in their test url. The request will then throw a null pointer exception, which 
+ * this class will use to notify the user of their error. If the exception thrown is not a null
+ * pointer error then it will be propogated down the chain.
  * @author Jan P.C. Hanson
  *
  */
-public class AddActionFactoryHandler extends AbstractRequestHandler
+public class NoActionParamHandler extends AbstractRequestHandler
 {
+	/** refefrence to log4j logger **/
+	private static final Logger logger = LogManager.getLogger
+			("BeSeenium.view.outputHandlers.requestHandlers.addActionHandlers.NoActionParamHandler");
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
@@ -33,8 +42,27 @@ public class AddActionFactoryHandler extends AbstractRequestHandler
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-
-		return null;
+		String results=null;
+		try
+		{
+			results = request.executeRequest(test);
+		} 
+		catch (NullPointerException npe)
+		{
+			logger.error("ERROR: There is no addAction parameter present");
+			results="ERROR: There is no addAction parameter present";
+		}
+		catch (Exception e)
+		{
+			if(super.successor != null)
+			{results = super.successor.handleRequest(request, test);}
+			else
+			{
+				results = "end of chain, see logs for stacktrace";
+				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
+			}
+		}
+	
+	return results;
 	}
-
 }

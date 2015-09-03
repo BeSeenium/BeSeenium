@@ -50,7 +50,7 @@ public class CapsActionDataHandler extends AbstractRequestHandler
 		} 
 		catch (ActionDataException ade)
 		{
-			logger.error("programming error in model FIX ME");
+			logger.error("ERROR: ActionDataException" + ade.getMessage());
 			results="ERROR: something went wrong in the backend, please notify a Developer "+
 					"by emailing jpchansondev@gmail.com";
 		}

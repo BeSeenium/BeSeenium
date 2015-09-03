@@ -20,6 +20,7 @@ import java.util.Arrays;
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
+import beseenium.exceptions.testExceptions.TestException;
 import beseenium.view.helpers.URLStringSplit;
 
 /**
@@ -49,13 +50,23 @@ public class AddActionsRequest extends AbstractTestRequest
 	 */
 	@Override
 	public String executeRequest(Test test) 
-			throws ActionDataException, NullPointerException, ActionFactoryException, NumberFormatException
+			throws ActionDataException, NullPointerException, ActionFactoryException, 
+			NumberFormatException, TestException
 	{
 		String[][] actions = new URLStringSplit().splitString(super.requestData);
 		
 		for(String[] actionSet: actions)
 		{
+			if(actionSet.length == 3 )
+			{
 				test.addAction(actionSet[0], actionSet[1], Integer.parseInt(actionSet[2]));
+			}
+		
+			else
+			{
+				throw new TestException("badly formatted addAction string: " 
+								+ Arrays.deepToString(actionSet));
+			}
 		}
 		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
 	}

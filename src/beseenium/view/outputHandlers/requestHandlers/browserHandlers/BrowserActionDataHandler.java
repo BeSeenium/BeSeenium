@@ -19,6 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.controller.Test;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
@@ -47,9 +48,9 @@ public class BrowserActionDataHandler extends AbstractRequestHandler
 		{
 			results = request.executeRequest(test);
 		} 
-		catch (NullPointerException npe)
+		catch (ActionDataException ade)
 		{
-			logger.error("ERROR: there is a programming problem FIX ME NOW");
+			logger.error("ERROR: ActionDataException" + ade.getMessage());
 			results="ERROR: Backend problems please let a developer know - jpchansondev@gmail.com";
 		}
 		catch (Exception e)
