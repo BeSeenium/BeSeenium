@@ -23,6 +23,11 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
+ * This class represents a handler for the case where a null pointer exception is thrown when
+ * attempting to carry out the request, the having a null pointer is a perfectly valid condition
+ * for the request to have as not all tests need to have capabilities set, in fact even 'remote'
+ * tests do not NEED capabilities, however will fall back on the default values of the remote
+ * server in this case.
  *
  * @author Jan P.C. Hanson
  *

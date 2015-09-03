@@ -20,7 +20,11 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This class is the root of the capabilities chain of responsibility, it takes care of 
+ * defining the chain and, assuming the request fails, passing it to the first handler in the
+ * chain. The request then propagates down the chain untill it gets handled, or in the worst
+ * case scenario, drops off the end of the chain without being handled.
+ * 
  * @author Jan P.C. Hanson
  *
  */
@@ -34,6 +38,9 @@ public class RootCapabilitiesHandler extends AbstractRequestHandler
 	
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
+	 * 
+	 * This sets the order of the chain of responsibility and sends the request to the first
+	 * handler, which in turn propagates it down the chain.
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
