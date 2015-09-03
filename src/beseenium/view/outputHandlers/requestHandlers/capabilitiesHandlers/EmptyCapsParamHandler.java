@@ -19,40 +19,43 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.controller.Test;
-import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This represents a handler for the case in which the ActionData object has not been correctly
- * used, this is more than likely a backend issue and is something that only a developer can 
- * deal with. Should this exception occur, it will be caught here and will notify the user of
- * the situation and asked to contact a developer so the issue may be addressed.
+ * This class represents a handler for the case where a null pointer exception is thrown when
+ * attempting to carry out the request, the having a null pointer is a perfectly valid condition
+ * for the request to have as not all tests need to have capabilities set, in fact even 'remote'
+ * tests do not NEED capabilities, however will fall back on the default values of the remote
+ * server in this case.
+ *
  * @author Jan P.C. Hanson
  *
  */
-public class ActionDataExceptionHandler extends AbstractRequestHandler
+public class EmptyCapsParamHandler extends AbstractRequestHandler
 {
-	/** refefrence to log4j logger **/
 	private static final Logger logger = LogManager.getLogger
-			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.ActionDataExceptionHandler");
-	
+			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.NullPointerHandler");
+	/**
+	 * default ctor
+	 */
+	public EmptyCapsParamHandler()
+	{super();}
+
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
-	{
+	{	
 		String results=null;
 		try
 		{
 			results = request.executeRequest(test);
 		} 
-		catch (ActionDataException ade)
+		catch (NullPointerException npe)
 		{
-			logger.error("programming error in model FIX ME");
-			results="ERROR: something went wrong in the backend, please notify a Developer "+
-					"by emailing jpchansondev@gmail.com";
+			results="DESIRED CAPABILITIES: NONE";
 		}
 		catch (Exception e)
 		{

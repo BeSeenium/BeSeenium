@@ -22,7 +22,7 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 /**
  * This class is the root of the capabilities chain of responsibility, it takes care of 
  * defining the chain and, assuming the request fails, passing it to the first handler in the
- * chain. The request then propagates down the chain untill it gets handled, or in the worst
+ * chain. The request then propagates down the chain until it gets handled, or in the worst
  * case scenario, drops off the end of the chain without being handled.
  * 
  * @author Jan P.C. Hanson
@@ -52,10 +52,10 @@ public class RootCapabilitiesHandler extends AbstractRequestHandler
 		} 
 		catch (Exception e)
 		{
-			NullPointerHandler h1 = new NullPointerHandler();
-			BadlyFormedStringHandler h2 = new BadlyFormedStringHandler();
+			EmptyCapsParamHandler h1 = new EmptyCapsParamHandler();
+			BadlyFormedCapsStringHandler h2 = new BadlyFormedCapsStringHandler();
 			MalformedURLHandler h3 = new MalformedURLHandler();
-			ActionDataExceptionHandler h4 = new ActionDataExceptionHandler();
+			CapsActionDataHandler h4 = new CapsActionDataHandler();
 			
 			h1.setSuccessor(h2);
 			h2.setSuccessor(h3);

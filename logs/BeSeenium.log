@@ -513,3 +513,52 @@ TEST RESULTS:  beseenium.exceptions.actionDataExceptions.ActionDataException: No
  
 2015-09-02 17:08:55,251 ERROR B.v.o.r.c.BadlyFormedStringHandler [qtp29029616-15] Badly formed capabilities string 
  
+2015-09-03 12:21:50,750 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:21:50,924 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:21:50,954 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:21:51,077 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:22:31,453 FATAL B.v.o.r.b.BrowserActionDataHandler [qtp29029616-18] reached end of handler chain, exception not handledbeseenium.exceptions.actionDataExceptions.ActionDataFactoryException: cannot create a ''. please check spelling, or refer to docs
+ 
+2015-09-03 12:22:40,830 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-19] Browser is not set, cannot perform test without one 
+2015-09-03 12:28:40,573 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:28:40,677 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:28:40,703 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:28:40,763 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:28:52,412 ERROR B.v.o.r.b.NoBrowserParamHandler [qtp29029616-14] Browser parameter not found, cannot perform test without one 
+2015-09-03 12:29:00,911 FATAL B.v.o.r.b.NoBrowserParamHandler [qtp29029616-15] reached end of handler chain, exception not handledjava.lang.NullPointerException
+ 
+2015-09-03 12:29:07,506 FATAL B.v.o.r.b.NoBrowserParamHandler [qtp29029616-16] reached end of handler chain, exception not handledjava.lang.NullPointerException
+ 
+2015-09-03 12:29:25,739 ERROR B.v.o.r.b.NoBrowserParamHandler [qtp29029616-17] Browser parameter not found, cannot perform test without one 
+2015-09-03 12:29:55,249 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:29:55,369 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:29:55,395 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:29:55,458 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:29:59,994 FATAL B.v.o.r.b.NoBrowserParamHandler [qtp29029616-14] reached end of handler chain, exception not handledbeseenium.exceptions.actionDataExceptions.ActionDataFactoryException: cannot create a ''. please check spelling, or refer to docs
+ 
+2015-09-03 12:30:29,415 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:30:29,549 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:30:29,582 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:30:29,656 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:30:39,505 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-14] Browser parameter is empty, cannot perform test without one 
+2015-09-03 12:30:44,743 ERROR B.v.o.r.b.NoBrowserParamHandler [qtp29029616-15] Browser parameter not found, cannot perform test without one 
+2015-09-03 12:30:56,089 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-16] Browser parameter is empty, cannot perform test without one 
+2015-09-03 12:33:43,829 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:33:43,937 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:33:43,964 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:33:44,022 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:33:50,223 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-14] Browser parameter is empty, cannot perform test without one 
+2015-09-03 12:36:41,287 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 12:36:41,396 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 12:36:41,423 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 12:36:41,495 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 12:36:44,576 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-14] BROWSER ERROR: Browser parameter is empty or set incorrectly 
+2015-09-03 12:36:53,762 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-15] BROWSER ERROR: Browser parameter is empty or set incorrectly 
+2015-09-03 12:37:03,594 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-16] BROWSER ERROR: Browser parameter is empty or set incorrectly 
+2015-09-03 12:37:08,176 ERROR B.v.o.r.b.NoBrowserParamHandler [qtp29029616-17] Browser parameter not found, cannot perform test without one 

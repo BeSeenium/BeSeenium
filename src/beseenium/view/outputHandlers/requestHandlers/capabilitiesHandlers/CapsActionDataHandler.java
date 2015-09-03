@@ -19,24 +19,24 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import beseenium.controller.Test;
-import beseenium.exceptions.testExceptions.TestException;
+import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This represents a handler for the case in which the user has made some elementary mistake in
- * the length of the capabilities substring, either too few or too many parameters or the correct
- * spacer has not been used etc. In this case the request will throw a TestException which 
- * will be caught here, and the user will be provided with appropriate information.
+ * This represents a handler for the case in which the ActionData object has not been correctly
+ * used, this is more than likely a backend issue and is something that only a developer can 
+ * deal with. Should this exception occur, it will be caught here and will notify the user of
+ * the situation and asked to contact a developer so the issue may be addressed.
  * @author Jan P.C. Hanson
  *
  */
-public class BadlyFormedStringHandler extends AbstractRequestHandler
+public class CapsActionDataHandler extends AbstractRequestHandler
 {
 	/** refefrence to log4j logger **/
 	private static final Logger logger = LogManager.getLogger
-			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.BadlyFormedStringHandler");
-
+			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.ActionDataExceptionHandler");
+	
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
@@ -48,10 +48,11 @@ public class BadlyFormedStringHandler extends AbstractRequestHandler
 		{
 			results = request.executeRequest(test);
 		} 
-		catch (TestException te)
+		catch (ActionDataException ade)
 		{
-			logger.error("Badly formed capabilities string");
-			results="ERROR: Badly formed capabilities string";
+			logger.error("programming error in model FIX ME");
+			results="ERROR: something went wrong in the backend, please notify a Developer "+
+					"by emailing jpchansondev@gmail.com";
 		}
 		catch (Exception e)
 		{

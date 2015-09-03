@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
+package beseenium.view.outputHandlers.requestHandlers.browserHandlers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,31 +23,24 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * This class represents a handler for the case where a null pointer exception is thrown when
- * attempting to carry out the request, the having a null pointer is a perfectly valid condition
- * for the request to have as not all tests need to have capabilities set, in fact even 'remote'
- * tests do not NEED capabilities, however will fall back on the default values of the remote
- * server in this case.
- *
+ * This represents a handler for the case where something in the model has gone awry and the
+ * ActionData object has been misused somehow.
+ * 
  * @author Jan P.C. Hanson
  *
  */
-public class NullPointerHandler extends AbstractRequestHandler
+public class BrowserActionDataHandler extends AbstractRequestHandler
 {
+	/** refefrence to log4j logger **/
 	private static final Logger logger = LogManager.getLogger
-			("BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.NullPointerHandler");
-	/**
-	 * default ctor
-	 */
-	public NullPointerHandler()
-	{super();}
+			("BeSeenium.view.outputHandlers.requestHandlers.browserHandlers.BrowserActionDataHandler");
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
-	{	
+	{
 		String results=null;
 		try
 		{
@@ -55,7 +48,8 @@ public class NullPointerHandler extends AbstractRequestHandler
 		} 
 		catch (NullPointerException npe)
 		{
-			results="DESIRED CAPABILITIES: NONE";
+			logger.error("ERROR: there is a programming problem FIX ME NOW");
+			results="ERROR: Backend problems please let a developer know - jpchansondev@gmail.com";
 		}
 		catch (Exception e)
 		{
