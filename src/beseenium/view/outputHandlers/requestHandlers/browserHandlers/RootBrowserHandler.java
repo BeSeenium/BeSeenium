@@ -18,13 +18,9 @@ package beseenium.view.outputHandlers.requestHandlers.browserHandlers;
 import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
-import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.CapsActionDataHandler;
-import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.BadlyFormedCapsStringHandler;
-import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler;
-import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyCapsParamHandler;
 
 /**
- * This class is the root of the capabilities chain of responsibility, it takes care of 
+ * This class is the root of the browser chain of responsibility, it takes care of 
  * defining the chain and, assuming the request fails, passing it to the first handler in the
  * chain. The request then propagates down the chain until it gets handled, or in the worst
  * case scenario, drops off the end of the chain without being handled.
@@ -34,14 +30,6 @@ import beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyC
  */
 public class RootBrowserHandler extends AbstractRequestHandler
 {
-
-	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler)
-	 */
-	@Override
-	public void setSuccessor(AbstractRequestHandler successor)
-	{
-	}
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()

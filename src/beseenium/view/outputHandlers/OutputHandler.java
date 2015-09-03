@@ -24,7 +24,6 @@ import java.util.Map;
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
-import beseenium.view.inputHandlers.requests.ExecuteRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 import beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler;
 import beseenium.view.outputHandlers.requestHandlers.browserHandlers.RootBrowserHandler;

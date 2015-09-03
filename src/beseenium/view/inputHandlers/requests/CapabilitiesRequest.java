@@ -66,7 +66,7 @@ public class CapabilitiesRequest extends AbstractTestRequest
 			
 				else
 				{
-					throw new TestException("ERROR: badly formatted capability string");
+					throw new TestException("badly formatted capability string");
 				}
 		}
 	return "DESIRED CAPABILITIES: "+Arrays.deepToString(caps) + "\n";

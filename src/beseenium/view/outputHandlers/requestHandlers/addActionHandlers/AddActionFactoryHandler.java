@@ -13,33 +13,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.outputHandlers.requestHandlers;
+package beseenium.view.outputHandlers.requestHandlers.addActionHandlers;
 
 import beseenium.controller.Test;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
+import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- * abstract base for a chain of responsibility that takes abstractTestRequests
- * and uses them to generate output in various forms: log messages, User messages,
- * as well as taking care of exception handling.
+ *
  * @author Jan P.C. Hanson
  *
  */
-public abstract class AbstractRequestHandler
+public class AddActionFactoryHandler extends AbstractRequestHandler
 {
-	/** reference to the successor object **/
-	protected AbstractRequestHandler successor;
-	
-	/**
-	 * sets the next concrete request handler in the chain.
-	 * @param successor the next handler in the chain
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest(beseenium.view.inputHandlers.requests.AbstractTestRequest, beseenium.controller.Test)
 	 */
-	public void setSuccessor(AbstractRequestHandler successor)
-	{this.successor = successor;}
-	
-	/**
-	 * provides implementation to handle the request.
-	 * @return
-	 */
-	public abstract String handleRequest(AbstractTestRequest request, Test test);
+	@Override
+	public String handleRequest(AbstractTestRequest request, Test test)
+	{
+
+		return null;
+	}
+
 }

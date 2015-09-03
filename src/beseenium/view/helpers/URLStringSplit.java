@@ -31,7 +31,7 @@ public class URLStringSplit
 	/**
 	 * split a string of the form "V01:V02:...:V0n|V11:V12:...:V1n|Vm1:Vm2:...:Vmn" into a 
 	 * 2d String array of the form {{V01,V02...V0n},{V11,V12...V1n}...{Vm1, Vm2... Vmn}}
-	 * @param string of the form "V01:V02:...:V0n|V11:V12:...:V1n|Vm1:Vm2:...:Vmn"
+	 * @param stringToSplit string of the form "V01:V02:...:V0n|V11:V12:...:V1n|Vm1:Vm2:...:Vmn"
 	 * @return String[][] of the form {{V01,V02...V0n},{V11,V12...V1n}...{Vm1, Vm2... Vmn}}
 	 */
 	public String[][] splitString(String stringToSplit)

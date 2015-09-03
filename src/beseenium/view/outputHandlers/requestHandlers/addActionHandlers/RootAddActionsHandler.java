@@ -20,6 +20,10 @@ import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
+ * This class is the root of the addAction chain of responsibility, it takes care of 
+ * defining the chain and, assuming the request fails, passing it to the first handler in the
+ * chain. The request then propagates down the chain until it gets handled, or in the worst
+ * case scenario, drops off the end of the chain without being handled.
  *
  * @author Jan P.C. Hanson
  *
@@ -27,22 +31,36 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 public class RootAddActionsHandler extends AbstractRequestHandler
 {
 
-	/* (non-Javadoc)
-	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#setSuccessor(beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler)
-	 */
-	@Override
-	public void setSuccessor(AbstractRequestHandler successor)
-	{
-	}
 
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
+	 * 
+	 * This sets the order of the chain of responsibility and sends the request to the first
+	 * handler, which in turn propagates it down the chain.
 	 */
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-
-		return null;
+		String results=null;
+		try
+		{			
+			 results = request.executeRequest(test);
+		} 
+		catch (Exception e)
+		{
+			EmptyActionParamHandler h1 = new EmptyActionParamHandler();
+			AddActionFactoryHandler h2 = new AddActionFactoryHandler();
+			ActionNumberFormatHandler h3 = new ActionNumberFormatHandler();
+			AddActionDataHandler h4 = new AddActionDataHandler();
+			
+			
+			h1.setSuccessor(h2);
+			h2.setSuccessor(h3);
+			h3.setSuccessor(h4);
+			
+			
+			results = h1.handleRequest(request, test);
+		}	
+		return results;
 	}
-
 }
