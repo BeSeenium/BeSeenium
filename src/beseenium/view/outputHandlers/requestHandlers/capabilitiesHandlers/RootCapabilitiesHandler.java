@@ -16,6 +16,7 @@
 package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 
 import beseenium.controller.Test;
+import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 

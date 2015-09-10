@@ -30,7 +30,7 @@ public class EmergencyShutdown
 	 * in case something goes wrong the test should be able to shut down the current browser instance,
 	 * or else there could potentially be many, for all intents and purposes, orphan processes floating
 	 * about eating up memory....remember: always kill the orphans.
-	 * @param e
+	 * @param Test the test to shut down.
 	 * @return verification string
 	 */
 	public String execute(Test test)

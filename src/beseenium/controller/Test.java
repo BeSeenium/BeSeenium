@@ -131,12 +131,14 @@ public class Test
 	{
 		if(this.invoker != null)
 		{
-			for(int i = 0; i < invoker.size(); ++i)
+			System.out.println("start size "+invoker.size());
+			for(int i = this.invoker.size()-1; i >= 0; --i)
 			{
 				this.invoker.remove(i);
 			}
 			this.invoker.add(this.actionFactory.makeAction("BrowserQuit"), "", 0);
 			this.invoker.execute();
+			System.out.println("end size "+invoker.size());
 		}
 	}
 }

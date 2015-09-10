@@ -115,11 +115,12 @@ public class OutputHandler
 			this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
 			results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
 			
-			test.emergencyShutdown();
+			results.add(new EmergencyShutdown().execute(test));
 		} 
 		
 		catch (Exception e)
 		{
+			results.add("test stopped");
 			e.printStackTrace();
 			
 		}

@@ -60,19 +60,19 @@ public class BeSeeniumServlet extends HttpServlet
 			throws ServletException, IOException
     {
 		Logger logger = LogManager.getLogger("BeSeenium.BeSeeniumServlet");
-		/** holds the contents of the 'browser' get parameter **/
+		// holds the contents of the 'browser' get parameter
 		String browser = request.getParameter("browser");
-		/** holds the contents of the 'addActions' get parameter **/
+		// holds the contents of the 'addActions' get parameter
 		String addActions = request.getParameter("addActions");
-		/** holds the contents of the 'addActions' get parameter **/
+		// holds the contents of the 'addActions' get parameter
 		String capabilities = request.getParameter("capabilities");
-		/** reference to object that outputs text to response **/
+		// reference to object that outputs text to response 
 		String id = request.getParameter("ID");
-		/** reference to the printwriter that will write the output to the response **/
+		// reference to the printwriter that will write the output to the response
 		PrintWriter out = response.getWriter();
 		try 
 		{			
-			/** UrlDecoder turns the get parameter strings into program actions **/
+			// UrlDecoder turns the get parameter strings into program actions 
 //			URLHandler urlHandler = new URLHandler();
 //			//turn the get parameters into something useful
 //			//execute the actions and turn the result string into an http response

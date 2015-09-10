@@ -52,7 +52,6 @@ public class RootExecuteHandler extends AbstractRequestHandler
 			
 			
 			results = h1.handleRequest(request, test);
-			results += new EmergencyShutdown().execute(test);
 		}	
 		return results;
 	}
