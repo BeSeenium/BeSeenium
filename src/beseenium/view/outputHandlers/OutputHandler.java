@@ -111,19 +111,35 @@ public class OutputHandler
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("actions")));
 			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test));
-		
-			this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
-			results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
 			
-			results.add(new EmergencyShutdown().execute(test));
+			if (this.checkListForERROR(results)==false)
+			{
+				this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
+				results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
+			}
+			else
+			{
+				results.add(new EmergencyShutdown().execute(test));
+			}
 		} 
 		
 		catch (Exception e)
 		{
-			results.add("test stopped");
 			e.printStackTrace();
 			
 		}
 		return results;
+	}
+	
+	/**
+	 * checks to see if a List<String> contains the string "ERROR" in it
+	 * @param stringList the List<String> to check
+	 * @return true if the list contains the String "ERROR", false if not.
+	 */
+	private boolean checkListForERROR(List<String> stringList)
+	{
+		for(String string: stringList)
+		{  if(string.contains("ERROR")){System.out.println(string);return true;}  }
+		return false;
 	}
 }

@@ -1237,3 +1237,103 @@ org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0
 2015-09-10 11:16:03,001 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-10 11:16:28,364 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-15] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:28:11,359 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:28:11,474 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:28:11,501 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:28:11,561 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:28:25,651 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:31:37,091 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:31:37,202 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:31:37,227 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:31:37,290 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:31:50,468 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:52:24,355 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:52:24,461 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:52:24,490 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:52:24,558 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:52:32,510 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:53:04,788 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:53:04,895 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:53:04,920 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:53:05,003 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:53:10,761 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:54:45,276 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:54:45,381 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:54:45,408 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:54:45,485 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:54:51,476 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:56:17,777 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:56:17,888 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:56:17,916 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:56:18,011 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:56:24,505 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:56:46,852 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:56:46,969 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:56:46,995 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:56:47,103 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:56:52,712 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:57:22,309 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:57:22,415 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:57:22,442 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:57:22,503 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:57:27,665 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:58:09,467 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:58:09,611 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:58:09,647 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:58:09,714 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:58:15,537 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 11:58:53,426 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 11:58:53,544 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 11:58:53,570 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 11:58:53,723 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 11:59:04,214 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 12:00:21,770 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 12:00:21,887 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 12:00:21,921 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 12:00:21,987 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 12:00:28,287 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 12:01:12,388 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 12:01:12,496 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 12:01:12,524 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 12:01:12,610 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 12:08:44,740 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 12:08:44,851 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 12:08:44,879 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 12:08:44,938 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 13:01:18,494 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 13:01:18,606 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 13:01:18,646 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 13:01:18,713 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 13:01:24,093 ERROR B.v.o.r.a.NoActionParamHandler [qtp29029616-14] ERROR: There is no addAction parameter present 
+2015-09-10 13:05:14,415 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 13:05:14,521 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 13:05:14,551 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 13:05:14,633 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 13:05:21,064 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 13:06:27,922 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 13:06:28,027 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 13:06:28,052 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 13:06:28,115 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 13:06:35,019 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 13:09:25,048 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 13:09:25,150 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 13:09:25,183 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 13:09:25,247 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 13:09:33,181 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
