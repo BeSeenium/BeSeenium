@@ -1088,3 +1088,69 @@ org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0
 2015-09-06 15:22:15,441 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-06 15:22:26,788 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:27:25,059 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:27:25,271 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:27:25,296 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:27:25,436 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:27:38,084 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:36:56,169 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:36:56,276 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:36:56,302 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:36:56,362 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:37:08,080 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:39:35,695 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:39:35,798 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:39:35,824 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:39:35,893 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:39:47,184 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:40:20,514 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-15] ERROR: No WebElement exists  
+2015-09-10 09:40:50,231 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:40:50,339 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:40:50,369 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:40:50,459 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:41:00,367 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:41:36,740 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:41:36,862 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:41:36,891 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:41:36,962 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:41:47,321 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:41:47,429 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:41:47,460 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:41:47,535 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:41:58,028 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:42:26,410 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:42:26,518 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:42:26,544 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:42:26,609 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:42:42,992 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:43:08,549 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:43:08,654 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:43:08,684 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:43:08,742 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:43:19,801 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:48:13,528 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:48:13,634 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:48:13,660 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:48:13,724 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:48:25,809 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:50:25,532 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:50:25,639 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:50:25,674 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:50:25,752 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:50:35,453 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-10 09:51:10,780 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 09:51:10,883 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 09:51:10,909 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 09:51:10,971 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 09:51:21,327 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  

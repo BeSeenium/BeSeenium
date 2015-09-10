@@ -29,6 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import beseenium.controller.Test;
 import beseenium.view.inputHandlers.InputHandler;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.OutputHandler;
@@ -78,9 +79,9 @@ public class BeSeeniumServlet extends HttpServlet
 //			String result = urlHandler.handleURL(capabilities, browser, addActions);
 //			out.print(result);	
 			
-			
+			Test test = new Test();
 			InputHandler inputHandler = new InputHandler();
-			OutputHandler outputHandler = new OutputHandler();
+			OutputHandler outputHandler = new OutputHandler(test);
 			Map<String, AbstractTestRequest>tmp = inputHandler.handleInput(capabilities, browser, addActions);
 
 			outputHandler.setRequests(tmp);

@@ -38,7 +38,7 @@ public class EmergencyShutdown
 		try {test.emergencyShutdown();} 
 		catch (ActionDataException | ActionException e1) 
 		{
-			e1.printStackTrace();;
+			e1.printStackTrace();
 			return "\n CRITICAL ERROR: CANNOT PERFORM EMERGENCY SHUTDOWN \n" + e1.getMessage();
 		}
 		return "\n could not run test";

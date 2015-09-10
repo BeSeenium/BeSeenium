@@ -23,6 +23,7 @@ import java.util.Map;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
+import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 import beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler;
@@ -54,14 +55,17 @@ public class OutputHandler
 	private AbstractRequestHandler successor;
 	/** map of string descriptors to AbstractTestRequests**/
 	private Map<String, AbstractTestRequest> requestMap;
+	/** class copy of test to be used **/
+	private Test test;
 	
 	/**
 	 * default constructor
 	 */
-	public OutputHandler()
+	public OutputHandler(Test test)
 	{
 		super();
 		successorMap = new HashMap<AbstractTestRequest, AbstractRequestHandler>();	
+		this.test = test;
 	}
 	
 	/**
@@ -98,8 +102,6 @@ public class OutputHandler
 		ArrayList<String> results = new ArrayList<String>();
 		try
 		{
-			Test test = new Test();
-		
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("capabilities")));
 			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test));
@@ -112,11 +114,14 @@ public class OutputHandler
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
 			results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
+			
+			test.emergencyShutdown();
 		} 
 		
-		catch (ActionDataFactoryException | MalformedURLException e)
+		catch (Exception e)
 		{
 			e.printStackTrace();
+			
 		}
 		return results;
 	}
