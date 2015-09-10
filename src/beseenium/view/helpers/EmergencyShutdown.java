@@ -13,36 +13,34 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.inputHandlers.requests;
+package beseenium.view.helpers;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionException;
 
 /**
- * represents a request to execute the test.
+ *
  * @author Jan P.C. Hanson
  *
  */
-public class ExecuteRequest extends AbstractTestRequest
+public class EmergencyShutdown
 {
 	/**
-	 * call super constructor passing in the appropriate request data.
-	 * @param requestData
+	 * in case something goes wrong the test should be able to shut down the current browser instance,
+	 * or else there could potentially be many, for all intents and purposes, orphan processes floating
+	 * about eating up memory....remember: always kill the orphans.
+	 * @param e
+	 * @return verification string
 	 */
-	public ExecuteRequest(String requestData)
+	public String execute(Test test)
 	{
-		super(requestData);
+		try {test.emergencyShutdown();} 
+		catch (ActionDataException | ActionException e1) 
+		{
+			e1.printStackTrace();;
+			return "\n CRITICAL ERROR: CANNOT PERFORM EMERGENCY SHUTDOWN \n" + e1.getMessage();
+		}
+		return "\n could not run test";
 	}
-
-	/* (non-Javadoc
-	 * @see beseenium.view.inputHandlers.AbstractTestRequest#executeRequest()
-	 * 
-	 * \n returns a String of with the output of the test results.
-	 */
-	@Override
-	public String executeRequest(Test test) 
-			throws ActionDataException, ActionException 
-			
-	{return test.executeActions().toString() + "\n";}
 }

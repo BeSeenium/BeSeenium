@@ -642,3 +642,449 @@ TEST RESULTS:  beseenium.exceptions.actionDataExceptions.ActionDataException: No
 2015-09-03 17:00:16,341 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-16] ERROR: you cannot instanciate this type of Action 'PagGets' Check your spelling, or refer to documentation 
 2015-09-03 17:00:27,470 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-18] ERROR: you cannot instanciate this type of Action 'PagGets' Check your spelling, or refer to documentation 
 2015-09-03 17:00:32,247 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-17] ERROR: you cannot instanciate this type of Action 'PagGet' Check your spelling, or refer to documentation 
+2015-09-03 22:48:17,802 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 22:48:17,932 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 22:48:17,953 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 22:48:18,055 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 22:50:17,756 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-17] reached end of handler chain, exception not handledjava.lang.NullPointerException
+ 
+2015-09-03 22:52:26,804 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 22:52:26,881 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 22:52:26,900 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 22:52:26,948 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 22:52:34,080 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handledjava.lang.NullPointerException
+ 
+2015-09-03 22:53:58,882 ERROR B.v.o.r.a.ActionNumberFormatHandler [qtp29029616-16] ERROR: badly formatted addAction string: [] 
+2015-09-03 22:54:08,039 ERROR B.v.o.r.a.NoActionParamHandler [qtp29029616-17] ERROR: There is no addAction parameter present 
+2015-09-03 22:57:37,614 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-03 22:57:37,694 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-03 22:57:37,713 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-03 22:57:37,765 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-03 22:58:08,129 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 14:53:15,239 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 14:53:15,325 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 14:53:15,344 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 14:53:15,391 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 14:53:23,094 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 14:56:44,370 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 14:56:44,444 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 14:56:44,462 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 14:56:44,513 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 14:56:52,748 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 14:57:38,058 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 14:57:38,132 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 14:57:38,149 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 14:57:38,206 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 14:57:43,862 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 14:57:47,574 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-15] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 14:58:16,432 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 14:58:16,505 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 14:58:16,523 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 14:58:16,569 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 14:58:23,303 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 15:19:19,745 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:19:19,826 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:19:19,844 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:19:19,900 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:19:27,562 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 15:22:46,241 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:22:46,314 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:22:46,332 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:22:46,375 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:22:54,551 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:85)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 15:28:55,067 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:28:55,145 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:28:55,163 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:28:55,208 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:29:02,651 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists in this ActionData beseenium.exceptions.actionDataExceptions.ActionDataException: No WebElement exists in this ActionData
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:95)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 15:33:09,971 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:33:10,048 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:33:10,066 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:33:10,125 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:33:24,435 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:33:24,515 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:33:24,533 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:33:24,578 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:33:30,625 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-15] ERROR: No WebElement exists in this ActionData beseenium.exceptions.actionDataExceptions.ActionDataException: No WebElement exists in this ActionData
+	at beseenium.model.actionData.ActionData.getElement(ActionData.java:95)
+	at beseenium.model.action.elementActions.GetTagName.execute(GetTagName.java:51)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:103)
+	at beseenium.controller.Test.executeActions(Test.java:122)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:52)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:63)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:58)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:114)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:88)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-05 15:35:21,779 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:35:21,860 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:35:21,887 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:35:21,929 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:35:27,933 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 15:52:21,035 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:52:21,111 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:52:21,128 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:52:21,174 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:52:37,010 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 15:55:27,941 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:55:28,017 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:55:28,036 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:55:28,080 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:55:37,438 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 15:57:18,476 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 15:57:18,557 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 15:57:18,576 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 15:57:18,626 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 15:57:31,854 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 16:22:07,397 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 16:22:07,470 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 16:22:07,489 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 16:22:07,535 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 16:22:16,692 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 16:30:36,406 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 16:30:36,483 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 16:30:36,501 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 16:30:36,553 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 16:30:47,399 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 16:31:25,002 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 16:31:25,078 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 16:31:25,096 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 16:31:25,139 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 16:31:32,848 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-05 16:32:25,773 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 16:32:25,848 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 16:32:25,866 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 16:32:25,912 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 16:32:53,613 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: cannot open webPage 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused 
+2015-09-05 16:33:04,482 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-15] ERROR: No WebElement exists  
+2015-09-05 16:34:16,164 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-05 16:34:16,242 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-05 16:34:16,260 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-05 16:34:16,312 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-05 16:34:26,002 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  
+2015-09-06 15:22:15,289 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-06 15:22:15,366 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-06 15:22:15,386 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-06 15:22:15,441 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-06 15:22:26,788 ERROR B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] ERROR: No WebElement exists  

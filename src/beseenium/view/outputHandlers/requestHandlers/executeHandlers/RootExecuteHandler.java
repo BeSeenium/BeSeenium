@@ -16,11 +16,15 @@
 package beseenium.view.outputHandlers.requestHandlers.executeHandlers;
 
 import beseenium.controller.Test;
+import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 
 /**
- *
+ * This class is the root of the addAction chain of responsibility, it takes care of 
+ * defining the chain and, assuming the request fails, passing it to the first handler in the
+ * chain. The request then propagates down the chain until it gets handled, or in the worst
+ * case scenario, drops off the end of the chain without being handled.
  * @author Jan P.C. Hanson
  *
  */
@@ -33,7 +37,23 @@ public class RootExecuteHandler extends AbstractRequestHandler
 	@Override
 	public String handleRequest(AbstractTestRequest request, Test test)
 	{
-		
-		return null;
+		String results=null;
+		try
+		{			
+			 results = request.executeRequest(test);
+		} 
+		catch (Exception e)
+		{
+			ActionExceptionHandler h1 = new ActionExceptionHandler();
+			ActionDataExceptionHandler h2 = new ActionDataExceptionHandler();
+			
+			
+			h1.setSuccessor(h2);
+			
+			
+			results = h1.handleRequest(request, test);
+			results += new EmergencyShutdown().execute(test);
+		}	
+		return results;
 	}
 }

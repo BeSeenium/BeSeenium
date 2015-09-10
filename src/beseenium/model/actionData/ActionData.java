@@ -82,10 +82,19 @@ public class ActionData
 	 */
 	public List<WebElement> getElement() throws ActionDataException 
 	{
-		if (this.element.isEmpty() || this.element == null)
-			{throw new ActionDataException("No WebElement exists in this ActionData");}
-		else
-			{return element;}	
+		try
+		{
+			if (this.element.isEmpty()==false)
+			{return element;}
+			
+			else
+			{throw new ActionDataException("No WebElement exists ");}	
+		}
+		catch(NullPointerException npe)
+		{
+			throw new ActionDataException("No WebElement exists ");
+		}
+		
 	}
 	
 	/**
@@ -96,7 +105,7 @@ public class ActionData
 	public WebDriver getDriver() throws ActionDataException
 	{
 		if (this.driver == null)
-		{throw new ActionDataException("No WebDriver exists in this ActionData");}
+		{throw new ActionDataException("No WebDriver exists ");}
 	else
 		{return driver;}
 	}
