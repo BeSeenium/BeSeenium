@@ -32,4 +32,4 @@ to run tests. In brief, to run a test submit a http request to **`[your IP]/resu
 
 replacing anything in square brackets with appropriate values.
 
-for more details and other documentation see <https://github.com/jpchanson/BeSeenium/wiki>
+for more details and other documentation see <a href="https://github.com/jpchanson/BeSeenium/wiki" target="_blank">
