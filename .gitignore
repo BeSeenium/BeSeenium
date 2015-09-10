@@ -1,3 +1,4 @@
 bin/
 docs/
 /target/
+/logs/BeSeenium.log
