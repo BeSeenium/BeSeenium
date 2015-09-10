@@ -1,6 +1,6 @@
 <map id="beseenium.view.inputHandlers.InputHandler.handleInput" name="beseenium.view.inputHandlers.InputHandler.handleInput">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a038cb9083926614e0943580ddb1a32d6" title="beseenium.view.inputHandlers.\lInputHandler.handleCapabilities" alt="" coords="290,5,514,47"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a336ffc7510426883f16b8baa5693f8ea" title="beseenium.view.inputHandlers.\lInputHandler.handleAddActions" alt="" coords="291,5,513,47"/>
 <area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a29951301b2495febba17d2947ba61a80" title="beseenium.view.inputHandlers.\lInputHandler.handleBrowser" alt="" coords="291,71,513,112"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a336ffc7510426883f16b8baa5693f8ea" title="beseenium.view.inputHandlers.\lInputHandler.handleAddActions" alt="" coords="291,136,513,177"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a038cb9083926614e0943580ddb1a32d6" title="beseenium.view.inputHandlers.\lInputHandler.handleCapabilities" alt="" coords="290,136,514,177"/>
 <area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a3fa21768c950556e9c803711ed4420aa" title="beseenium.view.inputHandlers.\lInputHandler.handleExecuteRequest" alt="" coords="275,201,529,243"/>
 </map>

@@ -153,6 +153,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is responsible for taking the input, in the form of URL parameters passed in from the servlet, and turning them into AbstractTestRequest derived objects that can then be passed to the output handler to give useable results. </p><dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
+
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00036">36</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a97131e9d0ca4c0a4325f8d89d990be58"></a>
 <div class="memitem">
@@ -167,6 +169,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>default constructor. </p>
+
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00044">44</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
 
 </div>
 </div>
@@ -191,6 +195,8 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>AbstractTestRequest </dd></dl>
+
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00075">75</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
 
 </div>
 </div>
@@ -222,6 +228,10 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>AddActionRequest </dd></dl>
+
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00105">105</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="InputHandler_8java_source.html#l00060">beseenium.view.inputHandlers.InputHandler.handleInput()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -265,6 +275,10 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BrowserRequest </dd></dl>
 
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00095">95</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="InputHandler_8java_source.html#l00060">beseenium.view.inputHandlers.InputHandler.handleInput()</a>.</p>
+
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -307,6 +321,10 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CapabilitiesRequest </dd></dl>
 
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00085">85</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="InputHandler_8java_source.html#l00060">beseenium.view.inputHandlers.InputHandler.handleInput()</a>.</p>
+
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -341,6 +359,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>generates an ExecuteRequest </p><dl class="section return"><dt>Returns</dt><dd>ExecuteRequest </dd></dl>
+
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00114">114</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="InputHandler_8java_source.html#l00060">beseenium.view.inputHandlers.InputHandler.handleInput()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -394,6 +416,12 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map&lt;String, AbstractTestRequest&gt; addressable by the strings: capabilities, browser, actions &amp; execute. </dd></dl>
 
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00060">60</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>References <a class="el" href="InputHandler_8java_source.html#l00105">beseenium.view.inputHandlers.InputHandler.handleAddActions()</a>, <a class="el" href="InputHandler_8java_source.html#l00095">beseenium.view.inputHandlers.InputHandler.handleBrowser()</a>, <a class="el" href="InputHandler_8java_source.html#l00085">beseenium.view.inputHandlers.InputHandler.handleCapabilities()</a>, <a class="el" href="InputHandler_8java_source.html#l00114">beseenium.view.inputHandlers.InputHandler.handleExecuteRequest()</a>, and <a class="el" href="InputHandler_8java_source.html#l00039">beseenium.view.inputHandlers.InputHandler.testRequests</a>.</p>
+
+<p>Referenced by <a class="el" href="BeSeeniumServlet_8java_source.html#l00059">beseenium.view.BeSeeniumServlet.doGet()</a>.</p>
+
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -401,7 +429,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler_aa848fb1b618af2cdb2e61d296ba55dad_cgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler_aa848fb1b618af2cdb2e61d296ba55dad_cgraph" alt=""/></div>
 <map name="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler_aa848fb1b618af2cdb2e61d296ba55dad_cgraph" id="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler_aa848fb1b618af2cdb2e61d296ba55dad_cgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a038cb9083926614e0943580ddb1a32d6" title="beseenium.view.inputHandlers.\lInputHandler.handleCapabilities" alt="" coords="290,5,514,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a29951301b2495febba17d2947ba61a80" title="beseenium.view.inputHandlers.\lInputHandler.handleBrowser" alt="" coords="291,71,513,112"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a336ffc7510426883f16b8baa5693f8ea" title="beseenium.view.inputHandlers.\lInputHandler.handleAddActions" alt="" coords="291,136,513,177"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a3fa21768c950556e9c803711ed4420aa" title="beseenium.view.inputHandlers.\lInputHandler.handleExecuteRequest" alt="" coords="275,201,529,243"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a336ffc7510426883f16b8baa5693f8ea" title="beseenium.view.inputHandlers.\lInputHandler.handleAddActions" alt="" coords="291,5,513,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a29951301b2495febba17d2947ba61a80" title="beseenium.view.inputHandlers.\lInputHandler.handleBrowser" alt="" coords="291,71,513,112"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a038cb9083926614e0943580ddb1a32d6" title="beseenium.view.inputHandlers.\lInputHandler.handleCapabilities" alt="" coords="290,136,514,177"/><area shape="rect" id="node5" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html#a3fa21768c950556e9c803711ed4420aa" title="beseenium.view.inputHandlers.\lInputHandler.handleExecuteRequest" alt="" coords="275,201,529,243"/></map>
 </div>
 </p>
 
@@ -438,10 +466,14 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>map of Strings to AbstractTestRequest's </p>
 
+<p>Definition at line <a class="el" href="InputHandler_8java_source.html#l00039">39</a> of file <a class="el" href="InputHandler_8java_source.html">InputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="InputHandler_8java_source.html#l00060">beseenium.view.inputHandlers.InputHandler.handleInput()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/view/inputHandlers/<a class="el" href="InputHandler_8java.html">InputHandler.java</a></li>
+<li>src/beseenium/view/inputHandlers/<a class="el" href="InputHandler_8java_source.html">InputHandler.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -449,7 +481,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1inputHandlers.html">inputHandlers</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1InputHandler.html">InputHandler</a></li>
-    <li class="footer">Generated on Thu Sep 3 2015 14:57:19 for BeSeenium by
+    <li class="footer">Generated on Thu Sep 10 2015 10:08:55 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

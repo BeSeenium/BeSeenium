@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['badlyformattedactionhandler_2ejava',['BadlyFormattedActionHandler.java',['../BadlyFormattedActionHandler_8java.html',1,'']]],
   ['badlyformedcapsstringhandler_2ejava',['BadlyFormedCapsStringHandler.java',['../BadlyFormedCapsStringHandler_8java.html',1,'']]],
   ['beseeniumexception_2ejava',['BeSeeniumException.java',['../BeSeeniumException_8java.html',1,'']]],
   ['beseeniumservlet_2ejava',['BeSeeniumServlet.java',['../BeSeeniumServlet_8java.html',1,'']]],

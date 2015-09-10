@@ -1,6 +1,6 @@
 <map id="beseenium.view.URLHandler.shutdown" name="beseenium.view.URLHandler.shutdown">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="620,72,895,98"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="beseenium.view.URLHandler.handle\lCapabilities" alt="" coords="321,31,572,72"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1URLHandler.html#a7696fb55c864a910283e742115b7ed15" title="beseenium.view.URLHandler.handle\lBrowser" alt="" coords="321,96,572,138"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1URLHandler.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="beseenium.view.URLHandler.handle\lAddActions" alt="" coords="321,162,572,203"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="beseenium.view.URLHandler.handle\lAddActions" alt="" coords="321,5,572,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="620,101,895,127"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1URLHandler.html#a7696fb55c864a910283e742115b7ed15" title="beseenium.view.URLHandler.handle\lBrowser" alt="" coords="321,123,572,164"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="beseenium.view.URLHandler.handle\lCapabilities" alt="" coords="321,188,572,229"/>
 </map>

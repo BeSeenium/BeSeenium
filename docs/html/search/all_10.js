@@ -1,7 +1,7 @@
 var searchData=
 [
   ['test',['Test',['../classbeseenium_1_1controller_1_1Test.html',1,'beseenium::controller']]],
-  ['test',['Test',['../classbeseenium_1_1controller_1_1Test.html#adbcbde688c9ee0e44eec684cf5ce0f48',1,'beseenium::controller::Test']]],
+  ['test',['Test',['../classbeseenium_1_1controller_1_1Test.html#adbcbde688c9ee0e44eec684cf5ce0f48',1,'beseenium.controller.Test.Test()'],['../classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a68754623e6b58f9cefda497d8a6bdb20',1,'beseenium.view.outputHandlers.OutputHandler.test()']]],
   ['test_2ejava',['Test.java',['../Test_8java.html',1,'']]],
   ['testalreadyexistsexception',['TestAlreadyExistsException',['../classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html',1,'beseenium::exceptions::testExceptions']]],
   ['testalreadyexistsexception',['TestAlreadyExistsException',['../classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html#a5e52e0c58572fd7a775f7a5c6a69b946',1,'beseenium.exceptions.testExceptions.TestAlreadyExistsException.TestAlreadyExistsException()'],['../classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html#aba79e335028eff00a3a0084aad2a73fd',1,'beseenium.exceptions.testExceptions.TestAlreadyExistsException.TestAlreadyExistsException(String message)']]],

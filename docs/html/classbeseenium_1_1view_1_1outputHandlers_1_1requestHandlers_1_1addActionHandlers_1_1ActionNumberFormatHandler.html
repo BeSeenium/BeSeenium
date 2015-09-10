@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">beseenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler Class Reference</div>  </div>
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler__coll__graph.png" border="0" usemap="#beseenium_8view_8outputHandlers_8requestHandlers_8addActionHandlers_8ActionNumberFormatHandler_coll__map" alt="Collaboration graph"/></div>
 <map name="beseenium_8view_8outputHandlers_8requestHandlers_8addActionHandlers_8ActionNumberFormatHandler_coll__map" id="beseenium_8view_8outputHandlers_8requestHandlers_8addActionHandlers_8ActionNumberFormatHandler_coll__map">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n||+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="15,5,295,112"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n||+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="5,5,285,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -143,6 +144,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add8cb6e5761e2ade230ec2021bce9d1b inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memItemLeft" align="right" valign="top">abstract String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b">handleRequest</a> (<a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html">AbstractTestRequest</a> request, <a class="el" href="classbeseenium_1_1controller_1_1Test.html">Test</a> test)</td></tr>
 <tr class="separator:add8cb6e5761e2ade230ec2021bce9d1b inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aa3ebc6f20856303878174dcdda7c7cb3"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler.html#aa3ebc6f20856303878174dcdda7c7cb3">logger</a></td></tr>
+<tr class="separator:aa3ebc6f20856303878174dcdda7c7cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler</a></td></tr>
@@ -150,7 +156,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:af63a4bec940086599042319b0fd06e75 inherit pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
+<div class="textblock"><p>This represents a handler for the case where the user has provided an index parameter for an action that is not a number, the user is then informed of this.</p>
+<dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
+
+<p>Definition at line <a class="el" href="ActionNumberFormatHandler_8java_source.html#l00032">32</a> of file <a class="el" href="ActionNumberFormatHandler_8java_source.html">ActionNumberFormatHandler.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa27f7e51a6430555eb7e50f0245d45e6"></a>
 <div class="memitem">
@@ -176,10 +185,51 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ActionNumberFormatHandler_8java_source.html#l00042">42</a> of file <a class="el" href="ActionNumberFormatHandler_8java_source.html">ActionNumberFormatHandler.java</a>.</p>
+
+<p>References <a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#aa69c65e2b1e435f9130ffa7dfde78069">beseenium.view.inputHandlers.requests.AbstractTestRequest.executeRequest()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler_aa27f7e51a6430555eb7e50f0245d45e6_cgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler_aa27f7e51a6430555eb7e50f0245d45e6_cgraph" alt=""/></div>
+<map name="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler_aa27f7e51a6430555eb7e50f0245d45e6_cgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler_aa27f7e51a6430555eb7e50f0245d45e6_cgraph">
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#aa69c65e2b1e435f9130ffa7dfde78069" title="beseenium.view.inputHandlers.requests.\lAbstractTestRequest.executeRequest" alt="" coords="353,13,635,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa3ebc6f20856303878174dcdda7c7cb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger beseenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler.logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= LogManager.getLogger</div>
+<div class="line">            (<span class="stringliteral">&quot;BeSeenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler&quot;</span>)</div>
+</div><!-- fragment --><p>refefrence to log4j logger </p>
+
+<p>Definition at line <a class="el" href="ActionNumberFormatHandler_8java_source.html#l00035">35</a> of file <a class="el" href="ActionNumberFormatHandler_8java_source.html">ActionNumberFormatHandler.java</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/view/outputHandlers/requestHandlers/addActionHandlers/<a class="el" href="ActionNumberFormatHandler_8java.html">ActionNumberFormatHandler.java</a></li>
+<li>src/beseenium/view/outputHandlers/requestHandlers/addActionHandlers/<a class="el" href="ActionNumberFormatHandler_8java_source.html">ActionNumberFormatHandler.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -187,7 +237,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers.html">outputHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers.html">requestHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers.html">addActionHandlers</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler.html">ActionNumberFormatHandler</a></li>
-    <li class="footer">Generated on Thu Sep 3 2015 14:57:19 for BeSeenium by
+    <li class="footer">Generated on Thu Sep 10 2015 10:08:55 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

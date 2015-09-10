@@ -5,6 +5,6 @@ var dir_c3aa92b7dbb40c27fcffaccb7f9ad0b0 =
     [ "model", "dir_a143349b75ba2ffaa5efaa578520d118.html", "dir_a143349b75ba2ffaa5efaa578520d118" ],
     [ "view", "dir_6f67b778e642d7f003b1565c8b5f8bdf.html", "dir_6f67b778e642d7f003b1565c8b5f8bdf" ],
     [ "Main.java", "Main_8java.html", [
-      [ "Main", "classbeseenium_1_1Main.html", null ]
+      [ "Main", "classbeseenium_1_1Main.html", "classbeseenium_1_1Main" ]
     ] ]
 ];

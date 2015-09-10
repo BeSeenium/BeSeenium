@@ -38,8 +38,9 @@ var hierarchy =
     [ "beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html", [
       [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.ActionNumberFormatHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1ActionNumberFormatHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionDataHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1AddActionDataHandler.html", null ],
-      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionFactoryHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1AddActionFactoryHandler.html", null ],
-      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.EmptyActionParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1EmptyActionParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.BadlyFormattedActionHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1BadlyFormattedActionHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.NoActionParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1NoActionParamHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.NonExistantActionHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1NonExistantActionHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.RootAddActionsHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1RootAddActionsHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.BrowserActionDataHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1BrowserActionDataHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.browserHandlers.NoBrowserParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1NoBrowserParamHandler.html", null ],
@@ -50,6 +51,8 @@ var hierarchy =
       [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyCapsParamHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1EmptyCapsParamHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1MalformedURLHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCapabilitiesHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1RootCapabilitiesHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1ActionDataExceptionHandler.html", null ],
+      [ "beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1ActionExceptionHandler.html", null ],
       [ "beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1RootExecuteHandler.html", null ]
     ] ],
     [ "beseenium.view.inputHandlers.requests.AbstractTestRequest", "classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html", [
@@ -61,6 +64,7 @@ var hierarchy =
     [ "beseenium.model.actionData.ActionData", "classbeseenium_1_1model_1_1actionData_1_1ActionData.html", null ],
     [ "beseenium.controller.ActionFactory.ActionFactory", "classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html", null ],
     [ "beseenium.model.ActionInvoker", "classbeseenium_1_1model_1_1ActionInvoker.html", null ],
+    [ "beseenium.view.helpers.EmergencyShutdown", "classbeseenium_1_1view_1_1helpers_1_1EmergencyShutdown.html", null ],
     [ "Exception", null, [
       [ "beseenium.exceptions.BeSeeniumException", "classbeseenium_1_1exceptions_1_1BeSeeniumException.html", [
         [ "beseenium.exceptions.actionDataExceptions.ActionDataException", "classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html", [

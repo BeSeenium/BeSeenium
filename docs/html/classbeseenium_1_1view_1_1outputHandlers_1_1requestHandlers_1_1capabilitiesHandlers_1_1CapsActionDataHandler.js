@@ -1,4 +1,5 @@
 var classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler =
 [
-    [ "handleRequest", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#a2b4802efff90518f2b18c9e5f9df80ab", null ]
+    [ "handleRequest", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#a2b4802efff90518f2b18c9e5f9df80ab", null ],
+    [ "logger", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#a978931d09f37fb806c3cbb6b0d0bbb86", null ]
 ];
