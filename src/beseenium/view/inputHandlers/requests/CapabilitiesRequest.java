@@ -21,7 +21,7 @@ import java.util.Arrays;
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.testExceptions.TestException;
-import beseenium.view.helpers.URLStringSplit;
+import beseenium.view.helpers.StringSplit;
 
 /**
  * represents a request for a particular set of capabilities.
@@ -55,7 +55,8 @@ public class CapabilitiesRequest extends AbstractTestRequest
 	public String executeRequest(Test test) 
 			throws ActionDataException, NullPointerException, TestException, MalformedURLException
 	{
-		String[][] caps = new URLStringSplit().splitString(super.requestData);
+		String[][] caps = new StringSplit().splitString(super.requestData);
+		String result="";
 		
 		for(String[] capabilitySet: caps)
 		{
@@ -68,7 +69,10 @@ public class CapabilitiesRequest extends AbstractTestRequest
 				{
 					throw new TestException("badly formatted capability string");
 				}
+				//format results
+				for(String res: capabilitySet) {result+=res;}
 		}
-	return "DESIRED CAPABILITIES: "+Arrays.deepToString(caps) + "\n";
+//	return "DESIRED CAPABILITIES: "+Arrays.deepToString(caps) + "\n";
+		return result +"|";
 	}
 }

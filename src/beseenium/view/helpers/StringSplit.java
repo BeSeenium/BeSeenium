@@ -20,12 +20,12 @@ package beseenium.view.helpers;
  * @author Jan P.C. Hanson
  *
  */
-public class URLStringSplit
+public class StringSplit
 {
 	/**
 	 * default constructor
 	 */
-	public URLStringSplit()
+	public StringSplit()
 	{super();}
 	
 	/**

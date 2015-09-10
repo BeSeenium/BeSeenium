@@ -1337,3 +1337,97 @@ org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0
 2015-09-10 13:09:25,247 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-10 13:09:33,181 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-14] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-10 14:32:19,693 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 14:32:19,806 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 14:32:19,839 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 14:32:19,915 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 14:32:36,548 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] [{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (657f9205-b5a3-495c-a83e-e42eeaf6629c)] -> name: q] , }, {input}, {Quitting...}]
+ 
+2015-09-10 14:35:10,397 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 14:35:10,511 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 14:35:10,553 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 14:35:10,633 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 14:35:21,008 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] "TEST RESULTS"[{navigating to http://www.google.com}, {[[FirefoxDriver: firefox on LINUX (910feb06-dc3b-4aac-a9ae-e4effa907f32)] -> name: q] , }, {input}, {Quitting...}]
+ 
+2015-09-10 15:05:40,184 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:05:40,321 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:05:40,359 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:05:40,516 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:05:48,015 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] [navigating to http://www.google.com, [[FirefoxDriver: firefox on LINUX (59761317-303b-4d9a-bdc1-4b6a7acf1e16)] -> name: q] , , input, Quitting...]
+ 
+2015-09-10 15:10:01,019 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:10:01,132 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:10:01,162 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:10:01,225 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:10:11,422 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] nullnavigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (107b0850-a53d-48e6-8ada-fb60f4a24ce4)] -> name: q] , inputQuitting... 
+2015-09-10 15:10:57,124 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:10:57,229 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:10:57,254 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:10:57,316 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:11:05,927 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] nullnavigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (b4ba14cb-2ea9-46e4-b112-e721a1e537d6)] -> name: q] , inputQuitting... 
+2015-09-10 15:12:10,394 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:12:10,506 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:12:10,538 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:12:10,643 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:12:18,533 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (06885589-da22-47a5-8c68-e953508ac90f)] -> name: q] , inputQuitting... 
+2015-09-10 15:15:31,206 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:15:31,311 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:15:31,337 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:15:31,404 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:15:41,103 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (4311b738-0eef-4387-b4ec-470542443cd0)] -> name: q] , inputQuitting... 
+2015-09-10 15:36:31,545 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:36:31,652 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:36:31,683 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:36:31,748 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:36:40,920 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (e926d45a-388c-4c70-b902-c0910609a781)] -> name: q] , inputQuitting... 
+2015-09-10 15:40:17,774 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[RemoteWebDriver: internet explorer on WINDOWS (d79af2021ff5ecf1cdf867e2d24ebbb6d2613026)] -> name: q] , q , all elements populated with: 'test' all elements submited. Quitting... 
+2015-09-10 15:40:53,148 FATAL B.v.o.r.b.BrowserActionDataHandler [qtp29029616-14] reached end of handler chain, exception not handledorg.openqa.selenium.WebDriverException: Invalid username or password (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 457 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Poseidon', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.0.7-2-ARCH', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+ 
+2015-09-10 15:40:53,150 ERROR B.v.o.r.a.NoActionParamHandler [qtp29029616-14] ERROR: There is no addAction parameter present 
+2015-09-10 15:42:50,647 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:42:50,765 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:42:50,793 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:42:50,861 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:43:06,851 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[RemoteWebDriver: internet explorer on WINDOWS (89ae8922577f222533b0456fbf87de0087290de0)] -> name: q] , q , all elements populated with: 'test' all elements submited. Quitting... 
+2015-09-10 15:44:51,174 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:44:51,382 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:44:51,424 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:44:51,572 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:45:20,794 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[RemoteWebDriver: internet explorer on WINDOWS (7db98d1cde3c02e12597b7b5799bb40307e1182d)] -> name: q] , q , all elements populated with: 'test' all elements submited. Quitting... 
+2015-09-10 15:51:51,412 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:51:51,520 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:51:51,546 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:51:51,612 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:52:04,391 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (e14a57b4-2141-4afa-bb16-655d2a91af49)] -> name: q] , inputQuitting... 
+2015-09-10 15:52:48,637 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:52:48,744 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:52:48,770 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:52:48,845 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:52:58,470 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (a8d05537-fc9a-478e-a1ec-9fd42aaad2f2)] -> name: q] , inputQuitting...| 
+2015-09-10 15:53:39,712 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:53:39,820 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:53:39,845 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:53:39,908 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:53:56,667 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-10 15:53:56,778 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-10 15:53:56,814 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-10 15:53:56,872 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-10 15:54:06,331 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (ee02cc39-e79e-4a2f-a4fc-7f07991c73a4)] -> name: q] , inputQuitting...| 

@@ -15,6 +15,9 @@
  */
 package beseenium.view.outputHandlers.requestHandlers.executeHandlers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import beseenium.controller.Test;
 import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
@@ -30,6 +33,8 @@ import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
  */
 public class RootExecuteHandler extends AbstractRequestHandler
 {
+	private static final Logger logger = LogManager.getLogger
+			("BeSeenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler");
 	
 	/* (non-Javadoc)
 	 * @see beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler#handleRequest()
@@ -41,6 +46,7 @@ public class RootExecuteHandler extends AbstractRequestHandler
 		try
 		{			
 			 results = request.executeRequest(test);
+			 logger.info(results);
 		} 
 		catch (Exception e)
 		{
@@ -53,7 +59,7 @@ public class RootExecuteHandler extends AbstractRequestHandler
 			
 			results = h1.handleRequest(request, test);
 			results += new EmergencyShutdown().execute(test);
-		}	
+		}
 		return results;
 	}
 }

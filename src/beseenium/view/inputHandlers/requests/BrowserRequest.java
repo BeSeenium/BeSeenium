@@ -46,6 +46,7 @@ public class BrowserRequest extends AbstractTestRequest
 			throws ActionDataException, NullPointerException
 	{
 		test.setBrowser(super.requestData);
-		return "BROWSER SET AS: " + super.requestData + "\n";
+//		return "BROWSER SET AS: " + super.requestData + "\n";
+		return super.requestData +"|";
 	}
 }

@@ -44,5 +44,11 @@ public class ExecuteRequest extends AbstractTestRequest
 	public String executeRequest(Test test) 
 			throws ActionDataException, ActionException 
 			
-	{return test.executeActions().toString() + "\n";}
+	{
+		//format results
+		String result="";
+		for(String res: test.executeActions()) {result+=res;}
+//		return test.executeActions().toString() + "\n";
+		return result +"|";
+	}
 }

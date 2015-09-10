@@ -15,14 +15,12 @@
  */
 package beseenium.view.outputHandlers;
 
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import beseenium.controller.Test;
-import beseenium.exceptions.actionDataExceptions.ActionDataFactoryException;
 import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;

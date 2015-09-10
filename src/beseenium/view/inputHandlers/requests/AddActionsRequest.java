@@ -21,7 +21,7 @@ import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionFactoryException;
 import beseenium.exceptions.testExceptions.TestException;
-import beseenium.view.helpers.URLStringSplit;
+import beseenium.view.helpers.StringSplit;
 
 /**
  * represents a request to add a series of actions to a test.
@@ -53,7 +53,8 @@ public class AddActionsRequest extends AbstractTestRequest
 			throws ActionDataException, NullPointerException, ActionFactoryException, 
 			NumberFormatException, TestException
 	{
-		String[][] actions = new URLStringSplit().splitString(super.requestData);
+		String[][] actions = new StringSplit().splitString(super.requestData);
+		String result="";
 		
 		for(String[] actionSet: actions)
 		{
@@ -67,7 +68,12 @@ public class AddActionsRequest extends AbstractTestRequest
 				throw new TestException("badly formatted addAction string: " 
 								+ Arrays.deepToString(actionSet));
 			}
+			
+			//format results
+			for(String res: actionSet) {result+=res;}
 		}
-		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
+		
+//		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
+		return result + "|";
 	}
 }
