@@ -1,3 +1,4 @@
+package beseenium.view.helpers;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -13,8 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.helpers;
-
 /**
  * helper class that splits a string into an appropriate 2d array of strings.
  * @author Jan P.C. Hanson
@@ -29,12 +28,12 @@ public class StringSplit
 	{super();}
 	
 	/**
-	 * split a string of the form "V01:V02:...:V0n|V11:V12:...:V1n|Vm1:Vm2:...:Vmn" into a 
+	 * split a string of the form "V01 V02 ... V0n|V11 V12 ... V1n|Vm1 Vm2 ... Vmn" into a 
 	 * 2d String array of the form {{V01,V02...V0n},{V11,V12...V1n}...{Vm1, Vm2... Vmn}}
-	 * @param stringToSplit string of the form "V01:V02:...:V0n|V11:V12:...:V1n|Vm1:Vm2:...:Vmn"
+	 * @param stringToSplit string of the form "V01 V02 ... V0n|V11 V12:... V1n|Vm1 Vm2 ... Vmn"
 	 * @return String[][] of the form {{V01,V02...V0n},{V11,V12...V1n}...{Vm1, Vm2... Vmn}}
 	 */
-	public String[][] splitString(String stringToSplit)
+	public String[][] urlSplitString(String stringToSplit)
 	{
 		String[] firstSplit = stringToSplit.split("\\|"); //={"key:value", "key:value"}
 		int split1Len = firstSplit.length;

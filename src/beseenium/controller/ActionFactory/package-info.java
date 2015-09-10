@@ -1,4 +1,3 @@
-package beseenium.controller.ActionFactory.elementActions;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -14,31 +13,16 @@ package beseenium.controller.ActionFactory.elementActions;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-import beseenium.controller.ActionDataFactory.ActionDataFactory;
-import beseenium.controller.ActionFactory.MakeAction;
-import beseenium.model.action.AbstractAction;
-import beseenium.model.action.elementActions.Click;
-
 /**
- * creates a new click action
+ *	This is the root package for the ActionFactory implementation, similarly to the 
+ *	ActionDataFactory, it is a factory method style implementation. However the inheritance
+ *	hierarchy for this factory is much broader than that of ActionDataFactory, as such only 
+ *	its Abstract base is located in the root package. All specialisations of MakeAction (the
+ *	abstract base) are grouped in packages so that classes that make similar actions are 
+ *	co-located. The package structure of the specialisations somewhat mirrors the structure 
+ *	of the action package in the model.
+ *
  * @author Jan P.C. Hanson
  *
  */
-public class MakeClick extends MakeAction
-{
-	/**
-	 * call to super constructor
-	 * @param adf an ActionDataFactory
-	 */
-	public MakeClick(ActionDataFactory adf)
-	{super(adf);}
-
-	/* (non-Javadoc)
-	 * @see beseenium.controller.ActionFactory.MakeAction#makeAction()
-	 */
-	@Override
-	public AbstractAction makeAction()
-	{
-		return new Click(super.adFactory.makeActionData());
-	}
-}
+package beseenium.controller.ActionFactory;

@@ -1,3 +1,4 @@
+package beseenium.view.helpers;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -13,14 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.helpers;
-
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
 import beseenium.exceptions.actionExceptions.ActionException;
 
 /**
- *
+ * this is an object wrapper for the emergency shutdown method of the Test class passed 
+ * in as a parameter.
  * @author Jan P.C. Hanson
  *
  */
@@ -30,7 +30,7 @@ public class EmergencyShutdown
 	 * in case something goes wrong the test should be able to shut down the current browser instance,
 	 * or else there could potentially be many, for all intents and purposes, orphan processes floating
 	 * about eating up memory....remember: always kill the orphans.
-	 * @param Test the test to shut down.
+	 * @param test the test to shut down.
 	 * @return verification string
 	 */
 	public String execute(Test test)

@@ -1,3 +1,4 @@
+package beseenium.view.inputHandlers.requests;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -13,10 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.inputHandlers.requests;
-
 import java.net.MalformedURLException;
-import java.util.Arrays;
 
 import beseenium.controller.Test;
 import beseenium.exceptions.actionDataExceptions.ActionDataException;
@@ -55,7 +53,7 @@ public class CapabilitiesRequest extends AbstractTestRequest
 	public String executeRequest(Test test) 
 			throws ActionDataException, NullPointerException, TestException, MalformedURLException
 	{
-		String[][] caps = new StringSplit().splitString(super.requestData);
+		String[][] caps = new StringSplit().urlSplitString(super.requestData);
 		String result="";
 		
 		for(String[] capabilitySet: caps)

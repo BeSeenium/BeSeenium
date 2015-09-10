@@ -13,34 +13,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.exceptions.testExceptions;
 /**
- * 
- *
+ *	This package contains all the classes to do with the ActionDataFactory functionality.
+ *	ActionDataFactory is a factory method style class, which uses the MakeData inheritance 
+ *	hierarchy to produce its ActionData objects.
  * @author Jan P.C. Hanson
  *
  */
-public class TestAlreadyExistsException extends TestException 
-{
-	/**
-	 * needed to avoid warnings
-	 */
-	private static final long serialVersionUID = -4809217893822758020L;
-
-	/**
-	 * default constructor
-	 */
-	protected TestAlreadyExistsException()
-	{
-		super();
-	}
-	
-	/**
-	 * instsnciate excecption with message 
-	 * @param message string to display
-	 */
-	public TestAlreadyExistsException(String message)
-	{
-		super(message);
-	}
-}
+package beseenium.controller.ActionDataFactory;

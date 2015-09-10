@@ -1,3 +1,4 @@
+package beseenium.view.inputHandlers.requests;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -13,8 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.inputHandlers.requests;
-
 import java.util.Arrays;
 
 import beseenium.controller.Test;
@@ -53,7 +52,7 @@ public class AddActionsRequest extends AbstractTestRequest
 			throws ActionDataException, NullPointerException, ActionFactoryException, 
 			NumberFormatException, TestException
 	{
-		String[][] actions = new StringSplit().splitString(super.requestData);
+		String[][] actions = new StringSplit().urlSplitString(super.requestData);
 		String result="";
 		
 		for(String[] actionSet: actions)

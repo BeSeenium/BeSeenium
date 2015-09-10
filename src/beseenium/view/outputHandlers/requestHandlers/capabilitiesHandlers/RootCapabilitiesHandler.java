@@ -1,3 +1,4 @@
+package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -13,10 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers;
-
 import beseenium.controller.Test;
-import beseenium.view.helpers.EmergencyShutdown;
 import beseenium.view.inputHandlers.requests.AbstractTestRequest;
 import beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler;
 

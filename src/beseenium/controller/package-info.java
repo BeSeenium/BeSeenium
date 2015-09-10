@@ -13,34 +13,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package beseenium.exceptions.testExceptions;
 /**
- * 
+ *	The root package for the controller module of the BeSeenium project. The controller
+ *  contains the Test class which is the main class that is interacted with in order to perform
+ *  automated test functionality, although the ActionDataFactory and ActionFactory are useful
+ *  Auxiliary classes to aid in this.
  *
  * @author Jan P.C. Hanson
  *
  */
-public class TestDoesNotExistException extends TestException 
-{
-	/**
-	 * needed to avoid warnings
-	 */
-	private static final long serialVersionUID = 6407310411521085773L;
-
-	/**
-	 * default constructor
-	 */
-	protected TestDoesNotExistException()
-	{
-		super();
-	}
-	
-	/**
-	 * instsnciate excecption with message 
-	 * @param message string to display
-	 */
-	public TestDoesNotExistException(String message)
-	{
-		super(message);
-	}
-}
+package beseenium.controller;
