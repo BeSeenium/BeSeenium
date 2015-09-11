@@ -14,6 +14,7 @@ package beseenium.view.outputFormatters;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 /**
  * ||||||||Interface/Abstract base class|||||  that all output formatter classes should 
  * subscribe to, allowing the servlet to request an appropriate output format specific to a 
