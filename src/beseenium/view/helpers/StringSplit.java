@@ -14,6 +14,7 @@ package beseenium.view.helpers;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 /**
  * helper class that splits a string into an appropriate 2d array of strings.
  * @author Jan P.C. Hanson

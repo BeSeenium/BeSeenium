@@ -1,5 +1,6 @@
 BeSeenium	{#mainpage}
 =========
-This is **BeSeenium** \ref test "my first page"
-
-S
+- Logo
+- intro
+- general bumpf
+- copyright
