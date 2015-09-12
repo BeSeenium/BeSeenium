@@ -1,4 +1,4 @@
-package beseenium.view.outputFormatters;
+package beseenium.helpers;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -14,17 +14,16 @@ package beseenium.view.outputFormatters;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-import beseenium.helpers.CopyrightIgnore;
+
 /**
- * ||||||||Interface/Abstract base class|||||  that all output formatter classes should 
- * subscribe to, allowing the servlet to request an appropriate output format specific to a 
- * users request.
+ * This class is completely empty its only purpose is to provide an import for those classes 
+ * that have no dependencies. This allows doxygen to ignore the copyright notice and produce 
+ * useful output for the class comments.
  * 
  * @author Jan P.C. Hanson
  *
  */
-@SuppressWarnings("unused")
-public class AbstractOutputFormatter
+public class CopyrightIgnore
 {
 
 }

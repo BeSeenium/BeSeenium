@@ -14,12 +14,13 @@ package beseenium.view.outputFormatters;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-//
+import beseenium.helpers.CopyrightIgnore;
 /**
  * This class provides methods to transform strings into JSON format.
  * @author Jan P.C. Hanson
  *
  */
+@SuppressWarnings("unused")
 public class JsonFormatter extends AbstractOutputFormatter
 {
 	/**
@@ -28,9 +29,8 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 * @return a string of the form '[V01, V02 ... V03]'
 	 */
 	public String asArray(String stringToFormat)
-	{
-		
-		return null;
+	{		
+		return "["+stringToFormat+"]";
 	}
 	
 	/**
@@ -40,7 +40,7 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 */
 	public String asObject(String stringToFormat)
 	{
-		return null;
+		return "{"+stringToFormat+"}";
 	}
 	
 	/**
@@ -51,6 +51,6 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 */
 	public String asKeyVal(String key,String value)
 	{
-		return null;
+		return "\""+key+"\""+":"+"\""+value+"\"";
 	}
 }
