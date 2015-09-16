@@ -81,13 +81,18 @@ public class BeSeeniumServlet extends HttpServlet
 			Test test = new Test();
 			InputHandler inputHandler = new InputHandler();
 			OutputHandler outputHandler = new OutputHandler(test);
+			String output = "";
 			Map<String, AbstractTestRequest>tmp = inputHandler.handleInput(capabilities, browser, addActions);
 
 			outputHandler.setRequests(tmp);
 			
-			List<String> results = outputHandler.handleRequests(id);
+//			List<String> results = outputHandler.handleRequests(id);
 			
-			out.println(Arrays.deepToString(results.toArray()));
+			for(String result: outputHandler.handleRequests(id))
+			{output += result;}
+			
+			out.println(output);
+//			out.println(Arrays.deepToString(results.toArray()));
 		} 
 //		
 //		catch (ActionDataFactoryException e) 

@@ -69,10 +69,10 @@ public class AddActionsRequest extends AbstractTestRequest
 			}
 			
 			//format results
-			for(String res: actionSet) {result+=res;}
+			result+="+"+actionSet[0]+","+actionSet[1]+","+actionSet[2]+"+";
 		}
 		
 //		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
-		return result + "|";
+		return "|"+result+"|";
 	}
 }

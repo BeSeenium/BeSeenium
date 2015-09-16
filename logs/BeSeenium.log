@@ -1437,3 +1437,57 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 2015-09-12 15:04:44,020 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-12 15:04:55,030 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (e810e7b9-4a97-4c90-bea7-adc114e06b34)] -> name: q] , inputQuitting...| 
+2015-09-16 14:13:19,699 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:13:19,822 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:13:19,840 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:13:19,938 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:13:36,296 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:14:52,752 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:14:52,897 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:14:52,917 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:14:52,967 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:14:59,439 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-15] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:16:00,951 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:16:01,037 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:16:01,061 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:16:01,119 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:16:06,346 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:17:17,735 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:17:17,834 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:17:17,853 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:17:17,901 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:17:21,973 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:17:39,445 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:17:39,522 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:17:39,546 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:17:39,592 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:17:43,146 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:21:55,356 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:21:55,431 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:21:55,449 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:21:55,498 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:22:01,559 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:22:34,958 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:22:35,031 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:22:35,050 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:22:35,106 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:22:39,477 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:26:22,320 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:26:22,393 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:26:22,412 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:26:22,467 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:26:27,819 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:28:43,117 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:28:43,205 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:28:43,244 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:28:43,303 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:28:46,873 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
