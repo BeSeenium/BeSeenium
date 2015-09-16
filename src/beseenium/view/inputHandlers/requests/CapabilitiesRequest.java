@@ -68,9 +68,9 @@ public class CapabilitiesRequest extends AbstractTestRequest
 					throw new TestException("badly formatted capability string");
 				}
 				//format results
-				for(String res: capabilitySet) {result+=res;}
+				result+="+"+capabilitySet[0]+","+capabilitySet[1]+"+";
 		}
 //	return "DESIRED CAPABILITIES: "+Arrays.deepToString(caps) + "\n";
-		return result +"|";
+		return "|"+result+"|";
 	}
 }

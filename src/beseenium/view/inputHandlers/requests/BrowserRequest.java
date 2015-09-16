@@ -26,7 +26,8 @@ public class BrowserRequest extends AbstractTestRequest
 {
 	/**
 	 * call super constructor passing in the appropriate request data.
-	 * @param requestData
+	 * @param requestData String representation of the WebDriver to use
+	 *  ("firefox"/"noWindows"/"remote"...etc)
 	 */
 	public BrowserRequest(String requestData)
 	{
@@ -36,7 +37,6 @@ public class BrowserRequest extends AbstractTestRequest
 	/* (non-Javadoc)
 	 * @see beseenium.view.inputHandlers.AbstractTestRequest#executeRequest()
 	 * 
-	 * \n String representation of the WebDriver to use ("firefox"/"noWindows"/"remote"...etc)
 	 * 
 	 * \n returns a String of the form: "BROWSER SET AS" + "<name of browser>" + newline
 	 */
@@ -46,6 +46,6 @@ public class BrowserRequest extends AbstractTestRequest
 	{
 		test.setBrowser(super.requestData);
 //		return "BROWSER SET AS: " + super.requestData + "\n";
-		return super.requestData +"|";
+		return "|"+super.requestData +"|";
 	}
 }
