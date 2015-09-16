@@ -28,7 +28,7 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
 	 * @return a string of the form '[V01, V02 ... V03]'
 	 */
-	public String asArray(String stringToFormat)
+	public static String asArray(String stringToFormat)
 	{		
 		return "["+stringToFormat+"]";
 	}
@@ -38,7 +38,7 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
 	 * @return string of the form '{V01, V02 ... V0n}'
 	 */
-	public String asObject(String stringToFormat)
+	public static String asObject(String stringToFormat)
 	{
 		return "{"+stringToFormat+"}";
 	}
@@ -49,7 +49,7 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 * @param value a string representing the value
 	 * @return a string of the form '"key":"value"'
 	 */
-	public String asKeyVal(String key,String value)
+	public static String asKeyVal(String key,String value)
 	{
 		return "\""+key+"\""+":"+"\""+value+"\"";
 	}

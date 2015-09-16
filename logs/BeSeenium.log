@@ -1431,3 +1431,9 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 2015-09-10 15:53:56,872 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-10 15:54:06,331 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (ee02cc39-e79e-4a2f-a4fc-7f07991c73a4)] -> name: q] , inputQuitting...| 
+2015-09-12 15:04:43,766 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-12 15:04:43,923 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-12 15:04:43,941 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-12 15:04:44,020 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-12 15:04:55,030 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com[[FirefoxDriver: firefox on LINUX (e810e7b9-4a97-4c90-bea7-adc114e06b34)] -> name: q] , inputQuitting...| 

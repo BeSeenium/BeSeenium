@@ -85,7 +85,7 @@ public class BeSeeniumServlet extends HttpServlet
 
 			outputHandler.setRequests(tmp);
 			
-			List<String> results = outputHandler.handleRequests();
+			List<String> results = outputHandler.handleRequests(id);
 			
 			out.println(Arrays.deepToString(results.toArray()));
 		} 

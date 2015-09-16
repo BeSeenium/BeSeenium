@@ -28,7 +28,7 @@ public class FormatOutput
 	/**
 	 * formats the output string of a findElementBy... output string
 	 * @param elements a List<WebElement> containing all elements to be formatted
-	 * @param n an integer value deermining which element to act on, if n = -1 then all elements
+	 * @param n an integer value determining which element to act on, if n = -1 then all elements
 	 * in the list will be formatted.
 	 * @return String containing the formatted output.
 	 */
@@ -40,7 +40,7 @@ public class FormatOutput
 		{
 			for(int i=0; i< elements.size(); ++i)
 			{
-				tempRes += elements.get(i).toString()+" , ";
+				tempRes += elements.get(i).toString();
 			}
 		
 		return tempRes;

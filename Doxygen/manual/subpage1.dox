@@ -1,7 +1,6 @@
 /**
 \page subpage1 sub page 1
-subpage 1
-===============
+
 \tableofcontents
 
 \section section10 first section page1
@@ -12,6 +11,7 @@ subpage 1
 
 \subsubsection subsubsection10 first sub sub section page1
 
+\paragraph p1 my paragraph
 
 \section section20 second section page1
 

@@ -94,7 +94,7 @@ public class OutputHandler
 	 * a browser to handle them for instance. Similarly as the 'remote' browser type
 	 * requires capabilities to be set before it is called this must come first.
 	 */
-	public List<String> handleRequests()
+	public List<String> handleRequests(String id)
 	{
 		ArrayList<String> results = new ArrayList<String>();
 		try
