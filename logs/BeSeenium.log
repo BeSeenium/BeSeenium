@@ -1491,3 +1491,25 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 2015-09-16 14:28:43,303 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-16 14:28:46,873 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:32:26,461 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:32:26,535 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:32:26,553 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:32:26,594 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:32:29,895 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 14:43:35,400 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-16 14:43:35,474 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-16 14:43:35,492 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-16 14:43:35,546 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-16 14:43:40,568 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] |navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-16 15:30:09,558 ERROR B.v.o.r.a.addActionFactoryHandler [qtp29029616-16] ERROR: you cannot instanciate this type of Action 'FindElementByName' Check your spelling, or refer to documentation 
+2015-09-16 15:30:21,494 ERROR B.v.o.r.b.EmptyBrowserParamHandler [qtp29029616-19] BROWSER ERROR: Browser parameter is empty or set incorrectlycannot create a 'noWindow'. please check spelling, or refer to docs 
+2015-09-16 15:30:21,494 ERROR B.v.o.r.a.NoActionParamHandler [qtp29029616-19] ERROR: There is no addAction parameter present 
+2015-09-16 15:30:55,495 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-19] |navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-17 09:10:20,011 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-17 09:10:20,175 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-17 09:10:20,200 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-17 09:10:20,296 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-17 09:10:25,381 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] |navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 

@@ -20,7 +20,30 @@ package beseenium.view.outputFormatters;
  * @author Jan P.C. Hanson
  *
  */
-public class AbstractCompositor
+public abstract class AbstractCompositor
 {
-
+	/** reference to the formatter used e.g. JSON, basic, xml, etc **/
+	protected AbstractOutputFormatter formatter;
+	
+	/**
+	 * default constructor, sets the formatter. if not explicitly called then defaults to 
+	 * BasicFormatter.
+	 * @param format a formatter object
+	 */
+	protected AbstractCompositor(AbstractOutputFormatter format)
+	{
+		if(format == null)
+		{this.formatter = new BasicFormatter();} //default value for formatter
+		else
+		{this.formatter = format;}
+	}
+	
+	/**
+	 * This method provides functionality that composites a string into the format 
+	 * specified by the user during the creation of derived objects.
+	 * @param compositorString
+	 * @param stringToComposite
+	 * @return String the composed string
+	 */
+	abstract String composite(String compositorString, String stringToComposite);
 }

@@ -23,4 +23,28 @@ package beseenium.view.outputFormatters;
 public class CapabilitiesCompositor extends AbstractCompositor
 {
 
+	/**
+	 * specifies the format that the user wishes the output returned in e.g. JSON, XML, etc
+	 * @param format the format that the user wishes the output returned in e.g. JSON, XML, etc
+	 */
+	public CapabilitiesCompositor(AbstractOutputFormatter format)
+	{
+		super(format);
+	}
+
+	/**
+	 * This method provides functionality to composite the string into the format specified by
+	 * the user on creation of this object.
+	 * @param compositorString representation of the type of string that this is i.e. execute,
+	 * addAction, capabilities or browser.
+	 * @param stringToComposite the string that requires formatting
+	 * @return String the formatted string.
+	 */
+	@Override
+	String composite(String compositorString, String stringToComposite)
+	{
+		
+		return null;
+	}
+
 }

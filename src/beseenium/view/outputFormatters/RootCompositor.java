@@ -25,10 +25,8 @@ import java.util.Map;
  */
 public class RootCompositor extends AbstractCompositor
 {
-	/** holds all the AbstractOutputFormatters **/
+	/** holds all the compositors **/
 	private Map<String, AbstractCompositor> compositorMap;
-	/** the formatter to be used **/
-	AbstractOutputFormatter formatter;
 	
 	/**
 	 * default constructor, populates the internal map and sets the default value for the 
@@ -36,31 +34,26 @@ public class RootCompositor extends AbstractCompositor
 	 */
 	public RootCompositor(AbstractOutputFormatter format)
 	{
-		super();
+		super(format);
 		
-		if(format == null)
-		{this.formatter = new BasicFormatter();} //default value for formatter
-		
-		else
-		{this.formatter = format;}
-		
-		compositorMap.put("execute", new ExecuteCompositor());
-		compositorMap.put("addAction", new AddActionCompositor());
-		compositorMap.put("browser", new BrowserCompositor());
-		compositorMap.put("capabilities", new CapabilitiesCompositor());		
+		compositorMap.put("execute", new ExecuteCompositor(super.formatter));
+		compositorMap.put("addAction", new AddActionCompositor(super.formatter));
+		compositorMap.put("browser", new BrowserCompositor(super.formatter));
+		compositorMap.put("capabilities", new CapabilitiesCompositor(super.formatter));		
 	}
 	
 	/**
-	 * This method formats a string into the specific format specified using the setFormat 
-	 * method.
-	 * @param formatterType the specific output formatter that you wish to call. i.e. execute,
+	 * This method passes the string to be composited, on to the appropriate compositor where
+	 * the string is transformed into the format provided in the constructor.
+	 * @param compositor the specific compositor that you wish to call. i.e. execute,
 	 * addAction,capabilities or browser.
 	 * @param stringToBeFormatted the string to be formatted
 	 * @return a string of the form specified by setFormat()
 	 */
-	public String formatOutput(String formatterType, String stringToBeFormatted)
+	@Override
+	public String composite(String compositorString, String stringToComposite)
 	{
-		
-		return null;
+		return this.compositorMap.get(compositorString)
+											.composite(compositorString, stringToComposite);
 	}
 }
