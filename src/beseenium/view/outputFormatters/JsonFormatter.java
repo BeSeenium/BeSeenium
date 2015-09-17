@@ -21,14 +21,34 @@ import beseenium.helpers.CopyrightIgnore;
  *
  */
 @SuppressWarnings("unused")
-public class JsonFormatter extends AbstractOutputFormatter
+public class JsonFormatter implements AbstractOutputFormatter
 {
+	/**
+	 * default ctor
+	 */
+	public JsonFormatter()
+	{super();}
+	
+	/**
+	 * format the end JSON object
+	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
+	 * @param label the label to apply to the end object.
+	 * @return a string of the form '{"label":}'
+	 */
+	@Override
+	public String finalForm(String label, String stringToFormat)
+	{
+		return "{\""+label+"\""+":"+""+stringToFormat+"}";
+	}
+	
 	/**
 	 * format a string as a JSON array
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
+	 * @param label NOT USED
 	 * @return a string of the form '[V01, V02 ... V03]'
 	 */
-	public static String asArray(String stringToFormat)
+	@Override
+	public String asKVsuperSet(String label, String stringToFormat)
 	{		
 		return "["+stringToFormat+"]";
 	}
@@ -36,9 +56,11 @@ public class JsonFormatter extends AbstractOutputFormatter
 	/**
 	 * format a string as a JSON object
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
+	 * @param label NOT USED
 	 * @return string of the form '{V01, V02 ... V0n}'
 	 */
-	public static String asObject(String stringToFormat)
+	@Override
+	public String asKVset(String Label, String stringToFormat)
 	{
 		return "{"+stringToFormat+"}";
 	}
@@ -49,7 +71,8 @@ public class JsonFormatter extends AbstractOutputFormatter
 	 * @param value a string representing the value
 	 * @return a string of the form '"key":"value"'
 	 */
-	public static String asKeyVal(String key,String value)
+	@Override
+	public String asKeyVal(String key,String value)
 	{
 		return "\""+key+"\""+":"+"\""+value+"\"";
 	}

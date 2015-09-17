@@ -21,14 +21,55 @@ package beseenium.view.outputFormatters;
  * this class into the format the user has requested.
  * @author Jan P.C. Hanson
  *
+ * \todo implement BasicFormatter properly
  */
-public class BasicFormatter extends AbstractOutputFormatter
+public class BasicFormatter implements AbstractOutputFormatter
 {
 	/**
 	 * default constructor
 	 */
 	public BasicFormatter()
 	{super();}
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKeyVal(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String asKeyVal(String key, String val)
+	{
+		
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKVset(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String asKVset(String label, String stringToFormat)
+	{
+		
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKVsuperSet(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String asKVsuperSet(String label, String stringToFormat)
+	{
+		
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#finalForm(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String finalForm(String label, String stringToFormat)
+	{
+		
+		return null;
+	}
 	
 	
 }

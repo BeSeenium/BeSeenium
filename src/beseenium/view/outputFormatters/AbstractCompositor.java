@@ -16,7 +16,9 @@ package beseenium.view.outputFormatters;
  */
 
 /**
- *
+ * This is the abstract base class for all the compositors. compositors use a formatter provided
+ * by a constructor argument to compose the output strings into the form that the user has
+ * requested.
  * @author Jan P.C. Hanson
  *
  */

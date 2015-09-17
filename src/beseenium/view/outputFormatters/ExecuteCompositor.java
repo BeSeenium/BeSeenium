@@ -16,7 +16,8 @@ package beseenium.view.outputFormatters;
  */
 
 /**
- *
+ * This compositor takes the executed output from the Test and composites it into the form 
+ * requested by the user.
  * @author Jan P.C. Hanson
  *
  */
@@ -24,12 +25,11 @@ public class ExecuteCompositor extends AbstractCompositor
 {
 
 	/**
-	 * @param format
+	 * constructor, calls super constructor passing an AbstractOutputFormatter as an argument.
+	 * @param format an AbstractOutputFormatter.
 	 */
 	public ExecuteCompositor(AbstractOutputFormatter format)
-	{
-		super(format);
-	}
+	{super(format);}
 
 	/**
 	 * This method provides functionality to composite the string into the format specified by
@@ -40,7 +40,7 @@ public class ExecuteCompositor extends AbstractCompositor
 	 * @return String the formatted string.
 	 */
 	@Override
-	String composite(String compositorString, String stringToComposite)
+	public String composite(String compositorString, String stringToComposite)
 	{
 		
 		return null;
