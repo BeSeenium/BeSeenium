@@ -7,4 +7,4 @@
  * @author Jan P.C. Hanson
  *
  */
-package beseenium.view.outputFormatters;
+package beseenium.view.outputHandlers.formatters;

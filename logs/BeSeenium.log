@@ -1513,3 +1513,51 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 2015-09-17 09:10:20,296 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
  
 2015-09-17 09:10:25,381 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] |navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-18 09:05:15,265 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:05:15,461 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:05:15,518 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:05:15,643 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:05:31,018 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] |navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting...| 
+2015-09-18 09:23:22,876 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:23:22,984 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:23:23,009 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:23:23,072 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:23:27,916 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting... 
+2015-09-18 09:25:11,723 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:25:11,829 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:25:11,860 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:25:11,998 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:25:16,973 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting... 
+2015-09-18 09:27:04,608 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:27:04,718 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:27:04,756 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:27:04,837 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:27:09,996 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting... 
+2015-09-18 09:35:26,343 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:35:26,445 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:35:26,470 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:35:26,549 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:35:32,220 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />inputQuitting... 
+2015-09-18 09:40:17,260 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:40:17,368 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:40:17,400 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:40:17,476 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:40:20,955 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com,<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />,input,Quitting..., 
+2015-09-18 09:41:25,056 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:41:25,171 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:41:25,202 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:41:25,276 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:41:29,192 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com,<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />,input,Quitting..., 
+2015-09-18 09:43:32,947 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-18 09:43:33,054 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-18 09:43:33,085 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-18 09:43:33,150 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-18 09:43:36,231 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.google.com,<input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" type="text" />,input,Quitting..., 

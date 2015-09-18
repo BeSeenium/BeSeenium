@@ -1,4 +1,7 @@
-package beseenium.view.outputFormatters;
+package beseenium.view.outputHandlers.compositors;
+
+import beseenium.view.outputHandlers.formatters.AbstractOutputFormatter;
+import beseenium.view.outputHandlers.formatters.BasicFormatter;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify

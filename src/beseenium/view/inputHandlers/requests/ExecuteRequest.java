@@ -46,7 +46,7 @@ public class ExecuteRequest extends AbstractTestRequest
 	{
 		//format results
 		String result="";
-		for(String res: test.executeActions()) {result+=res;}
+		for(String res: test.executeActions()) {result+=res+",";}
 //		return test.executeActions().toString() + "\n";
 		return result;
 	}

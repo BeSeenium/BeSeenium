@@ -1,4 +1,6 @@
-package beseenium.view.outputFormatters;
+package beseenium.view.outputHandlers.compositors;
+
+import beseenium.view.outputHandlers.formatters.AbstractOutputFormatter;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -20,13 +22,13 @@ package beseenium.view.outputFormatters;
  * @author Jan P.C. Hanson
  *
  */
-public class AddActionCompositor extends AbstractCompositor
+public class BrowserCompositor extends AbstractCompositor
 {
 
 	/**
 	 * @param format
 	 */
-	protected AddActionCompositor(AbstractOutputFormatter format)
+	protected BrowserCompositor(AbstractOutputFormatter format)
 	{super(format);}
 
 	/**

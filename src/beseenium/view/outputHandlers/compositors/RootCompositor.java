@@ -1,6 +1,9 @@
-package beseenium.view.outputFormatters;
+package beseenium.view.outputHandlers.compositors;
 
+import java.util.HashMap;
 import java.util.Map;
+
+import beseenium.view.outputHandlers.formatters.AbstractOutputFormatter;
 
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
@@ -35,11 +38,11 @@ public class RootCompositor extends AbstractCompositor
 	public RootCompositor(AbstractOutputFormatter format)
 	{
 		super(format);
-		
-		compositorMap.put("execute", new ExecuteCompositor(super.formatter));
-		compositorMap.put("addAction", new AddActionCompositor(super.formatter));
-		compositorMap.put("browser", new BrowserCompositor(super.formatter));
-		compositorMap.put("capabilities", new CapabilitiesCompositor(super.formatter));		
+		this.compositorMap = new HashMap<String, AbstractCompositor>();
+		this.compositorMap.put("execute", new ExecuteCompositor(super.formatter));
+		this.compositorMap.put("addAction", new AddActionCompositor(super.formatter));
+		this.compositorMap.put("browser", new BrowserCompositor(super.formatter));
+		this.compositorMap.put("capabilities", new CapabilitiesCompositor(super.formatter));		
 	}
 	
 	/**

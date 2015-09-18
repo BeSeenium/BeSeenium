@@ -1,4 +1,6 @@
-package beseenium.view.outputFormatters;
+package beseenium.view.outputHandlers.compositors;
+
+import beseenium.view.outputHandlers.formatters.AbstractOutputFormatter;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -16,17 +18,19 @@ package beseenium.view.outputFormatters;
  */
 
 /**
- *
+ * This compositor takes the executed output from the Test and composites it into the form 
+ * requested by the user.
  * @author Jan P.C. Hanson
  *
  */
-public class BrowserCompositor extends AbstractCompositor
+public class ExecuteCompositor extends AbstractCompositor
 {
 
 	/**
-	 * @param format
+	 * constructor, calls super constructor passing an AbstractOutputFormatter as an argument.
+	 * @param format an AbstractOutputFormatter.
 	 */
-	protected BrowserCompositor(AbstractOutputFormatter format)
+	public ExecuteCompositor(AbstractOutputFormatter format)
 	{super(format);}
 
 	/**
@@ -38,9 +42,19 @@ public class BrowserCompositor extends AbstractCompositor
 	 * @return String the formatted string.
 	 */
 	@Override
-	String composite(String compositorString, String stringToComposite)
+	public String composite(String compositorString, String stringToComposite)
 	{
+		String[] results = stringToComposite.split(",");
+		String tmp = new String();
 		
-		return null;
+		for(int i = 0 ; i < results.length-1 ; ++i) 
+		{
+			tmp+=
+				this.formatter.asKVset("",
+						this.formatter.asKeyVal("Action", Integer.toString(i+1))+"," +
+						this.formatter.asKeyVal("result", results[i])
+				);
+		}
+		return tmp;
 	}
 }
