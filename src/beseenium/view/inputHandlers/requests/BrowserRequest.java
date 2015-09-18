@@ -46,6 +46,6 @@ public class BrowserRequest extends AbstractTestRequest
 	{
 		test.setBrowser(super.requestData);
 //		return "BROWSER SET AS: " + super.requestData + "\n";
-		return "|"+super.requestData +"|";
+		return super.requestData;
 	}
 }

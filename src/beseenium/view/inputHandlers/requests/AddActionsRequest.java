@@ -73,6 +73,6 @@ public class AddActionsRequest extends AbstractTestRequest
 		}
 		
 //		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";
-		return "|"+result+"|";
+		return result;
 	}
 }

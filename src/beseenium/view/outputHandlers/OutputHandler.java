@@ -101,18 +101,18 @@ public class OutputHandler
 		{
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("capabilities")));
-			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test));
+			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test)+"\n");
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("browser")));
-			results.add(this.successor.handleRequest(this.requestMap.get("browser"),test));
+			results.add(this.successor.handleRequest(this.requestMap.get("browser"),test)+"\n");
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("actions")));
-			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test));
+			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test)+"\n");
 			
 			if (this.checkListForERROR(results)==false)
 			{
 				this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
-				results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
+				results.add(this.successor.handleRequest(this.requestMap.get("execute"),test)+"\n");
 			}
 			else
 			{
