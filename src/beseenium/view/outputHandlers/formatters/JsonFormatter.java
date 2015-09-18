@@ -36,33 +36,33 @@ public class JsonFormatter implements AbstractOutputFormatter
 	 * @return a string of the form '{"label":}'
 	 */
 	@Override
-	public String finalForm(String label, String stringToFormat)
+	public String finalForm(String label, String stringToFormat, String delimiter)
 	{
-		return "{\""+label+"\""+":"+""+stringToFormat+"}";
+		return "{\""+label+"\""+":"+""+stringToFormat+"}"+delimiter;
 	}
 	
 	/**
 	 * format a string as a JSON array
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
-	 * @param label NOT USED
+	 * @param label string that precedes the xtringToformat
 	 * @return a string of the form '[V01, V02 ... V03]'
 	 */
 	@Override
-	public String asKVsuperSet(String label, String stringToFormat)
+	public String asKVsuperSet(String label, String stringToFormat, String delimiter)
 	{		
-		return "["+stringToFormat+"]";
+		return "["+label+stringToFormat+"]"+delimiter;
 	}
 	
 	/**
 	 * format a string as a JSON object
 	 * @param stringToFormat string of the form 'V01 V02 ... V0n'
-	 * @param label NOT USED
+	 * @param label string that precedes the format
 	 * @return string of the form '{V01, V02 ... V0n}'
 	 */
 	@Override
-	public String asKVset(String Label, String stringToFormat)
+	public String asKVset(String label, String stringToFormat, String delimiter)
 	{
-		return "{"+stringToFormat+"}";
+		return label+"{"+stringToFormat+"}"+delimiter;
 	}
 	
 	/**
@@ -72,8 +72,8 @@ public class JsonFormatter implements AbstractOutputFormatter
 	 * @return a string of the form '"key":"value"'
 	 */
 	@Override
-	public String asKeyVal(String key,String value)
+	public String asKeyVal(String key,String value, String delimiter)
 	{
-		return "\""+key+"\""+":"+"\""+value+"\"";
+		return "\""+key+"\""+":"+"\""+value+"\""+delimiter;
 	}
 }

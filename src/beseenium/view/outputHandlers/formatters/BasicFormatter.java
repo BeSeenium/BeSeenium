@@ -35,7 +35,7 @@ public class BasicFormatter implements AbstractOutputFormatter
 	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKeyVal(java.lang.String, java.lang.String)
 	 */
 	@Override
-	public String asKeyVal(String key, String val)
+	public String asKeyVal(String key, String val, String delimiter)
 	{
 		
 		return null;
@@ -45,7 +45,7 @@ public class BasicFormatter implements AbstractOutputFormatter
 	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKVset(java.lang.String, java.lang.String)
 	 */
 	@Override
-	public String asKVset(String label, String stringToFormat)
+	public String asKVset(String label, String stringToFormat, String delimiter)
 	{
 		
 		return null;
@@ -55,7 +55,7 @@ public class BasicFormatter implements AbstractOutputFormatter
 	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#asKVsuperSet(java.lang.String, java.lang.String)
 	 */
 	@Override
-	public String asKVsuperSet(String label, String stringToFormat)
+	public String asKVsuperSet(String label, String stringToFormat, String delimiter)
 	{
 		
 		return null;
@@ -65,7 +65,7 @@ public class BasicFormatter implements AbstractOutputFormatter
 	 * @see beseenium.view.outputFormatters.AbstractOutputFormatter#finalForm(java.lang.String, java.lang.String)
 	 */
 	@Override
-	public String finalForm(String label, String stringToFormat)
+	public String finalForm(String label, String stringToFormat, String delimiter)
 	{
 		
 		return null;

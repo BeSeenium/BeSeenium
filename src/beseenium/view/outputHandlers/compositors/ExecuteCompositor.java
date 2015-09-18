@@ -49,12 +49,21 @@ public class ExecuteCompositor extends AbstractCompositor
 		
 		for(int i = 0 ; i < results.length-1 ; ++i) 
 		{
-			tmp+=
-				this.formatter.asKVset("",
-						this.formatter.asKeyVal("Action", Integer.toString(i+1))+"," +
-						this.formatter.asKeyVal("result", results[i])
-				);
+			if(i < results.length-2) //with comma delimiter
+			{
+				tmp+=this.formatter.asKVset("	",
+							this.formatter.asKeyVal("Action", Integer.toString(i+1),", ")+
+							this.formatter.asKeyVal("result", results[i], "")
+										,",\n");
+			}
+			else//without comma delimiter
+			{
+				tmp+=this.formatter.asKVset("	",
+							this.formatter.asKeyVal("Action", Integer.toString(i+1),", ")+
+							this.formatter.asKeyVal("result", results[i], "")
+										,"\n");
+			}
 		}
-		return tmp;
+		return this.formatter.finalForm("TestResults",this.formatter.asKVsuperSet("\n", tmp, ""),",\n");
 	}
 }

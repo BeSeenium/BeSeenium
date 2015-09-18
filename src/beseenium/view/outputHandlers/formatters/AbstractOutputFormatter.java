@@ -40,33 +40,38 @@ public interface AbstractOutputFormatter
 {
 	/**
 	 * format the given string as a key value pair specific to the derived type.
-	 * @param stringToFormat the string to format
+	 * @param key the key
+	 * @param val the value
+	 * @param delimiter a string to use as a delimiter
 	 * @return String formatted as requested
 	 */
-	public String asKeyVal(String key, String val);
+	public String asKeyVal(String key, String val, String delimiter);
 	
 	/**
 	 * format the given string as a key value set specific to the derived type.
 	 * @param stringToFormat the string to format
 	 * @param label a string to use as a label in the KVSet (optional)
+	 * @param delimiter a string to use as a delimiter
 	 * @return String formatted as requested
 	 */
-	public String asKVset(String label, String stringToFormat);
+	public String asKVset(String label, String stringToFormat, String delimiter);
 	
 	/**
 	 * format the given string as a key value super set specific to the derived type.
 	 * @param stringToFormat the string to format
 	 * @param label a string to use as a label in the KVsuperSet (optional)
+	 * @param delimiter a string to use as a delimiter
 	 * @return String formatted as requested
 	 */
-	public String asKVsuperSet(String label, String stringToFormat);
+	public String asKVsuperSet(String label, String stringToFormat, String delimiter);
 	
 	/**
 	 * do some final formatting on the given string to put it in the final form specific to 
 	 * the derived type.
 	 * @param stringToFormat the string to format
 	 * @param label a string to use as a label in the final form (optional)
+	 * @param delimiter a string to use as a delimiter
 	 * @return String formatted as requested
 	 */
-	public String finalForm(String label, String stringToFormat);
+	public String finalForm(String label, String stringToFormat, String delimiter);
 }
