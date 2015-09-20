@@ -52,7 +52,7 @@ public class AddActionDataHandler extends AbstractRequestHandler
 		catch (ActionDataException ade)
 		{
 			logger.error("ERROR: ActionDataException" + ade.getMessage());
-			results="ERROR: probably a programming error, notify developer, jpchansondev@gmail.com";
+			results="!!ERROR!!: probably a programming error, notify developer, jpchansondev@gmail.com";
 		}
 		catch (Exception e)
 		{

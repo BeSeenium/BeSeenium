@@ -42,7 +42,6 @@ public class BrowserCompositor extends AbstractCompositor
 	@Override
 	String composite(String compositorString, String stringToComposite)
 	{
-		
-		return null;
+		return this.formatter.finalForm("Browser", "\""+stringToComposite+"\"", ",");
 	}
 }

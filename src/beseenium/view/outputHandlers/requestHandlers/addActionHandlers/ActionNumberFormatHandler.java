@@ -48,7 +48,7 @@ public class ActionNumberFormatHandler extends AbstractRequestHandler
 		catch (NumberFormatException nfe)
 		{
 			logger.error("ERROR: The index parameter provided is not a number");
-			results="ERROR: The index parameter provided is not a number";
+			results="!!ERROR!!: The index parameter provided is not a number"+", ";
 		}
 		catch (Exception e)
 		{
@@ -56,7 +56,7 @@ public class ActionNumberFormatHandler extends AbstractRequestHandler
 			{results = super.successor.handleRequest(request, test);}
 			else
 			{
-				results = "end of chain, see logs for stacktrace";
+				results = "end of chain. see logs for stacktrace"+", ";
 				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
 			}
 		}

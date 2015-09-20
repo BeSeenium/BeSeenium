@@ -103,33 +103,45 @@ public class OutputHandler
 		{
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("capabilities")));
-			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test)+"\n");
+			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test));
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("browser")));
-			results.add(this.successor.handleRequest(this.requestMap.get("browser"),test)+"\n");
+			results.add(this.successor.handleRequest(this.requestMap.get("browser"),test));
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("actions")));
-			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test)+"\n");
+			results.add(this.successor.handleRequest(this.requestMap.get("actions"),test));
 			
 			if (this.checkListForERROR(results)==false)
 			{
 				this.setSuccessor(successorMap.get(this.requestMap.get("execute")));
-				results.add(this.successor.handleRequest(this.requestMap.get("execute"),test)+"\n");
-				System.out.println(new RootCompositor
-							(
-								new JsonFormatter()).composite("execute", results.get(3))
-							);
+				results.add(this.successor.handleRequest(this.requestMap.get("execute"),test));
+				
 			}
 			else
 			{
 				results.add(new EmergencyShutdown().execute(test));
 			}
+			System.out.println(new RootCompositor
+					(
+						new JsonFormatter()).composite("capabilities", results.get(0))
+					);
+			System.out.println(new RootCompositor
+					(
+						new JsonFormatter()).composite("browser", results.get(1))
+					);
+			System.out.println(new RootCompositor
+					(
+						new JsonFormatter()).composite("addAction", results.get(2))
+					);
+			System.out.println(new RootCompositor
+					(
+						new JsonFormatter()).composite("execute", results.get(3))
+					);
 		} 
 		
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			
 		}
 		return results;
 	}
@@ -142,7 +154,7 @@ public class OutputHandler
 	private boolean checkListForERROR(List<String> stringList)
 	{
 		for(String string: stringList)
-		{  if(string.contains("ERROR")){System.out.println(string);return true;}  }
+		{  if(string.contains("ERROR")){return true;}  }
 		return false;
 	}
 }

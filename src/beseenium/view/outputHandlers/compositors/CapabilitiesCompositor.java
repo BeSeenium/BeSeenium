@@ -1,5 +1,6 @@
 package beseenium.view.outputHandlers.compositors;
 
+import beseenium.view.helpers.StringSplit;
 import beseenium.view.outputHandlers.formatters.AbstractOutputFormatter;
 /** Copyright(C) 2015 Jan P.C. Hanson & BeSeen Marketing Ltd
  * 
@@ -43,10 +44,51 @@ public class CapabilitiesCompositor extends AbstractCompositor
 	 * @return String the formatted string.
 	 */
 	@Override
-	String composite(String compositorString, String stringToComposite)
+	public String composite(String compositorString, String stringToComposite)
 	{
+		String[][] results = StringSplit.generic2d(stringToComposite, "~", ",");
+		String formattedResult = new String();
 		
-		return null;
+		for(int i = 0 ; i < results.length ; ++i) 
+		{
+			if(i < results.length-1) //with comma delimiter
+			{
+				formattedResult+=this.format(i,results, ",");
+			}
+			
+			else//without comma delimiter
+			{
+				formattedResult += this.format(i,results, "");
+			}
+		}
+		return this.finalFormat(formattedResult, compositorString);
 	}
-
+	
+	/**
+	 * does the formatting of the keyVal and KVset
+	 * @param actionNo the number of the action to use as a key in the KeyVal
+	 * @param result the result to use as the value of a KeyVal
+	 * @param delimiter string delimiter to add to the end of each KVset
+	 * @return String of the form {"action":"actionNo", "result":"result value"}
+	 */
+	private String format(int actionNo, String[][] results, String delimiter)
+	{
+		return this.formatter.asKVset("	",
+					this.formatter.asKeyVal("Name", results[actionNo][0], ",")+
+					this.formatter.asKeyVal("Value", results[actionNo][1], "")
+					, delimiter+"\n");
+	}
+	
+	/**
+	 * does the final formatting of the JSON object
+	 * @param results the previously formatted results
+	 * @return fully formatted JSON
+	 */
+	private String finalFormat(String formattedResults, String label)
+	{
+		return this.formatter.finalForm
+				(
+					label,this.formatter.asKVsuperSet("\n", formattedResults, ""),","
+				);
+	}
 }

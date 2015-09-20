@@ -48,8 +48,8 @@ public class NoActionParamHandler extends AbstractRequestHandler
 		} 
 		catch (NullPointerException npe)
 		{
-			logger.error("ERROR: There is no addAction parameter present");
-			results="ERROR: There is no addAction parameter present";
+			logger.error("ERROR: There is no addAction parameter present"+", ");
+			results="!!ERROR!!: There is no addAction parameter present";
 		}
 		catch (Exception e)
 		{
@@ -57,7 +57,7 @@ public class NoActionParamHandler extends AbstractRequestHandler
 			{results = super.successor.handleRequest(request, test);}
 			else
 			{
-				results = "end of chain, see logs for stacktrace";
+				results = "end of chain, see logs for stacktrace"+", ";
 				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
 			}
 		}

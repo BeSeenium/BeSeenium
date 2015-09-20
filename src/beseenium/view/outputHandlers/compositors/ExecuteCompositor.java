@@ -45,25 +45,48 @@ public class ExecuteCompositor extends AbstractCompositor
 	public String composite(String compositorString, String stringToComposite)
 	{
 		String[] results = stringToComposite.split(",");
-		String tmp = new String();
+		String formattedResult = new String();
 		
-		for(int i = 0 ; i < results.length-1 ; ++i) 
+		for(int i = 0 ; i < results.length ; ++i) 
 		{
 			if(i < results.length-2) //with comma delimiter
 			{
-				tmp+=this.formatter.asKVset("	",
-							this.formatter.asKeyVal("Action", Integer.toString(i+1),", ")+
-							this.formatter.asKeyVal("result", results[i], "")
-										,",\n");
+				formattedResult+=this.format(i,results[i], ",");
 			}
+			
 			else//without comma delimiter
 			{
-				tmp+=this.formatter.asKVset("	",
-							this.formatter.asKeyVal("Action", Integer.toString(i+1),", ")+
-							this.formatter.asKeyVal("result", results[i], "")
-										,"\n");
+				formattedResult += this.format(i,results[i], "");
 			}
 		}
-		return this.formatter.finalForm("TestResults",this.formatter.asKVsuperSet("\n", tmp, ""),",\n");
+		return this.finalFormat(formattedResult);
+	}
+	
+	/**
+	 * does the formatting of the keyVal and KVset
+	 * @param actionNo the number of the action to use as a key in the KeyVal
+	 * @param result the result to use as the value of a KeyVal
+	 * @param delimiter string delimiter to add to the end of each KVset
+	 * @return String of the form {"action":"actionNo", "result":"result value"}
+	 */
+	private String format(int actionNo, String result, String delimiter)
+	{
+		return this.formatter.asKVset("	",
+					this.formatter.asKeyVal("Action", Integer.toString(actionNo+1),", ")+
+					this.formatter.asKeyVal("result", result, "")
+								,delimiter+"\n");
+	}
+	
+	/**
+	 * does the final formatting of the JSON object
+	 * @param results the previously formatted results
+	 * @return fully formatted JSON
+	 */
+	private String finalFormat(String results)
+	{
+		return this.formatter.finalForm
+				(
+					"TestResults",this.formatter.asKVsuperSet("\n", results, ""),"\n"
+				);
 	}
 }

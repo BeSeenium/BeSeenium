@@ -69,7 +69,7 @@ public class AddActionsRequest extends AbstractTestRequest
 			}
 			
 			//format results
-			result+="+"+actionSet[0]+","+actionSet[1]+","+actionSet[2]+"+";
+			result+=actionSet[0]+","+actionSet[1]+","+actionSet[2]+"~";
 		}
 		
 //		return "ACTIONS ADDED: " + Arrays.deepToString(actions) + "\n";

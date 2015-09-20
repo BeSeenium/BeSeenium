@@ -48,4 +48,25 @@ public class StringSplit
 		}
 		return resultArray;
 	}
+	
+	/**
+	 * split a string according to 2 delimiters, produces a 2d array
+	 * @param stringToSplit the string to split
+	 * @param split1Regex first string to split at
+	 * @param split2Regex second string to split at
+	 * @return String[][] of the form {{V01,V02...V0n},{V11,V12...V1n}...{Vm1, Vm2... Vmn}}
+	 */
+	public static String[][] generic2d(String stringToSplit, String split1Regex, String split2Regex)
+	{
+		String[] firstSplit = stringToSplit.split(split1Regex); //={"key:value", "key:value"}
+		int split1Len = firstSplit.length;
+		int split2Len = firstSplit[0].split(split2Regex).length;
+		String[][] resultArray = new String[split1Len][split2Len];// = {{"key","value"},{"key","value"}};
+		
+		for(int i = 0; i < firstSplit.length; ++i)
+		{
+			resultArray[i]=firstSplit[i].split(split2Regex);
+		}
+		return resultArray;
+	}
 }

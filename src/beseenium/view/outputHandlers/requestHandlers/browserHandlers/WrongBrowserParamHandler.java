@@ -52,7 +52,7 @@ public class WrongBrowserParamHandler extends AbstractRequestHandler
 		{
 			logger.error("BROWSER ERROR: Browser parameter is empty or set incorrectly"
 						+ adfe.getMessage());
-			results="BROWSER ERROR: " +adfe.getMessage();
+			results="ERROR: " +adfe.getMessage();
 		}
 		catch (Exception e)
 		{

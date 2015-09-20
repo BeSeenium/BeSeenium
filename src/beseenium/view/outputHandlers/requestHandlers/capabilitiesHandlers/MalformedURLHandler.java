@@ -57,7 +57,7 @@ public class MalformedURLHandler extends AbstractRequestHandler
 		catch (MalformedURLException npe)
 		{
 			logger.error("BAD URL check 'auth' capability string");
-			results="ERROR: BAD URL check 'auth' capability string";
+			results="ERROR, BAD URL check 'auth' capability string";
 		}
 		catch (Exception e)
 		{
@@ -65,7 +65,7 @@ public class MalformedURLHandler extends AbstractRequestHandler
 			{results = super.successor.handleRequest(request, test);}
 			else
 			{
-				results = "end of chain, see logs for stacktrace";
+				results = "ERROR, end of chain. see logs for stacktrace";
 				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
 			}
 		}

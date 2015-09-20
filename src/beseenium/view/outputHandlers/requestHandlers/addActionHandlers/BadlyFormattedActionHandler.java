@@ -51,7 +51,7 @@ public class BadlyFormattedActionHandler extends AbstractRequestHandler
 		catch (TestException te)
 		{
 			logger.error("ERROR: " + te.getMessage());
-			results="ERROR: " + te.getMessage();
+			results="!!ERROR!! " + te.getMessage()+", ";
 		}
 		catch (Exception e)
 		{

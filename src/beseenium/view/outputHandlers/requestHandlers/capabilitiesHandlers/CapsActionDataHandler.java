@@ -50,7 +50,7 @@ public class CapsActionDataHandler extends AbstractRequestHandler
 		catch (ActionDataException ade)
 		{
 			logger.error("ERROR: ActionDataException" + ade.getMessage());
-			results="ERROR: something went wrong in the backend, please notify a Developer "+
+			results="ERROR, something went wrong in the backend please notify a Developer "+
 					"by emailing jpchansondev@gmail.com";
 		}
 		catch (Exception e)
@@ -59,7 +59,7 @@ public class CapsActionDataHandler extends AbstractRequestHandler
 			{results = super.successor.handleRequest(request, test);}
 			else
 			{
-				results = "end of chain, see logs for stacktrace";
+				results = "ERROR, end of chain. see logs for stacktrace";
 				logger.fatal("reached end of handler chain, exception not handled" + e + "\n");
 			}
 		}

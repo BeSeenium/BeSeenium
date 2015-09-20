@@ -52,7 +52,7 @@ public class NonExistantActionHandler extends AbstractRequestHandler
 		catch (ActionFactoryException afe)
 		{
 			logger.error("ERROR: "+ afe.getMessage());
-			results="ERROR: "+ afe.getMessage();
+			results="!!ERROR!!, "+ afe.getMessage()+", ~";
 		}
 		catch (Exception e)
 		{
