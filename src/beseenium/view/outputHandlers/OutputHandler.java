@@ -100,7 +100,7 @@ public class OutputHandler
 	{
 		ArrayList<String> results = new ArrayList<String>();
 		try
-		{ 
+		{ //
 		
 			this.setSuccessor(successorMap.get(this.requestMap.get("capabilities")));
 			results.add(this.successor.handleRequest(this.requestMap.get("capabilities"),test));
