@@ -116,7 +116,9 @@ public class ActionData
 	 * @param element the list of element to set
 	 */
 	public void setElement(List<WebElement> element) 
-	{this.element = element;}
+	{
+		this.element = element;
+	}
 
 	/**
 	 * this method sets the value of the input parameter. Make sure that the value is 

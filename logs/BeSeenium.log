@@ -3536,3 +3536,107 @@ Context.call(Context,{"site":3,"errors":{"enabled":false},"app":"shopcart","doma
 	.lh140 {line-height: 144px !important;}
 	.mh140 {max-height: 144px !important;}.mw140 {max-width: 144px !important;}
 </style><![endif]--><img width="1" border="0" height="1" alt="" src="http://rover.ebay.co.uk/roverimp/0/0/9?imp=2046301&amp;trknvp=cp%3D2046448%26ghi%3D94&amp;1443108254770" /></body></html>,Quitting..., 
+2015-09-25 12:59:12,054 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-25 12:59:12,170 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-25 12:59:12,201 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-25 12:59:12,318 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-25 13:00:00,412 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-15] reached end of handler chain, exception not handled java.lang.NullPointerException
+ java.lang.NullPointerException
+	at beseenium.model.actionData.ActionData.setElement(ActionData.java:120)
+	at beseenium.model.action.findElementsBy.FindElementsByCss.execute(FindElementsByCss.java:59)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:102)
+	at beseenium.controller.Test.executeActions(Test.java:121)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:49)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:62)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:59)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:117)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:82)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-09-25 13:02:56,306 INFO B.Main [main] <---STARTING BESEENIUM---> 
+2015-09-25 13:02:56,413 INFO B.HttpServer [main] <---servlet handler initialised---> 
+2015-09-25 13:02:56,439 INFO B.HttpServer [main] <---gui handler initialised---> 
+2015-09-25 13:02:56,503 INFO B.HttpServer [main] <---BESEENIUM SERVER STARTED---> 
+ 
+2015-09-25 13:03:18,413 INFO B.v.o.r.e.RootExecuteHandler [qtp29029616-14] navigating to http://www.ebay.co.uk/rpp/Back-To-University/Back-To-University-Bedroom,[[FirefoxDriver: firefox on LINUX (a4530151-d7a9-4394-91cb-1af866d95345)] -> css selector: .gl-itm>a],element 2 clicked,[[FirefoxDriver: firefox on LINUX (a4530151-d7a9-4394-91cb-1af866d95345)] -> id: prcIsum],£18.95,[[FirefoxDriver: firefox on LINUX (a4530151-d7a9-4394-91cb-1af866d95345)] -> id: msku-opt-1],element 0 clicked,[[FirefoxDriver: firefox on LINUX (a4530151-d7a9-4394-91cb-1af866d95345)] -> id: isCartBtn_btn],element 0 clicked,[[FirefoxDriver: firefox on LINUX (a4530151-d7a9-4394-91cb-1af866d95345)] -> id: asyncTotal],£28.95, 
+2015-09-25 13:05:45,639 FATAL B.v.o.r.e.ActionExceptionHandler [qtp29029616-14] reached end of handler chain, exception not handled org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 108 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Poseidon', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.0.7-2-ARCH', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=39.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 597400b5-42f4-4a6b-9d17-c1edaa2fddb3
+ org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 108 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Poseidon', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.0.7-2-ARCH', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=39.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 597400b5-42f4-4a6b-9d17-c1edaa2fddb3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:80)
+	at beseenium.model.action.elementActions.Click.execute(Click.java:64)
+	at beseenium.model.ActionInvoker.execute(ActionInvoker.java:102)
+	at beseenium.controller.Test.executeActions(Test.java:121)
+	at beseenium.view.inputHandlers.requests.ExecuteRequest.executeRequest(ExecuteRequest.java:49)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionDataExceptionHandler.handleRequest(ActionDataExceptionHandler.java:47)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler.handleRequest(ActionExceptionHandler.java:62)
+	at beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler.handleRequest(RootExecuteHandler.java:59)
+	at beseenium.view.outputHandlers.OutputHandler.handleRequests(OutputHandler.java:117)
+	at beseenium.view.BeSeeniumServlet.doGet(BeSeeniumServlet.java:82)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'Poseidon', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.0.7-2-ARCH', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///tmp/anonymous8361010313858383643webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9615)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///tmp/anonymous8361010313858383643webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12265)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous8361010313858383643webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous8361010313858383643webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous8361010313858383643webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+
