@@ -1,6 +1,0 @@
-<map id="beseenium.model.ActionInvoker.execute" name="beseenium.model.ActionInvoker.execute">
-<area shape="rect" id="node2" href="$a00001.html#a24e2b60937596ecd18cd17cfe7595c5d" title="execute the derived Action in question, " alt="" coords="336,5,575,47"/>
-<area shape="rect" id="node3" href="$a00001.html#a1dade057d9cb3bfecefdb716aae91d33" title="get the ActionData object stored in the derived Action " alt="" coords="336,71,575,112"/>
-<area shape="rect" id="node4" href="$a00005.html#a1cbbd813f07556de640f8f3b3f03587a" title="Sets the WebDriver associated with this ActionData. " alt="" coords="348,136,563,177"/>
-<area shape="rect" id="node5" href="$a00005.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="this method sets the value of the input parameter. " alt="" coords="348,201,563,243"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="beseenium.view.inputHandlers.InputHandler.handleInput" name="beseenium.view.inputHandlers.InputHandler.handleInput">
-<area shape="rect" id="node2" href="$a00052.html#a336ffc7510426883f16b8baa5693f8ea" title="generates a AddActionRequest " alt="" coords="291,5,513,47"/>
-<area shape="rect" id="node3" href="$a00052.html#a29951301b2495febba17d2947ba61a80" title="generates a BrowserRequest " alt="" coords="291,71,513,112"/>
-<area shape="rect" id="node4" href="$a00052.html#a038cb9083926614e0943580ddb1a32d6" title="generates a CapabilitiesRequest " alt="" coords="290,136,514,177"/>
-<area shape="rect" id="node5" href="$a00052.html#a3fa21768c950556e9c803711ed4420aa" title="generates an ExecuteRequest " alt="" coords="275,201,529,243"/>
-</map>

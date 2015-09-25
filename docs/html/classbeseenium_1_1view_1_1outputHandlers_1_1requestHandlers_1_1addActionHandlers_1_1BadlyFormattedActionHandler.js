@@ -1,5 +1,0 @@
-var classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1BadlyFormattedActionHandler =
-[
-    [ "handleRequest", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1BadlyFormattedActionHandler.html#af25be46f6b92935883af21a1153c388d", null ],
-    [ "logger", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1addActionHandlers_1_1BadlyFormattedActionHandler.html#a52f49aeebfcc6ed8576a4585fc3c876e", null ]
-];

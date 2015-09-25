@@ -1,6 +1,0 @@
-<map id="beseenium.controller.ActionFactory.pageActions.MakeGetURL" name="beseenium.controller.ActionFactory.pageActions.MakeGetURL">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html" title="abstract base class for the creation of AbstractActions specific to the MakeAction derived type..." alt="" coords="511,616,712,723"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="This Class conforms to a &#39;factory&#39; pattern, it allows the creation of different ActionData instances..." alt="" coords="500,403,723,553"/>
-<area shape="rect" id="node4" href="$interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="interface which describes a prototype for creating MakeData objects. " alt="" coords="5,197,207,289"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="This class encapsulates the data needed to perform an action into 4 distinct areas: &#160;&#160;&#160;..." alt="" coords="504,145,719,340"/>
-</map>

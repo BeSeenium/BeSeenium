@@ -1,6 +1,0 @@
-<map id="beseenium.view.inputHandlers.requests.AbstractTestRequest" name="beseenium.view.inputHandlers.requests.AbstractTestRequest">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AddActionsRequest.html" title="represents a request to add a series of actions to a test. " alt="" coords="5,160,287,267"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1BrowserRequest.html" title="This class represents a request for a test to use a particular browser type. " alt="" coords="311,160,592,267"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1CapabilitiesRequest.html" title="represents a request for a particular set of capabilities. " alt="" coords="616,160,897,267"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1ExecuteRequest.html" title="represents a request to execute the test. " alt="" coords="921,160,1203,267"/>
-</map>

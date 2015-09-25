@@ -1,5 +1,0 @@
-<map id="beseenium.view.URLHandler.splitString" name="beseenium.view.URLHandler.splitString">
-<area shape="rect" id="node2" href="$a00122.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;addActio..." alt="" coords="287,5,537,47"/>
-<area shape="rect" id="node4" href="$a00122.html#ae0ec35bbb8622775c22687d68a8a830d" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;capabili..." alt="" coords="287,71,537,112"/>
-<area shape="rect" id="node3" href="$a00122.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Tes..." alt="" coords="585,46,860,73"/>
-</map>

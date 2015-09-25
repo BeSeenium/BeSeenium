@@ -1,6 +1,0 @@
-<map id="beseenium.controller.ActionFactory.elementActions.MakeIsSelected" name="beseenium.controller.ActionFactory.elementActions.MakeIsSelected">
-<area shape="rect" id="node2" href="$a00073.html" title="abstract base class for the creation of AbstractActions specific to the MakeAction derived type..." alt="" coords="511,616,712,723"/>
-<area shape="rect" id="node3" href="$a00017.html" title="This Class conforms to a &#39;factory&#39; pattern, it allows the creation of different ActionData instances..." alt="" coords="500,403,723,553"/>
-<area shape="rect" id="node4" href="$a00077.html" title="interface which describes a prototype for creating MakeData objects. " alt="" coords="5,197,207,289"/>
-<area shape="rect" id="node6" href="$a00014.html" title="This class encapsulates the data needed to perform an action into 4 distinct areas: &#160;&#160;&#160;..." alt="" coords="504,145,719,340"/>
-</map>

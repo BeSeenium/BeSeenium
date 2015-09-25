@@ -1,7 +1,0 @@
-<map id="beseenium.controller.Test.executeActions" name="beseenium.controller.Test.executeActions">
-<area shape="rect" id="node2" href="$a00024.html#abd8f9cf7dc1cf8d14b0334d7b0fe633f" title="iterates through the commands stored in the list and executes " alt="" coords="296,111,579,138"/>
-<area shape="rect" id="node3" href="$a00011.html#a1dade057d9cb3bfecefdb716aae91d33" title="get the ActionData object stored in the derived Action " alt="" coords="627,5,865,47"/>
-<area shape="rect" id="node4" href="$a00015.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="this method sets the value of the input parameter. " alt="" coords="639,71,853,112"/>
-<area shape="rect" id="node5" href="$a00015.html#a1cbbd813f07556de640f8f3b3f03587a" title="Sets the WebDriver associated with this ActionData. " alt="" coords="639,136,853,177"/>
-<area shape="rect" id="node6" href="$a00011.html#a24e2b60937596ecd18cd17cfe7595c5d" title="execute the derived Action in question, " alt="" coords="627,201,865,243"/>
-</map>

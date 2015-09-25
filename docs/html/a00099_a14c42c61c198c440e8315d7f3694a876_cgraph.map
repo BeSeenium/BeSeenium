@@ -1,5 +1,0 @@
-<map id="beseenium.view.outputHandlers.OutputHandler.handleRequests" name="beseenium.view.outputHandlers.OutputHandler.handleRequests">
-<area shape="rect" id="node2" href="$a00099.html#ae7918c5edc6ac732fc56461328842def" title="checks to see if a List&lt;String&gt; contains the string &quot;ERROR&quot; in it " alt="" coords="307,5,548,47"/>
-<area shape="rect" id="node3" href="$a00003.html#add8cb6e5761e2ade230ec2021bce9d1b" title="provides implementation to handle the request. " alt="" coords="284,70,571,126"/>
-<area shape="rect" id="node4" href="$a00099.html#a8e70cb6ebb3ed7308600a334599f96b8" title="beseenium.view.outputHandlers.\lOutputHandler.setSuccessor" alt="" coords="312,149,543,191"/>
-</map>

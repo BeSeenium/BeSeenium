@@ -5,5 +5,5 @@ var a00297 =
     [ "helpers", "a00309.html", "a00309" ],
     [ "model", "a00310.html", "a00310" ],
     [ "view", "a00319.html", "a00319" ],
-    [ "Main", "a00072.html", "a00072" ]
+    [ "Main", "a00072.html", null ]
 ];

@@ -1,4 +1,0 @@
-var classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1RootBrowserHandler =
-[
-    [ "handleRequest", "classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1browserHandlers_1_1RootBrowserHandler.html#a537d1204c72fa2f5ebe87df895710427", null ]
-];
