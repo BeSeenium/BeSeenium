@@ -1,0 +1,101 @@
+.TH "beseenium.view.helpers.StringSplit" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.helpers.StringSplit \- helper class that splits a string into an appropriate 2d array of strings\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStringSplit\fP ()"
+.br
+.RI "\fIdefault constructor \fP"
+.ti -1c
+.RI "String[][] \fBurlSplitString\fP (String stringToSplit)"
+.br
+.RI "\fIsplit a string of the form 'V01 V02 \&.\&.\&. V0n|V11 V12 \&.\&.\&. V1n|Vm1 Vm2 \&.\&.\&. Vmn' into a 2d String array of the form {{V01,V02\&.\&.\&.V0n},{V11,V12\&.\&.\&.V1n}\&.\&.\&.{Vm1, Vm2\&.\&.\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static String[][] \fBgeneric2d\fP (String stringToSplit, String split1Regex, String split2Regex)"
+.br
+.RI "\fIsplit a string according to 2 delimiters, produces a 2d array \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+helper class that splits a string into an appropriate 2d array of strings\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 24 of file StringSplit\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.helpers\&.StringSplit\&.StringSplit ()"
+
+.PP
+default constructor 
+.PP
+Definition at line 29 of file StringSplit\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static String [][] beseenium\&.view\&.helpers\&.StringSplit\&.generic2d (String stringToSplit, String split1Regex, String split2Regex)\fC [static]\fP"
+
+.PP
+split a string according to 2 delimiters, produces a 2d array 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstringToSplit\fP the string to split 
+.br
+\fIsplit1Regex\fP first string to split at 
+.br
+\fIsplit2Regex\fP second string to split at 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String[][] of the form {{V01,V02\&.\&.\&.V0n},{V11,V12\&.\&.\&.V1n}\&.\&.\&.{Vm1, Vm2\&.\&.\&. Vmn}} 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file StringSplit\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.composite(), and beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.composite()\&.
+.SS "String [][] beseenium\&.view\&.helpers\&.StringSplit\&.urlSplitString (String stringToSplit)"
+
+.PP
+split a string of the form 'V01 V02 \&.\&.\&. V0n|V11 V12 \&.\&.\&. V1n|Vm1 Vm2 \&.\&.\&. Vmn' into a 2d String array of the form {{V01,V02\&.\&.\&.V0n},{V11,V12\&.\&.\&.V1n}\&.\&.\&.{Vm1, Vm2\&.\&.\&. Vmn}} 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstringToSplit\fP string of the form 'V01 V02 \&.\&.\&. V0n|V11 V12:\&.\&.\&. V1n|Vm1 Vm2 \&.\&.\&. Vmn' 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String[][] of the form {{V01,V02\&.\&.\&.V0n},{V11,V12\&.\&.\&.V1n}\&.\&.\&.{Vm1, Vm2\&.\&.\&. Vmn}} 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file StringSplit\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.requests\&.AddActionsRequest\&.executeRequest(), and beseenium\&.view\&.inputHandlers\&.requests\&.CapabilitiesRequest\&.executeRequest()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

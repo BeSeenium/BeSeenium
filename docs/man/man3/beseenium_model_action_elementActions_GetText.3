@@ -1,0 +1,84 @@
+.TH "beseenium.model.action.elementActions.GetText" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.elementActions.GetText \- This is a \fBGetText\fP action, it returns the inner html of the current WebElement (and any child nodes) not including any text hidden by css\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetText\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException, ActionException  	"
+.br
+.RI "\fIThis performs a \fBGetText\fP action\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This is a \fBGetText\fP action, it returns the inner html of the current WebElement (and any child nodes) not including any text hidden by css\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file GetText\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.elementActions\&.GetText\&.GetText (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file GetText\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.elementActions\&.GetText\&.execute (int n) throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+This performs a \fBGetText\fP action\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the index of the element to get the text of (as taken from the ActionData) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String containing the text of the WebElement[n] contained in the ActionData\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.br
+\fIActionException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file GetText\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

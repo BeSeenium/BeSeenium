@@ -111,12 +111,19 @@ $(document).ready(function(){initNavTree('namespacebeseenium_1_1view.html','');}
 <div class="title">Package beseenium.view</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is the root package for the View module of the application.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Packages</h2></td></tr>
 <tr class="memitem:namespacebeseenium_1_1view_1_1helpers"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebeseenium_1_1view_1_1helpers.html">helpers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacebeseenium_1_1view_1_1inputHandlers"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebeseenium_1_1view_1_1inputHandlers.html">inputHandlers</a></td></tr>
+<tr class="memdesc:namespacebeseenium_1_1view_1_1inputHandlers"><td class="mdescLeft">&#160;</td><td class="mdescRight">This package contains classes relevant to handling the user input, as well as sub-packages That aid in this. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebeseenium_1_1view_1_1outputFormatters"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebeseenium_1_1view_1_1outputFormatters.html">outputFormatters</a></td></tr>
+<tr class="memdesc:namespacebeseenium_1_1view_1_1outputFormatters"><td class="mdescLeft">&#160;</td><td class="mdescRight">This package provides objects that modify the output of AbstractTestRequests into a variety of more usable forms: JSON, XML, etc. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacebeseenium_1_1view_1_1outputHandlers"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers.html">outputHandlers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,24 +131,27 @@ Packages</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html">BeSeeniumServlet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html" title="BeSeeniumServlet is a servlet that provide functionality that grabs the query strings from a http req...">BeSeeniumServlet</a> is a servlet that provide functionality that grabs the query strings from a http request and passes it on to the <a class="el" href="classbeseenium_1_1view_1_1URLHandler.html" title="The sole responsibility of this class is to translate parameters representing URL query strings from ...">URLHandler</a>, which gives back a result string which this servlet then inserts into the http response.  <a href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1HttpServer.html">HttpServer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the embedded Jetty Web Server.  <a href="classbeseenium_1_1view_1_1HttpServer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1URLHandler.html">URLHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sole responsibility of this class is to translate parameters representing URL query strings from an http request into 'Test' functionality.  <a href="classbeseenium_1_1view_1_1URLHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright(C) 2015 Jan P.C. Hanson &amp; BeSeen Marketing Ltd</p>
-<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
+<div class="textblock"><p>This is the root package for the View module of the application. </p>
+<p>It contains the classes responsible for providing graphical output in the form of web pages. For the most part the view is based around a Jetty implementation. The <a class="el" href="classbeseenium_1_1view_1_1HttpServer.html" title="This is the embedded Jetty Web Server. ">HttpServer</a> is responsible for doing servery type stuff: listening for connections, and passing connections through to the servlet's.</p>
+<p>The BeSeenmiumServlet is a servlet implementation that takes http requests and turns them into output that will be displayed on the users browser. It does this using the functionality provided by the sub-packages under this one.</p>
+<dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:55 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:05 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

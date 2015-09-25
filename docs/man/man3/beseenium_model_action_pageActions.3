@@ -1,0 +1,54 @@
+.TH "beseenium.model.action.pageActions" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.pageActions \- This package contains the majority of page-scoped actions, that is actions which apply to a web page as a whole, things like: get a pages URL, or retrieve the title of the page\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBrowserQuit\fP"
+.br
+.RI "\fIThis is a quit Action, it essentially closes the bowser\&. \fP"
+.ti -1c
+.RI "class \fBGetPageSrc\fP"
+.br
+.RI "\fIthis is a get page source action, it retrieves the source code of the page that you are currently on\&. \fP"
+.ti -1c
+.RI "class \fBGetTitle\fP"
+.br
+.RI "\fIretrieves the title of the html document currently selected\&. \fP"
+.ti -1c
+.RI "class \fBGetURL\fP"
+.br
+.RI "\fIThis is a \fBGetURL\fP Action, it retrieves the URL of the current page\&. \fP"
+.ti -1c
+.RI "class \fBPageClose\fP"
+.br
+.RI "\fIThis is a Close Action, it essentially closes the current tab, if it is the last or only tab open it also closes the browser\&. \fP"
+.ti -1c
+.RI "class \fBPageGet\fP"
+.br
+.RI "\fIthis is a page get action, it navigates to a page set in the input parameter of the ActionData object\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains the majority of page-scoped actions, that is actions which apply to a web page as a whole, things like: get a pages URL, or retrieve the title of the page\&. 
+
+It also contains actions that close the current page or browser\&.
+.PP
+All classes in this package are concrete command objects and are part of the \fBAbstractAction\fP inheritance hierarchy\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

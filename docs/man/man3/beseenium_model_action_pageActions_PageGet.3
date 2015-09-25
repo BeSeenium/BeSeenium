@@ -1,0 +1,82 @@
+.TH "beseenium.model.action.pageActions.PageGet" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.pageActions.PageGet \- this is a page get action, it navigates to a page set in the input parameter of the ActionData object\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPageGet\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException  	"
+.br
+.RI "\fIThis performs a \fBPageGet\fP action\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+this is a page get action, it navigates to a page set in the input parameter of the ActionData object\&. 
+
+It is possible to get a page a number of times in succession (could be useful for stress/load testing) 
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file PageGet\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.pageActions\&.PageGet\&.PageGet (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file PageGet\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.pageActions\&.PageGet\&.execute (int n) throws \fBActionDataException\fP"
+
+.PP
+This performs a \fBPageGet\fP action\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP number of times to re-load the page\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String verifying the page to navigate to\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file PageGet\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -1,5 +1,3 @@
 <map id="beseenium.exceptions.testExceptions.TestException" name="beseenium.exceptions.testExceptions.TestException">
-<area shape="rect" id="node4" href="$classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html" title="{beseenium.exceptions.test\lExceptions.TestAlreadyExistsException\n|&#45; serialVersionUID\l|+ TestAlreadyExistsException()\l# TestAlreadyExistsException()\l}" alt="" coords="5,440,275,547"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1exceptions_1_1testExceptions_1_1TestDoesNotExistException.html" title="{beseenium.exceptions.test\lExceptions.TestDoesNotExistException\n|&#45; serialVersionUID\l|+ TestDoesNotExistException()\l# TestDoesNotExistException()\l}" alt="" coords="299,440,570,547"/>
-<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="{beseenium.exceptions.BeSeenium\lException\n|&#45; serialVersionUID\l|+ BeSeeniumException()\l# BeSeeniumException()\l}" alt="" coords="165,131,409,237"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="5,131,249,237"/>
 </map>

@@ -1,33 +1,33 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html" title="beseenium.controller.Action\lFactory.MakeAction" alt="" coords="5,981,207,1023"/>
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeClear.html" title="beseenium.controller.Action\lFactory.elementActions.MakeClear" alt="" coords="283,5,527,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeClick.html" title="beseenium.controller.Action\lFactory.elementActions.MakeClick" alt="" coords="285,71,525,112"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetAttribute.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetAttribute" alt="" coords="260,136,551,177"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetCssValue.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetCssValue" alt="" coords="259,201,552,243"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetLocation.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetLocation" alt="" coords="261,267,549,308"/>
-<area shape="rect" id="node7" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetSize.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetSize" alt="" coords="275,332,536,373"/>
-<area shape="rect" id="node8" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetTagName.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetTagName" alt="" coords="257,397,553,439"/>
-<area shape="rect" id="node9" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeGetText.html" title="beseenium.controller.Action\lFactory.elementActions.MakeGetText" alt="" coords="275,463,536,504"/>
-<area shape="rect" id="node10" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeIsDisplayed.html" title="beseenium.controller.Action\lFactory.elementActions.MakeIsDisplayed" alt="" coords="264,528,547,569"/>
-<area shape="rect" id="node11" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeIsEnabled.html" title="beseenium.controller.Action\lFactory.elementActions.MakeIsEnabled" alt="" coords="269,593,541,635"/>
-<area shape="rect" id="node12" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeIsSelected.html" title="beseenium.controller.Action\lFactory.elementActions.MakeIsSelected" alt="" coords="267,659,544,700"/>
-<area shape="rect" id="node13" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeSendKeys.html" title="beseenium.controller.Action\lFactory.elementActions.MakeSendKeys" alt="" coords="268,724,543,765"/>
-<area shape="rect" id="node14" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeSubmit.html" title="beseenium.controller.Action\lFactory.elementActions.MakeSubmit" alt="" coords="277,789,534,831"/>
-<area shape="rect" id="node15" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByClass.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByClass" alt="" coords="287,854,523,910"/>
-<area shape="rect" id="node16" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByCss.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByCss" alt="" coords="287,934,523,990"/>
-<area shape="rect" id="node17" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsById.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsById" alt="" coords="287,1014,523,1070"/>
-<area shape="rect" id="node18" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByLinkTxt.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByLinkTxt" alt="" coords="287,1094,523,1150"/>
-<area shape="rect" id="node19" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByName.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByName" alt="" coords="287,1174,523,1230"/>
-<area shape="rect" id="node20" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByPartialLinkTxt.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByPartialLinkTxt" alt="" coords="287,1254,523,1310"/>
-<area shape="rect" id="node21" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByTagName.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByTagName" alt="" coords="287,1334,523,1390"/>
-<area shape="rect" id="node22" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByXpath.html" title="beseenium.controller.Action\lFactory.findElementsBy.MakeFind\lElementsByXpath" alt="" coords="287,1414,523,1470"/>
-<area shape="rect" id="node23" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateBack.html" title="beseenium.controller.Action\lFactory.navigateActions.MakeNavigateBack" alt="" coords="255,1493,556,1535"/>
-<area shape="rect" id="node24" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeNavigateForward.html" title="beseenium.controller.Action\lFactory.navigateActions.MakeNavigate\lForward" alt="" coords="270,1558,541,1614"/>
-<area shape="rect" id="node25" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeRefreshPage.html" title="beseenium.controller.Action\lFactory.navigateActions.MakeRefreshPage" alt="" coords="259,1637,552,1679"/>
-<area shape="rect" id="node26" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakeBrowserQuit.html" title="beseenium.controller.Action\lFactory.pageActions.MakeBrowserQuit" alt="" coords="272,1703,539,1744"/>
-<area shape="rect" id="node27" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakeGetPageSrc.html" title="beseenium.controller.Action\lFactory.pageActions.MakeGetPageSrc" alt="" coords="272,1768,539,1809"/>
-<area shape="rect" id="node28" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakeGetTitle.html" title="beseenium.controller.Action\lFactory.pageActions.MakeGetTitle" alt="" coords="286,1833,525,1875"/>
-<area shape="rect" id="node29" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakeGetURL.html" title="beseenium.controller.Action\lFactory.pageActions.MakeGetURL" alt="" coords="286,1899,525,1940"/>
-<area shape="rect" id="node30" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakePageClose.html" title="beseenium.controller.Action\lFactory.pageActions.MakePageClose" alt="" coords="277,1964,534,2005"/>
-<area shape="rect" id="node31" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakePageGet.html" title="beseenium.controller.Action\lFactory.pageActions.MakePageGet" alt="" coords="283,2029,528,2071"/>
+<area shape="rect" id="node1" href="$a00073.html" title="abstract base class for the creation of AbstractActions specific to the MakeAction derived type..." alt="" coords="5,981,207,1023"/>
+<area shape="rect" id="node2" href="$a00075.html" title="creates a new Clear action " alt="" coords="283,5,527,47"/>
+<area shape="rect" id="node3" href="$a00076.html" title="creates a new click action " alt="" coords="285,71,525,112"/>
+<area shape="rect" id="node4" href="$a00087.html" title="creates a new GetAttribute action " alt="" coords="260,136,551,177"/>
+<area shape="rect" id="node5" href="$a00088.html" title="creates a new GetCssValue action " alt="" coords="259,201,552,243"/>
+<area shape="rect" id="node6" href="$a00089.html" title="creates a new GetLocation action " alt="" coords="261,267,549,308"/>
+<area shape="rect" id="node7" href="$a00091.html" title="creates a new GetSize action " alt="" coords="275,332,536,373"/>
+<area shape="rect" id="node8" href="$a00092.html" title="creates a new GetTagName action " alt="" coords="257,397,553,439"/>
+<area shape="rect" id="node9" href="$a00093.html" title="creates a new GetText action " alt="" coords="275,463,536,504"/>
+<area shape="rect" id="node10" href="$a00097.html" title="creates a new IsDisplayed action " alt="" coords="264,528,547,569"/>
+<area shape="rect" id="node11" href="$a00098.html" title="creates a new IsEnabled action " alt="" coords="269,593,541,635"/>
+<area shape="rect" id="node12" href="$a00099.html" title="creates a new IsSelected action " alt="" coords="267,659,544,700"/>
+<area shape="rect" id="node13" href="$a00105.html" title="creates a new SendKeys action " alt="" coords="268,724,543,765"/>
+<area shape="rect" id="node14" href="$a00106.html" title="creates a new Submit action " alt="" coords="277,789,534,831"/>
+<area shape="rect" id="node15" href="$a00078.html" title="Creates a new FindElementsByClass action. " alt="" coords="287,854,523,910"/>
+<area shape="rect" id="node16" href="$a00079.html" title="Creates a new FindElementsByCss action. " alt="" coords="287,934,523,990"/>
+<area shape="rect" id="node17" href="$a00080.html" title="creates a new FindElementsById action " alt="" coords="287,1014,523,1070"/>
+<area shape="rect" id="node18" href="$a00081.html" title="creates a new FindElementsByLinkTxt action " alt="" coords="287,1094,523,1150"/>
+<area shape="rect" id="node19" href="$a00082.html" title="creates a new FindElementsByName action " alt="" coords="287,1174,523,1230"/>
+<area shape="rect" id="node20" href="$a00083.html" title="creates a new FindElementsByPartialLinkTxt action " alt="" coords="287,1254,523,1310"/>
+<area shape="rect" id="node21" href="$a00084.html" title="creates a new FindElementsByTagName action " alt="" coords="287,1334,523,1390"/>
+<area shape="rect" id="node22" href="$a00085.html" title="creates a new FindElementsByXpath action " alt="" coords="287,1414,523,1470"/>
+<area shape="rect" id="node23" href="$a00100.html" title="creates new NavigateBack action " alt="" coords="255,1493,556,1535"/>
+<area shape="rect" id="node24" href="$a00101.html" title="create new NavigateForwards action " alt="" coords="270,1558,541,1614"/>
+<area shape="rect" id="node25" href="$a00104.html" title="creates a new RefreshPage action " alt="" coords="259,1637,552,1679"/>
+<area shape="rect" id="node26" href="$a00074.html" title="creates a new BrowserQuit action " alt="" coords="272,1703,539,1744"/>
+<area shape="rect" id="node27" href="$a00090.html" title="creates a new GetPageSrc action " alt="" coords="272,1768,539,1809"/>
+<area shape="rect" id="node28" href="$a00094.html" title="creates a new GetTitle action " alt="" coords="286,1833,525,1875"/>
+<area shape="rect" id="node29" href="$a00095.html" title="creates a new GetURL action " alt="" coords="286,1899,525,1940"/>
+<area shape="rect" id="node30" href="$a00102.html" title="creates a new PageClose action " alt="" coords="277,1964,534,2005"/>
+<area shape="rect" id="node31" href="$a00103.html" title="creates a new PageGet object " alt="" coords="283,2029,528,2071"/>
 </map>

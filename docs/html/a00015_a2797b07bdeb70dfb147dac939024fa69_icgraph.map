@@ -1,0 +1,6 @@
+<map id="beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler.setSuccessor" name="beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler.setSuccessor">
+<area shape="rect" id="node2" href="$a00117.html#a537d1204c72fa2f5ebe87df895710427" title="beseenium.view.outputHandlers.request\lHandlers.browserHandlers.RootBrowserHandler.handle\lRequest" alt="" coords="383,5,754,61"/>
+<area shape="rect" id="node3" href="$a00116.html#a24658ebd56efcdec6f8928a733235c2b" title="beseenium.view.outputHandlers.request\lHandlers.addActionHandlers.RootAddActions\lHandler.handleRequest" alt="" coords="414,85,723,141"/>
+<area shape="rect" id="node4" href="$a00119.html#ade06e27882a65a5fc8e93a3292cd12b6" title="beseenium.view.outputHandlers.request\lHandlers.executeHandlers.RootExecuteHandler.handle\lRequest" alt="" coords="383,165,755,221"/>
+<area shape="rect" id="node5" href="$a00118.html#a9be285cdc69f6c0b03c55c913b76b8fe" title="beseenium.view.outputHandlers.request\lHandlers.capabilitiesHandlers.RootCapabilities\lHandler.handleRequest" alt="" coords="410,245,727,301"/>
+</map>

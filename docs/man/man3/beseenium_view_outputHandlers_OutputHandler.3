@@ -1,0 +1,168 @@
+.TH "beseenium.view.outputHandlers.OutputHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.OutputHandler \- This takes an array of AbstractTestRequests and uses it to generate output in various forms\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOutputHandler\fP (\fBTest\fP \fBtest\fP)"
+.br
+.RI "\fIdefault constructor \fP"
+.ti -1c
+.RI "void \fBsetRequests\fP (Map< String, \fBAbstractTestRequest\fP > requests)"
+.br
+.RI "\fISets the map of Test Requests to distribute to the various chains of responsibility\&. \fP"
+.ti -1c
+.RI "void \fBsetSuccessor\fP (\fBAbstractRequestHandler\fP \fBsuccessor\fP)"
+.br
+.ti -1c
+.RI "List< String > \fBhandleRequests\fP (String id)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBcheckListForERROR\fP (List< String > stringList)"
+.br
+.RI "\fIchecks to see if a List<String> contains the string 'ERROR' in it \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Map< \fBAbstractTestRequest\fP, \fBAbstractRequestHandler\fP > \fBsuccessorMap\fP"
+.br
+.RI "\fImap of possible chains of responsibility to follow depending on the type of TestRequest \fP"
+.ti -1c
+.RI "\fBAbstractRequestHandler\fP \fBsuccessor\fP"
+.br
+.RI "\fIThe actual chain of responsibility to follow\&. \fP"
+.ti -1c
+.RI "Map< String, \fBAbstractTestRequest\fP > \fBrequestMap\fP"
+.br
+.RI "\fImap of string descriptors to AbstractTestRequests \fP"
+.ti -1c
+.RI "\fBTest\fP \fBtest\fP"
+.br
+.RI "\fIclass copy of test to be used \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This takes an array of AbstractTestRequests and uses it to generate output in various forms\&. 
+
+Logically it is a specialisation of the AbstractRequestHandler type but contains an extra method \fBsetRequests()\fP which allows it to distribute the requests contained in this array to chains of responsibility specific to that request type\&. It is also the client of all request chains of responsibility\&. As well as this, its \fBhandleRequests()\fP method has no parameter, so while it is logically an AbstractRequestHandler it is not part of that inheritance hierarchy\&.
+.PP
+it is responsible for deciding the order in which the specific requests are passed to their handlers, however it is left to the root handler of individual chains to decide the order in which request specific handlers are called\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file OutputHandler\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.OutputHandler\&.OutputHandler (\fBTest\fP test)"
+
+.PP
+default constructor 
+.PP
+Definition at line 63 of file OutputHandler\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.OutputHandler\&.test\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean beseenium\&.view\&.outputHandlers\&.OutputHandler\&.checkListForERROR (List< String > stringList)\fC [private]\fP"
+
+.PP
+checks to see if a List<String> contains the string 'ERROR' in it 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstringList\fP the List<String> to check 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if the list contains the String 'ERROR', false if not\&. 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file OutputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests()\&.
+.SS "List<String> beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests (String id)"
+
+.PP
+Definition at line 99 of file OutputHandler\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.OutputHandler\&.checkListForERROR(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.OutputHandler\&.setSuccessor(), and beseenium\&.view\&.outputHandlers\&.OutputHandler\&.test\&.
+.PP
+Referenced by beseenium\&.view\&.BeSeeniumServlet\&.doGet()\&.
+.SS "void beseenium\&.view\&.outputHandlers\&.OutputHandler\&.setRequests (Map< String, \fBAbstractTestRequest\fP > requests)"
+
+.PP
+Sets the map of Test Requests to distribute to the various chains of responsibility\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrequests\fP 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file OutputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.BeSeeniumServlet\&.doGet()\&.
+.SS "void beseenium\&.view\&.outputHandlers\&.OutputHandler\&.setSuccessor (\fBAbstractRequestHandler\fP successor)"
+
+.PP
+Definition at line 86 of file OutputHandler\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.OutputHandler\&.successor\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Map<String, \fBAbstractTestRequest\fP> beseenium\&.view\&.outputHandlers\&.OutputHandler\&.requestMap\fC [private]\fP"
+
+.PP
+map of string descriptors to AbstractTestRequests 
+.PP
+Definition at line 56 of file OutputHandler\&.java\&.
+.SS "\fBAbstractRequestHandler\fP beseenium\&.view\&.outputHandlers\&.OutputHandler\&.successor\fC [private]\fP"
+
+.PP
+The actual chain of responsibility to follow\&. 
+.PP
+Definition at line 54 of file OutputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.OutputHandler\&.setSuccessor()\&.
+.SS "Map<\fBAbstractTestRequest\fP, \fBAbstractRequestHandler\fP> beseenium\&.view\&.outputHandlers\&.OutputHandler\&.successorMap\fC [private]\fP"
+
+.PP
+map of possible chains of responsibility to follow depending on the type of TestRequest 
+.PP
+Definition at line 52 of file OutputHandler\&.java\&.
+.SS "\fBTest\fP beseenium\&.view\&.outputHandlers\&.OutputHandler\&.test\fC [private]\fP"
+
+.PP
+class copy of test to be used 
+.PP
+Definition at line 58 of file OutputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests(), and beseenium\&.view\&.outputHandlers\&.OutputHandler\&.OutputHandler()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

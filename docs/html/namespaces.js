@@ -1,4 +1,4 @@
 var namespaces =
 [
-    [ "beseenium", "namespacebeseenium.html", "namespacebeseenium" ]
+    [ "beseenium", "a00297.html", "a00297" ]
 ];

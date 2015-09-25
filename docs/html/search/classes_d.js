@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['sendkeys',['SendKeys',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1SendKeys.html',1,'beseenium::model::action::elementActions']]],
-  ['submit',['Submit',['../classbeseenium_1_1model_1_1action_1_1elementActions_1_1Submit.html',1,'beseenium::model::action::elementActions']]],
-  ['submitexception',['SubmitException',['../classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html',1,'beseenium::exceptions::actionExceptions']]],
-  ['switchtoactiveelement',['SwitchToActiveElement',['../classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToActiveElement.html',1,'beseenium::model::action::switchActions']]],
-  ['switchtodefaultcontent',['SwitchToDefaultContent',['../classbeseenium_1_1model_1_1action_1_1switchActions_1_1SwitchToDefaultContent.html',1,'beseenium::model::action::switchActions']]]
+  ['refreshpage',['RefreshPage',['../a00117.html',1,'beseenium::model::action::navigateActions']]],
+  ['resetactiondata',['ResetActionData',['../a00118.html',1,'beseenium::model::action']]],
+  ['rootaddactionshandler',['RootAddActionsHandler',['../a00119.html',1,'beseenium::view::outputHandlers::requestHandlers::addActionHandlers']]],
+  ['rootbrowserhandler',['RootBrowserHandler',['../a00120.html',1,'beseenium::view::outputHandlers::requestHandlers::browserHandlers']]],
+  ['rootcapabilitieshandler',['RootCapabilitiesHandler',['../a00121.html',1,'beseenium::view::outputHandlers::requestHandlers::capabilitiesHandlers']]],
+  ['rootcompositor',['RootCompositor',['../a00122.html',1,'beseenium::view::outputHandlers::compositors']]],
+  ['rootexecutehandler',['RootExecuteHandler',['../a00123.html',1,'beseenium::view::outputHandlers::requestHandlers::executeHandlers']]]
 ];

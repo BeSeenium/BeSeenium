@@ -1,0 +1,147 @@
+.TH "beseenium.view.outputHandlers.compositors.CapabilitiesCompositor" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.compositors.CapabilitiesCompositor \- Copyright(C) 2015 Jan P\&.C\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCapabilitiesCompositor\fP (\fBAbstractOutputFormatter\fP \fBformat\fP)"
+.br
+.RI "\fIspecifies the format that the user wishes the output returned in e\&.g\&. \fP"
+.ti -1c
+.RI "String \fBcomposite\fP (String compositorString, String stringToComposite)"
+.br
+.RI "\fIThis method provides functionality to composite the string into the format specified by the user on creation of this object\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBformat\fP (int actionNo, String[][] results, String delimiter)"
+.br
+.RI "\fIdoes the formatting of the keyVal and KVset \fP"
+.ti -1c
+.RI "String \fBfinalFormat\fP (String formattedResults, String label)"
+.br
+.RI "\fIdoes the final formatting of the JSON object \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Copyright(C) 2015 Jan P\&.C\&. 
+
+Hanson & BeSeen Marketing Ltd
+.PP
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version\&.
+.PP
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&. See the GNU General Public License for more details\&.
+.PP
+You should have received a copy of the GNU General Public License along with this program\&. If not, see http://www.gnu.org/licenses/\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 26 of file CapabilitiesCompositor\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.CapabilitiesCompositor (\fBAbstractOutputFormatter\fP format)"
+
+.PP
+specifies the format that the user wishes the output returned in e\&.g\&. JSON, XML, etc 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIformat\fP the format that the user wishes the output returned in e\&.g\&. JSON, XML, etc 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file CapabilitiesCompositor\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.composite (String compositorString, String stringToComposite)"
+
+.PP
+This method provides functionality to composite the string into the format specified by the user on creation of this object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcompositorString\fP representation of the type of string that this is i\&.e\&. execute, addAction, capabilities or browser\&. 
+.br
+\fIstringToComposite\fP the string that requires formatting 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String the formatted string\&. 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file CapabilitiesCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.finalFormat(), beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.format(), and beseenium\&.view\&.helpers\&.StringSplit\&.generic2d()\&.
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.finalFormat (String formattedResults, String label)\fC [private]\fP"
+
+.PP
+does the final formatting of the JSON object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresults\fP the previously formatted results 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+fully formatted JSON 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file CapabilitiesCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKVsuperSet(), beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.finalForm(), and beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.formatter\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.composite()\&.
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.format (int actionNo, String results[][], String delimiter)\fC [private]\fP"
+
+.PP
+does the formatting of the keyVal and KVset 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionNo\fP the number of the action to use as a key in the KeyVal 
+.br
+\fIresult\fP the result to use as the value of a KeyVal 
+.br
+\fIdelimiter\fP string delimiter to add to the end of each KVset 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String of the form {'action':'actionNo', 'result':'result value'} 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file CapabilitiesCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKeyVal(), beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKVset(), and beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.formatter\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.composite()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

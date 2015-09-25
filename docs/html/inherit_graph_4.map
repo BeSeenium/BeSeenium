@@ -1,13 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="beseenium.exceptions.BeSeenium\lException" alt="" coords="137,183,381,225"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html" title="beseenium.exceptions.action\lDataExceptions.ActionDataException" alt="" coords="429,50,688,91"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionException.html" title="beseenium.exceptions.action\lExceptions.ActionException" alt="" coords="454,183,663,225"/>
-<area shape="rect" id="node10" href="$classbeseenium_1_1exceptions_1_1testExceptions_1_1TestException.html" title="beseenium.exceptions.test\lExceptions.TestException" alt="" coords="461,346,656,387"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataFactoryException.html" title="beseenium.exceptions.action\lDataExceptions.ActionDataFactory\lException" alt="" coords="751,5,995,61"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html" title="beseenium.exceptions.action\lExceptions.ActionFactoryException" alt="" coords="751,85,995,126"/>
-<area shape="rect" id="node7" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ClickException.html" title="beseenium.exceptions.action\lExceptions.ClickException" alt="" coords="769,150,978,191"/>
-<area shape="rect" id="node8" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html" title="beseenium.exceptions.action\lExceptions.NoSuchParameterException" alt="" coords="736,215,1011,257"/>
-<area shape="rect" id="node9" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html" title="beseenium.exceptions.action\lExceptions.SubmitException" alt="" coords="769,281,978,322"/>
-<area shape="rect" id="node11" href="$classbeseenium_1_1exceptions_1_1testExceptions_1_1TestAlreadyExistsException.html" title="beseenium.exceptions.test\lExceptions.TestAlreadyExistsException" alt="" coords="739,346,1008,387"/>
-<area shape="rect" id="node12" href="$classbeseenium_1_1exceptions_1_1testExceptions_1_1TestDoesNotExistException.html" title="beseenium.exceptions.test\lExceptions.TestDoesNotExistException" alt="" coords="738,411,1009,453"/>
+<area shape="rect" id="node2" href="$a00031.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="137,150,381,191"/>
+<area shape="rect" id="node3" href="$a00015.html" title="Exception applicable to ActionData. " alt="" coords="429,49,688,90"/>
+<area shape="rect" id="node5" href="$a00019.html" title="exception applicable to Actions " alt="" coords="454,150,663,191"/>
+<area shape="rect" id="node10" href="$a00131.html" title="Exception that apply to Test&#39;s. " alt="" coords="461,215,656,257"/>
+<area shape="rect" id="node4" href="$a00018.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="751,5,995,61"/>
+<area shape="rect" id="node6" href="$a00022.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="751,85,995,126"/>
+<area shape="rect" id="node7" href="$a00042.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="769,150,978,191"/>
+<area shape="rect" id="node8" href="$a00113.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="736,215,1011,257"/>
+<area shape="rect" id="node9" href="$a00127.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="769,281,978,322"/>
 </map>

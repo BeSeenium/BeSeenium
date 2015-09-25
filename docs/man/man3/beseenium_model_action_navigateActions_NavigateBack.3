@@ -1,0 +1,77 @@
+.TH "beseenium.model.action.navigateActions.NavigateBack" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.navigateActions.NavigateBack \- This is a navigate back action, it attempts to use the back/forward history to navigate back a specified number of times\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNavigateBack\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException  	"
+.br
+.RI "\fIperforms the navigate back action \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This is a navigate back action, it attempts to use the back/forward history to navigate back a specified number of times\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 26 of file NavigateBack\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.navigateActions\&.NavigateBack\&.NavigateBack (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file NavigateBack\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.navigateActions\&.NavigateBack\&.execute (int n) throws \fBActionDataException\fP"
+
+.PP
+performs the navigate back action 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the number of times to navigate back 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String verifying the number of times back navigation has occurred and the resultant URL\&. 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file NavigateBack\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -1,0 +1,77 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyCapsParamHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.EmptyCapsParamHandler \- This class represents a handler for the case where a null pointer exception is thrown when attempting to carry out the request, the having a null pointer is a perfectly valid condition for the request to have as not all tests need to have capabilities set, in fact even 'remote' tests do not NEED capabilities, however will fall back on the default values of the remote server in this case\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEmptyCapsParamHandler\fP ()"
+.br
+.RI "\fIdefault ctor \fP"
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class represents a handler for the case where a null pointer exception is thrown when attempting to carry out the request, the having a null pointer is a perfectly valid condition for the request to have as not all tests need to have capabilities set, in fact even 'remote' tests do not NEED capabilities, however will fall back on the default values of the remote server in this case\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file EmptyCapsParamHandler\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.EmptyCapsParamHandler\&.EmptyCapsParamHandler ()"
+
+.PP
+default ctor 
+.PP
+Definition at line 41 of file EmptyCapsParamHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.EmptyCapsParamHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 48 of file EmptyCapsParamHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.RootCapabilitiesHandler\&.handleRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.EmptyCapsParamHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.NullPointerHandler")
+.fi
+.PP
+Definition at line 36 of file EmptyCapsParamHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

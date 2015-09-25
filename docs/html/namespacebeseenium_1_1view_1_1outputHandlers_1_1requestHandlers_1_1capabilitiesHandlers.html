@@ -114,28 +114,28 @@ $(document).ready(function(){initNavTree('namespacebeseenium_1_1view_1_1outputHa
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1BadlyFormedCapsStringHandler.html">BadlyFormedCapsStringHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This represents a handler for the case in which the user has made some elementary mistake in the length of the capabilities substring, either too few or too many parameters or the correct spacer has not been used etc.  <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1BadlyFormedCapsStringHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html">CapsActionDataHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This represents a handler for the case in which the ActionData object has not been correctly used, this is more than likely a backend issue and is something that only a developer can deal with.  <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1EmptyCapsParamHandler.html">EmptyCapsParamHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a handler for the case where a null pointer exception is thrown when attempting to carry out the request, the having a null pointer is a perfectly valid condition for the request to have as not all tests need to have capabilities set, in fact even 'remote' tests do not NEED capabilities, however will fall back on the default values of the remote server in this case.  <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1EmptyCapsParamHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1MalformedURLHandler.html">MalformedURLHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a handler for the case in which the authorisation string of the remote capabilities has been mutilated by the user, in which case the request should throw a MalformedURLException, which this handler will catch and dispose of appropriately, by by giving the user some information to that effect.  <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1MalformedURLHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1RootCapabilitiesHandler.html">RootCapabilitiesHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is the root of the capabilities chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain.  <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1RootCapabilitiesHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright(C) 2015 Jan P.C. Hanson &amp; BeSeen Marketing Ltd</p>
-<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers.html">outputHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers.html">requestHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers.html">capabilitiesHandlers</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:56 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:05 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

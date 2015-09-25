@@ -5,5 +5,6 @@ var dir_a143349b75ba2ffaa5efaa578520d118 =
     [ "helpers", "dir_14d2872d9f4394d49922489c6d41d27a.html", "dir_14d2872d9f4394d49922489c6d41d27a" ],
     [ "ActionInvoker.java", "ActionInvoker_8java.html", [
       [ "ActionInvoker", "classbeseenium_1_1model_1_1ActionInvoker.html", "classbeseenium_1_1model_1_1ActionInvoker" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "model_2package-info_8java.html", null ]
 ];

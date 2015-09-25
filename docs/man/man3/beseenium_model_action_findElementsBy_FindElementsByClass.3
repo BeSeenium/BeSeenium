@@ -1,0 +1,84 @@
+.TH "beseenium.model.action.findElementsBy.FindElementsByClass" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.findElementsBy.FindElementsByClass \- This class represents a FindElementByClass Action, it takes an ActionData object in initialiseation which should contain an appropriate searchParam and returnParam\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFindElementsByClass\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException  	"
+.br
+.RI "\fIperforms the find elements by class action\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class represents a FindElementByClass Action, it takes an ActionData object in initialiseation which should contain an appropriate searchParam and returnParam\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file FindElementsByClass\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByClass\&.FindElementsByClass (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file FindElementsByClass\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByClass\&.execute (int n) throws \fBActionDataException\fP"
+
+.PP
+performs the find elements by class action\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the index of the element to find information on, i\&.e\&. if 3 results are found the 0 will be the first element 1 the second and so on\&. will get an array out of bounds\&. If you wish the action to return all of the results found then set n = -1\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String representation of the returnParam set in the ActionData object passed into the constructor\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file FindElementsByClass\&.java\&.
+.PP
+References beseenium\&.model\&.helpers\&.FormatOutput\&.formatFindElementOutput()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

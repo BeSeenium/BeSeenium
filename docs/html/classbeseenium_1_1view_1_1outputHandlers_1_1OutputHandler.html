@@ -109,12 +109,16 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">beseenium.view.outputHandlers.OutputHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This takes an array of AbstractTestRequests and uses it to generate output in various forms.  
+ <a href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for beseenium.view.outputHandlers.OutputHandler:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,37 +126,50 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler__coll__graph.png" border="0" usemap="#beseenium_8view_8outputHandlers_8OutputHandler_coll__map" alt="Collaboration graph"/></div>
 <map name="beseenium_8view_8outputHandlers_8OutputHandler_coll__map" id="beseenium_8view_8outputHandlers_8OutputHandler_coll__map">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n||+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="5,844,285,951"/><area shape="rect" id="node4" href="classbeseenium_1_1controller_1_1Test.html" title="{beseenium.controller.Test\n||+ Test()\l+ setBrowser()\l+ configureRemoteDriver()\l+ addAction()\l+ removeAction()\l+ executeActions()\l+ emergencyShutdown()\l}" alt="" coords="728,815,923,980"/><area shape="rect" id="node5" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="{beseenium.controller.Action\lDataFactory.ActionDataFactory\n||+ ActionDataFactory()\l+ setCapabilities()\l+ makeActionData()\l+ makeActionData()\l&#45; mapEntries()\l}" alt="" coords="641,417,863,568"/><area shape="rect" id="node17" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html" title="{beseenium.controller.Action\lFactory.ActionFactory\n||+ ActionFactory()\l+ makeAction()\l&#45; populateActionMap()\l}" alt="" coords="575,631,777,752"/><area shape="rect" id="node6" href="interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="{beseenium.controller.Action\lDataFactory.MakeData\n||+ makeActionData()\l}" alt="" coords="586,211,787,303"/><area shape="rect" id="node8" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="{beseenium.model.actionData.\lActionData\n|&#45; inputParam\l|+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="347,160,562,355"/><area shape="rect" id="node13" href="classbeseenium_1_1model_1_1ActionInvoker.html" title="{beseenium.model.ActionInvoker\n||+ ActionInvoker()\l+ add()\l+ remove()\l+ execute()\l+ size()\l}" alt="" coords="1051,189,1277,325"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate..." alt="" coords="5,844,285,951"/><area shape="rect" id="node4" href="classbeseenium_1_1controller_1_1Test.html" title="blueprint for creating Test objects, a Test is ostensibly a series of actions that are performed one ..." alt="" coords="728,815,923,980"/><area shape="rect" id="node5" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="This Class conforms to a &#39;factory&#39; pattern, it allows the creation of different ActionData instances..." alt="" coords="641,417,863,568"/><area shape="rect" id="node17" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html" title="this class is a factory for creating actions, it uses a factory method style pattern and a map implem..." alt="" coords="575,631,777,752"/><area shape="rect" id="node6" href="interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="interface which describes a prototype for creating MakeData objects. " alt="" coords="586,211,787,303"/><area shape="rect" id="node8" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="This class encapsulates the data needed to perform an action into 4 distinct areas: &#160;&#160;&#160;..." alt="" coords="347,160,562,355"/><area shape="rect" id="node13" href="classbeseenium_1_1model_1_1ActionInvoker.html" title="This class acts as the invoker in a GOF command style pattern. " alt="" coords="1051,189,1277,325"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c9456844cb1c4716dd40627e3e63e89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a0c9456844cb1c4716dd40627e3e63e89">OutputHandler</a> (<a class="el" href="classbeseenium_1_1controller_1_1Test.html">Test</a> <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a68754623e6b58f9cefda497d8a6bdb20">test</a>)</td></tr>
+<tr class="memdesc:a0c9456844cb1c4716dd40627e3e63e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="#a0c9456844cb1c4716dd40627e3e63e89">More...</a><br /></td></tr>
 <tr class="separator:a0c9456844cb1c4716dd40627e3e63e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6914d44a8a56c1302053c495b89f6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#aa6914d44a8a56c1302053c495b89f6c1">setRequests</a> (Map&lt; String, <a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html">AbstractTestRequest</a> &gt; requests)</td></tr>
+<tr class="memdesc:aa6914d44a8a56c1302053c495b89f6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the map of Test Requests to distribute to the various chains of responsibility.  <a href="#aa6914d44a8a56c1302053c495b89f6c1">More...</a><br /></td></tr>
 <tr class="separator:aa6914d44a8a56c1302053c495b89f6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e70cb6ebb3ed7308600a334599f96b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a8e70cb6ebb3ed7308600a334599f96b8">setSuccessor</a> (<a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">AbstractRequestHandler</a> <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a47f6e7a0412564f0ea861e9a21684e5a">successor</a>)</td></tr>
 <tr class="separator:a8e70cb6ebb3ed7308600a334599f96b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c42c61c198c440e8315d7f3694a876"><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876">handleRequests</a> ()</td></tr>
 <tr class="separator:a14c42c61c198c440e8315d7f3694a876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae7918c5edc6ac732fc56461328842def"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#ae7918c5edc6ac732fc56461328842def">checkListForERROR</a> (List&lt; String &gt; stringList)</td></tr>
+<tr class="memdesc:ae7918c5edc6ac732fc56461328842def"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks to see if a List&lt;String&gt; contains the string "ERROR" in it  <a href="#ae7918c5edc6ac732fc56461328842def">More...</a><br /></td></tr>
+<tr class="separator:ae7918c5edc6ac732fc56461328842def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aed333e20c353936862acbe77ddc87114"><td class="memItemLeft" align="right" valign="top">Map&lt; <a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html">AbstractTestRequest</a>, <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">AbstractRequestHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#aed333e20c353936862acbe77ddc87114">successorMap</a></td></tr>
+<tr class="memdesc:aed333e20c353936862acbe77ddc87114"><td class="mdescLeft">&#160;</td><td class="mdescRight">map of possible chains of responsibility to follow depending on the type of TestRequest  <a href="#aed333e20c353936862acbe77ddc87114">More...</a><br /></td></tr>
 <tr class="separator:aed333e20c353936862acbe77ddc87114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f6e7a0412564f0ea861e9a21684e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">AbstractRequestHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a47f6e7a0412564f0ea861e9a21684e5a">successor</a></td></tr>
+<tr class="memdesc:a47f6e7a0412564f0ea861e9a21684e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual chain of responsibility to follow.  <a href="#a47f6e7a0412564f0ea861e9a21684e5a">More...</a><br /></td></tr>
 <tr class="separator:a47f6e7a0412564f0ea861e9a21684e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d64b3ca3a20cfe63d8f844c5a06008d"><td class="memItemLeft" align="right" valign="top">Map&lt; String, <a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html">AbstractTestRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a0d64b3ca3a20cfe63d8f844c5a06008d">requestMap</a></td></tr>
+<tr class="memdesc:a0d64b3ca3a20cfe63d8f844c5a06008d"><td class="mdescLeft">&#160;</td><td class="mdescRight">map of string descriptors to AbstractTestRequests  <a href="#a0d64b3ca3a20cfe63d8f844c5a06008d">More...</a><br /></td></tr>
 <tr class="separator:a0d64b3ca3a20cfe63d8f844c5a06008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68754623e6b58f9cefda497d8a6bdb20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbeseenium_1_1controller_1_1Test.html">Test</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a68754623e6b58f9cefda497d8a6bdb20">test</a></td></tr>
+<tr class="memdesc:a68754623e6b58f9cefda497d8a6bdb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">class copy of test to be used  <a href="#a68754623e6b58f9cefda497d8a6bdb20">More...</a><br /></td></tr>
 <tr class="separator:a68754623e6b58f9cefda497d8a6bdb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This takes an array of AbstractTestRequests and uses it to generate output in various forms. Logically it is a specialisation of the AbstractRequestHandler type but contains an extra method <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#aa6914d44a8a56c1302053c495b89f6c1">setRequests()</a> which allows it to distribute the requests contained in this array to chains of responsibility specific to that request type. It is also the client of all request chains of responsibility. As well as this, its <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876">handleRequests()</a> method has no parameter, so while it is logically an AbstractRequestHandler it is not part of that inheritance hierarchy.</p>
+<div class="textblock"><p>This takes an array of AbstractTestRequests and uses it to generate output in various forms. </p>
+<p>Logically it is a specialisation of the AbstractRequestHandler type but contains an extra method <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#aa6914d44a8a56c1302053c495b89f6c1" title="Sets the map of Test Requests to distribute to the various chains of responsibility. ">setRequests()</a> which allows it to distribute the requests contained in this array to chains of responsibility specific to that request type. It is also the client of all request chains of responsibility. As well as this, its <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876">handleRequests()</a> method has no parameter, so while it is logically an AbstractRequestHandler it is not part of that inheritance hierarchy.</p>
 <p>it is responsible for deciding the order in which the specific requests are passed to their handlers, however it is left to the root handler of individual chains to decide the order in which request specific handlers are called.</p>
 <dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00050">50</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00047">47</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0c9456844cb1c4716dd40627e3e63e89"></a>
 <div class="memitem">
@@ -167,15 +184,64 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>default constructor </p>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00064">64</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00061">61</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>References <a class="el" href="OutputHandler_8java_source.html#l00059">beseenium.view.outputHandlers.OutputHandler.test</a>.</p>
+<p>References <a class="el" href="OutputHandler_8java_source.html#l00056">beseenium.view.outputHandlers.OutputHandler.test</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae7918c5edc6ac732fc56461328842def"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean beseenium.view.outputHandlers.OutputHandler.checkListForERROR </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>stringList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks to see if a List&lt;String&gt; contains the string "ERROR" in it </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stringList</td><td>the List&lt;String&gt; to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the list contains the String "ERROR", false if not. </dd></dl>
+
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00136">136</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+
+<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00097">beseenium.view.outputHandlers.OutputHandler.handleRequests()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_ae7918c5edc6ac732fc56461328842def_icgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_ae7918c5edc6ac732fc56461328842def_icgraph" alt=""/></div>
+<map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_ae7918c5edc6ac732fc56461328842def_icgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_ae7918c5edc6ac732fc56461328842def_icgraph">
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876" title="beseenium.view.outputHandlers.\lOutputHandler.handleRequests" alt="" coords="295,5,525,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="Logger. " alt="" coords="573,5,776,47"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a14c42c61c198c440e8315d7f3694a876"></a>
 <div class="memitem">
 <div class="memproto">
@@ -189,31 +255,31 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00100">100</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00097">97</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>References <a class="el" href="Test_8java_source.html#l00130">beseenium.controller.Test.emergencyShutdown()</a>, <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b">beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler.handleRequest()</a>, <a class="el" href="OutputHandler_8java_source.html#l00087">beseenium.view.outputHandlers.OutputHandler.setSuccessor()</a>, and <a class="el" href="OutputHandler_8java_source.html#l00059">beseenium.view.outputHandlers.OutputHandler.test</a>.</p>
+<p>References <a class="el" href="OutputHandler_8java_source.html#l00136">beseenium.view.outputHandlers.OutputHandler.checkListForERROR()</a>, <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b">beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler.handleRequest()</a>, <a class="el" href="OutputHandler_8java_source.html#l00084">beseenium.view.outputHandlers.OutputHandler.setSuccessor()</a>, and <a class="el" href="OutputHandler_8java_source.html#l00056">beseenium.view.outputHandlers.OutputHandler.test</a>.</p>
 
-<p>Referenced by <a class="el" href="BeSeeniumServlet_8java_source.html#l00059">beseenium.view.BeSeeniumServlet.doGet()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph" alt=""/></div>
-<map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="295,161,559,203"/><area shape="rect" id="node12" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b" title="beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler.handle\lRequest" alt="" coords="284,226,571,282"/><area shape="rect" id="node13" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a8e70cb6ebb3ed7308600a334599f96b8" title="beseenium.view.outputHandlers.\lOutputHandler.setSuccessor" alt="" coords="312,305,543,347"/><area shape="rect" id="node3" href="classbeseenium_1_1model_1_1ActionInvoker.html#abf329444fb06b3cf9b4dc5c0a11832b2" title="beseenium.model.ActionInvoker.add" alt="" coords="633,59,887,86"/><area shape="rect" id="node4" href="classbeseenium_1_1model_1_1ActionInvoker.html#abd8f9cf7dc1cf8d14b0334d7b0fe633f" title="beseenium.model.ActionInvoker.execute" alt="" coords="619,110,901,137"/><area shape="rect" id="node9" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a8283241ec6b94055f72282f99815155d" title="beseenium.controller.Action\lFactory.ActionFactory.makeAction" alt="" coords="640,161,880,203"/><area shape="rect" id="node10" href="classbeseenium_1_1model_1_1ActionInvoker.html#af7d6d40d83ef5753d06f553b0be06bc5" title="beseenium.model.ActionInvoker.remove" alt="" coords="620,227,900,254"/><area shape="rect" id="node11" href="classbeseenium_1_1model_1_1ActionInvoker.html#a315c13ebb167511b6895aabefe8b6c8e" title="beseenium.model.ActionInvoker.size" alt="" coords="632,278,888,305"/><area shape="rect" id="node5" href="classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a24e2b60937596ecd18cd17cfe7595c5d" title="beseenium.model.action.Abstract\lAction.execute" alt="" coords="949,5,1188,47"/><area shape="rect" id="node6" href="classbeseenium_1_1model_1_1action_1_1AbstractAction.html#a1dade057d9cb3bfecefdb716aae91d33" title="beseenium.model.action.Abstract\lAction.getActionData" alt="" coords="949,71,1188,112"/><area shape="rect" id="node7" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a1cbbd813f07556de640f8f3b3f03587a" title="beseenium.model.actionData.\lActionData.setDriver" alt="" coords="961,136,1176,177"/><area shape="rect" id="node8" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html#a0825a9ec5bee8b6de8e7b244d991c04d" title="beseenium.model.actionData.\lActionData.setInputParam" alt="" coords="961,201,1176,243"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="BeSeeniumServlet_8java_source.html#l00058">beseenium.view.BeSeeniumServlet.doGet()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph" alt=""/></div>
+<map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_cgraph">
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#ae7918c5edc6ac732fc56461328842def" title="checks to see if a List&lt;String&gt; contains the string &quot;ERROR&quot; in it " alt="" coords="307,5,548,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b" title="provides implementation to handle the request. " alt="" coords="284,70,571,126"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a8e70cb6ebb3ed7308600a334599f96b8" title="beseenium.view.outputHandlers.\lOutputHandler.setSuccessor" alt="" coords="312,149,543,191"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_icgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_icgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a14c42c61c198c440e8315d7f3694a876_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="284,5,487,47"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="Logger. " alt="" coords="284,5,487,47"/></map>
 </div>
 </p>
 
@@ -232,25 +298,27 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the map of Test Requests to distribute to the various chains of responsibility. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Sets the map of Test Requests to distribute to the various chains of responsibility. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">requests</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00075">75</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00072">72</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>Referenced by <a class="el" href="BeSeeniumServlet_8java_source.html#l00059">beseenium.view.BeSeeniumServlet.doGet()</a>.</p>
+<p>Referenced by <a class="el" href="BeSeeniumServlet_8java_source.html#l00058">beseenium.view.BeSeeniumServlet.doGet()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_aa6914d44a8a56c1302053c495b89f6c1_icgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_aa6914d44a8a56c1302053c495b89f6c1_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_aa6914d44a8a56c1302053c495b89f6c1_icgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_aa6914d44a8a56c1302053c495b89f6c1_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="284,5,487,47"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="Logger. " alt="" coords="284,5,487,47"/></map>
 </div>
 </p>
 
@@ -270,20 +338,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00087">87</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00084">84</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>References <a class="el" href="OutputHandler_8java_source.html#l00055">beseenium.view.outputHandlers.OutputHandler.successor</a>.</p>
+<p>References <a class="el" href="OutputHandler_8java_source.html#l00052">beseenium.view.outputHandlers.OutputHandler.successor</a>.</p>
 
-<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00100">beseenium.view.outputHandlers.OutputHandler.handleRequests()</a>.</p>
+<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00097">beseenium.view.outputHandlers.OutputHandler.handleRequests()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a8e70cb6ebb3ed7308600a334599f96b8_icgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a8e70cb6ebb3ed7308600a334599f96b8_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a8e70cb6ebb3ed7308600a334599f96b8_icgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler_a8e70cb6ebb3ed7308600a334599f96b8_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876" title="beseenium.view.outputHandlers.\lOutputHandler.handleRequests" alt="" coords="284,5,515,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="563,5,765,47"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876" title="beseenium.view.outputHandlers.\lOutputHandler.handleRequests" alt="" coords="284,5,515,47"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="Logger. " alt="" coords="563,5,765,47"/></map>
 </div>
 </p>
 
@@ -307,9 +375,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>map of string descriptors to AbstractTestRequests </p>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00057">57</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00054">54</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
 </div>
 </div>
@@ -330,11 +399,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>The actual chain of responsibility to follow. </p>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00055">55</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00052">52</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00087">beseenium.view.outputHandlers.OutputHandler.setSuccessor()</a>.</p>
+<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00084">beseenium.view.outputHandlers.OutputHandler.setSuccessor()</a>.</p>
 
 </div>
 </div>
@@ -355,9 +425,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>map of possible chains of responsibility to follow depending on the type of TestRequest </p>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00053">53</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00050">50</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
 </div>
 </div>
@@ -378,16 +449,17 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>class copy of test to be used </p>
 
-<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00059">59</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="OutputHandler_8java_source.html#l00056">56</a> of file <a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a>.</p>
 
-<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00100">beseenium.view.outputHandlers.OutputHandler.handleRequests()</a>, and <a class="el" href="OutputHandler_8java_source.html#l00064">beseenium.view.outputHandlers.OutputHandler.OutputHandler()</a>.</p>
+<p>Referenced by <a class="el" href="OutputHandler_8java_source.html#l00097">beseenium.view.outputHandlers.OutputHandler.handleRequests()</a>, and <a class="el" href="OutputHandler_8java_source.html#l00061">beseenium.view.outputHandlers.OutputHandler.OutputHandler()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/view/outputHandlers/<a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a></li>
+<li><a class="el" href="OutputHandler_8java_source.html">OutputHandler.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -395,7 +467,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers.html">outputHandlers</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html">OutputHandler</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:55 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:05 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

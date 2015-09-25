@@ -11,5 +11,6 @@ var dir_5bbe2df8b9144465e599bb26fc8ecf62 =
     ] ],
     [ "MakeHtmlUnitDriverData.java", "MakeHtmlUnitDriverData_8java.html", [
       [ "MakeHtmlUnitDriverData", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html", "classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionDataFactory_2package-info_8java.html", null ]
 ];

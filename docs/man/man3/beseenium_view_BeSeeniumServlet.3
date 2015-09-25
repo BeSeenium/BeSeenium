@@ -1,0 +1,79 @@
+.TH "beseenium.view.BeSeeniumServlet" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.BeSeeniumServlet \- \fBBeSeeniumServlet\fP is a servlet that provide functionality that grabs the query strings from a http request and passes it on to the \fBURLHandler\fP, which gives back a result string which this servlet then inserts into the http response\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits HttpServlet\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdoGet\fP (HttpServletRequest request, HttpServletResponse response)  throws ServletException, IOException     "
+.br
+.RI "\fILogger\&. \fP"
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = -2842549406742289709L"
+.br
+.RI "\fIneed this to avoid warnings \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBBeSeeniumServlet\fP is a servlet that provide functionality that grabs the query strings from a http request and passes it on to the \fBURLHandler\fP, which gives back a result string which this servlet then inserts into the http response\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file BeSeeniumServlet\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void beseenium\&.view\&.BeSeeniumServlet\&.doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException\fC [protected]\fP"
+
+.PP
+Logger\&. The method that actually does all the work\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrequest\fP a http request 
+.br
+\fIresponse\fP the http response 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIServletException\fP 
+.br
+\fIIOException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file BeSeeniumServlet\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput(), beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests(), and beseenium\&.view\&.outputHandlers\&.OutputHandler\&.setRequests()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final long beseenium\&.view\&.BeSeeniumServlet\&.serialVersionUID = -2842549406742289709L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+need this to avoid warnings 
+.PP
+Definition at line 45 of file BeSeeniumServlet\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -17,5 +17,6 @@ var dir_20ceaf6d976831f909692d9b6e3ab214 =
     ] ],
     [ "MakePageGet.java", "MakePageGet_8java.html", [
       [ "MakePageGet", "classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakePageGet.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1pageActions_1_1MakePageGet" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionFactory_2pageActions_2package-info_8java.html", null ]
 ];

@@ -1,0 +1,59 @@
+.TH "beseenium.view.helpers.EmergencyShutdown" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.helpers.EmergencyShutdown \- this is an object wrapper for the emergency shutdown method of the Test class passed in as a parameter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBexecute\fP (\fBTest\fP test)"
+.br
+.RI "\fIin case something goes wrong the test should be able to shut down the current browser instance, or else there could potentially be many, for all intents and purposes, orphan processes floating about eating up memory\&.\&.\&.\&.remember: always kill the orphans\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+this is an object wrapper for the emergency shutdown method of the Test class passed in as a parameter\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file EmergencyShutdown\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.helpers\&.EmergencyShutdown\&.execute (\fBTest\fP test)"
+
+.PP
+in case something goes wrong the test should be able to shut down the current browser instance, or else there could potentially be many, for all intents and purposes, orphan processes floating about eating up memory\&.\&.\&.\&.remember: always kill the orphans\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItest\fP the test to shut down\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+verification string 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file EmergencyShutdown\&.java\&.
+.PP
+References beseenium\&.controller\&.Test\&.emergencyShutdown()\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.handleRequest()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

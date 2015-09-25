@@ -1,0 +1,109 @@
+.TH "beseenium.view.HttpServer" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.HttpServer \- This is the embedded Jetty Web Server\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBlaunch\fP (int portNumber)"
+.br
+.RI "\fIlaunches the embedded webserver on the specified port number\&. \fP"
+.in -1c
+.SS "Static Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static ContextHandler \fBsetUpServletHandler\fP ()"
+.br
+.RI "\fIdo setup for the servlet handler \fP"
+.ti -1c
+.RI "static ContextHandler \fBsetUpGuiHandler\fP ()  throws MalformedURLException     "
+.br
+.RI "\fIdo setup for the static resource handler \fP"
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP = LogManager\&.getLogger('BeSeenium\&.HttpServer')"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the embedded Jetty Web Server\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file HttpServer\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static void beseenium\&.view\&.HttpServer\&.launch (int portNumber)\fC [static]\fP"
+
+.PP
+launches the embedded webserver on the specified port number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIportNumber\fP the portnumber for the server to listen on\&. 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file HttpServer\&.java\&.
+.PP
+References beseenium\&.view\&.HttpServer\&.setUpGuiHandler(), and beseenium\&.view\&.HttpServer\&.setUpServletHandler()\&.
+.PP
+Referenced by beseenium\&.Main\&.main()\&.
+.SS "static ContextHandler beseenium\&.view\&.HttpServer\&.setUpGuiHandler () throws MalformedURLException\fC [static]\fP, \fC [private]\fP"
+
+.PP
+do setup for the static resource handler 
+.PP
+\fBReturns:\fP
+.RS 4
+ContextHandler for the static resource handler 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file HttpServer\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.HttpServer\&.launch()\&.
+.SS "static ContextHandler beseenium\&.view\&.HttpServer\&.setUpServletHandler ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+do setup for the servlet handler 
+.PP
+\fBReturns:\fP
+.RS 4
+ContextHandler for the servlet 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file HttpServer\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.HttpServer\&.launch()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.HttpServer\&.logger = LogManager\&.getLogger('BeSeenium\&.HttpServer')\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 39 of file HttpServer\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

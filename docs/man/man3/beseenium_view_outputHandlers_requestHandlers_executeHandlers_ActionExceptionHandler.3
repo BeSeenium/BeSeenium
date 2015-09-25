@@ -1,0 +1,68 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.executeHandlers.ActionExceptionHandler \- This represents a handler for the case where, actions have been requested in the incorrect order, i\&.e\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.RI "\fIrefefrence to log4j logger \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This represents a handler for the case where, actions have been requested in the incorrect order, i\&.e\&. 
+
+an element-scoped action has been requested before a findElementsBy\&.\&.\&. action as it is nonsensical to query an element that has yet to be found\&. There are other examples, please refer to the wiki for an exhaustive list\&. in any case this class should pick up on these misuses and inform the user of their digression from the path\&. any of these action misuses will result in an ActionException should the exception thrown now be an ActionException then the request will be passed on to the following handler in the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file ActionExceptionHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 47 of file ActionExceptionHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.handleRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler")
+.fi
+.PP
+refefrence to log4j logger 
+.PP
+Definition at line 40 of file ActionExceptionHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -1,0 +1,89 @@
+.TH "beseenium.controller.ActionFactory.MakeAction" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.controller.ActionFactory.MakeAction \- abstract base class for the creation of AbstractActions specific to the \fBMakeAction\fP derived type\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeClear\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeClick\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetAttribute\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetCssValue\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetLocation\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetSize\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetTagName\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeGetText\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeIsDisplayed\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeIsEnabled\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeIsSelected\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeSendKeys\fP, \fBbeseenium\&.controller\&.ActionFactory\&.elementActions\&.MakeSubmit\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByClass\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByCss\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsById\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByLinkTxt\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByName\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByPartialLinkTxt\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByTagName\fP, \fBbeseenium\&.controller\&.ActionFactory\&.findElementsBy\&.MakeFindElementsByXpath\fP, \fBbeseenium\&.controller\&.ActionFactory\&.navigateActions\&.MakeNavigateBack\fP, \fBbeseenium\&.controller\&.ActionFactory\&.navigateActions\&.MakeNavigateForward\fP, \fBbeseenium\&.controller\&.ActionFactory\&.navigateActions\&.MakeRefreshPage\fP, \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakeBrowserQuit\fP, \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakeGetPageSrc\fP, \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakeGetTitle\fP, \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakeGetURL\fP, \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakePageClose\fP, and \fBbeseenium\&.controller\&.ActionFactory\&.pageActions\&.MakePageGet\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "abstract \fBAbstractAction\fP \fBmakeAction\fP ()"
+.br
+.RI "\fIcreates an AbstractAction specific to the \fBMakeAction\fP derived type\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMakeAction\fP (\fBActionDataFactory\fP adf)"
+.br
+.RI "\fIpopulates internal \fBActionDataFactory\fP for use by derived types \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBActionDataFactory\fP \fBadFactory\fP"
+.br
+.RI "\fIinternal \fBActionDataFactory\fP for use by derived types \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+abstract base class for the creation of AbstractActions specific to the \fBMakeAction\fP derived type\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file MakeAction\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.controller\&.ActionFactory\&.MakeAction\&.MakeAction (\fBActionDataFactory\fP adf)\fC [protected]\fP"
+
+.PP
+populates internal \fBActionDataFactory\fP for use by derived types 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIadf\fP 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file MakeAction\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract \fBAbstractAction\fP beseenium\&.controller\&.ActionFactory\&.MakeAction\&.makeAction ()\fC [abstract]\fP"
+
+.PP
+creates an AbstractAction specific to the \fBMakeAction\fP derived type\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+AbstractAction specific to the \fBMakeAction\fP derived type 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActionDataFactory\fP beseenium\&.controller\&.ActionFactory\&.MakeAction\&.adFactory\fC [protected]\fP"
+
+.PP
+internal \fBActionDataFactory\fP for use by derived types 
+.PP
+Definition at line 30 of file MakeAction\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

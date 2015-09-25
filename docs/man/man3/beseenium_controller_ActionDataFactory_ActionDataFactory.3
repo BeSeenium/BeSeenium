@@ -1,0 +1,197 @@
+.TH "beseenium.controller.ActionDataFactory.ActionDataFactory" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.controller.ActionDataFactory.ActionDataFactory \- This Class conforms to a 'factory' pattern, it allows the creation of different ActionData instances\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.controller\&.ActionDataFactory\&.MakeData\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionDataFactory\fP ()  throws MalformedURLException 	"
+.br
+.RI "\fIdefault constructor, initialises internal map and populates it \fP"
+.ti -1c
+.RI "void \fBsetCapabilities\fP (String key, String value)  throws MalformedURLException 	"
+.br
+.RI "\fIwhen you wish to use the remote webdriver, then the capabilities must be set first, this method provides a convenient way to set them\&. \fP"
+.ti -1c
+.RI "\fBActionData\fP \fBmakeActionData\fP ()"
+.br
+.RI "\fIprovides an ActionData devoid of any pre initialised data, i\&.e\&. \fP"
+.ti -1c
+.RI "\fBActionData\fP \fBmakeActionData\fP (String ActionDataKey)  throws ActionDataFactoryException 	"
+.br
+.RI "\fImake a specific actionData containing a specific WebDriver\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmapEntries\fP ()"
+.br
+.RI "\fIpopulate the map with 'MakeActionData' derived types \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Map< String, \fBMakeData\fP > \fBActionDataMap\fP"
+.br
+.RI "\fIcontainer for string value pairs associated with this factory \fP"
+.ti -1c
+.RI "DesiredCapabilities \fBcapabilities\fP"
+.br
+.RI "\fIthis is used by the RemoteWebDriver to create an appropriate browser simulation \fP"
+.ti -1c
+.RI "URL \fBURL\fP"
+.br
+.RI "\fIneeded by the RemoteWebDriver, holds the location of the server to run simulations on \fP"
+.ti -1c
+.RI "\fBActionData\fP \fBemptyActionData\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This Class conforms to a 'factory' pattern, it allows the creation of different ActionData instances\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file ActionDataFactory\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.ActionDataFactory () throws MalformedURLException"
+
+.PP
+default constructor, initialises internal map and populates it 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file ActionDataFactory\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.mapEntries()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBActionData\fP beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.makeActionData ()"
+
+.PP
+provides an ActionData devoid of any pre initialised data, i\&.e\&. completely empty\&. mostly used by \fBActionFactory\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+ActionData that is completely empty\&. 
+.RE
+.PP
+
+.PP
+Implements \fBbeseenium\&.controller\&.ActionDataFactory\&.MakeData\fP\&.
+.PP
+Definition at line 91 of file ActionDataFactory\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.emptyActionData\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.setBrowser()\&.
+.SS "\fBActionData\fP beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.makeActionData (String ActionDataKey) throws \fBActionDataFactoryException\fP"
+
+.PP
+make a specific actionData containing a specific WebDriver\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIActionDataKey\fP the type of ActionData you wish to specify\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ActionData appropriate to the ActionDataKey passed in 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataFactoryException\fP if ActionDataKey does not correspond to a known ActionData implementation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file ActionDataFactory\&.java\&.
+.SS "void beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.mapEntries ()\fC [private]\fP"
+
+.PP
+populate the map with 'MakeActionData' derived types 
+.PP
+Definition at line 126 of file ActionDataFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.ActionDataFactory()\&.
+.SS "void beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.setCapabilities (String key, String value) throws MalformedURLException"
+
+.PP
+when you wish to use the remote webdriver, then the capabilities must be set first, this method provides a convenient way to set them\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIkey\fP the capability you wish to set 
+.br
+\fIvalue\fP the value you wish to set it to\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file ActionDataFactory\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.URL\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.configureRemoteDriver()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Map<String, \fBMakeData\fP> beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.ActionDataMap\fC [private]\fP"
+
+.PP
+container for string value pairs associated with this factory 
+.PP
+Definition at line 37 of file ActionDataFactory\&.java\&.
+.SS "DesiredCapabilities beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.capabilities\fC [private]\fP"
+
+.PP
+this is used by the RemoteWebDriver to create an appropriate browser simulation 
+.PP
+Definition at line 39 of file ActionDataFactory\&.java\&.
+.SS "\fBActionData\fP beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.emptyActionData\fC [private]\fP"
+
+.PP
+Definition at line 43 of file ActionDataFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.makeActionData()\&.
+.SS "URL beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.URL\fC [private]\fP"
+
+.PP
+needed by the RemoteWebDriver, holds the location of the server to run simulations on 
+.PP
+Definition at line 41 of file ActionDataFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.setCapabilities()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

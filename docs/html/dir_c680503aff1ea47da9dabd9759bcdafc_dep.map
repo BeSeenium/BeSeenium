@@ -1,4 +1,4 @@
-<map id="src/beseenium/view/outputHandlers/requestHandlers" name="src/beseenium/view/outputHandlers/requestHandlers">
+<map id="requestHandlers" name="requestHandlers">
 <area shape="rect" id="node2" href="dir_27c8a0040d16fc172a2834cdd6cd6717.html" title="addActionHandlers" alt="" coords="521,63,663,111"/>
 <area shape="rect" id="node3" href="dir_706877631986011d7edb8da7d80d0cf5.html" title="browserHandlers" alt="" coords="367,63,497,111"/>
 <area shape="rect" id="node4" href="dir_77116085250b5b6d447d567baabb8d32.html" title="capabilitiesHandlers" alt="" coords="193,63,343,111"/>

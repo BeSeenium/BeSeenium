@@ -12,6 +12,7 @@ var dir_a988745f64d1f1d4e0c36b8ca07d7583 =
     [ "GetURL.java", "GetURL_8java.html", [
       [ "GetURL", "classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetURL.html", "classbeseenium_1_1model_1_1action_1_1pageActions_1_1GetURL" ]
     ] ],
+    [ "package-info.java", "model_2action_2pageActions_2package-info_8java.html", null ],
     [ "PageClose.java", "PageClose_8java.html", [
       [ "PageClose", "classbeseenium_1_1model_1_1action_1_1pageActions_1_1PageClose.html", "classbeseenium_1_1model_1_1action_1_1pageActions_1_1PageClose" ]
     ] ],

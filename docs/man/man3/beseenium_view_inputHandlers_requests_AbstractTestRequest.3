@@ -1,0 +1,95 @@
+.TH "beseenium.view.inputHandlers.requests.AbstractTestRequest" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.inputHandlers.requests.AbstractTestRequest \- This class is the abstract base class for a series of request objects relating to various parts of a test's functionality, e\&.g\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbeseenium\&.view\&.inputHandlers\&.requests\&.AddActionsRequest\fP, \fBbeseenium\&.view\&.inputHandlers\&.requests\&.BrowserRequest\fP, \fBbeseenium\&.view\&.inputHandlers\&.requests\&.CapabilitiesRequest\fP, and \fBbeseenium\&.view\&.inputHandlers\&.requests\&.ExecuteRequest\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "abstract String \fBexecuteRequest\fP (\fBTest\fP test)  throws Exception"
+.br
+.RI "\fIContains the implementation of the request\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractTestRequest\fP (String \fBrequestData\fP)"
+.br
+.RI "\fIConstructor, instantiates the object with the data provided by the URL parameter\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBrequestData\fP"
+.br
+.RI "\fIthe data passed in from the URL parameter \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class is the abstract base class for a series of request objects relating to various parts of a test's functionality, e\&.g\&. 
+
+capabilities, browser, addActions etc\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 25 of file AbstractTestRequest\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.AbstractTestRequest (String requestData)\fC [protected]\fP"
+
+.PP
+Constructor, instantiates the object with the data provided by the URL parameter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrequestData\fP the data provided by the URL parameter\&. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file AbstractTestRequest\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.requestData\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract String beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest (\fBTest\fP test) throws Exception\fC [abstract]\fP"
+
+.PP
+Contains the implementation of the request\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+String representing the result of this request\&. 
+.RE
+.PP
+
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.RootBrowserHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.ActionNumberFormatHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.RootAddActionsHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NoActionParamHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.NoBrowserParamHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionDataExceptionHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.CapsActionDataHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.BadlyFormedCapsStringHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.BrowserActionDataHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.BadlyFormattedActionHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.WrongBrowserParamHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.RootCapabilitiesHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.AddActionDataHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NonExistantActionHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.EmptyCapsParamHandler\&.handleRequest(), and beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler\&.handleRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "String beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.requestData\fC [protected]\fP"
+
+.PP
+the data passed in from the URL parameter 
+.PP
+Definition at line 28 of file AbstractTestRequest\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.AbstractTestRequest()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

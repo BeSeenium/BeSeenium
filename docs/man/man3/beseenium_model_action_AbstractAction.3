@@ -1,0 +1,143 @@
+.TH "beseenium.model.action.AbstractAction" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.AbstractAction \- this is the root class for all derived Actions  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbeseenium\&.model\&.action\&.elementActions\&.Clear\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.Click\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetAttribute\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetCssValue\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetLocation\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetSize\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetTagName\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.GetText\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.IsDisplayed\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.IsEnabled\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.IsSelected\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.SendKeys\fP, \fBbeseenium\&.model\&.action\&.elementActions\&.Submit\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByClass\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByCss\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsById\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByLinkTxt\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByName\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByPartialLinkTxt\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByTagName\fP, \fBbeseenium\&.model\&.action\&.findElementsBy\&.FindElementsByXpath\fP, \fBbeseenium\&.model\&.action\&.navigateActions\&.NavigateBack\fP, \fBbeseenium\&.model\&.action\&.navigateActions\&.NavigateForward\fP, \fBbeseenium\&.model\&.action\&.navigateActions\&.RefreshPage\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.BrowserQuit\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.GetPageSrc\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.GetTitle\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.GetURL\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.PageClose\fP, \fBbeseenium\&.model\&.action\&.pageActions\&.PageGet\fP, \fBbeseenium\&.model\&.action\&.ResetActionData\fP, \fBbeseenium\&.model\&.action\&.switchActions\&.SwitchToActiveElement\fP, and \fBbeseenium\&.model\&.action\&.switchActions\&.SwitchToDefaultContent\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionData\fP \fBgetActionData\fP ()"
+.br
+.RI "\fIget the ActionData object stored in the derived Action \fP"
+.ti -1c
+.RI "void \fBsetActionData\fP (\fBActionData\fP actionData)"
+.br
+.RI "\fIsets the ActionData that the derived \fBAbstractAction\fP is going to use\&. \fP"
+.ti -1c
+.RI "abstract String \fBexecute\fP (int n)  throws ActionDataException, ActionException"
+.br
+.RI "\fIexecute the derived Action in question, \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractAction\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises derived object using the ActionData passed in as a param \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBActionData\fP \fBcontext\fP"
+.br
+.RI "\fIreference to the ActionData object that a derived Action is constructed with \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+this is the root class for all derived Actions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 26 of file AbstractAction\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.AbstractAction\&.AbstractAction (\fBActionData\fP context)\fC [protected]\fP"
+
+.PP
+constructor, initialises derived object using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file AbstractAction\&.java\&.
+.PP
+References beseenium\&.model\&.action\&.AbstractAction\&.context\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract String beseenium\&.model\&.action\&.AbstractAction\&.execute (int n) throws \fBActionDataException\fP, \fBActionException\fP\fC [abstract]\fP"
+
+.PP
+execute the derived Action in question, 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the index of the element to find information on, i\&.e\&. if 3 results are found the 0 will be the first element 1 the second and so on\&. will get an IndexOutOfBounds type exception if you provide a number higher than the number of elements returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String representation of the output of the derived Action\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Referenced by beseenium\&.model\&.ActionInvoker\&.execute()\&.
+.SS "\fBActionData\fP beseenium\&.model\&.action\&.AbstractAction\&.getActionData ()"
+
+.PP
+get the ActionData object stored in the derived Action 
+.PP
+\fBReturns:\fP
+.RS 4
+The ActionData that this Action operates on 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file AbstractAction\&.java\&.
+.PP
+References beseenium\&.model\&.action\&.AbstractAction\&.context\&.
+.PP
+Referenced by beseenium\&.model\&.ActionInvoker\&.execute()\&.
+.SS "void beseenium\&.model\&.action\&.AbstractAction\&.setActionData (\fBActionData\fP actionData)"
+
+.PP
+sets the ActionData that the derived \fBAbstractAction\fP is going to use\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBactionData\fP\fP The ActionData that this \fBAbstractAction\fP will use\&. 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file AbstractAction\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActionData\fP beseenium\&.model\&.action\&.AbstractAction\&.context\fC [protected]\fP"
+
+.PP
+reference to the ActionData object that a derived Action is constructed with 
+.PP
+Definition at line 29 of file AbstractAction\&.java\&.
+.PP
+Referenced by beseenium\&.model\&.action\&.AbstractAction\&.AbstractAction(), and beseenium\&.model\&.action\&.AbstractAction\&.getActionData()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

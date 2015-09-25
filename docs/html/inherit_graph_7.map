@@ -1,3 +1,36 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="beseenium.model.actionData.\lActionData" alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node1" href="$a00009.html" title="this is the root class for all derived Actions " alt="" coords="5,1051,244,1092"/>
+<area shape="rect" id="node2" href="$a00040.html" title="This represents a clear action, it will have no effect unless the element that this action is perform..." alt="" coords="307,5,544,47"/>
+<area shape="rect" id="node3" href="$a00041.html" title="This is a click action,. " alt="" coords="307,71,544,112"/>
+<area shape="rect" id="node4" href="$a00057.html" title="This is a getAttribute action, it takes the input parameter from the ActionData object to perform thi..." alt="" coords="307,136,544,177"/>
+<area shape="rect" id="node5" href="$a00058.html" title="this is a Get CSS Action, it retrieves the value of a specific CSS property. " alt="" coords="307,201,544,243"/>
+<area shape="rect" id="node6" href="$a00059.html" title="This is a GetLocation Action, It retrieves the location of the top left corner of the element current..." alt="" coords="307,267,544,308"/>
+<area shape="rect" id="node7" href="$a00061.html" title="This is a GetSize Action, It retrieves the size of the WebElement currently stored in the ActionData..." alt="" coords="307,332,544,373"/>
+<area shape="rect" id="node8" href="$a00062.html" title="This is a GetTagName Action, it retrieves the tag name of the web element selected. " alt="" coords="307,397,544,439"/>
+<area shape="rect" id="node9" href="$a00063.html" title="This is a GetText action, it returns the inner html of the current WebElement (and any child nodes) n..." alt="" coords="307,463,544,504"/>
+<area shape="rect" id="node10" href="$a00068.html" title="This is an IsDisplayed Action, checks to see whether the element currently held in the ActionData is ..." alt="" coords="307,528,544,569"/>
+<area shape="rect" id="node11" href="$a00069.html" title="This is an IsEnabled Action, checks to see whether the element currently held in the ActionData is cu..." alt="" coords="307,593,544,635"/>
+<area shape="rect" id="node12" href="$a00070.html" title="This is an IsSelected Action, checks to see whether the element currently held in the ActionData is c..." alt="" coords="307,659,544,700"/>
+<area shape="rect" id="node13" href="$a00124.html" title="This is a sendKeys Action, it simulates a human typing into an element, which may set its value..." alt="" coords="307,724,544,765"/>
+<area shape="rect" id="node14" href="$a00126.html" title="This will submit a form if the element in question is a form or a form element. " alt="" coords="307,789,544,831"/>
+<area shape="rect" id="node15" href="$a00048.html" title="This class represents a FindElementByClass Action, it takes an ActionData object in initialiseation w..." alt="" coords="306,855,545,896"/>
+<area shape="rect" id="node16" href="$a00049.html" title="this is a FindElementByCss Action, it takes an ActionData object in initialiseation which should cont..." alt="" coords="312,920,539,961"/>
+<area shape="rect" id="node17" href="$a00050.html" title="This class represents a FindElementById Action, it takes an ActionData object in initialiseation whic..." alt="" coords="318,985,533,1027"/>
+<area shape="rect" id="node18" href="$a00051.html" title="this is a find element by link text action, it searches for an element using a string containing &#39;lin..." alt="" coords="301,1051,549,1092"/>
+<area shape="rect" id="node19" href="$a00052.html" title="this is a find elements by name action, it attempts to find an element using a name provided i..." alt="" coords="304,1116,547,1157"/>
+<area shape="rect" id="node20" href="$a00053.html" title="this is a find element by partial link text action, it searches for an element using a string contain..." alt="" coords="303,1181,547,1237"/>
+<area shape="rect" id="node21" href="$a00054.html" title="this is a find elements by tag name, it finds an element using a provided tag name string..." alt="" coords="292,1260,559,1301"/>
+<area shape="rect" id="node22" href="$a00055.html" title="is a Find element by Xpath action, it provides a method to find an element using an xpath string..." alt="" coords="304,1325,547,1367"/>
+<area shape="rect" id="node23" href="$a00108.html" title="This is a navigate back action, it attempts to use the back/forward history to navigate back a specif..." alt="" coords="306,1391,545,1432"/>
+<area shape="rect" id="node24" href="$a00109.html" title="This is a navigate forward action, it attempts to use the back/foward history to navigate forward a s..." alt="" coords="306,1456,545,1497"/>
+<area shape="rect" id="node25" href="$a00117.html" title="this is a refresh page action, it (surprise surprise) refreshes the page. " alt="" coords="306,1521,545,1563"/>
+<area shape="rect" id="node26" href="$a00035.html" title="This is a quit Action, it essentially closes the bowser. " alt="" coords="317,1587,533,1628"/>
+<area shape="rect" id="node27" href="$a00060.html" title="this is a get page source action, it retrieves the source code of the page that you are currently on..." alt="" coords="317,1652,533,1693"/>
+<area shape="rect" id="node28" href="$a00064.html" title="retrieves the title of the html document currently selected. " alt="" coords="317,1717,533,1759"/>
+<area shape="rect" id="node29" href="$a00065.html" title="This is a GetURL Action, it retrieves the URL of the current page. " alt="" coords="317,1783,533,1824"/>
+<area shape="rect" id="node30" href="$a00115.html" title="This is a Close Action, it essentially closes the current tab, if it is the last or only tab open it ..." alt="" coords="317,1848,533,1889"/>
+<area shape="rect" id="node31" href="$a00116.html" title="this is a page get action, it navigates to a page set in the input parameter of the ActionData object..." alt="" coords="317,1913,533,1955"/>
+<area shape="rect" id="node32" href="$a00118.html" title="this resets various attributes of the ActionData " alt="" coords="315,1979,535,2020"/>
+<area shape="rect" id="node33" href="$a00128.html" title="this is a SwitchToActiveElement, it Switches to the element that currently has focus within the docum..." alt="" coords="314,2044,537,2085"/>
+<area shape="rect" id="node34" href="$a00129.html" title="represents a SwitchToDefaultContent action which Selects either the first frame on the page..." alt="" coords="312,2109,539,2151"/>
 </map>

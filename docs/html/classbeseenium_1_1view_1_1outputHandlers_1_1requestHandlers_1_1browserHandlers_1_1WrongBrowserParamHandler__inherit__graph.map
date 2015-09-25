@@ -1,3 +1,3 @@
 <map id="beseenium.view.outputHandlers.requestHandlers.browserHandlers.WrongBrowserParamHandler" name="beseenium.view.outputHandlers.requestHandlers.browserHandlers.WrongBrowserParamHandler">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n|# successor\l|+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="29,5,309,112"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate..." alt="" coords="29,5,309,112"/>
 </map>

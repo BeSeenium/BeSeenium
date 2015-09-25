@@ -1,4 +1,4 @@
 <map id="beseenium.exceptions.actionDataExceptions.ActionDataFactoryException" name="beseenium.exceptions.actionDataExceptions.ActionDataFactoryException">
-<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html" title="{beseenium.exceptions.action\lDataExceptions.ActionDataException\n|&#45; serialVersionUID\l|+ ActionDataException()\l+ ActionDataException()\l}" alt="" coords="5,285,264,392"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="{beseenium.exceptions.BeSeenium\lException\n|&#45; serialVersionUID\l|+ BeSeeniumException()\l# BeSeeniumException()\l}" alt="" coords="13,131,257,237"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1actionDataExceptions_1_1ActionDataException.html" title="Exception applicable to ActionData. " alt="" coords="5,285,264,392"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="13,131,257,237"/>
 </map>

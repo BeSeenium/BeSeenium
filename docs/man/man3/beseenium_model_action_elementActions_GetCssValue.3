@@ -1,0 +1,84 @@
+.TH "beseenium.model.action.elementActions.GetCssValue" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.elementActions.GetCssValue \- this is a Get CSS Action, it retrieves the value of a specific CSS property\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetCssValue\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException, ActionException  	"
+.br
+.RI "\fIThis performs a GetCss action\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+this is a Get CSS Action, it retrieves the value of a specific CSS property\&. 
+
+The property that you wish to find is defined in the ActionData object, so make sure that you set this to reflect the CSS property you wish to find the value of before passing it to this action\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file GetCssValue\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.elementActions\&.GetCssValue\&.GetCssValue (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file GetCssValue\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.elementActions\&.GetCssValue\&.execute (int n) throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+This performs a GetCss action\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the index of the element to get a CSS value of (as taken from the ActionData) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String containing the value of the CSS value set in the input parameter 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.br
+\fIActionException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file GetCssValue\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

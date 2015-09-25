@@ -1,0 +1,5 @@
+<map id="beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCapabilitiesHandler.handleRequest" name="beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.RootCapabilitiesHandler.handleRequest">
+<area shape="rect" id="node2" href="$a00016.html#aa69c65e2b1e435f9130ffa7dfde78069" title="Contains the implementation of the request. " alt="" coords="748,5,1029,47"/>
+<area shape="rect" id="node3" href="$a00043.html#a9e9792c8e613f1ce45deab1f1d2c5489" title="beseenium.view.outputHandlers.request\lHandlers.capabilitiesHandlers.EmptyCaps\lParamHandler.handleRequest" alt="" coords="391,30,679,86"/>
+<area shape="rect" id="node4" href="$a00015.html#a2797b07bdeb70dfb147dac939024fa69" title="sets the next concrete request handler in the chain. " alt="" coords="371,109,700,151"/>
+</map>

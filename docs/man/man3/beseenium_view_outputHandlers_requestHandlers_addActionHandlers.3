@@ -1,0 +1,54 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.addActionHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.addActionHandlers \- This package contains all classes relevant to the chain of responsibility that processes the 'addActions' url query string\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionNumberFormatHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the user has provided an index parameter for an action that is not a number, the user is then informed of this\&. \fP"
+.ti -1c
+.RI "class \fBAddActionDataHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where there has been a misuse of an ActionData object This is in the most case a developer space problem rather than a user-space problem i\&.e\&. \fP"
+.ti -1c
+.RI "class \fBBadlyFormattedActionHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the user has entered a badly formatted value for the addAction parameter, if this is the case the request will throw a TestException, which is caught by this class and notifies the user of their mistake\&. \fP"
+.ti -1c
+.RI "class \fBNoActionParamHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the user has forgotten to use the addAction parameter in their test url\&. \fP"
+.ti -1c
+.RI "class \fBNonExistantActionHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the user attempts to create an action that does not exist, for example they misspelled the action etc\&. \fP"
+.ti -1c
+.RI "class \fBRootAddActionsHandler\fP"
+.br
+.RI "\fIThis class is the root of the addAction chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains all classes relevant to the chain of responsibility that processes the 'addActions' url query string\&. 
+
+The RootAddActions class is the start of the chain and is responsible for the case where there are no errors or issues with the input\&. Passing it down the chain to the other handlers should an error occur\&.
+.PP
+in order to implement new exceptional behaviour cases a new child class of \fBAbstractRequestHandler\fP should be created containing the code to handle this case, then the RootAddActions class should be modified to add this new class to the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

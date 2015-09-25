@@ -1,4 +1,4 @@
 <map id="beseenium.controller.Test.configureRemoteDriver" name="beseenium.controller.Test.configureRemoteDriver">
-<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="beseenium.view.URLHandler.handle\lCapabilities" alt="" coords="304,5,555,47"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="603,13,877,39"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;capabili..." alt="" coords="304,5,555,47"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Tes..." alt="" coords="603,13,877,39"/>
 </map>

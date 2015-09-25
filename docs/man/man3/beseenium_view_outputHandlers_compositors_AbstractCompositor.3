@@ -1,0 +1,76 @@
+.TH "beseenium.view.outputHandlers.compositors.AbstractCompositor" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.compositors.AbstractCompositor \- Copyright(C) 2015 Jan P\&.C\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\fP, \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.BrowserCompositor\fP, \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\fP, \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.ExecuteCompositor\fP, and \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.RootCompositor\fP\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractCompositor\fP (\fBAbstractOutputFormatter\fP format)"
+.br
+.RI "\fIdefault constructor, sets the formatter\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractOutputFormatter\fP \fBformatter\fP"
+.br
+.RI "\fIreference to the formatter used e\&.g\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Copyright(C) 2015 Jan P\&.C\&. 
+
+Hanson & BeSeen Marketing Ltd
+.PP
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version\&.
+.PP
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&. See the GNU General Public License for more details\&.
+.PP
+You should have received a copy of the GNU General Public License along with this program\&. If not, see http://www.gnu.org/licenses/\&. This is the abstract base class for all the compositors\&. compositors use a formatter provided by a constructor argument to compose the output strings into the form that the user has requested\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file AbstractCompositor\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.AbstractCompositor (\fBAbstractOutputFormatter\fP format)\fC [protected]\fP"
+
+.PP
+default constructor, sets the formatter\&. if not explicitly called then defaults to BasicFormatter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIformat\fP a formatter object 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file AbstractCompositor\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAbstractOutputFormatter\fP beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.formatter\fC [protected]\fP"
+
+.PP
+reference to the formatter used e\&.g\&. JSON, basic, xml, etc 
+.PP
+Definition at line 31 of file AbstractCompositor\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.finalFormat(), beseenium\&.view\&.outputHandlers\&.compositors\&.ExecuteCompositor\&.finalFormat(), beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.finalFormat(), beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.format(), beseenium\&.view\&.outputHandlers\&.compositors\&.ExecuteCompositor\&.format(), and beseenium\&.view\&.outputHandlers\&.compositors\&.CapabilitiesCompositor\&.format()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

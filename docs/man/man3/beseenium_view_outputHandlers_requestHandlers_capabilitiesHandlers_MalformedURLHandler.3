@@ -1,0 +1,78 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.MalformedURLHandler \- This class represents a handler for the case in which the authorisation string of the remote capabilities has been mutilated by the user, in which case the request should throw a MalformedURLException, which this handler will catch and dispose of appropriately, by by giving the user some information to that effect\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMalformedURLHandler\fP ()"
+.br
+.RI "\fIdefault ctor \fP"
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.RI "\fIrefefrence to log4j logger \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class represents a handler for the case in which the authorisation string of the remote capabilities has been mutilated by the user, in which case the request should throw a MalformedURLException, which this handler will catch and dispose of appropriately, by by giving the user some information to that effect\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file MalformedURLHandler\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler\&.MalformedURLHandler ()"
+
+.PP
+default ctor 
+.PP
+Definition at line 43 of file MalformedURLHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 50 of file MalformedURLHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler")
+.fi
+.PP
+refefrence to log4j logger 
+.PP
+Definition at line 38 of file MalformedURLHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

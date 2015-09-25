@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div class="title">beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.CapsActionDataHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This represents a handler for the case in which the ActionData object has not been correctly used, this is more than likely a backend issue and is something that only a developer can deal with.  
+ <a href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.CapsActionDataHandler:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,7 +125,7 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler__inherit__graph.png" border="0" usemap="#beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_inherit__map" alt="Inheritance graph"/></div>
 <map name="beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_inherit__map" id="beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_inherit__map">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n|# successor\l|+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="9,5,289,112"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate..." alt="" coords="9,5,289,112"/></map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.CapsActionDataHandler:</div>
@@ -131,7 +134,7 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1view_1_1outputHandle
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler__coll__graph.png" border="0" usemap="#beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_coll__map" alt="Collaboration graph"/></div>
 <map name="beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_coll__map" id="beseenium_8view_8outputHandlers_8requestHandlers_8capabilitiesHandlers_8CapsActionDataHandler_coll__map">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="{beseenium.view.outputHandlers.request\lHandlers.AbstractRequestHandler\n||+ setSuccessor()\l+ handleRequest()\l}" alt="" coords="5,5,285,112"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html" title="abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate..." alt="" coords="5,5,285,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -140,25 +143,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b4802efff90518f2b18c9e5f9df80ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler</a></td></tr>
 <tr class="memitem:a2797b07bdeb70dfb147dac939024fa69 inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#a2797b07bdeb70dfb147dac939024fa69">setSuccessor</a> (<a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">AbstractRequestHandler</a> <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#af63a4bec940086599042319b0fd06e75">successor</a>)</td></tr>
+<tr class="memdesc:a2797b07bdeb70dfb147dac939024fa69 inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the next concrete request handler in the chain.  <a href="#a2797b07bdeb70dfb147dac939024fa69">More...</a><br /></td></tr>
 <tr class="separator:a2797b07bdeb70dfb147dac939024fa69 inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8cb6e5761e2ade230ec2021bce9d1b inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memItemLeft" align="right" valign="top">abstract String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#add8cb6e5761e2ade230ec2021bce9d1b">handleRequest</a> (<a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html">AbstractTestRequest</a> request, <a class="el" href="classbeseenium_1_1controller_1_1Test.html">Test</a> test)</td></tr>
+<tr class="memdesc:add8cb6e5761e2ade230ec2021bce9d1b inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">provides implementation to handle the request.  <a href="#add8cb6e5761e2ade230ec2021bce9d1b">More...</a><br /></td></tr>
 <tr class="separator:add8cb6e5761e2ade230ec2021bce9d1b inherit pub_methods_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a978931d09f37fb806c3cbb6b0d0bbb86"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html#a978931d09f37fb806c3cbb6b0d0bbb86">logger</a></td></tr>
+<tr class="memdesc:a978931d09f37fb806c3cbb6b0d0bbb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">refefrence to log4j logger  <a href="#a978931d09f37fb806c3cbb6b0d0bbb86">More...</a><br /></td></tr>
 <tr class="separator:a978931d09f37fb806c3cbb6b0d0bbb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler</a></td></tr>
 <tr class="memitem:af63a4bec940086599042319b0fd06e75 inherit pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html">AbstractRequestHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler.html#af63a4bec940086599042319b0fd06e75">successor</a></td></tr>
+<tr class="memdesc:af63a4bec940086599042319b0fd06e75 inherit pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the successor object  <a href="#af63a4bec940086599042319b0fd06e75">More...</a><br /></td></tr>
 <tr class="separator:af63a4bec940086599042319b0fd06e75 inherit pro_attribs_classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1AbstractRequestHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This represents a handler for the case in which the ActionData object has not been correctly used, this is more than likely a backend issue and is something that only a developer can deal with. Should this exception occur, it will be caught here and will notify the user of the situation and asked to contact a developer so the issue may be addressed. </p><dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
+<div class="textblock"><p>This represents a handler for the case in which the ActionData object has not been correctly used, this is more than likely a backend issue and is something that only a developer can deal with. </p>
+<p>Should this exception occur, it will be caught here and will notify the user of the situation and asked to contact a developer so the issue may be addressed. </p><dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
 
-<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00034">34</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00033">33</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a2b4802efff90518f2b18c9e5f9df80ab"></a>
 <div class="memitem">
@@ -184,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00044">44</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00043">43</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
 
 <p>References <a class="el" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#aa69c65e2b1e435f9130ffa7dfde78069">beseenium.view.inputHandlers.requests.AbstractTestRequest.executeRequest()</a>.</p>
 
@@ -195,7 +203,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler_a2b4802efff90518f2b18c9e5f9df80ab_cgraph.png" border="0" usemap="#classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler_a2b4802efff90518f2b18c9e5f9df80ab_cgraph" alt=""/></div>
 <map name="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler_a2b4802efff90518f2b18c9e5f9df80ab_cgraph" id="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler_a2b4802efff90518f2b18c9e5f9df80ab_cgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#aa69c65e2b1e435f9130ffa7dfde78069" title="beseenium.view.inputHandlers.requests.\lAbstractTestRequest.executeRequest" alt="" coords="340,13,621,54"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1inputHandlers_1_1requests_1_1AbstractTestRequest.html#aa69c65e2b1e435f9130ffa7dfde78069" title="Contains the implementation of the request. " alt="" coords="340,13,621,54"/></map>
 </div>
 </p>
 
@@ -221,14 +229,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= LogManager.getLogger</div>
 <div class="line">            (<span class="stringliteral">&quot;BeSeenium.view.outputHandlers.requestHandlers.capabilitiesHandlers.ActionDataExceptionHandler&quot;</span>)</div>
-</div><!-- fragment --><p>refefrence to log4j logger </p>
+</div><!-- fragment -->
+<p>refefrence to log4j logger </p>
 
-<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00037">37</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
+<p>Definition at line <a class="el" href="CapsActionDataHandler_8java_source.html#l00036">36</a> of file <a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/view/outputHandlers/requestHandlers/capabilitiesHandlers/<a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a></li>
+<li><a class="el" href="CapsActionDataHandler_8java_source.html">CapsActionDataHandler.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -236,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers.html">outputHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers.html">requestHandlers</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers.html">capabilitiesHandlers</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1capabilitiesHandlers_1_1CapsActionDataHandler.html">CapsActionDataHandler</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:56 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:05 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

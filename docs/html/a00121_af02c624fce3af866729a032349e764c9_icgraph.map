@@ -1,0 +1,4 @@
+<map id="beseenium.controller.Test.setBrowser" name="beseenium.controller.Test.setBrowser">
+<area shape="rect" id="node2" href="$a00123.html#a7696fb55c864a910283e742115b7ed15" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;browser&#39;..." alt="" coords="265,5,516,47"/>
+<area shape="rect" id="node3" href="$a00123.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Tes..." alt="" coords="564,13,839,39"/>
+</map>

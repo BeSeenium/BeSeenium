@@ -1,5 +1,5 @@
 <map id="beseenium.controller.ActionDataFactory.MakeData" name="beseenium.controller.ActionDataFactory.MakeData">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="{beseenium.controller.Action\lDataFactory.ActionDataFactory\n|&#45; ActionDataMap\l&#45; capabilities\l&#45; URL\l&#45; emptyActionData\l|+ ActionDataFactory()\l+ setCapabilities()\l+ makeActionData()\l+ makeActionData()\l&#45; mapEntries()\l}" alt="" coords="5,145,228,340"/>
-<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeFirefoxData.html" title="{beseenium.controller.Action\lDataFactory.MakeFirefoxData\n||+ MakeFirefoxData()\l+ makeActionData()\l}" alt="" coords="251,189,462,296"/>
-<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html" title="{beseenium.controller.Action\lDataFactory.MakeHtmlUnitDriverData\n||+ MakeHtmlUnitDriverData()\l+ makeActionData()\l}" alt="" coords="486,189,750,296"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="This Class conforms to a &#39;factory&#39; pattern, it allows the creation of different ActionData instances..." alt="" coords="5,145,228,340"/>
+<area shape="rect" id="node3" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeFirefoxData.html" title="make an ActionData containing a firefox Driver " alt="" coords="251,189,462,296"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html" title="makes an ActionData containing a HtmlUnitDriver " alt="" coords="486,189,750,296"/>
 </map>

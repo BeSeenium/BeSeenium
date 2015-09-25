@@ -1,0 +1,66 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.browserHandlers.WrongBrowserParamHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.browserHandlers.WrongBrowserParamHandler \- This represents a handler for the case where the browser parameter has either been left blank or an incorrect value has been given as the browser parameter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.RI "\fIrefefrence to log4j logger \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This represents a handler for the case where the browser parameter has either been left blank or an incorrect value has been given as the browser parameter\&. 
+
+Either way it will notify the user that this is the case and echo the string they used referring them to the documentation in order to remedy the problem\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file WrongBrowserParamHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.WrongBrowserParamHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 44 of file WrongBrowserParamHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.WrongBrowserParamHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.EmptyBrowserParamHandler")
+.fi
+.PP
+refefrence to log4j logger 
+.PP
+Definition at line 37 of file WrongBrowserParamHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

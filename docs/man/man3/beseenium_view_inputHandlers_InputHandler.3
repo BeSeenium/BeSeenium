@@ -1,0 +1,210 @@
+.TH "beseenium.view.inputHandlers.InputHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.inputHandlers.InputHandler \- This class is responsible for taking the input, in the form of URL parameters passed in from the servlet, and turning them into AbstractTestRequest derived objects that can then be passed to the output handler to give useable results\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInputHandler\fP ()"
+.br
+.RI "\fIdefault constructor\&. \fP"
+.ti -1c
+.RI "Map< String, \fBAbstractTestRequest\fP > \fBhandleInput\fP (String caps, String brwsr, String actns)"
+.br
+.RI "\fIGenerates a map of string descriptors to requests from the given parameters, ending with a request to execute the test\&. \fP"
+.ti -1c
+.RI "\fBAbstractTestRequest\fP \fBgetRequest\fP (String requestType)"
+.br
+.RI "\fIretrieves a request \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractTestRequest\fP \fBhandleCapabilities\fP (String caps)"
+.br
+.RI "\fIgenerates a CapabilitiesRequest \fP"
+.ti -1c
+.RI "\fBAbstractTestRequest\fP \fBhandleBrowser\fP (String brwsr)"
+.br
+.RI "\fIgenerates a BrowserRequest \fP"
+.ti -1c
+.RI "\fBAbstractTestRequest\fP \fBhandleAddActions\fP (String actns)"
+.br
+.RI "\fIgenerates a AddActionRequest \fP"
+.ti -1c
+.RI "\fBAbstractTestRequest\fP \fBhandleExecuteRequest\fP ()"
+.br
+.RI "\fIgenerates an ExecuteRequest \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Map< String, \fBAbstractTestRequest\fP > \fBtestRequests\fP"
+.br
+.RI "\fImap of Strings to AbstractTestRequest's \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class is responsible for taking the input, in the form of URL parameters passed in from the servlet, and turning them into AbstractTestRequest derived objects that can then be passed to the output handler to give useable results\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file InputHandler\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.inputHandlers\&.InputHandler\&.InputHandler ()"
+
+.PP
+default constructor\&. 
+.PP
+Definition at line 43 of file InputHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAbstractTestRequest\fP beseenium\&.view\&.inputHandlers\&.InputHandler\&.getRequest (String requestType)"
+
+.PP
+retrieves a request 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrequestType\fP string representing the request: capabilities/browser/actions/execute 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+AbstractTestRequest 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file InputHandler\&.java\&.
+.SS "\fBAbstractTestRequest\fP beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleAddActions (String actns)\fC [private]\fP"
+
+.PP
+generates a AddActionRequest 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactns\fP the actions string 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+AddActionRequest 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file InputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput()\&.
+.SS "\fBAbstractTestRequest\fP beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleBrowser (String brwsr)\fC [private]\fP"
+
+.PP
+generates a BrowserRequest 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbrwsr\fP the browser string 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+BrowserRequest 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file InputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput()\&.
+.SS "\fBAbstractTestRequest\fP beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleCapabilities (String caps)\fC [private]\fP"
+
+.PP
+generates a CapabilitiesRequest 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcaps\fP the capabilities string 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+CapabilitiesRequest 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file InputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput()\&.
+.SS "\fBAbstractTestRequest\fP beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleExecuteRequest ()\fC [private]\fP"
+
+.PP
+generates an ExecuteRequest 
+.PP
+\fBReturns:\fP
+.RS 4
+ExecuteRequest 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file InputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput()\&.
+.SS "Map<String, \fBAbstractTestRequest\fP> beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput (String caps, String brwsr, String actns)"
+
+.PP
+Generates a map of string descriptors to requests from the given parameters, ending with a request to execute the test\&. keys are 'capabilities', 'browser', 'actions', 'execute' 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcaps\fP the capabilities passed in as a string\&. 
+.br
+\fIbrwsr\fP the browser passed in as a string\&. 
+.br
+\fIactns\fP the actions to add passed in as a string\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Map<String, AbstractTestRequest> addressable by the strings: capabilities, browser, actions & execute\&. 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file InputHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleAddActions(), beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleBrowser(), beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleCapabilities(), beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleExecuteRequest(), and beseenium\&.view\&.inputHandlers\&.InputHandler\&.testRequests\&.
+.PP
+Referenced by beseenium\&.view\&.BeSeeniumServlet\&.doGet()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Map<String, \fBAbstractTestRequest\fP> beseenium\&.view\&.inputHandlers\&.InputHandler\&.testRequests\fC [private]\fP"
+
+.PP
+map of Strings to AbstractTestRequest's 
+.PP
+Definition at line 38 of file InputHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.inputHandlers\&.InputHandler\&.handleInput()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

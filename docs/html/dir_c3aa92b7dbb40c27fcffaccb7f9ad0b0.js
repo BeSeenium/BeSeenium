@@ -6,5 +6,6 @@ var dir_c3aa92b7dbb40c27fcffaccb7f9ad0b0 =
     [ "view", "dir_6f67b778e642d7f003b1565c8b5f8bdf.html", "dir_6f67b778e642d7f003b1565c8b5f8bdf" ],
     [ "Main.java", "Main_8java.html", [
       [ "Main", "classbeseenium_1_1Main.html", "classbeseenium_1_1Main" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "package-info_8java.html", null ]
 ];

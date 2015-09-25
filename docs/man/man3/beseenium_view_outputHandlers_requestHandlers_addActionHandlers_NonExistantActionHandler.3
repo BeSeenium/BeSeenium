@@ -1,0 +1,66 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.NonExistantActionHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.addActionHandlers.NonExistantActionHandler \- This represents a handler for the case where the user attempts to create an action that does not exist, for example they misspelled the action etc\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.RI "\fIrefefrence to log4j logger \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This represents a handler for the case where the user attempts to create an action that does not exist, for example they misspelled the action etc\&. 
+
+This class will pass back a message echoing what was used as input and refer the user to the documentation in order to check the spelling/action is correct\&. If this is not the case then the request will be propogated down the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file NonExistantActionHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NonExistantActionHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 45 of file NonExistantActionHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NonExistantActionHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.addActionFactoryHandler")
+.fi
+.PP
+refefrence to log4j logger 
+.PP
+Definition at line 38 of file NonExistantActionHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -1,0 +1,82 @@
+.TH "beseenium.model.action.elementActions" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.elementActions \- This package contains all the concrete command classes relevant to element-scoped actions, i\&.e\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBClear\fP"
+.br
+.RI "\fIThis represents a clear action, it will have no effect unless the element that this action is performed on is a text entry element, i\&.e\&. \fP"
+.ti -1c
+.RI "class \fBClick\fP"
+.br
+.RI "\fIThis is a click action,\&. \fP"
+.ti -1c
+.RI "class \fBGetAttribute\fP"
+.br
+.RI "\fIThis is a getAttribute action, it takes the input parameter from the ActionData object to perform this action so make sure that at the time of execution this reflects the attribute you wish to find the value of i\&.e\&. \fP"
+.ti -1c
+.RI "class \fBGetCssValue\fP"
+.br
+.RI "\fIthis is a Get CSS Action, it retrieves the value of a specific CSS property\&. \fP"
+.ti -1c
+.RI "class \fBGetLocation\fP"
+.br
+.RI "\fIThis is a \fBGetLocation\fP Action, It retrieves the location of the top left corner of the element currently stored in the ActionData object\&. \fP"
+.ti -1c
+.RI "class \fBGetSize\fP"
+.br
+.RI "\fIThis is a \fBGetSize\fP Action, It retrieves the size of the WebElement currently stored in the ActionData\&. \fP"
+.ti -1c
+.RI "class \fBGetTagName\fP"
+.br
+.RI "\fIThis is a \fBGetTagName\fP Action, it retrieves the tag name of the web element selected\&. \fP"
+.ti -1c
+.RI "class \fBGetText\fP"
+.br
+.RI "\fIThis is a \fBGetText\fP action, it returns the inner html of the current WebElement (and any child nodes) not including any text hidden by css\&. \fP"
+.ti -1c
+.RI "class \fBIsDisplayed\fP"
+.br
+.RI "\fIThis is an \fBIsDisplayed\fP Action, checks to see whether the element currently held in the ActionData is currently displayed or not\&. \fP"
+.ti -1c
+.RI "class \fBIsEnabled\fP"
+.br
+.RI "\fIThis is an \fBIsEnabled\fP Action, checks to see whether the element currently held in the ActionData is currently enabled or not\&. \fP"
+.ti -1c
+.RI "class \fBIsSelected\fP"
+.br
+.RI "\fIThis is an \fBIsSelected\fP Action, checks to see whether the element currently held in the ActionData is currently selected or not\&. \fP"
+.ti -1c
+.RI "class \fBSendKeys\fP"
+.br
+.RI "\fIThis is a sendKeys Action, it simulates a human typing into an element, which may set its value\&. \fP"
+.ti -1c
+.RI "class \fBSubmit\fP"
+.br
+.RI "\fIThis will submit a form if the element in question is a form or a form element\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains all the concrete command classes relevant to element-scoped actions, i\&.e\&. 
+
+any action that operates on a html element found by one of the FindElementsBy\&.\&.\&. actions\&.
+.PP
+All classes in this package are concrete command objects and are part of the \fBAbstractAction\fP inheritance hierarchy\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

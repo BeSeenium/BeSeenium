@@ -1,0 +1,63 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.executeHandlers.RootExecuteHandler \- This class is the root of the addAction chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class is the root of the addAction chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&. 
+
+The request then propagates down the chain until it gets handled, or in the worst case scenario, drops off the end of the chain without being handled\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file RootExecuteHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 42 of file RootExecuteHandler\&.java\&.
+.PP
+References beseenium\&.view\&.helpers\&.EmergencyShutdown\&.execute(), beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler\&.handleRequest(), and beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.setSuccessor()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler")
+.fi
+.PP
+Definition at line 35 of file RootExecuteHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

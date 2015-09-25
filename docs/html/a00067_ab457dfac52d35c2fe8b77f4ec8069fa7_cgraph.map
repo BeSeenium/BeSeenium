@@ -1,0 +1,5 @@
+<map id="beseenium.Main.main" name="beseenium.Main.main">
+<area shape="rect" id="node2" href="$a00061.html#a0b2bae533232dfc8368124c07c3c7af6" title="launches the embedded webserver on the specified port number. " alt="" coords="216,46,460,73"/>
+<area shape="rect" id="node3" href="$a00061.html#a6d086e2b90baec37773c8cf043142ea8" title="do setup for the servlet handler " alt="" coords="508,5,731,47"/>
+<area shape="rect" id="node4" href="$a00061.html#a20311b769224a084099084f3cd577c2d" title="do setup for the static resource handler " alt="" coords="508,71,731,112"/>
+</map>

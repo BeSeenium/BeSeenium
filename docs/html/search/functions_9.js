@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['launch',['launch',['../classbeseenium_1_1view_1_1HttpServer.html#a0b2bae533232dfc8368124c07c3c7af6',1,'beseenium::view::HttpServer']]]
+  ['jsonformatter',['JsonFormatter',['../a00071.html#a74ead9d82448a4e5e0fd7c0ebd4ef1a3',1,'beseenium::view::outputHandlers::formatters::JsonFormatter']]]
 ];

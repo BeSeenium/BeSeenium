@@ -1,7 +1,9 @@
 var NAVTREE =
 [
   [ "BeSeenium", "index.html", [
-    [ "Todo List", "todo.html", null ],
+    [ "LICENCE", "a00002.html", null ],
+    [ "BeSeenium Manual", "a00004.html", "a00004" ],
+    [ "Todo List", "a00332.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],
@@ -23,10 +25,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AbstractAction_8java.html",
-"classbeseenium_1_1controller_1_1ActionDataFactory_1_1MakeHtmlUnitDriverData.html",
-"classbeseenium_1_1model_1_1action_1_1findElementsBy_1_1FindElementsByXpath.html#a812274c6c07736d9292c35f95e23ffb2",
-"namespacebeseenium_1_1exceptions_1_1testExceptions.html"
+"a00002.html",
+"a00069.html",
+"a00148.html",
+"a00276.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

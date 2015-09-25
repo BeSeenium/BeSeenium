@@ -116,6 +116,9 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1controller_1_1Action
 <div class="title">beseenium.controller.ActionFactory.ActionFactory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>this class is a factory for creating actions, it uses a factory method style pattern and a map implementation.  
+ <a href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for beseenium.controller.ActionFactory.ActionFactory:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,32 +126,38 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1controller_1_1Action
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory__coll__graph.png" border="0" usemap="#beseenium_8controller_8ActionFactory_8ActionFactory_coll__map" alt="Collaboration graph"/></div>
 <map name="beseenium_8controller_8ActionFactory_8ActionFactory_coll__map" id="beseenium_8controller_8ActionFactory_8ActionFactory_coll__map">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="{beseenium.controller.Action\lDataFactory.ActionDataFactory\n||+ ActionDataFactory()\l+ setCapabilities()\l+ makeActionData()\l+ makeActionData()\l&#45; mapEntries()\l}" alt="" coords="500,403,723,553"/><area shape="rect" id="node3" href="interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="{beseenium.controller.Action\lDataFactory.MakeData\n||+ makeActionData()\l}" alt="" coords="5,197,207,289"/><area shape="rect" id="node5" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="{beseenium.model.actionData.\lActionData\n|&#45; inputParam\l|+ ActionData()\l+ ActionData()\l+ getInputParam()\l+ getElement()\l+ getDriver()\l+ setElement()\l+ setInputParam()\l+ setDriver()\l}" alt="" coords="504,145,719,340"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html" title="This Class conforms to a &#39;factory&#39; pattern, it allows the creation of different ActionData instances..." alt="" coords="500,403,723,553"/><area shape="rect" id="node3" href="interfacebeseenium_1_1controller_1_1ActionDataFactory_1_1MakeData.html" title="interface which describes a prototype for creating MakeData objects. " alt="" coords="5,197,207,289"/><area shape="rect" id="node5" href="classbeseenium_1_1model_1_1actionData_1_1ActionData.html" title="This class encapsulates the data needed to perform an action into 4 distinct areas: &#160;&#160;&#160;..." alt="" coords="504,145,719,340"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a61a34c728745dc950e5c9410b5b4fe4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a61a34c728745dc950e5c9410b5b4fe4b">ActionFactory</a> (<a class="el" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html">ActionDataFactory</a> <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#aa1d1f90a33bbe8fd32745f36467b2cec">actionDataFactory</a>)  throws ActionDataFactoryException, MalformedURLException 	</td></tr>
+<tr class="memdesc:a61a34c728745dc950e5c9410b5b4fe4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor creates and populates internal map  <a href="#a61a34c728745dc950e5c9410b5b4fe4b">More...</a><br /></td></tr>
 <tr class="separator:a61a34c728745dc950e5c9410b5b4fe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8283241ec6b94055f72282f99815155d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbeseenium_1_1model_1_1action_1_1AbstractAction.html">AbstractAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a8283241ec6b94055f72282f99815155d">makeAction</a> (String actionKey)  throws ActionFactoryException 	</td></tr>
+<tr class="memdesc:a8283241ec6b94055f72282f99815155d"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an Action  <a href="#a8283241ec6b94055f72282f99815155d">More...</a><br /></td></tr>
 <tr class="separator:a8283241ec6b94055f72282f99815155d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ac20e4e9e93ccef2376c0b4c36dcc9d0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#ac20e4e9e93ccef2376c0b4c36dcc9d0e">populateActionMap</a> ()  throws ActionDataFactoryException 	</td></tr>
+<tr class="memdesc:ac20e4e9e93ccef2376c0b4c36dcc9d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates all possible actions and populates the map with them.  <a href="#ac20e4e9e93ccef2376c0b4c36dcc9d0e">More...</a><br /></td></tr>
 <tr class="separator:ac20e4e9e93ccef2376c0b4c36dcc9d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aaab7ef6ed12e672caf0ba10c800bc19c"><td class="memItemLeft" align="right" valign="top">Map&lt; String, <a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html">MakeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#aaab7ef6ed12e672caf0ba10c800bc19c">actionMap</a></td></tr>
+<tr class="memdesc:aaab7ef6ed12e672caf0ba10c800bc19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the map to store the actions in  <a href="#aaab7ef6ed12e672caf0ba10c800bc19c">More...</a><br /></td></tr>
 <tr class="separator:aaab7ef6ed12e672caf0ba10c800bc19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d1f90a33bbe8fd32745f36467b2cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbeseenium_1_1controller_1_1ActionDataFactory_1_1ActionDataFactory.html">ActionDataFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#aa1d1f90a33bbe8fd32745f36467b2cec">actionDataFactory</a></td></tr>
+<tr class="memdesc:aa1d1f90a33bbe8fd32745f36467b2cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal <a class="el" href="namespacebeseenium_1_1controller_1_1ActionDataFactory.html" title="This package contains all the classes to do with the ActionDataFactory functionality. ">ActionDataFactory</a> reference  <a href="#aa1d1f90a33bbe8fd32745f36467b2cec">More...</a><br /></td></tr>
 <tr class="separator:aa1d1f90a33bbe8fd32745f36467b2cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>this class is a factory for creating actions, it uses a factory method style pattern and a map implementation. </p><dl class="section author"><dt>Author</dt><dd>JPC Hanson </dd></dl>
+<div class="textblock"><p>this class is a factory for creating actions, it uses a factory method style pattern and a map implementation. </p>
+<dl class="section author"><dt>Author</dt><dd>JPC Hanson </dd></dl>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00063">63</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00062">62</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a61a34c728745dc950e5c9410b5b4fe4b"></a>
 <div class="memitem">
@@ -163,7 +172,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>default constructor creates and populates internal map </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>default constructor creates and populates internal map </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">actionDataFactory</td><td></td></tr>
   </table>
@@ -177,9 +188,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00077">77</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00076">76</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
 
-<p>References <a class="el" href="ActionFactory_8java_source.html#l00068">beseenium.controller.ActionFactory.ActionFactory.actionDataFactory</a>, and <a class="el" href="ActionFactory_8java_source.html#l00106">beseenium.controller.ActionFactory.ActionFactory.populateActionMap()</a>.</p>
+<p>References <a class="el" href="ActionFactory_8java_source.html#l00067">beseenium.controller.ActionFactory.ActionFactory.actionDataFactory</a>, and <a class="el" href="ActionFactory_8java_source.html#l00105">beseenium.controller.ActionFactory.ActionFactory.populateActionMap()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -188,7 +199,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a61a34c728745dc950e5c9410b5b4fe4b_cgraph.png" border="0" usemap="#classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a61a34c728745dc950e5c9410b5b4fe4b_cgraph" alt=""/></div>
 <map name="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a61a34c728745dc950e5c9410b5b4fe4b_cgraph" id="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a61a34c728745dc950e5c9410b5b4fe4b_cgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#ac20e4e9e93ccef2376c0b4c36dcc9d0e" title="beseenium.controller.Action\lFactory.ActionFactory.populateActionMap" alt="" coords="304,5,591,47"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#ac20e4e9e93ccef2376c0b4c36dcc9d0e" title="creates all possible actions and populates the map with them. " alt="" coords="304,5,591,47"/></map>
 </div>
 </p>
 
@@ -208,7 +219,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>creates an Action </p><dl class="section return"><dt>Returns</dt><dd>AbstractAction </dd></dl>
+
+<p>creates an Action </p>
+<dl class="section return"><dt>Returns</dt><dd>AbstractAction </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ActionFactoryException</td><td></td></tr>
@@ -217,9 +230,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00092">92</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00091">91</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
 
-<p>Referenced by <a class="el" href="Test_8java_source.html#l00099">beseenium.controller.Test.addAction()</a>, and <a class="el" href="Test_8java_source.html#l00130">beseenium.controller.Test.emergencyShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="Test_8java_source.html#l00098">beseenium.controller.Test.addAction()</a>, and <a class="el" href="Test_8java_source.html#l00129">beseenium.controller.Test.emergencyShutdown()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -228,7 +241,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a8283241ec6b94055f72282f99815155d_icgraph.png" border="0" usemap="#classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a8283241ec6b94055f72282f99815155d_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a8283241ec6b94055f72282f99815155d_icgraph" id="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_a8283241ec6b94055f72282f99815155d_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1Test.html#a47938d96708f66fa5342e9377c8b5171" title="beseenium.controller.Test.add\lAction" alt="" coords="317,68,533,109"/><area shape="rect" id="node5" href="classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="beseenium.controller.Test.emergency\lShutdown" alt="" coords="293,192,557,233"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1URLHandler.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="beseenium.view.URLHandler.handle\lAddActions" alt="" coords="982,5,1233,47"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="beseenium.view.URLHandler.handleURL" alt="" coords="1341,101,1616,127"/><area shape="rect" id="node6" href="classbeseenium_1_1view_1_1helpers_1_1EmergencyShutdown.html#a2413846626263a20383c8341d7dd2e47" title="beseenium.view.helpers.Emergency\lShutdown.execute" alt="" coords="614,221,865,263"/><area shape="rect" id="node8" href="classbeseenium_1_1view_1_1outputHandlers_1_1OutputHandler.html#a14c42c61c198c440e8315d7f3694a876" title="beseenium.view.outputHandlers.\lOutputHandler.handleRequests" alt="" coords="624,289,855,331"/><area shape="rect" id="node10" href="classbeseenium_1_1view_1_1URLHandler.html#ab3a029a7ca30c5f8a0344c4634b9daf0" title="beseenium.view.URLHandler.shutdown" alt="" coords="605,130,873,157"/><area shape="rect" id="node7" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1RootExecuteHandler.html#ade06e27882a65a5fc8e93a3292cd12b6" title="beseenium.view.outputHandlers.request\lHandlers.executeHandlers.RootExecuteHandler.handle\lRequest" alt="" coords="921,253,1293,309"/><area shape="rect" id="node9" href="classbeseenium_1_1view_1_1BeSeeniumServlet.html#abfe1e13814420a006f1dc1d230260ed6" title="beseenium.view.BeSeenium\lServlet.doGet" alt="" coords="1006,332,1209,373"/><area shape="rect" id="node11" href="classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="beseenium.view.URLHandler.handle\lCapabilities" alt="" coords="982,123,1233,164"/><area shape="rect" id="node12" href="classbeseenium_1_1view_1_1URLHandler.html#a7696fb55c864a910283e742115b7ed15" title="beseenium.view.URLHandler.handle\lBrowser" alt="" coords="982,188,1233,229"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1Test.html#a47938d96708f66fa5342e9377c8b5171" title="Add an action to this test. " alt="" coords="317,31,533,72"/><area shape="rect" id="node5" href="classbeseenium_1_1controller_1_1Test.html#a30550c4174a00b79dcb3c09b37eb925f" title="remove all actions from this test and close the browser instance associated with it. " alt="" coords="293,104,557,145"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1URLHandler.html#aa2ec4a8ab58fee50c2a0a4ace58fd981" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;addActio..." alt="" coords="982,5,1233,47"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1URLHandler.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Tes..." alt="" coords="1341,111,1616,138"/><area shape="rect" id="node6" href="classbeseenium_1_1view_1_1helpers_1_1EmergencyShutdown.html#a2413846626263a20383c8341d7dd2e47" title="in case something goes wrong the test should be able to shut down the current browser instance..." alt="" coords="614,195,865,236"/><area shape="rect" id="node8" href="classbeseenium_1_1view_1_1URLHandler.html#ab3a029a7ca30c5f8a0344c4634b9daf0" title="in case something goes wrong the test should be able to shut down the current browser instance..." alt="" coords="605,111,873,138"/><area shape="rect" id="node7" href="classbeseenium_1_1view_1_1outputHandlers_1_1requestHandlers_1_1executeHandlers_1_1RootExecuteHandler.html#ade06e27882a65a5fc8e93a3292cd12b6" title="beseenium.view.outputHandlers.request\lHandlers.executeHandlers.RootExecuteHandler.handle\lRequest" alt="" coords="921,253,1293,309"/><area shape="rect" id="node9" href="classbeseenium_1_1view_1_1URLHandler.html#ae0ec35bbb8622775c22687d68a8a830d" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;capabili..." alt="" coords="982,71,1233,112"/><area shape="rect" id="node10" href="classbeseenium_1_1view_1_1URLHandler.html#a7696fb55c864a910283e742115b7ed15" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;browser&#39;..." alt="" coords="982,136,1233,177"/></map>
 </div>
 </p>
 
@@ -254,16 +267,18 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>creates all possible actions and populates the map with them. </p><dl class="exception"><dt>Exceptions</dt><dd>
+
+<p>creates all possible actions and populates the map with them. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ActionDataFactoryException</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00106">106</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00105">105</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
 
-<p>Referenced by <a class="el" href="ActionFactory_8java_source.html#l00077">beseenium.controller.ActionFactory.ActionFactory.ActionFactory()</a>.</p>
+<p>Referenced by <a class="el" href="ActionFactory_8java_source.html#l00076">beseenium.controller.ActionFactory.ActionFactory.ActionFactory()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -272,7 +287,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_ac20e4e9e93ccef2376c0b4c36dcc9d0e_icgraph.png" border="0" usemap="#classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_ac20e4e9e93ccef2376c0b4c36dcc9d0e_icgraph" alt=""/></div>
 <map name="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_ac20e4e9e93ccef2376c0b4c36dcc9d0e_icgraph" id="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory_ac20e4e9e93ccef2376c0b4c36dcc9d0e_icgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a61a34c728745dc950e5c9410b5b4fe4b" title="beseenium.controller.Action\lFactory.ActionFactory.ActionFactory" alt="" coords="340,5,591,47"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html#a61a34c728745dc950e5c9410b5b4fe4b" title="default constructor creates and populates internal map " alt="" coords="340,5,591,47"/></map>
 </div>
 </p>
 
@@ -296,11 +311,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>internal <a class="el" href="namespacebeseenium_1_1controller_1_1ActionDataFactory.html">ActionDataFactory</a> reference </p>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00068">68</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>internal <a class="el" href="namespacebeseenium_1_1controller_1_1ActionDataFactory.html" title="This package contains all the classes to do with the ActionDataFactory functionality. ">ActionDataFactory</a> reference </p>
 
-<p>Referenced by <a class="el" href="ActionFactory_8java_source.html#l00077">beseenium.controller.ActionFactory.ActionFactory.ActionFactory()</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00067">67</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+
+<p>Referenced by <a class="el" href="ActionFactory_8java_source.html#l00076">beseenium.controller.ActionFactory.ActionFactory.ActionFactory()</a>.</p>
 
 </div>
 </div>
@@ -321,14 +337,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>the map to store the actions in </p>
 
-<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00066">66</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="ActionFactory_8java_source.html#l00065">65</a> of file <a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/controller/ActionFactory/<a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a></li>
+<li><a class="el" href="ActionFactory_8java_source.html">ActionFactory.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -336,7 +353,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacebeseenium_1_1controller_1_1ActionFactory.html">ActionFactory</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1controller_1_1ActionFactory_1_1ActionFactory.html">ActionFactory</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:54 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:04 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

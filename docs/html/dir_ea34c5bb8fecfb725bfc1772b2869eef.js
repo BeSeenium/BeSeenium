@@ -38,5 +38,6 @@ var dir_ea34c5bb8fecfb725bfc1772b2869eef =
     ] ],
     [ "MakeSubmit.java", "MakeSubmit_8java.html", [
       [ "MakeSubmit", "classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeSubmit.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1elementActions_1_1MakeSubmit" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionFactory_2elementActions_2package-info_8java.html", null ]
 ];

@@ -1,0 +1,46 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.browserHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.browserHandlers \- This package contains all classes relevant to the chain of responsibility that processes the 'browser' url query string\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBrowserActionDataHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where something in the model has gone awry and the ActionData object has been misused somehow\&. \fP"
+.ti -1c
+.RI "class \fBNoBrowserParamHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the browser parameter has been left out entirely\&. \fP"
+.ti -1c
+.RI "class \fBRootBrowserHandler\fP"
+.br
+.RI "\fIThis class is the root of the browser chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&. \fP"
+.ti -1c
+.RI "class \fBWrongBrowserParamHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where the browser parameter has either been left blank or an incorrect value has been given as the browser parameter\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains all classes relevant to the chain of responsibility that processes the 'browser' url query string\&. 
+
+The \fBRootBrowserHandler\fP class is the start of the chain and is responsible for the case where there are no errors or issues with the input\&. Passing it down the chain to the other handlers should an error occur\&.
+.PP
+in order to implement new exceptional behaviour cases a new child class of \fBAbstractRequestHandler\fP should be created containing the code to handle this case, then the \fBRootBrowserHandler\fP class should be modified to add this new class to the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

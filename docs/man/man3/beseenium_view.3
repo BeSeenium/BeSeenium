@@ -1,0 +1,57 @@
+.TH "beseenium.view" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view \- This is the root package for the View module of the application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBhelpers\fP"
+.br
+.ti -1c
+.RI "package \fBinputHandlers\fP"
+.br
+.RI "\fIThis package contains classes relevant to handling the user input, as well as sub-packages That aid in this\&. \fP"
+.ti -1c
+.RI "package \fBoutputHandlers\fP"
+.br
+.RI "\fIThis is the root package for all the classes necessary for handling the output from an AbstractTestRequest and turning it into manipulable text\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBeSeeniumServlet\fP"
+.br
+.RI "\fI\fBBeSeeniumServlet\fP is a servlet that provide functionality that grabs the query strings from a http request and passes it on to the \fBURLHandler\fP, which gives back a result string which this servlet then inserts into the http response\&. \fP"
+.ti -1c
+.RI "class \fBHttpServer\fP"
+.br
+.RI "\fIThis is the embedded Jetty Web Server\&. \fP"
+.ti -1c
+.RI "class \fBURLHandler\fP"
+.br
+.RI "\fIThe sole responsibility of this class is to translate parameters representing URL query strings from an http request into 'Test' functionality\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the root package for the View module of the application\&. 
+
+It contains the classes responsible for providing graphical output in the form of web pages\&. For the most part the view is based around a Jetty implementation\&. The \fBHttpServer\fP is responsible for doing servery type stuff: listening for connections, and passing connections through to the servlet's\&.
+.PP
+The BeSeenmiumServlet is a servlet implementation that takes http requests and turns them into output that will be displayed on the users browser\&. It does this using the functionality provided by the sub-packages under this one\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

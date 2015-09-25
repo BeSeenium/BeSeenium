@@ -1,0 +1,138 @@
+.TH "beseenium.controller.ActionFactory.ActionFactory" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.controller.ActionFactory.ActionFactory \- this class is a factory for creating actions, it uses a factory method style pattern and a map implementation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionFactory\fP (\fBActionDataFactory\fP \fBactionDataFactory\fP)  throws ActionDataFactoryException, MalformedURLException 	"
+.br
+.RI "\fIdefault constructor creates and populates internal map \fP"
+.ti -1c
+.RI "\fBAbstractAction\fP \fBmakeAction\fP (String actionKey)  throws ActionFactoryException 	"
+.br
+.RI "\fIcreates an Action \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBpopulateActionMap\fP ()  throws ActionDataFactoryException 	"
+.br
+.RI "\fIcreates all possible actions and populates the map with them\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Map< String, \fBMakeAction\fP > \fBactionMap\fP"
+.br
+.RI "\fIthe map to store the actions in \fP"
+.ti -1c
+.RI "\fBActionDataFactory\fP \fBactionDataFactory\fP"
+.br
+.RI "\fIinternal \fBActionDataFactory\fP reference \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+this class is a factory for creating actions, it uses a factory method style pattern and a map implementation\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file ActionFactory\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.ActionFactory (\fBActionDataFactory\fP actionDataFactory) throws \fBActionDataFactoryException\fP, MalformedURLException"
+
+.PP
+default constructor creates and populates internal map 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionDataFactory\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataFactoryException\fP 
+.br
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 76 of file ActionFactory\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.actionDataFactory, and beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.populateActionMap()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAbstractAction\fP beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.makeAction (String actionKey) throws \fBActionFactoryException\fP"
+
+.PP
+creates an Action 
+.PP
+\fBReturns:\fP
+.RS 4
+AbstractAction 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionFactoryException\fP 
+.br
+\fIActionDataFactoryException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file ActionFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.addAction(), and beseenium\&.controller\&.Test\&.emergencyShutdown()\&.
+.SS "void beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.populateActionMap () throws \fBActionDataFactoryException\fP\fC [private]\fP"
+
+.PP
+creates all possible actions and populates the map with them\&. 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataFactoryException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file ActionFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.ActionFactory()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActionDataFactory\fP beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.actionDataFactory\fC [private]\fP"
+
+.PP
+internal \fBActionDataFactory\fP reference 
+.PP
+Definition at line 67 of file ActionFactory\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.ActionFactory()\&.
+.SS "Map<String, \fBMakeAction\fP> beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.actionMap\fC [private]\fP"
+
+.PP
+the map to store the actions in 
+.PP
+Definition at line 65 of file ActionFactory\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

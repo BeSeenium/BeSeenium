@@ -1,4 +1,4 @@
-<map id="src/beseenium/model/action" name="src/beseenium/model/action">
+<map id="action" name="action">
 <area shape="rect" id="node2" href="dir_5228261402f98a3d53e9cf5373e19e15.html" title="elementActions" alt="" coords="591,63,713,111"/>
 <area shape="rect" id="node3" href="dir_f70fce310b823180791e078d0fd1a137.html" title="findElementsBy" alt="" coords="445,63,566,111"/>
 <area shape="rect" id="node4" href="dir_d5f66d1df8010c6a903d946c594d4a4c.html" title="navigateActions" alt="" coords="297,63,421,111"/>

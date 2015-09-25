@@ -1,7 +1,7 @@
 <map id="beseenium.exceptions.actionExceptions.ActionException" name="beseenium.exceptions.actionExceptions.ActionException">
-<area shape="rect" id="node4" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html" title="{beseenium.exceptions.action\lExceptions.ActionFactoryException\n|&#45; serialVersionUID\l|+ ActionFactoryException()\l+ ActionFactoryException()\l}" alt="" coords="5,440,249,547"/>
-<area shape="rect" id="node5" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ClickException.html" title="{beseenium.exceptions.action\lExceptions.ClickException\n|&#45; serialVersionUID\l|+ ClickException()\l+ ClickException()\l}" alt="" coords="273,440,483,547"/>
-<area shape="rect" id="node6" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html" title="{beseenium.exceptions.action\lExceptions.NoSuchParameterException\n|&#45; serialVersionUID\l|+ NoSuchParameterException()\l+ NoSuchParameterException()\l}" alt="" coords="507,440,782,547"/>
-<area shape="rect" id="node7" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html" title="{beseenium.exceptions.action\lExceptions.SubmitException\n|&#45; serialVersionUID\l|+ SubmitException()\l+ SubmitException()\l}" alt="" coords="807,440,1016,547"/>
-<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="{beseenium.exceptions.BeSeenium\lException\n|&#45; serialVersionUID\l|+ BeSeeniumException()\l# BeSeeniumException()\l}" alt="" coords="389,131,633,237"/>
+<area shape="rect" id="node4" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ActionFactoryException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="5,440,249,547"/>
+<area shape="rect" id="node5" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1ClickException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="273,440,483,547"/>
+<area shape="rect" id="node6" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="507,440,782,547"/>
+<area shape="rect" id="node7" href="$classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="807,440,1016,547"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1exceptions_1_1BeSeeniumException.html" title="Copyright(C) 2015 Jan P.C. " alt="" coords="389,131,633,237"/>
 </map>

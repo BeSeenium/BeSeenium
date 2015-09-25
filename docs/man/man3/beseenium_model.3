@@ -1,0 +1,50 @@
+.TH "beseenium.model" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model \- This is the root package for the Model module of the BeSeenium application, it contains all the classes related to the data model\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBaction\fP"
+.br
+.RI "\fIThis package is the root of all \fBAbstractAction\fP objects, while this package contains only the \fBAbstractAction\fP class its derived classes are located in sub-packages beneath this one\&. \fP"
+.ti -1c
+.RI "package \fBactionData\fP"
+.br
+.RI "\fIThis package contains the \fBActionData\fP and any related classes\&. \fP"
+.ti -1c
+.RI "package \fBhelpers\fP"
+.br
+.RI "\fIThis package contains helper classes that do not have any particular place in the design but are none the less neccessary for the operation of the application\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionInvoker\fP"
+.br
+.RI "\fIThis class acts as the invoker in a GOF command style pattern\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the root package for the Model module of the BeSeenium application, it contains all the classes related to the data model\&. 
+
+The model is comprised of a GOF command style pattern with the client being the controller module the \fBActionInvoker\fP taking the role of invoker, AbstractAction taking the role of abstract command object and its derived classes are concrete command objects\&. The Reciever of these commands is the functionality exposed by the Selenium WebDriver API\&. Information on Selenium can be found at \fCwww\&.seleniumhq\&.org\fP
+.PP
+This package contains only the \fBActionInvoker\fP, the command objects are located in the action sub-package, and there is a helper sub-package that contains helper classes that do not fit neatly into the rest of the design\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

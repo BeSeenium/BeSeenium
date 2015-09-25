@@ -1,0 +1,94 @@
+.TH "beseenium.view.outputHandlers.compositors.RootCompositor" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.compositors.RootCompositor \- Copyright(C) 2015 Jan P\&.C\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRootCompositor\fP (\fBAbstractOutputFormatter\fP format)"
+.br
+.RI "\fIdefault constructor, populates the internal map and sets the default value for the format as basicFormatter; \fP"
+.ti -1c
+.RI "String \fBcomposite\fP (String compositorString, String stringToComposite)"
+.br
+.RI "\fIThis method passes the string to be composited, on to the appropriate compositor where the string is transformed into the format provided in the constructor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Map< String, \fBAbstractCompositor\fP > \fBcompositorMap\fP"
+.br
+.RI "\fIholds all the compositors \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Copyright(C) 2015 Jan P\&.C\&. 
+
+Hanson & BeSeen Marketing Ltd
+.PP
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version\&.
+.PP
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&. See the GNU General Public License for more details\&.
+.PP
+You should have received a copy of the GNU General Public License along with this program\&. If not, see http://www.gnu.org/licenses/\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 29 of file RootCompositor\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.compositors\&.RootCompositor\&.RootCompositor (\fBAbstractOutputFormatter\fP format)"
+
+.PP
+default constructor, populates the internal map and sets the default value for the format as basicFormatter; 
+.PP
+Definition at line 38 of file RootCompositor\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.RootCompositor\&.composite (String compositorString, String stringToComposite)"
+
+.PP
+This method passes the string to be composited, on to the appropriate compositor where the string is transformed into the format provided in the constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcompositor\fP the specific compositor that you wish to call\&. i\&.e\&. execute, addAction,capabilities or browser\&. 
+.br
+\fIstringToBeFormatted\fP the string to be formatted 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a string of the form specified by setFormat() 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file RootCompositor\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Map<String, \fBAbstractCompositor\fP> beseenium\&.view\&.outputHandlers\&.compositors\&.RootCompositor\&.compositorMap\fC [private]\fP"
+
+.PP
+holds all the compositors 
+.PP
+Definition at line 32 of file RootCompositor\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

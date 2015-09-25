@@ -1,0 +1,163 @@
+.TH "beseenium.view.outputHandlers.compositors.AddActionCompositor" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.compositors.AddActionCompositor \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBcomposite\fP (String compositorString, String stringToComposite)"
+.br
+.RI "\fIThis method provides functionality to composite the string into the format specified by the user on creation of this object\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAddActionCompositor\fP (\fBAbstractOutputFormatter\fP \fBformat\fP)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBformat\fP (int actionNo, String[][] results, String delimiter)"
+.br
+.RI "\fIdoes the formatting of the keyVal and KVset \fP"
+.ti -1c
+.RI "String \fBfinalFormat\fP (String formattedResults)"
+.br
+.RI "\fIdoes the final formatting of the JSON object \fP"
+.ti -1c
+.RI "boolean \fBcontainsError\fP (String msg)"
+.br
+.RI "\fIcheck if result string contains '!!ERROR!!' \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file AddActionCompositor\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.AddActionCompositor (\fBAbstractOutputFormatter\fP format)\fC [protected]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIformat\fP 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file AddActionCompositor\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.composite (String compositorString, String stringToComposite)"
+
+.PP
+This method provides functionality to composite the string into the format specified by the user on creation of this object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcompositorString\fP representation of the type of string that this is i\&.e\&. execute, addAction, capabilities or browser\&. 
+.br
+\fIstringToComposite\fP the string that requires formatting 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String the formatted string\&. 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file AddActionCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.containsError(), beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.finalFormat(), beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.format(), and beseenium\&.view\&.helpers\&.StringSplit\&.generic2d()\&.
+.SS "boolean beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.containsError (String msg)\fC [private]\fP"
+
+.PP
+check if result string contains '!!ERROR!!' 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImsg\fP String to check 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if contains, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file AddActionCompositor\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.composite()\&.
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.finalFormat (String formattedResults)\fC [private]\fP"
+
+.PP
+does the final formatting of the JSON object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresults\fP the previously formatted results 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+fully formatted JSON 
+.RE
+.PP
+
+.PP
+Definition at line 76 of file AddActionCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKVsuperSet(), beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.finalForm(), and beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.formatter\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.composite()\&.
+.SS "String beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.format (int actionNo, String results[][], String delimiter)\fC [private]\fP"
+
+.PP
+does the formatting of the keyVal and KVset 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionNo\fP the number of the action to use as a key in the KeyVal 
+.br
+\fIresult\fP the result to use as the value of a KeyVal 
+.br
+\fIdelimiter\fP string delimiter to add to the end of each KVset 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String of the form {'action':'actionNo', 'result':'result value'} 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file AddActionCompositor\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKeyVal(), beseenium\&.view\&.outputHandlers\&.formatters\&.AbstractOutputFormatter\&.asKVset(), and beseenium\&.view\&.outputHandlers\&.compositors\&.AbstractCompositor\&.formatter\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.compositors\&.AddActionCompositor\&.composite()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

@@ -1,0 +1,12 @@
+<map id="beseenium.view.BeSeeniumServlet.doGet" name="beseenium.view.BeSeeniumServlet.doGet">
+<area shape="rect" id="node2" href="$a00067.html#aa848fb1b618af2cdb2e61d296ba55dad" title="Generates a map of string descriptors to requests from the given parameters, ending with a request to..." alt="" coords="261,136,482,177"/>
+<area shape="rect" id="node7" href="$a00114.html#a0aaa39829880d8a3104d8010d254f2ef" title="beseenium.view.outputHandlers.\lOutputHandler.handleRequests" alt="" coords="256,303,487,344"/>
+<area shape="rect" id="node11" href="$a00114.html#aa6914d44a8a56c1302053c495b89f6c1" title="Sets the map of Test Requests to distribute to the various chains of responsibility. " alt="" coords="256,368,487,409"/>
+<area shape="rect" id="node3" href="$a00067.html#a038cb9083926614e0943580ddb1a32d6" title="generates a CapabilitiesRequest " alt="" coords="566,5,790,47"/>
+<area shape="rect" id="node4" href="$a00067.html#a29951301b2495febba17d2947ba61a80" title="generates a BrowserRequest " alt="" coords="567,71,789,112"/>
+<area shape="rect" id="node5" href="$a00067.html#a336ffc7510426883f16b8baa5693f8ea" title="generates a AddActionRequest " alt="" coords="567,136,789,177"/>
+<area shape="rect" id="node6" href="$a00067.html#a3fa21768c950556e9c803711ed4420aa" title="generates an ExecuteRequest " alt="" coords="551,201,805,243"/>
+<area shape="rect" id="node8" href="$a00114.html#a8e70cb6ebb3ed7308600a334599f96b8" title="beseenium.view.outputHandlers.\lOutputHandler.setSuccessor" alt="" coords="563,267,793,308"/>
+<area shape="rect" id="node9" href="$a00012.html#add8cb6e5761e2ade230ec2021bce9d1b" title="provides implementation to handle the request. " alt="" coords="535,331,821,387"/>
+<area shape="rect" id="node10" href="$a00114.html#ae7918c5edc6ac732fc56461328842def" title="checks to see if a List&lt;String&gt; contains the string &quot;ERROR&quot; in it " alt="" coords="557,411,799,452"/>
+</map>

@@ -1,0 +1,40 @@
+.TH "beseenium.view.inputHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.inputHandlers \- This package contains classes relevant to handling the user input, as well as sub-packages That aid in this\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBrequests\fP"
+.br
+.RI "\fIThis package contains the classes necessary for creating request objects\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBInputHandler\fP"
+.br
+.RI "\fIThis class is responsible for taking the input, in the form of URL parameters passed in from the servlet, and turning them into AbstractTestRequest derived objects that can then be passed to the output handler to give useable results\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains classes relevant to handling the user input, as well as sub-packages That aid in this\&. 
+
+User input comes into the servlet in the form of URL query string parameters, this package, with the aid of its sub-packages turns this into request objects, storing them as a map and returning this map\&. This map can then be used by its calling object (the servlet) to perform, various tasks on using these stored request objects\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

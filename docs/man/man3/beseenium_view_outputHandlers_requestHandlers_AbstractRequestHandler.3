@@ -1,0 +1,91 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.AbstractRequestHandler \- abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate output in various forms: log messages, User messages, as well as taking care of exception handling\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.ActionNumberFormatHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.AddActionDataHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.BadlyFormattedActionHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NoActionParamHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.NonExistantActionHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.RootAddActionsHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.BrowserActionDataHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.NoBrowserParamHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.RootBrowserHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.WrongBrowserParamHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.BadlyFormedCapsStringHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.CapsActionDataHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.EmptyCapsParamHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.MalformedURLHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.RootCapabilitiesHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionDataExceptionHandler\fP, \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.ActionExceptionHandler\fP, and \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetSuccessor\fP (\fBAbstractRequestHandler\fP \fBsuccessor\fP)"
+.br
+.RI "\fIsets the next concrete request handler in the chain\&. \fP"
+.ti -1c
+.RI "abstract String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.RI "\fIprovides implementation to handle the request\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractRequestHandler\fP \fBsuccessor\fP"
+.br
+.RI "\fIreference to the successor object \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+abstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate output in various forms: log messages, User messages, as well as taking care of exception handling\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file AbstractRequestHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)\fC [abstract]\fP"
+
+.PP
+provides implementation to handle the request\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.OutputHandler\&.handleRequests()\&.
+.SS "void beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.setSuccessor (\fBAbstractRequestHandler\fP successor)"
+
+.PP
+sets the next concrete request handler in the chain\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsuccessor\fP the next handler in the chain 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file AbstractRequestHandler\&.java\&.
+.PP
+References beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.successor\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.browserHandlers\&.RootBrowserHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.RootAddActionsHandler\&.handleRequest(), beseenium\&.view\&.outputHandlers\&.requestHandlers\&.executeHandlers\&.RootExecuteHandler\&.handleRequest(), and beseenium\&.view\&.outputHandlers\&.requestHandlers\&.capabilitiesHandlers\&.RootCapabilitiesHandler\&.handleRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAbstractRequestHandler\fP beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.successor\fC [protected]\fP"
+
+.PP
+reference to the successor object 
+.PP
+Definition at line 30 of file AbstractRequestHandler\&.java\&.
+.PP
+Referenced by beseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\&.setSuccessor()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

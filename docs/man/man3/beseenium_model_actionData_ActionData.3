@@ -1,0 +1,255 @@
+.TH "beseenium.model.actionData.ActionData" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.actionData.ActionData \- This class encapsulates the data needed to perform an action into 4 distinct areas: 
+.br
+
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionData\fP ()"
+.br
+.RI "\fIdefault ctor \fP"
+.ti -1c
+.RI "\fBActionData\fP (WebDriver \fBdriver\fP)"
+.br
+.RI "\fIInstantiate a new \fBActionData\fP object with the WebDriver provided\&. \fP"
+.ti -1c
+.RI "String \fBgetInputParam\fP ()  throws ActionDataException  	"
+.br
+.RI "\fIretrieve the input parameter currently stored in this \fBActionData\fP \fP"
+.ti -1c
+.RI "List< WebElement > \fBgetElement\fP ()  throws ActionDataException  	"
+.br
+.RI "\fIretrieve the list of WebElements currently stored in the \fBActionData\fP \fP"
+.ti -1c
+.RI "WebDriver \fBgetDriver\fP ()  throws ActionDataException 	"
+.br
+.RI "\fIretrieves the WebDriver Object curently stored in the \fBActionData\fP \fP"
+.ti -1c
+.RI "void \fBsetElement\fP (List< WebElement > \fBelement\fP)"
+.br
+.RI "\fIsets the list of WebElements currently stored in the \fBActionData\fP \fP"
+.ti -1c
+.RI "void \fBsetInputParam\fP (String \fBinputParam\fP)"
+.br
+.RI "\fIthis method sets the value of the input parameter\&. \fP"
+.ti -1c
+.RI "void \fBsetDriver\fP (WebDriver \fBdriver\fP)"
+.br
+.RI "\fISets the WebDriver associated with this \fBActionData\fP\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "WebDriver \fBdriver\fP"
+.br
+.RI "\fIa the browser driver that an action will be performed with \fP"
+.ti -1c
+.RI "String \fBinputParam\fP"
+.br
+.RI "\fIthe Input parameter that an action may operate on \fP"
+.ti -1c
+.RI "List< WebElement > \fBelement\fP"
+.br
+.RI "\fIThe html element that other actions operate on\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class encapsulates the data needed to perform an action into 4 distinct areas: 
+.br
+
+.br
+ 
+
+\fBInputParam\fP - The Input Param is a string that represents What a particular action should be using as input\&. For example if the action in question is FindElementByCss action an appropriate inputParam would be 'a\&.title' if it was FindElementByClass an appropriate inputParam would be '\&.myClass' and if the action was SendKeys an appropriate Input Parameter would be a string containing the set letters you wish to send etc\&.
+.br
+.PP
+\fBelement\fP A FindElementBy\&.\&.\&. action populates an \fBActionData\fP with a WebElement, this is needed by other, non FindElementBy queries\&.
+.br
+.PP
+\fBdriver\fP This is used by all queries and is the Selenium WebDriver that this particular \fBActionData\fP object is created with\&.
+.br
+ 
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file ActionData\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.actionData\&.ActionData\&.ActionData ()"
+
+.PP
+default ctor 
+.PP
+Definition at line 53 of file ActionData\&.java\&.
+.SS "beseenium\&.model\&.actionData\&.ActionData\&.ActionData (WebDriver driver)"
+
+.PP
+Instantiate a new \fBActionData\fP object with the WebDriver provided\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdriver\fP the WebDriver to instantiate the \fBActionData\fP with\&. 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.driver\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "WebDriver beseenium\&.model\&.actionData\&.ActionData\&.getDriver () throws \fBActionDataException\fP"
+
+.PP
+retrieves the WebDriver Object curently stored in the \fBActionData\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+WebDriver representing the browser instance currently stored 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP if no driver is set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.driver\&.
+.SS "List<WebElement> beseenium\&.model\&.actionData\&.ActionData\&.getElement () throws \fBActionDataException\fP"
+
+.PP
+retrieve the list of WebElements currently stored in the \fBActionData\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+List<WebElement> containing all elements currently stored\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP if no WebElement set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.element\&.
+.SS "String beseenium\&.model\&.actionData\&.ActionData\&.getInputParam () throws \fBActionDataException\fP"
+
+.PP
+retrieve the input parameter currently stored in this \fBActionData\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+String representing the input parameter\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP if no search parameter set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.inputParam\&.
+.SS "void beseenium\&.model\&.actionData\&.ActionData\&.setDriver (WebDriver driver)"
+
+.PP
+Sets the WebDriver associated with this \fBActionData\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdriver\fP the WebDrivver to set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.driver\&.
+.PP
+Referenced by beseenium\&.model\&.ActionInvoker\&.execute()\&.
+.SS "void beseenium\&.model\&.actionData\&.ActionData\&.setElement (List< WebElement > element)"
+
+.PP
+sets the list of WebElements currently stored in the \fBActionData\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP the list of element to set 
+.RE
+.PP
+
+.PP
+Definition at line 118 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.element\&.
+.SS "void beseenium\&.model\&.actionData\&.ActionData\&.setInputParam (String inputParam)"
+
+.PP
+this method sets the value of the input parameter\&. Make sure that the value is appropriate to the action that you plan to execute next\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinputParam\fP the searchParam to set 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file ActionData\&.java\&.
+.PP
+References beseenium\&.model\&.actionData\&.ActionData\&.inputParam\&.
+.PP
+Referenced by beseenium\&.model\&.ActionInvoker\&.execute()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "WebDriver beseenium\&.model\&.actionData\&.ActionData\&.driver\fC [private]\fP"
+
+.PP
+a the browser driver that an action will be performed with 
+.PP
+Definition at line 44 of file ActionData\&.java\&.
+.PP
+Referenced by beseenium\&.model\&.actionData\&.ActionData\&.ActionData(), beseenium\&.model\&.actionData\&.ActionData\&.getDriver(), and beseenium\&.model\&.actionData\&.ActionData\&.setDriver()\&.
+.SS "List<WebElement> beseenium\&.model\&.actionData\&.ActionData\&.element\fC [private]\fP"
+
+.PP
+The html element that other actions operate on\&. 
+.PP
+Definition at line 48 of file ActionData\&.java\&.
+.PP
+Referenced by beseenium\&.model\&.actionData\&.ActionData\&.getElement(), and beseenium\&.model\&.actionData\&.ActionData\&.setElement()\&.
+.SS "String beseenium\&.model\&.actionData\&.ActionData\&.inputParam\fC [private]\fP"
+
+.PP
+the Input parameter that an action may operate on 
+.PP
+Definition at line 46 of file ActionData\&.java\&.
+.PP
+Referenced by beseenium\&.model\&.actionData\&.ActionData\&.getInputParam(), and beseenium\&.model\&.actionData\&.ActionData\&.setInputParam()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

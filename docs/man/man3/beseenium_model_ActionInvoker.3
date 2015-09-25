@@ -1,0 +1,175 @@
+.TH "beseenium.model.ActionInvoker" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.ActionInvoker \- This class acts as the invoker in a GOF command style pattern\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionInvoker\fP (\fBActionData\fP actionData)  throws ActionDataException 	"
+.br
+.RI "\fIconstructor, takes an ActionData(one that has been populated with a WebDriver, if it is not populated then you will run into problems down the line as the execute method requires one), and instantiates internal variables\&. \fP"
+.ti -1c
+.RI "void \fBadd\fP (\fBAbstractAction\fP action, String inputParam, int n)"
+.br
+.RI "\fIAdds an abstract action to the action queue, each action has an input parameter and an index n\&. \fP"
+.ti -1c
+.RI "void \fBremove\fP (int actionToRemove)"
+.br
+.RI "\fIremoves the last Action and associated parameters \fP"
+.ti -1c
+.RI "List< String > \fBexecute\fP ()  throws ActionDataException, ActionException 	"
+.br
+.RI "\fIiterates through the commands stored in the list and executes \fP"
+.ti -1c
+.RI "int \fBsize\fP ()"
+.br
+.RI "\fIget the current size of the invoker \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "List< \fBAbstractAction\fP > \fBactions\fP"
+.br
+.ti -1c
+.RI "List< String > \fBinputParams\fP"
+.br
+.ti -1c
+.RI "List< Integer > \fBoptionalIndex\fP"
+.br
+.ti -1c
+.RI "WebDriver \fBdriver\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class acts as the invoker in a GOF command style pattern\&. 
+
+It stores and tries to execute a series of Actions loaded at runtime\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file ActionInvoker\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.ActionInvoker\&.ActionInvoker (\fBActionData\fP actionData) throws \fBActionDataException\fP"
+
+.PP
+constructor, takes an ActionData(one that has been populated with a WebDriver, if it is not populated then you will run into problems down the line as the execute method requires one), and instantiates internal variables\&. 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file ActionInvoker\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void beseenium\&.model\&.ActionInvoker\&.add (\fBAbstractAction\fP action, String inputParam, int n)"
+
+.PP
+Adds an abstract action to the action queue, each action has an input parameter and an index n\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaction\fP an AbstractAction derived type\&. 
+.br
+\fIinputParam\fP dependant on the Action being performed\&. 
+.br
+\fIn\fP dependant on the Action being performed\&. 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file ActionInvoker\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.addAction(), and beseenium\&.controller\&.Test\&.emergencyShutdown()\&.
+.SS "List<String> beseenium\&.model\&.ActionInvoker\&.execute () throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+iterates through the commands stored in the list and executes 
+.PP
+\fBReturns:\fP
+.RS 4
+List<String> the results of the various actions, to be used in reporting\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionException\fP 
+.br
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file ActionInvoker\&.java\&.
+.PP
+References beseenium\&.model\&.action\&.AbstractAction\&.execute(), beseenium\&.model\&.action\&.AbstractAction\&.getActionData(), beseenium\&.model\&.actionData\&.ActionData\&.setDriver(), and beseenium\&.model\&.actionData\&.ActionData\&.setInputParam()\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.emergencyShutdown(), and beseenium\&.controller\&.Test\&.executeActions()\&.
+.SS "void beseenium\&.model\&.ActionInvoker\&.remove (int actionToRemove)"
+
+.PP
+removes the last Action and associated parameters 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionToRemove\fP the action to remove with 0 being the first action 
+.RE
+.PP
+
+.PP
+Definition at line 73 of file ActionInvoker\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.emergencyShutdown(), and beseenium\&.controller\&.Test\&.removeAction()\&.
+.SS "int beseenium\&.model\&.ActionInvoker\&.size ()"
+
+.PP
+get the current size of the invoker 
+.PP
+\fBReturns:\fP
+.RS 4
+int representation of size\&. 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file ActionInvoker\&.java\&.
+.PP
+Referenced by beseenium\&.controller\&.Test\&.emergencyShutdown()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "List<\fBAbstractAction\fP> beseenium\&.model\&.ActionInvoker\&.actions\fC [private]\fP"
+
+.PP
+Definition at line 35 of file ActionInvoker\&.java\&.
+.SS "WebDriver beseenium\&.model\&.ActionInvoker\&.driver\fC [private]\fP"
+
+.PP
+Definition at line 38 of file ActionInvoker\&.java\&.
+.SS "List<String> beseenium\&.model\&.ActionInvoker\&.inputParams\fC [private]\fP"
+
+.PP
+Definition at line 36 of file ActionInvoker\&.java\&.
+.SS "List<Integer> beseenium\&.model\&.ActionInvoker\&.optionalIndex\fC [private]\fP"
+
+.PP
+Definition at line 37 of file ActionInvoker\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

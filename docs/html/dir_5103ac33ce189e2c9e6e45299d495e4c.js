@@ -9,5 +9,6 @@ var dir_5103ac33ce189e2c9e6e45299d495e4c =
     ] ],
     [ "MakeAction.java", "MakeAction_8java.html", [
       [ "MakeAction", "classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionFactory_2package-info_8java.html", null ]
 ];

@@ -23,5 +23,6 @@ var dir_f70fce310b823180791e078d0fd1a137 =
     ] ],
     [ "FindElementsByXpath.java", "FindElementsByXpath_8java.html", [
       [ "FindElementsByXpath", "classbeseenium_1_1model_1_1action_1_1findElementsBy_1_1FindElementsByXpath.html", "classbeseenium_1_1model_1_1action_1_1findElementsBy_1_1FindElementsByXpath" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "model_2action_2findElementsBy_2package-info_8java.html", null ]
 ];

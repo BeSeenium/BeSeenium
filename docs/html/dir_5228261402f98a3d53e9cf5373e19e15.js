@@ -33,6 +33,7 @@ var dir_5228261402f98a3d53e9cf5373e19e15 =
     [ "IsSelected.java", "IsSelected_8java.html", [
       [ "IsSelected", "classbeseenium_1_1model_1_1action_1_1elementActions_1_1IsSelected.html", "classbeseenium_1_1model_1_1action_1_1elementActions_1_1IsSelected" ]
     ] ],
+    [ "package-info.java", "model_2action_2elementActions_2package-info_8java.html", null ],
     [ "SendKeys.java", "SendKeys_8java.html", [
       [ "SendKeys", "classbeseenium_1_1model_1_1action_1_1elementActions_1_1SendKeys.html", "classbeseenium_1_1model_1_1action_1_1elementActions_1_1SendKeys" ]
     ] ],

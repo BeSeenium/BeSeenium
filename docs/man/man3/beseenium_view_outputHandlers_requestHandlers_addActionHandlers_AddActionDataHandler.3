@@ -1,0 +1,66 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionDataHandler" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.addActionHandlers.AddActionDataHandler \- This represents a handler for the case where there has been a misuse of an ActionData object This is in the most case a developer space problem rather than a user-space problem i\&.e\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.view\&.outputHandlers\&.requestHandlers\&.AbstractRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBhandleRequest\fP (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlogger\fP"
+.br
+.RI "\fIrefefrence to log4j logger \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This represents a handler for the case where there has been a misuse of an ActionData object This is in the most case a developer space problem rather than a user-space problem i\&.e\&. 
+
+a bug rather than the user having done something wrong\&. this is generally the last handler in the chain and as such if the exception is not caught here it will fall trigger an end of chain response\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file AddActionDataHandler\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.AddActionDataHandler\&.handleRequest (\fBAbstractTestRequest\fP request, \fBTest\fP test)"
+
+.PP
+Definition at line 45 of file AddActionDataHandler\&.java\&.
+.PP
+References beseenium\&.view\&.inputHandlers\&.requests\&.AbstractTestRequest\&.executeRequest()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger beseenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.AddActionDataHandler\&.logger\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= LogManager\&.getLogger
+            ("BeSeenium\&.view\&.outputHandlers\&.requestHandlers\&.addActionHandlers\&.addActionDataHandler")
+.fi
+.PP
+refefrence to log4j logger 
+.PP
+Definition at line 38 of file AddActionDataHandler\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

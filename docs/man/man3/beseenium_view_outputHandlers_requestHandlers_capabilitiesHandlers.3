@@ -1,0 +1,50 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.capabilitiesHandlers \- This package contains all classes relevant to the chain of responsibility that processes the 'capabilities' url query string\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBadlyFormedCapsStringHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case in which the user has made some elementary mistake in the length of the capabilities substring, either too few or too many parameters or the correct spacer has not been used etc\&. \fP"
+.ti -1c
+.RI "class \fBCapsActionDataHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case in which the ActionData object has not been correctly used, this is more than likely a backend issue and is something that only a developer can deal with\&. \fP"
+.ti -1c
+.RI "class \fBEmptyCapsParamHandler\fP"
+.br
+.RI "\fIThis class represents a handler for the case where a null pointer exception is thrown when attempting to carry out the request, the having a null pointer is a perfectly valid condition for the request to have as not all tests need to have capabilities set, in fact even 'remote' tests do not NEED capabilities, however will fall back on the default values of the remote server in this case\&. \fP"
+.ti -1c
+.RI "class \fBMalformedURLHandler\fP"
+.br
+.RI "\fIThis class represents a handler for the case in which the authorisation string of the remote capabilities has been mutilated by the user, in which case the request should throw a MalformedURLException, which this handler will catch and dispose of appropriately, by by giving the user some information to that effect\&. \fP"
+.ti -1c
+.RI "class \fBRootCapabilitiesHandler\fP"
+.br
+.RI "\fIThis class is the root of the capabilities chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package contains all classes relevant to the chain of responsibility that processes the 'capabilities' url query string\&. 
+
+The \fBRootCapabilitiesHandler\fP class is the start of the chain and is responsible for the case where there are no errors or issues with the input\&. Passing it down the chain to the other handlers should an error occur\&.
+.PP
+in order to implement new exceptional behaviour cases a new child class of \fBAbstractRequestHandler\fP should be created containing the code to handle this case, then the \fBRootCapabilitiesHandler\fP class should be modified to add this new class to the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

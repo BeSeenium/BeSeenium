@@ -1,0 +1,84 @@
+.TH "beseenium.model.action.elementActions.SendKeys" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action.elementActions.SendKeys \- This is a sendKeys Action, it simulates a human typing into an element, which may set its value\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbeseenium\&.model\&.action\&.AbstractAction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSendKeys\fP (\fBActionData\fP \fBcontext\fP)"
+.br
+.RI "\fIconstructor, initialises Action using the ActionData passed in as a param \fP"
+.ti -1c
+.RI "String \fBexecute\fP (int n)  throws ActionDataException, ActionException  	"
+.br
+.RI "\fIThis performs a sendKeys action\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This is a sendKeys Action, it simulates a human typing into an element, which may set its value\&. 
+
+Make sure to change the \fBinput parameter\fP to the value that you wish to enter into the element\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+JPC Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file SendKeys\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.model\&.action\&.elementActions\&.SendKeys\&.SendKeys (\fBActionData\fP context)"
+
+.PP
+constructor, initialises Action using the ActionData passed in as a param 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP an ActionData 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file SendKeys\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String beseenium\&.model\&.action\&.elementActions\&.SendKeys\&.execute (int n) throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+This performs a sendKeys action\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP the index of the element to send the keys to (as taken from the ActionData) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String verifying \fBSendKeys\fP action 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.br
+\fIActionException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 50 of file SendKeys\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

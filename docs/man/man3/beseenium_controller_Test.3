@@ -1,0 +1,246 @@
+.TH "beseenium.controller.Test" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.controller.Test \- blueprint for creating \fBTest\fP objects, a \fBTest\fP is ostensibly a series of actions that are performed one after the other\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTest\fP ()  throws ActionDataFactoryException, MalformedURLException 	"
+.br
+.RI "\fIconstructs the \fBTest\fP object \fP"
+.ti -1c
+.RI "void \fBsetBrowser\fP (String browserDriver)  throws ActionDataException 	"
+.br
+.RI "\fISet the browser that you want this test to run on\&. \fP"
+.ti -1c
+.RI "void \fBconfigureRemoteDriver\fP (String key, String value)  throws MalformedURLException 	"
+.br
+.RI "\fIWhen using a 'remote' Driver set a capability of the driver i\&.e\&. \fP"
+.ti -1c
+.RI "void \fBaddAction\fP (String actionName, String inputParameter, int optionalIndex)  throws ActionFactoryException 	"
+.br
+.RI "\fIAdd an action to this test\&. \fP"
+.ti -1c
+.RI "void \fBremoveAction\fP (int actionToRemove)"
+.br
+.RI "\fIremove an action from this test\&. \fP"
+.ti -1c
+.RI "List< String > \fBexecuteActions\fP ()  throws ActionDataException, ActionException 	"
+.br
+.RI "\fIexecutes all actions in this test, in the sequence they were added \fP"
+.ti -1c
+.RI "void \fBemergencyShutdown\fP ()  throws ActionDataException, ActionException 	"
+.br
+.RI "\fIremove all actions from this test and close the browser instance associated with it\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBActionFactory\fP \fBactionFactory\fP"
+.br
+.RI "\fIreference to internal \fBActionFactory\fP \fP"
+.ti -1c
+.RI "\fBActionDataFactory\fP \fBactionDataFactory\fP"
+.br
+.RI "\fIreference to internal \fBActionDataFactory\fP \fP"
+.ti -1c
+.RI "\fBActionInvoker\fP \fBinvoker\fP"
+.br
+.RI "\fIreference to Action Invoker\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+blueprint for creating \fBTest\fP objects, a \fBTest\fP is ostensibly a series of actions that are performed one after the other\&. 
+
+provides methods for adding/removing actions configuring remote capabilities and other functionality that relates to creating and using a test\&.
+.PP
+this class acts as the client of command pattern governing the storage and execution of Abstract Actions\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file Test\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "beseenium\&.controller\&.Test\&.Test () throws \fBActionDataFactoryException\fP, MalformedURLException"
+
+.PP
+constructs the \fBTest\fP object 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataFactoryException\fP 
+.br
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file Test\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void beseenium\&.controller\&.Test\&.addAction (String actionName, String inputParameter, int optionalIndex) throws \fBActionFactoryException\fP"
+
+.PP
+Add an action to this test\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionName\fP the name of the Action to add 
+.br
+\fIinputParameter\fP the input parameter (if applicable) of the action to add 
+.br
+\fIoptionalIndex\fP an optional index (if applicable) to specify the element that this action will be performed on(assuming one of the previous actions was a FindElement action) 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionFactoryException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file Test\&.java\&.
+.PP
+References beseenium\&.model\&.ActionInvoker\&.add(), and beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.makeAction()\&.
+.PP
+Referenced by beseenium\&.view\&.URLHandler\&.handleAddActions()\&.
+.SS "void beseenium\&.controller\&.Test\&.configureRemoteDriver (String key, String value) throws MalformedURLException"
+
+.PP
+When using a 'remote' Driver set a capability of the driver i\&.e\&. key='os' value='windows' 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIkey\fP 
+.br
+\fIvalue\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file Test\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.setCapabilities()\&.
+.PP
+Referenced by beseenium\&.view\&.URLHandler\&.handleCapabilities()\&.
+.SS "void beseenium\&.controller\&.Test\&.emergencyShutdown () throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+remove all actions from this test and close the browser instance associated with it\&. 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.br
+\fIActionException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file Test\&.java\&.
+.PP
+References beseenium\&.model\&.ActionInvoker\&.add(), beseenium\&.model\&.ActionInvoker\&.execute(), beseenium\&.controller\&.ActionFactory\&.ActionFactory\&.makeAction(), beseenium\&.model\&.ActionInvoker\&.remove(), and beseenium\&.model\&.ActionInvoker\&.size()\&.
+.PP
+Referenced by beseenium\&.view\&.helpers\&.EmergencyShutdown\&.execute(), and beseenium\&.view\&.URLHandler\&.shutdown()\&.
+.SS "List<String> beseenium\&.controller\&.Test\&.executeActions () throws \fBActionDataException\fP, \fBActionException\fP"
+
+.PP
+executes all actions in this test, in the sequence they were added 
+.PP
+\fBReturns:\fP
+.RS 4
+List<String> containing the results of each action 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.br
+\fIActionException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 119 of file Test\&.java\&.
+.PP
+References beseenium\&.model\&.ActionInvoker\&.execute()\&.
+.PP
+Referenced by beseenium\&.view\&.URLHandler\&.handleURL()\&.
+.SS "void beseenium\&.controller\&.Test\&.removeAction (int actionToRemove)"
+
+.PP
+remove an action from this test\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionToRemove\fP the index of the action to be removed from the test 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file Test\&.java\&.
+.PP
+References beseenium\&.model\&.ActionInvoker\&.remove()\&.
+.SS "void beseenium\&.controller\&.Test\&.setBrowser (String browserDriver) throws \fBActionDataException\fP"
+
+.PP
+Set the browser that you want this test to run on\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbrowserDriver\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIActionDataException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file Test\&.java\&.
+.PP
+References beseenium\&.controller\&.ActionDataFactory\&.ActionDataFactory\&.makeActionData()\&.
+.PP
+Referenced by beseenium\&.view\&.URLHandler\&.handleBrowser()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActionDataFactory\fP beseenium\&.controller\&.Test\&.actionDataFactory\fC [private]\fP"
+
+.PP
+reference to internal \fBActionDataFactory\fP 
+.PP
+Definition at line 44 of file Test\&.java\&.
+.SS "\fBActionFactory\fP beseenium\&.controller\&.Test\&.actionFactory\fC [private]\fP"
+
+.PP
+reference to internal \fBActionFactory\fP 
+.PP
+Definition at line 42 of file Test\&.java\&.
+.SS "\fBActionInvoker\fP beseenium\&.controller\&.Test\&.invoker\fC [private]\fP"
+
+.PP
+reference to Action Invoker\&. 
+.PP
+Definition at line 46 of file Test\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

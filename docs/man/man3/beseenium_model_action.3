@@ -1,0 +1,60 @@
+.TH "beseenium.model.action" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.action \- This package is the root of all \fBAbstractAction\fP objects, while this package contains only the \fBAbstractAction\fP class its derived classes are located in sub-packages beneath this one\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBelementActions\fP"
+.br
+.RI "\fIThis package contains all the concrete command classes relevant to element-scoped actions, i\&.e\&. \fP"
+.ti -1c
+.RI "package \fBfindElementsBy\fP"
+.br
+.RI "\fIThis package contains FindElementsBy\&.\&.\&. \fP"
+.ti -1c
+.RI "package \fBnavigateActions\fP"
+.br
+.RI "\fIThis package contains all actions related to browser based navigation, and are analagoug to many of the buttons found at the top of a browser: back, forward, refresh etc\&. \fP"
+.ti -1c
+.RI "package \fBpageActions\fP"
+.br
+.RI "\fIThis package contains the majority of page-scoped actions, that is actions which apply to a web page as a whole, things like: get a pages URL, or retrieve the title of the page\&. \fP"
+.ti -1c
+.RI "package \fBswitchActions\fP"
+.br
+.RI "\fIThis package contains elements which relate to switching actions, for instance, switch to a different browser window, tab, or popup etc\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAbstractAction\fP"
+.br
+.RI "\fIthis is the root class for all derived Actions \fP"
+.ti -1c
+.RI "class \fBResetActionData\fP"
+.br
+.RI "\fIthis resets various attributes of the ActionData \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package is the root of all \fBAbstractAction\fP objects, while this package contains only the \fBAbstractAction\fP class its derived classes are located in sub-packages beneath this one\&. 
+
+An Action is the generic name for any piece of functionality for a Test: loading a web page, getting information on that web page, finding an element, getting information on that element etc\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

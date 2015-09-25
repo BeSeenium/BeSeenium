@@ -1,0 +1,56 @@
+.TH "beseenium.controller.ActionFactory" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.controller.ActionFactory \- This is the root package for the \fBActionFactory\fP implementation, similarly to the \fBActionDataFactory\fP, it is a factory method style implementation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBelementActions\fP"
+.br
+.RI "\fIThis package contains all the MakeData derived classes for creating element scoped actions for the \fBActionFactory\fP\&. \fP"
+.ti -1c
+.RI "package \fBfindElementsBy\fP"
+.br
+.RI "\fIThis package contains all the MakeData derived classes necessary for the \fBActionFactory\fP to create FindElementBy\&.\&.\&. \fP"
+.ti -1c
+.RI "package \fBnavigateActions\fP"
+.br
+.RI "\fIThis package contains all the MakeData derived classes needed for the \fBActionFactory\fP to create navigation type action objects\&. \fP"
+.ti -1c
+.RI "package \fBpageActions\fP"
+.br
+.RI "\fIThis package contains all the MakeData derived objects necessary for the \fBActionFactory\fP to create page-scoped actions\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionFactory\fP"
+.br
+.RI "\fIthis class is a factory for creating actions, it uses a factory method style pattern and a map implementation\&. \fP"
+.ti -1c
+.RI "class \fBMakeAction\fP"
+.br
+.RI "\fIabstract base class for the creation of AbstractActions specific to the \fBMakeAction\fP derived type\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the root package for the \fBActionFactory\fP implementation, similarly to the \fBActionDataFactory\fP, it is a factory method style implementation\&. 
+
+However the inheritance hierarchy for this factory is much broader than that of \fBActionDataFactory\fP, as such only its Abstract base is located in the root package\&. All specialisations of \fBMakeAction\fP (the abstract base) are grouped in packages so that classes that make similar actions are co-located\&. The package structure of the specialisations somewhat mirrors the structure of the action package in the model\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

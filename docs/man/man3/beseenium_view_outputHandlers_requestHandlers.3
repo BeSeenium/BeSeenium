@@ -1,0 +1,52 @@
+.TH "beseenium.view.outputHandlers.requestHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers \- This is the root package for all request handlers in the \fBAbstractRequestHandler\fP inheritance hierarchy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Packages"
+
+.in +1c
+.ti -1c
+.RI "package \fBaddActionHandlers\fP"
+.br
+.RI "\fIThis package contains all classes relevant to the chain of responsibility that processes the 'addActions' url query string\&. \fP"
+.ti -1c
+.RI "package \fBbrowserHandlers\fP"
+.br
+.RI "\fIThis package contains all classes relevant to the chain of responsibility that processes the 'browser' url query string\&. \fP"
+.ti -1c
+.RI "package \fBcapabilitiesHandlers\fP"
+.br
+.RI "\fIThis package contains all classes relevant to the chain of responsibility that processes the 'capabilities' url query string\&. \fP"
+.ti -1c
+.RI "package \fBexecuteHandlers\fP"
+.br
+.RI "\fIThis package is responsible for the chain of responsibility that executes a Test after all inputs have been checked for errors\&. \fP"
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAbstractRequestHandler\fP"
+.br
+.RI "\fIabstract base for a chain of responsibility that takes abstractTestRequests and uses them to generate output in various forms: log messages, User messages, as well as taking care of exception handling\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the root package for all request handlers in the \fBAbstractRequestHandler\fP inheritance hierarchy\&. 
+
+This package contains only the abstract base, all concrete implementations are located in the relevant sub-packages\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

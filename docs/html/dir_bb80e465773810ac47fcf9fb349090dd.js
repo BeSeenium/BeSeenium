@@ -8,6 +8,7 @@ var dir_bb80e465773810ac47fcf9fb349090dd =
     [ "AbstractAction.java", "AbstractAction_8java.html", [
       [ "AbstractAction", "classbeseenium_1_1model_1_1action_1_1AbstractAction.html", "classbeseenium_1_1model_1_1action_1_1AbstractAction" ]
     ] ],
+    [ "package-info.java", "model_2action_2package-info_8java.html", null ],
     [ "ResetActionData.java", "ResetActionData_8java.html", [
       [ "ResetActionData", "classbeseenium_1_1model_1_1action_1_1ResetActionData.html", "classbeseenium_1_1model_1_1action_1_1ResetActionData" ]
     ] ]

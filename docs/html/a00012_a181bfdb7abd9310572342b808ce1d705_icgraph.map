@@ -1,0 +1,5 @@
+<map id="beseenium.controller.ActionDataFactory.ActionDataFactory.setCapabilities" name="beseenium.controller.ActionDataFactory.ActionDataFactory.setCapabilities">
+<area shape="rect" id="node2" href="$a00118.html#a89397b4d1c9e1e78d0333e2ccd388e28" title="When using a &#39;remote&#39; Driver set a capability of the driver i.e. " alt="" coords="300,13,551,54"/>
+<area shape="rect" id="node3" href="$a00120.html#ae0ec35bbb8622775c22687d68a8a830d" title="takes an input from servlet(via handleURL method) in the form of string &#39;get&#39; URL parameter &#39;capabili..." alt="" coords="599,13,849,54"/>
+<area shape="rect" id="node4" href="$a00120.html#a5d57a46df8465d2c40f22fd8cb037c9c" title="takes the URL parameters passed to it from the BeSeeniumServlet and uses it to populate and run a Tes..." alt="" coords="897,20,1172,47"/>
+</map>

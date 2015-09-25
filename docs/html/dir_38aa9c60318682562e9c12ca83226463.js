@@ -8,5 +8,6 @@ var dir_38aa9c60318682562e9c12ca83226463 =
     ] ],
     [ "MakeRefreshPage.java", "MakeRefreshPage_8java.html", [
       [ "MakeRefreshPage", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeRefreshPage.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1navigateActions_1_1MakeRefreshPage" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionFactory_2navigateActions_2package-info_8java.html", null ]
 ];

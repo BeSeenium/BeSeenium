@@ -114,26 +114,28 @@ $(document).ready(function(){initNavTree('classbeseenium_1_1Main.html','');});
 <div class="title">beseenium.Main Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is the main entry point for the program, initial setup and configuration done here.  
+ <a href="classbeseenium_1_1Main.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for beseenium.Main:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1Main__coll__graph.png" border="0" usemap="#beseenium_8Main_coll__map" alt="Collaboration graph"/></div>
-<map name="beseenium_8Main_coll__map" id="beseenium_8Main_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab457dfac52d35c2fe8b77f4ec8069fa7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbeseenium_1_1Main.html#ab457dfac52d35c2fe8b77f4ec8069fa7">main</a> (String[] args)</td></tr>
+<tr class="memdesc:ab457dfac52d35c2fe8b77f4ec8069fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">passes the first command line argument to the http server, ostensibly the port number.  <a href="#ab457dfac52d35c2fe8b77f4ec8069fa7">More...</a><br /></td></tr>
 <tr class="separator:ab457dfac52d35c2fe8b77f4ec8069fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the main entry point for the program, initial setup and configuration done here.</p>
+<div class="textblock"><p>This is the main entry point for the program, initial setup and configuration done here. </p>
 <dl class="section author"><dt>Author</dt><dd>Jan P.C. Hanson </dd></dl>
 
-<p>Definition at line <a class="el" href="Main_8java_source.html#l00029">29</a> of file <a class="el" href="Main_8java_source.html">Main.java</a>.</p>
+<p>Definition at line <a class="el" href="Main_8java_source.html#l00028">28</a> of file <a class="el" href="Main_8java_source.html">Main.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab457dfac52d35c2fe8b77f4ec8069fa7"></a>
 <div class="memitem">
@@ -156,16 +158,18 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>passes the first command line argument to the http server, ostensibly the port number. also does some setup for log4j async logger. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>passes the first command line argument to the http server, ostensibly the port number. </p>
+<p>also does some setup for log4j async logger. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">args</td><td>command line arguments. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Main_8java_source.html#l00037">37</a> of file <a class="el" href="Main_8java_source.html">Main.java</a>.</p>
+<p>Definition at line <a class="el" href="Main_8java_source.html#l00036">36</a> of file <a class="el" href="Main_8java_source.html">Main.java</a>.</p>
 
-<p>References <a class="el" href="HttpServer_8java_source.html#l00045">beseenium.view.HttpServer.launch()</a>.</p>
+<p>References <a class="el" href="HttpServer_8java_source.html#l00044">beseenium.view.HttpServer.launch()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -174,14 +178,14 @@ Static Public Member Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classbeseenium_1_1Main_ab457dfac52d35c2fe8b77f4ec8069fa7_cgraph.png" border="0" usemap="#classbeseenium_1_1Main_ab457dfac52d35c2fe8b77f4ec8069fa7_cgraph" alt=""/></div>
 <map name="classbeseenium_1_1Main_ab457dfac52d35c2fe8b77f4ec8069fa7_cgraph" id="classbeseenium_1_1Main_ab457dfac52d35c2fe8b77f4ec8069fa7_cgraph">
-<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1HttpServer.html#a0b2bae533232dfc8368124c07c3c7af6" title="beseenium.view.HttpServer.launch" alt="" coords="216,46,460,73"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1HttpServer.html#a6d086e2b90baec37773c8cf043142ea8" title="beseenium.view.HttpServer.set\lUpServletHandler" alt="" coords="508,5,731,47"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1HttpServer.html#a20311b769224a084099084f3cd577c2d" title="beseenium.view.HttpServer.set\lUpGuiHandler" alt="" coords="508,71,731,112"/></map>
+<area shape="rect" id="node2" href="classbeseenium_1_1view_1_1HttpServer.html#a0b2bae533232dfc8368124c07c3c7af6" title="launches the embedded webserver on the specified port number. " alt="" coords="216,46,460,73"/><area shape="rect" id="node3" href="classbeseenium_1_1view_1_1HttpServer.html#a6d086e2b90baec37773c8cf043142ea8" title="do setup for the servlet handler " alt="" coords="508,5,731,47"/><area shape="rect" id="node4" href="classbeseenium_1_1view_1_1HttpServer.html#a20311b769224a084099084f3cd577c2d" title="do setup for the static resource handler " alt="" coords="508,71,731,112"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/beseenium/<a class="el" href="Main_8java_source.html">Main.java</a></li>
+<li><a class="el" href="Main_8java_source.html">Main.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebeseenium.html">beseenium</a></li><li class="navelem"><a class="el" href="classbeseenium_1_1Main.html">Main</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:54 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:04 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,0 +1,9 @@
+<map id="beseenium.view.outputHandlers.compositors.CapabilitiesCompositor.composite" name="beseenium.view.outputHandlers.compositors.CapabilitiesCompositor.composite">
+<area shape="rect" id="node2" href="$a00037.html#add3be82b7aa9c8961f27fc39ea5ba1ba" title="does the final formatting of the JSON object " alt="" coords="368,71,683,112"/>
+<area shape="rect" id="node5" href="$a00037.html#acdfc9290d8df3d2e589f94a2f6a9f72b" title="does the formatting of the keyVal and KVset " alt="" coords="368,136,683,177"/>
+<area shape="rect" id="node8" href="$a00125.html#a243e23fc0af55c6b9040a614cbac7794" title="split a string according to 2 delimiters, produces a 2d array " alt="" coords="417,201,634,243"/>
+<area shape="rect" id="node3" href="$a00011.html#a69bd6433e55b37fe94f24089aacec5bf" title="do some final formatting on the given string to put it in the final form specific to the derived type..." alt="" coords="731,5,1033,47"/>
+<area shape="rect" id="node4" href="$a00011.html#a8af12cce044f1652ef0135bd5712fb6d" title="format the given string as a key value super set specific to the derived type. " alt="" coords="731,71,1033,112"/>
+<area shape="rect" id="node6" href="$a00011.html#a35e8f2c147167e6a35c846eddfc3a5e5" title="format the given string as a key value set specific to the derived type. " alt="" coords="731,136,1033,177"/>
+<area shape="rect" id="node7" href="$a00011.html#a679fc9504f717af5057aff716c39d837" title="format the given string as a key value pair specific to the derived type. " alt="" coords="731,201,1033,243"/>
+</map>

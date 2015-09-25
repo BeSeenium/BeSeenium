@@ -12,6 +12,7 @@ var dir_58237547d5618ae9dd3b7735780b1594 =
     [ "NoSuchParameterException.java", "NoSuchParameterException_8java.html", [
       [ "NoSuchParameterException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException.html", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1NoSuchParameterException" ]
     ] ],
+    [ "package-info.java", "exceptions_2actionExceptions_2package-info_8java.html", null ],
     [ "SubmitException.java", "SubmitException_8java.html", [
       [ "SubmitException", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException.html", "classbeseenium_1_1exceptions_1_1actionExceptions_1_1SubmitException" ]
     ] ]

@@ -23,5 +23,6 @@ var dir_7edfb0fb576ade402a5ff3e8b5e13e84 =
     ] ],
     [ "MakeFindElementsByXpath.java", "MakeFindElementsByXpath_8java.html", [
       [ "MakeFindElementsByXpath", "classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByXpath.html", "classbeseenium_1_1controller_1_1ActionFactory_1_1findElementsBy_1_1MakeFindElementsByXpath" ]
-    ] ]
+    ] ],
+    [ "package-info.java", "controller_2ActionFactory_2findElementsBy_2package-info_8java.html", null ]
 ];

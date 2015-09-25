@@ -1,3 +1,3 @@
 <map id="beseenium.controller.ActionFactory.pageActions.MakeGetPageSrc" name="beseenium.controller.ActionFactory.pageActions.MakeGetPageSrc">
-<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html" title="{beseenium.controller.Action\lFactory.MakeAction\n|# adFactory\l|+ makeAction()\l# MakeAction()\l}" alt="" coords="38,5,239,112"/>
+<area shape="rect" id="node2" href="$classbeseenium_1_1controller_1_1ActionFactory_1_1MakeAction.html" title="abstract base class for the creation of AbstractActions specific to the MakeAction derived type..." alt="" coords="38,5,239,112"/>
 </map>

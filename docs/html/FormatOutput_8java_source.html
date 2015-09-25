@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>BeSeenium: src/beseenium/model/helpers/FormatOutput.java Source File</title>
+<title>BeSeenium: FormatOutput.java Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,43 +108,41 @@ $(document).ready(function(){initNavTree('FormatOutput_8java_source.html','');})
 <div class="title">FormatOutput.java</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="FormatOutput_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacebeseenium_1_1model_1_1helpers.html">   16</a></span>&#160;<span class="keyword">package </span>beseenium.model.helpers;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">import</span> java.util.List;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> org.openqa.selenium.WebElement;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">   27</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">FormatOutput</a> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">   36</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> String <a class="code" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">formatFindElementOutput</a>(List&lt;WebElement&gt; elements, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        String tempRes = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(n == -1)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt; elements.size(); ++i)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                tempRes += elements.get(i).toString()+<span class="stringliteral">&quot; , &quot;</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> tempRes;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> elements.get(n).toString();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }   </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="ttc" id="classbeseenium_1_1model_1_1helpers_1_1FormatOutput_html"><div class="ttname"><a href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">beseenium.model.helpers.FormatOutput</a></div><div class="ttdef"><b>Definition:</b> <a href="FormatOutput_8java_source.html#l00027">FormatOutput.java:27</a></div></div>
-<div class="ttc" id="classbeseenium_1_1model_1_1helpers_1_1FormatOutput_html_a8898fc2ffd06b918766bf002823edbc0"><div class="ttname"><a href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">beseenium.model.helpers.FormatOutput.formatFindElementOutput</a></div><div class="ttdeci">static String formatFindElementOutput(List&lt; WebElement &gt; elements, int n)</div><div class="ttdef"><b>Definition:</b> <a href="FormatOutput_8java_source.html#l00036">FormatOutput.java:36</a></div></div>
+<a href="FormatOutput_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacebeseenium_1_1model_1_1helpers.html">    1</a></span>&#160;<span class="keyword">package </span>beseenium.model.helpers;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">import</span> org.openqa.selenium.WebElement;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">   26</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">FormatOutput</a> </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> String <a class="code" href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">formatFindElementOutput</a>(List&lt;WebElement&gt; elements, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        String tempRes = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(n == -1)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt; elements.size(); ++i)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                tempRes += elements.get(i).toString()+<span class="stringliteral">&quot; , &quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> tempRes;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> elements.get(n).toString();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }   </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="ttc" id="classbeseenium_1_1model_1_1helpers_1_1FormatOutput_html"><div class="ttname"><a href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html">beseenium.model.helpers.FormatOutput</a></div><div class="ttdoc">This helper class provides methods to format the output of individual actions. </div><div class="ttdef"><b>Definition:</b> <a href="FormatOutput_8java_source.html#l00026">FormatOutput.java:26</a></div></div>
+<div class="ttc" id="classbeseenium_1_1model_1_1helpers_1_1FormatOutput_html_a8898fc2ffd06b918766bf002823edbc0"><div class="ttname"><a href="classbeseenium_1_1model_1_1helpers_1_1FormatOutput.html#a8898fc2ffd06b918766bf002823edbc0">beseenium.model.helpers.FormatOutput.formatFindElementOutput</a></div><div class="ttdeci">static String formatFindElementOutput(List&lt; WebElement &gt; elements, int n)</div><div class="ttdoc">formats the output string of a findElementBy... </div><div class="ttdef"><b>Definition:</b> <a href="FormatOutput_8java_source.html#l00035">FormatOutput.java:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c3aa92b7dbb40c27fcffaccb7f9ad0b0.html">beseenium</a></li><li class="navelem"><a class="el" href="dir_a143349b75ba2ffaa5efaa578520d118.html">model</a></li><li class="navelem"><a class="el" href="dir_14d2872d9f4394d49922489c6d41d27a.html">helpers</a></li><li class="navelem"><a class="el" href="FormatOutput_8java.html">FormatOutput.java</a></li>
-    <li class="footer">Generated on Thu Sep 10 2015 10:08:54 for BeSeenium by
+    <li class="footer">Generated on Fri Sep 11 2015 14:17:03 for BeSeenium by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

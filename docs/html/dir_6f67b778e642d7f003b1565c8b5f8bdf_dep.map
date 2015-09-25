@@ -1,4 +1,4 @@
-<map id="src/beseenium/view" name="src/beseenium/view">
+<map id="view" name="view">
 <area shape="rect" id="node2" href="dir_50d5bac53a27960ba5881699e369f52a.html" title="helpers" alt="" coords="319,63,391,111"/>
 <area shape="rect" id="node3" href="dir_6b5e86fabecd0c4513b88847fb2ad3b0.html" title="inputHandlers" alt="" coords="183,63,294,111"/>
 <area shape="rect" id="node4" href="dir_61a8b099e71abd8cee6031c28cc171b7.html" title="outputHandlers" alt="" coords="38,63,159,111"/>

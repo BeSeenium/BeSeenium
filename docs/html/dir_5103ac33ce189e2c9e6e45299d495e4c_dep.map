@@ -1,4 +1,4 @@
-<map id="src/beseenium/controller/ActionFactory" name="src/beseenium/controller/ActionFactory">
+<map id="ActionFactory" name="ActionFactory">
 <area shape="rect" id="node2" href="dir_ea34c5bb8fecfb725bfc1772b2869eef.html" title="elementActions" alt="" coords="457,63,580,111"/>
 <area shape="rect" id="node3" href="dir_7edfb0fb576ade402a5ff3e8b5e13e84.html" title="findElementsBy" alt="" coords="311,63,433,111"/>
 <area shape="rect" id="node4" href="dir_38aa9c60318682562e9c12ca83226463.html" title="navigateActions" alt="" coords="163,63,287,111"/>

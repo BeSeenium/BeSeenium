@@ -1,0 +1,59 @@
+.TH "beseenium.model.helpers.FormatOutput" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.model.helpers.FormatOutput \- This helper class provides methods to format the output of individual actions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static String \fBformatFindElementOutput\fP (List< WebElement > elements, int n)"
+.br
+.RI "\fIformats the output string of a findElementBy\&.\&.\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This helper class provides methods to format the output of individual actions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.PP
+Definition at line 26 of file FormatOutput\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static String beseenium\&.model\&.helpers\&.FormatOutput\&.formatFindElementOutput (List< WebElement > elements, int n)\fC [static]\fP"
+
+.PP
+formats the output string of a findElementBy\&.\&.\&. output string 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelements\fP a List<WebElement> containing all elements to be formatted 
+.br
+\fIn\fP an integer value determining which element to act on, if n = -1 then all elements in the list will be formatted\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String containing the formatted output\&. 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file FormatOutput\&.java\&.
+.PP
+Referenced by beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByClass\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByCss\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByName\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsById\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByXpath\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByLinkTxt\&.execute(), beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByTagName\&.execute(), and beseenium\&.model\&.action\&.findElementsBy\&.FindElementsByPartialLinkTxt\&.execute()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

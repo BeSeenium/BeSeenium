@@ -1,0 +1,42 @@
+.TH "beseenium.view.outputHandlers.requestHandlers.executeHandlers" 3 "Fri Sep 25 2015" "Version 1.0.0-Alpha" "BeSeenium" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+beseenium.view.outputHandlers.requestHandlers.executeHandlers \- This package is responsible for the chain of responsibility that executes a Test after all inputs have been checked for errors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionDataExceptionHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where, an element scoped action has been performed before a findElementsBy\&.\&.\&. \fP"
+.ti -1c
+.RI "class \fBActionExceptionHandler\fP"
+.br
+.RI "\fIThis represents a handler for the case where, actions have been requested in the incorrect order, i\&.e\&. \fP"
+.ti -1c
+.RI "class \fBRootExecuteHandler\fP"
+.br
+.RI "\fIThis class is the root of the addAction chain of responsibility, it takes care of defining the chain and, assuming the request fails, passing it to the first handler in the chain\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This package is responsible for the chain of responsibility that executes a Test after all inputs have been checked for errors\&. 
+
+If this class picks up exceptional behaviour it calls the next handler in the chain and so on until the problem is handled\&.
+.PP
+in order to implement new exceptional behaviour cases a new child class of \fBAbstractRequestHandler\fP should be created containing the code to handle this case, then the \fBRootExecuteHandler\fP class should be modified to add this new class to the chain\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Jan P\&.C\&. Hanson 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BeSeenium from the source code\&.

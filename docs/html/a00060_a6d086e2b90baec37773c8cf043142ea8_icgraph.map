@@ -1,0 +1,4 @@
+<map id="beseenium.view.HttpServer.setUpServletHandler" name="beseenium.view.HttpServer.setUpServletHandler">
+<area shape="rect" id="node2" href="$a00060.html#a0b2bae533232dfc8368124c07c3c7af6" title="launches the embedded webserver on the specified port number. " alt="" coords="276,13,520,39"/>
+<area shape="rect" id="node3" href="$a00066.html#ab457dfac52d35c2fe8b77f4ec8069fa7" title="passes the first command line argument to the http server, ostensibly the port number. " alt="" coords="568,13,731,39"/>
+</map>
