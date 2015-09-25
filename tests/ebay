@@ -1,0 +1,17 @@
+http://localhost:1337/results/
+?browser=firefox
+&addActions=PageGet+http://www.ebay.co.uk/rpp/Back-To-University/Back-To-University-Bedroom+0
+|FindElementsByCss+.gl-itm>a+2
+|Click++2
+|FindElementsById+prcIsum+0
+|GetText++0
+|FindElementsById+msku-opt-1+0
+|Click++0
+|FindElementsById+isCartBtn_btn+0
+|Click++0
+|FindElementsById+asyncTotal+0
+|GetText++0
+|FindElementsById+ptcBtnButton+0 (craps out here)
+|Click++0
+|GetTitle++0
+|BrowserQuit++0

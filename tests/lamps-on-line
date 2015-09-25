@@ -1,0 +1,18 @@
+http://localhost:1337/results/
+?browser=firefox
+&addActions=PageGet+http://www.lamps-on-line.com/light-bulbs/fluorescent-tubes/led.html+0
+|FindElementsByCss+.item>a+2
+|Click++2
+|FindElementsByCss+div>div>span>.price+0
+|GetText++0
+|FindElementsByCss+.btn-cart+0
+|Click++0
+|FindElementsByCss+.success-msg>ul>li>div>h2+0
+|GetText++0
+|FindElementsByCss+span>.btn-view-cart+0
+|Click++0
+|FindElementsByCss+.btn-proceed-checkout+0
+|Click++0
+|FindElementsByCss+.price>.price+0 (error when it gets to here)
+|GetText++0
+|BrowserQuit++0

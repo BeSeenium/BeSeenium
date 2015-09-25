@@ -71,13 +71,6 @@ public class BeSeeniumServlet extends HttpServlet
 		PrintWriter out = response.getWriter();
 		try 
 		{			
-			// UrlDecoder turns the get parameter strings into program actions 
-//			URLHandler urlHandler = new URLHandler();
-//			//turn the get parameters into something useful
-//			//execute the actions and turn the result string into an http response
-//			String result = urlHandler.handleURL(capabilities, browser, addActions);
-//			out.print(result);	
-			
 			Test test = new Test();
 			InputHandler inputHandler = new InputHandler();
 			OutputHandler outputHandler = new OutputHandler(test);
@@ -86,24 +79,11 @@ public class BeSeeniumServlet extends HttpServlet
 
 			outputHandler.setRequests(tmp);
 			
-//			List<String> results = outputHandler.handleRequests(id);
-			
 			for(String result: outputHandler.handleRequests(id))
 			{output += result;}
 			
 			out.println(output);
-//			out.println(Arrays.deepToString(results.toArray()));
 		} 
-//		
-//		catch (ActionDataFactoryException e) 
-//		{
-//			out.println("UNRECOVERABLE ERROR: "+ e.getMessage() + EOL);
-//			e.printStackTrace(out);
-//			e.printStackTrace();
-//			out.println(EOL);
-//			logger.error("UNRECOVERABLE ERROR: ActionDataFactory" + e + "\n");
-//			
-//		}
 		
 		catch (Exception e)
 		{

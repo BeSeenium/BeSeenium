@@ -38,7 +38,7 @@ public class FormatOutput
 		
 		if(n == -1)
 		{
-			for(int i=0; i< elements.size(); ++i)
+			for(int i=0; i<= elements.size(); ++i)
 			{
 				tempRes += elements.get(i).toString();
 			}
